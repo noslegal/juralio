@@ -1,0 +1,80 @@
+# Controlled vocabulary for article front matter.
+#
+# Every value used in an article's front matter must appear here. Adding a term
+# is a deliberate act: open a pull request that adds it here and explains why
+# the existing terms do not fit. Free tagging is not permitted, because a tag
+# set that anyone can extend silently stops being useful within a release or two.
+#
+# scripts/validate.py enforces this file.
+
+# ---------------------------------------------------------------- type
+# Exactly one per article. Determines the article's shape - see CONTRIBUTING.md.
+type:
+  concept: Explains what something is and why it works the way it does.
+  how-to: Walks the reader through completing a specific task.
+  reference: Lookup material - lists, tables, limits, permissions, definitions.
+  troubleshooting: Diagnoses a symptom the reader is already experiencing.
+
+# ---------------------------------------------------------------- role
+# Who needs this article. One or more. This is the highest-value axis: most
+# reader questions in this product are really "am I allowed to do this?".
+role:
+  everyone: Anyone with a Juralio account.
+  external-account: People outside the organisation, invited to specific matters.
+  matter-viewer: Can see a matter's workstreams but not change them.
+  matter-editor: Can see and change a matter's tasks and posts.
+  matter-admin: Manages people, workstreams and status within a matter.
+  matter-creator: Organisation-level role permitting matter creation.
+  knowledge-manager: Organisation-level role for creating and publishing templates.
+  org-admin: Organisation administrator.
+  org-owner: Organisation owner - admin powers plus seats and subscriptions.
+  sysadmin: System administrator, above organisation level.
+
+# ---------------------------------------------------------------- object
+# The domain nouns the article is about. One to four.
+object:
+  organisation: The tenant that owns matters, templates and accounts.
+  group: A company or entity; every account belongs to exactly one.
+  account: An individual user account.
+  matter: A set of activities for a particular client.
+  workstream: A subdivision of a matter, containing tasks.
+  task: A unit of work, nestable to six levels.
+  post: A note or link attached to a task.
+  label: Risk, workflow or hashtag label.
+  template: Reusable task structure.
+  milestone: A significant stage or event.
+  deliverable: A tangible output within a phase.
+  cost: Rates, projections, fees and cost tracking.
+  link: A blocking link between tasks, or an external URL.
+  date: Planned and actual task dates.
+
+# ---------------------------------------------------------------- surface
+# Where in the product this lives. Drives in-app contextual help.
+surface:
+  login: The sign-in screen and authentication.
+  home: The home screen.
+  personal-settings: The profile menu.
+  search: The global search box.
+  matter-switcher: The matter dropdown.
+  matter-overview: A matter's overview screen.
+  workstream-overview: A workstream's overview screen.
+  taskmap: The taskmap view.
+  roadmap: The roadmap view.
+  tasklist: The tasklist view.
+  task-preview: The hover preview on a task card.
+  task-details: The full task details panel.
+  matter-admin: The matter administration area.
+  org-admin: The organisation administration area.
+  templates: The templates gallery and template editor.
+  costs: The costs area at organisation or matter level.
+  sysadmin: The system administration area.
+
+# ---------------------------------------------------------------- lifecycle
+# Exactly one. Broad stage at which the reader needs this.
+lifecycle:
+  access: Getting in and setting yourself up.
+  set-up: Configuring an organisation, matter or permissions.
+  plan: Structuring work before or as it starts.
+  work: Day-to-day use.
+  monitor: Tracking progress, cost and status.
+  close: Finishing, archiving and closing down.

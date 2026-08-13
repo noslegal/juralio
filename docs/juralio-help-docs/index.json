@@ -1,0 +1,1733 @@
+[
+  {
+    "id": "accepted-urls",
+    "title": "Accepted URL types",
+    "type": "reference",
+    "role": [
+      "matter-editor",
+      "org-admin"
+    ],
+    "object": [
+      "link",
+      "post"
+    ],
+    "surface": [
+      "task-details"
+    ],
+    "lifecycle": "work",
+    "summary": "Which link formats Juralio accepts in posts, and how to request another.",
+    "related": [
+      "posts",
+      "blocking-links"
+    ],
+    "words": 104,
+    "path": "articles/accepted-urls.md"
+  },
+  {
+    "id": "account-types",
+    "title": "Internal and external accounts",
+    "type": "concept",
+    "role": [
+      "org-admin",
+      "matter-admin"
+    ],
+    "object": [
+      "account",
+      "organisation"
+    ],
+    "surface": [
+      "org-admin"
+    ],
+    "lifecycle": "set-up",
+    "summary": "The difference between internal and external accounts, and what external accounts can and cannot do.",
+    "related": [
+      "organisation-roles",
+      "matter-roles",
+      "matter-permissions",
+      "groups"
+    ],
+    "words": 186,
+    "path": "articles/account-types.md"
+  },
+  {
+    "id": "add-a-task",
+    "title": "Add a task",
+    "type": "how-to",
+    "role": [
+      "matter-editor",
+      "external-account"
+    ],
+    "object": [
+      "task"
+    ],
+    "surface": [
+      "taskmap",
+      "task-details"
+    ],
+    "lifecycle": "work",
+    "summary": "Two ways to add a task, and what status and reference number a new task gets.",
+    "related": [
+      "tasks-introduction",
+      "taskmap",
+      "creating-things",
+      "reference-numbers"
+    ],
+    "words": 185,
+    "path": "articles/add-a-task.md"
+  },
+  {
+    "id": "add-remove-matter-people",
+    "title": "Add or remove a matter editor or admin",
+    "type": "how-to",
+    "role": [
+      "matter-admin",
+      "org-admin"
+    ],
+    "object": [
+      "matter",
+      "account"
+    ],
+    "surface": [
+      "matter-admin"
+    ],
+    "lifecycle": "set-up",
+    "summary": "How a matter admin adds or removes matter editors and admins via the People tab.",
+    "related": [
+      "matter-permissions",
+      "matter-roles",
+      "placeholders"
+    ],
+    "words": 92,
+    "path": "articles/add-remove-matter-people.md"
+  },
+  {
+    "id": "advisor-costs",
+    "title": "Advisor costs",
+    "type": "how-to",
+    "role": [
+      "matter-admin",
+      "matter-editor"
+    ],
+    "object": [
+      "cost",
+      "matter"
+    ],
+    "surface": [
+      "costs"
+    ],
+    "lifecycle": "plan",
+    "summary": "Set matter rates, build a projection across pricing types and grades, and monitor against the dashboard.",
+    "related": [
+      "matter-costs",
+      "client-costs",
+      "rate-tables",
+      "cost-snapshots",
+      "assumptions"
+    ],
+    "words": 560,
+    "path": "articles/advisor-costs.md"
+  },
+  {
+    "id": "archiving-and-closing",
+    "title": "Archiving and closing",
+    "type": "reference",
+    "role": [
+      "matter-admin",
+      "matter-editor",
+      "org-admin",
+      "knowledge-manager"
+    ],
+    "object": [
+      "matter",
+      "workstream",
+      "task",
+      "post"
+    ],
+    "surface": [
+      "matter-admin"
+    ],
+    "lifecycle": "close",
+    "summary": "What can be closed, archived, restored or marked not required, and who can do it.",
+    "related": [
+      "task-status",
+      "move-copy-tasks",
+      "matter-permissions"
+    ],
+    "words": 135,
+    "path": "articles/archiving-and-closing.md"
+  },
+  {
+    "id": "assumptions",
+    "title": "Assumptions",
+    "type": "reference",
+    "role": [
+      "matter-editor"
+    ],
+    "object": [
+      "cost",
+      "task"
+    ],
+    "surface": [
+      "costs",
+      "task-details"
+    ],
+    "lifecycle": "plan",
+    "summary": "Short notes attached to a phase that define scope and guide projected resource allocation.",
+    "related": [
+      "deliverables",
+      "client-costs",
+      "advisor-costs",
+      "cost-snapshots"
+    ],
+    "words": 82,
+    "path": "articles/assumptions.md"
+  },
+  {
+    "id": "blocking-links",
+    "title": "Blocking links",
+    "type": "concept",
+    "role": [
+      "matter-editor"
+    ],
+    "object": [
+      "link",
+      "task"
+    ],
+    "surface": [
+      "task-details"
+    ],
+    "lifecycle": "work",
+    "summary": "Soft blocks that show one task should be finished before another starts, and which tasks cannot be linked.",
+    "related": [
+      "overriding-block-links",
+      "removing-task-links",
+      "task-status"
+    ],
+    "words": 242,
+    "path": "articles/blocking-links.md"
+  },
+  {
+    "id": "breaking-down-tasks",
+    "title": "Breaking down tasks effectively",
+    "type": "concept",
+    "role": [
+      "matter-editor"
+    ],
+    "object": [
+      "task",
+      "workstream"
+    ],
+    "surface": [
+      "taskmap"
+    ],
+    "lifecycle": "plan",
+    "summary": "Guidance on choosing a task structure that stays legible to the whole matter team.",
+    "related": [
+      "tasks-introduction",
+      "task-breakdown-examples",
+      "split-merge-workstreams",
+      "templates"
+    ],
+    "words": 268,
+    "path": "articles/breaking-down-tasks.md"
+  },
+  {
+    "id": "client-costs",
+    "title": "Client costs",
+    "type": "how-to",
+    "role": [
+      "matter-admin",
+      "matter-editor"
+    ],
+    "object": [
+      "cost",
+      "matter"
+    ],
+    "surface": [
+      "costs"
+    ],
+    "lifecycle": "plan",
+    "summary": "Set a fixed fee for a period, define out-of-scope rules, review scope and confirm the arrangement.",
+    "related": [
+      "matter-costs",
+      "advisor-costs",
+      "assumptions",
+      "deliverables",
+      "cost-snapshots"
+    ],
+    "words": 229,
+    "path": "articles/client-costs.md"
+  },
+  {
+    "id": "cost-building-blocks",
+    "title": "Cost building blocks",
+    "type": "reference",
+    "role": [
+      "org-admin"
+    ],
+    "object": [
+      "cost",
+      "organisation"
+    ],
+    "surface": [
+      "org-admin",
+      "costs"
+    ],
+    "lifecycle": "set-up",
+    "summary": "Grades, rate types and other cost types - the three blocks every rate table is built from.",
+    "related": [
+      "costs-setup",
+      "rate-tables",
+      "matter-costs"
+    ],
+    "words": 204,
+    "path": "articles/cost-building-blocks.md"
+  },
+  {
+    "id": "cost-snapshots",
+    "title": "Cost snapshots",
+    "type": "reference",
+    "role": [
+      "matter-editor"
+    ],
+    "object": [
+      "cost",
+      "matter"
+    ],
+    "surface": [
+      "costs"
+    ],
+    "lifecycle": "monitor",
+    "summary": "Finalising a projection freezes rates, periods and assumptions at that moment, alongside the live matter data.",
+    "related": [
+      "advisor-costs",
+      "client-costs",
+      "assumptions"
+    ],
+    "words": 88,
+    "path": "articles/cost-snapshots.md"
+  },
+  {
+    "id": "cost-visibility",
+    "title": "Who can see costs",
+    "type": "reference",
+    "role": [
+      "matter-editor",
+      "external-account",
+      "matter-admin"
+    ],
+    "object": [
+      "cost",
+      "matter",
+      "group"
+    ],
+    "surface": [
+      "costs"
+    ],
+    "lifecycle": "monitor",
+    "summary": "Cost visibility depends on position and permissions; external users see a reduced view, and nothing until setup is done.",
+    "related": [
+      "matter-positions",
+      "matter-costs",
+      "account-types",
+      "matter-permissions"
+    ],
+    "words": 95,
+    "path": "articles/cost-visibility.md"
+  },
+  {
+    "id": "costs-setup",
+    "title": "Set up organisation costs",
+    "type": "how-to",
+    "role": [
+      "org-admin"
+    ],
+    "object": [
+      "cost",
+      "organisation"
+    ],
+    "surface": [
+      "org-admin",
+      "costs"
+    ],
+    "lifecycle": "set-up",
+    "summary": "The one-time guided setup that defines your cost building blocks and first rate table.",
+    "related": [
+      "cost-building-blocks",
+      "rate-tables",
+      "matter-costs",
+      "matter-positions"
+    ],
+    "words": 199,
+    "path": "articles/costs-setup.md"
+  },
+  {
+    "id": "create-a-matter",
+    "title": "Create a matter",
+    "type": "how-to",
+    "role": [
+      "matter-creator"
+    ],
+    "object": [
+      "matter",
+      "group"
+    ],
+    "surface": [
+      "home"
+    ],
+    "lifecycle": "set-up",
+    "summary": "What you need in order to create a matter, and the details you are asked for.",
+    "related": [
+      "matters-and-workstreams",
+      "matter-positions",
+      "matter-permissions",
+      "reference-numbers"
+    ],
+    "words": 200,
+    "path": "articles/create-a-matter.md"
+  },
+  {
+    "id": "create-a-workstream",
+    "title": "Create a workstream",
+    "type": "how-to",
+    "role": [
+      "matter-admin"
+    ],
+    "object": [
+      "workstream",
+      "matter",
+      "template"
+    ],
+    "surface": [
+      "matter-admin",
+      "templates"
+    ],
+    "lifecycle": "plan",
+    "summary": "Three ways to create a workstream: from existing tasks, blank, or from a template.",
+    "related": [
+      "matters-and-workstreams",
+      "use-a-template",
+      "split-merge-workstreams",
+      "restricted-workstreams"
+    ],
+    "words": 193,
+    "path": "articles/create-a-workstream.md"
+  },
+  {
+    "id": "creating-things",
+    "title": "Creating things with the add button",
+    "type": "how-to",
+    "role": [
+      "everyone"
+    ],
+    "object": [
+      "matter",
+      "task",
+      "post",
+      "template"
+    ],
+    "surface": [
+      "home",
+      "taskmap"
+    ],
+    "lifecycle": "work",
+    "summary": "Use the add (+) button to create matters, templates, tasks, posts and other items.",
+    "related": [
+      "create-a-matter",
+      "add-a-task",
+      "posts",
+      "milestones"
+    ],
+    "words": 120,
+    "path": "articles/creating-things.md"
+  },
+  {
+    "id": "deliverables",
+    "title": "Deliverables",
+    "type": "concept",
+    "role": [
+      "matter-editor"
+    ],
+    "object": [
+      "deliverable",
+      "task",
+      "cost"
+    ],
+    "surface": [
+      "taskmap",
+      "roadmap",
+      "costs"
+    ],
+    "lifecycle": "plan",
+    "summary": "Tangible outputs within a phase; deliverables feed into cost setup and snapshots as a scope signal.",
+    "related": [
+      "milestones",
+      "map-views",
+      "assumptions",
+      "client-costs"
+    ],
+    "words": 133,
+    "path": "articles/deliverables.md"
+  },
+  {
+    "id": "downloads",
+    "title": "Downloads and exports",
+    "type": "reference",
+    "role": [
+      "matter-viewer",
+      "matter-editor"
+    ],
+    "object": [
+      "task",
+      "post",
+      "workstream"
+    ],
+    "surface": [
+      "task-details",
+      "workstream-overview"
+    ],
+    "lifecycle": "monitor",
+    "summary": "Export a task or post to Word, or a workstream task list to Excel.",
+    "related": [
+      "matter-workstream-overviews",
+      "task-details"
+    ],
+    "words": 53,
+    "path": "articles/downloads.md"
+  },
+  {
+    "id": "draft-and-final-notes",
+    "title": "Draft and final notes",
+    "type": "how-to",
+    "role": [
+      "matter-editor"
+    ],
+    "object": [
+      "post"
+    ],
+    "surface": [
+      "task-details"
+    ],
+    "lifecycle": "work",
+    "summary": "Notes start as drafts; finalise them to lock editing, and reopen them to edit again.",
+    "related": [
+      "posts",
+      "restricted-posts",
+      "task-status"
+    ],
+    "words": 150,
+    "path": "articles/draft-and-final-notes.md"
+  },
+  {
+    "id": "edit-template-tasks",
+    "title": "Edit a template's tasks",
+    "type": "how-to",
+    "role": [
+      "knowledge-manager"
+    ],
+    "object": [
+      "template",
+      "task",
+      "post"
+    ],
+    "surface": [
+      "templates"
+    ],
+    "lifecycle": "plan",
+    "summary": "Edit, move and copy tasks inside a template, and add posts that guide the people who use it.",
+    "related": [
+      "templates",
+      "use-a-template",
+      "move-copy-tasks"
+    ],
+    "words": 207,
+    "path": "articles/edit-template-tasks.md"
+  },
+  {
+    "id": "groups",
+    "title": "Groups",
+    "type": "concept",
+    "role": [
+      "org-admin",
+      "matter-admin"
+    ],
+    "object": [
+      "group",
+      "organisation"
+    ],
+    "surface": [
+      "org-admin"
+    ],
+    "lifecycle": "set-up",
+    "summary": "Every account belongs to exactly one group; groups represent your own organisation or the companies you work with.",
+    "related": [
+      "manage-groups",
+      "matter-positions",
+      "account-types"
+    ],
+    "words": 308,
+    "path": "articles/groups.md"
+  },
+  {
+    "id": "home-screen",
+    "title": "Home screen",
+    "type": "concept",
+    "role": [
+      "everyone"
+    ],
+    "object": [
+      "matter",
+      "task"
+    ],
+    "surface": [
+      "home"
+    ],
+    "lifecycle": "access",
+    "summary": "What you see when you log in: recent items, to dos, matter cards and tip cards.",
+    "related": [
+      "matters-and-workstreams",
+      "templates",
+      "search",
+      "personal-settings"
+    ],
+    "words": 182,
+    "path": "articles/home-screen.md"
+  },
+  {
+    "id": "labels",
+    "title": "Labels",
+    "type": "concept",
+    "role": [
+      "org-admin",
+      "matter-admin",
+      "matter-editor"
+    ],
+    "object": [
+      "label",
+      "task",
+      "matter"
+    ],
+    "surface": [
+      "org-admin",
+      "matter-admin",
+      "task-details"
+    ],
+    "lifecycle": "work",
+    "summary": "Risk, workflow and hashtag labels: what they are, who controls them, and how to apply and find them.",
+    "related": [
+      "map-views",
+      "search",
+      "task-details",
+      "organisation-admin"
+    ],
+    "words": 340,
+    "path": "articles/labels.md"
+  },
+  {
+    "id": "logging-in",
+    "title": "Logging in",
+    "type": "how-to",
+    "role": [
+      "everyone"
+    ],
+    "object": [
+      "account"
+    ],
+    "surface": [
+      "login"
+    ],
+    "lifecycle": "access",
+    "summary": "How to reach Juralio in a supported browser and sign in with single sign-on or a password.",
+    "related": [
+      "single-sign-on",
+      "password-policy",
+      "sso-email-change",
+      "personal-settings"
+    ],
+    "words": 169,
+    "path": "articles/logging-in.md"
+  },
+  {
+    "id": "manage-accounts",
+    "title": "Manage individual accounts",
+    "type": "how-to",
+    "role": [
+      "org-admin",
+      "org-owner"
+    ],
+    "object": [
+      "account",
+      "organisation"
+    ],
+    "surface": [
+      "org-admin"
+    ],
+    "lifecycle": "set-up",
+    "summary": "Invite people, activate or deactivate accounts, and edit names, roles and authentication method.",
+    "related": [
+      "organisation-admin",
+      "organisation-roles",
+      "account-types",
+      "manage-groups"
+    ],
+    "words": 122,
+    "path": "articles/manage-accounts.md"
+  },
+  {
+    "id": "manage-groups",
+    "title": "Create and manage groups",
+    "type": "how-to",
+    "role": [
+      "org-admin",
+      "org-owner",
+      "sysadmin"
+    ],
+    "object": [
+      "group",
+      "organisation"
+    ],
+    "surface": [
+      "org-admin"
+    ],
+    "lifecycle": "set-up",
+    "summary": "Add, rename, delete groups and set their logo and default position, from Organisation admin.",
+    "related": [
+      "groups",
+      "matter-positions",
+      "manage-accounts"
+    ],
+    "words": 168,
+    "path": "articles/manage-groups.md"
+  },
+  {
+    "id": "map-views",
+    "title": "Filtering, zooming and view options",
+    "type": "how-to",
+    "role": [
+      "matter-viewer",
+      "matter-editor"
+    ],
+    "object": [
+      "task",
+      "workstream",
+      "label"
+    ],
+    "surface": [
+      "taskmap",
+      "roadmap"
+    ],
+    "lifecycle": "work",
+    "summary": "Filter taskmap and roadmap by status, type, label or person, switch detail level, zoom, and use the minimap.",
+    "related": [
+      "taskmap",
+      "roadmap",
+      "labels",
+      "milestones",
+      "deliverables"
+    ],
+    "words": 410,
+    "path": "articles/map-views.md"
+  },
+  {
+    "id": "matter-costs",
+    "title": "Matter costs",
+    "type": "concept",
+    "role": [
+      "matter-admin",
+      "matter-editor"
+    ],
+    "object": [
+      "cost",
+      "matter"
+    ],
+    "surface": [
+      "costs"
+    ],
+    "lifecycle": "plan",
+    "summary": "Price and track an individual matter once organisation cost setup is done; who can see the costs tab.",
+    "related": [
+      "advisor-costs",
+      "client-costs",
+      "cost-visibility",
+      "costs-setup"
+    ],
+    "words": 66,
+    "path": "articles/matter-costs.md"
+  },
+  {
+    "id": "matter-permissions",
+    "title": "Matter permissions",
+    "type": "reference",
+    "role": [
+      "matter-admin",
+      "matter-editor",
+      "matter-viewer",
+      "matter-creator"
+    ],
+    "object": [
+      "matter",
+      "workstream",
+      "task",
+      "post"
+    ],
+    "surface": [
+      "matter-admin"
+    ],
+    "lifecycle": "set-up",
+    "summary": "What matter creators, admins, editors and viewers can each see and change.",
+    "related": [
+      "matter-roles",
+      "add-remove-matter-people",
+      "account-types"
+    ],
+    "words": 294,
+    "path": "articles/matter-permissions.md"
+  },
+  {
+    "id": "matter-positions",
+    "title": "Matter positions: Client and Advisor",
+    "type": "concept",
+    "role": [
+      "matter-admin",
+      "org-admin"
+    ],
+    "object": [
+      "matter",
+      "group",
+      "cost"
+    ],
+    "surface": [
+      "matter-admin",
+      "org-admin"
+    ],
+    "lifecycle": "set-up",
+    "summary": "Every group on a matter is either Client or Advisor; positions control cost visibility and permissions.",
+    "related": [
+      "groups",
+      "manage-groups",
+      "matter-costs",
+      "cost-visibility"
+    ],
+    "words": 574,
+    "path": "articles/matter-positions.md"
+  },
+  {
+    "id": "matter-roles",
+    "title": "Matter-level roles",
+    "type": "reference",
+    "role": [
+      "matter-admin",
+      "matter-editor",
+      "matter-viewer"
+    ],
+    "object": [
+      "account",
+      "matter",
+      "task"
+    ],
+    "surface": [
+      "matter-admin"
+    ],
+    "lifecycle": "set-up",
+    "summary": "Matter admin, editor, viewer and placeholder roles, plus the task team member, post author and meeting attendee roles within a workstream.",
+    "related": [
+      "matter-permissions",
+      "organisation-roles",
+      "placeholders",
+      "task-team-members"
+    ],
+    "words": 232,
+    "path": "articles/matter-roles.md"
+  },
+  {
+    "id": "matter-workstream-overviews",
+    "title": "Matter and workstream overviews",
+    "type": "concept",
+    "role": [
+      "matter-viewer",
+      "matter-editor"
+    ],
+    "object": [
+      "matter",
+      "workstream",
+      "task",
+      "post"
+    ],
+    "surface": [
+      "matter-overview",
+      "workstream-overview"
+    ],
+    "lifecycle": "monitor",
+    "summary": "High-level summaries of progress, people and content for a matter or workstream.",
+    "related": [
+      "roadmap",
+      "taskmap",
+      "downloads",
+      "matter-permissions"
+    ],
+    "words": 131,
+    "path": "articles/matter-workstream-overviews.md"
+  },
+  {
+    "id": "matters-and-workstreams",
+    "title": "Matters and workstreams",
+    "type": "concept",
+    "role": [
+      "everyone"
+    ],
+    "object": [
+      "matter",
+      "workstream",
+      "task"
+    ],
+    "surface": [
+      "matter-switcher",
+      "matter-overview"
+    ],
+    "lifecycle": "plan",
+    "summary": "How work is organised into matters and workstreams, and why tasks cannot move between matters.",
+    "related": [
+      "create-a-matter",
+      "create-a-workstream",
+      "split-merge-workstreams",
+      "restricted-workstreams"
+    ],
+    "words": 262,
+    "path": "articles/matters-and-workstreams.md"
+  },
+  {
+    "id": "milestones",
+    "title": "Milestones",
+    "type": "concept",
+    "role": [
+      "matter-editor"
+    ],
+    "object": [
+      "milestone",
+      "task"
+    ],
+    "surface": [
+      "taskmap",
+      "roadmap"
+    ],
+    "lifecycle": "plan",
+    "summary": "Mark a significant stage or event; milestones have one date, two states and no subtasks.",
+    "related": [
+      "deliverables",
+      "map-views",
+      "creating-things",
+      "task-status"
+    ],
+    "words": 122,
+    "path": "articles/milestones.md"
+  },
+  {
+    "id": "move-copy-tasks",
+    "title": "Move or copy tasks",
+    "type": "how-to",
+    "role": [
+      "matter-editor",
+      "matter-admin"
+    ],
+    "object": [
+      "task",
+      "workstream"
+    ],
+    "surface": [
+      "taskmap",
+      "task-details"
+    ],
+    "lifecycle": "work",
+    "summary": "What happens to content, subtasks and status when you move or copy a task, and who is allowed to.",
+    "related": [
+      "split-merge-workstreams",
+      "archiving-and-closing",
+      "matter-permissions"
+    ],
+    "words": 454,
+    "path": "articles/move-copy-tasks.md"
+  },
+  {
+    "id": "organisation-admin",
+    "title": "Organisation admin",
+    "type": "concept",
+    "role": [
+      "org-admin",
+      "org-owner"
+    ],
+    "object": [
+      "organisation",
+      "matter"
+    ],
+    "surface": [
+      "org-admin"
+    ],
+    "lifecycle": "set-up",
+    "summary": "What the organisation admin area covers and the matter-level powers organisation admins hold.",
+    "related": [
+      "manage-accounts",
+      "manage-groups",
+      "labels",
+      "organisation-security-settings",
+      "costs-setup"
+    ],
+    "words": 124,
+    "path": "articles/organisation-admin.md"
+  },
+  {
+    "id": "organisation-roles",
+    "title": "Organisation-level roles",
+    "type": "reference",
+    "role": [
+      "org-admin",
+      "org-owner"
+    ],
+    "object": [
+      "account",
+      "organisation"
+    ],
+    "surface": [
+      "org-admin"
+    ],
+    "lifecycle": "set-up",
+    "summary": "What organisation owners, organisation administrators, matter creators and knowledge managers can do.",
+    "related": [
+      "account-types",
+      "matter-roles",
+      "manage-accounts",
+      "sysadmin"
+    ],
+    "words": 113,
+    "path": "articles/organisation-roles.md"
+  },
+  {
+    "id": "organisation-security-settings",
+    "title": "Organisation security settings",
+    "type": "how-to",
+    "role": [
+      "org-admin",
+      "org-owner"
+    ],
+    "object": [
+      "organisation",
+      "account"
+    ],
+    "surface": [
+      "org-admin"
+    ],
+    "lifecycle": "set-up",
+    "summary": "Enable or disable multi-factor authentication and single sign-on, and turn on document system integrations.",
+    "related": [
+      "single-sign-on",
+      "manage-accounts",
+      "organisation-admin"
+    ],
+    "words": 81,
+    "path": "articles/organisation-security-settings.md"
+  },
+  {
+    "id": "overriding-block-links",
+    "title": "Overriding block links",
+    "type": "how-to",
+    "role": [
+      "matter-editor"
+    ],
+    "object": [
+      "link",
+      "task"
+    ],
+    "surface": [
+      "task-details"
+    ],
+    "lifecycle": "work",
+    "summary": "Start a blocked task anyway by overriding the block - a permanent change that removes the link.",
+    "related": [
+      "blocking-links",
+      "removing-task-links",
+      "task-status"
+    ],
+    "words": 108,
+    "path": "articles/overriding-block-links.md"
+  },
+  {
+    "id": "password-policy",
+    "title": "Password policy",
+    "type": "reference",
+    "role": [
+      "everyone"
+    ],
+    "object": [
+      "account"
+    ],
+    "surface": [
+      "login"
+    ],
+    "lifecycle": "access",
+    "summary": "Minimum password length and complexity requirements, plus guidance on choosing and storing passwords.",
+    "related": [
+      "logging-in",
+      "single-sign-on"
+    ],
+    "words": 98,
+    "path": "articles/password-policy.md"
+  },
+  {
+    "id": "personal-settings",
+    "title": "Personal settings",
+    "type": "how-to",
+    "role": [
+      "everyone"
+    ],
+    "object": [
+      "account"
+    ],
+    "surface": [
+      "personal-settings"
+    ],
+    "lifecycle": "access",
+    "summary": "Edit your profile, reset your password, and reset tutorial cards and feature reminders.",
+    "related": [
+      "logging-in",
+      "home-screen",
+      "password-policy"
+    ],
+    "words": 42,
+    "path": "articles/personal-settings.md"
+  },
+  {
+    "id": "placeholders",
+    "title": "Placeholders",
+    "type": "how-to",
+    "role": [
+      "matter-admin",
+      "matter-editor"
+    ],
+    "object": [
+      "account",
+      "matter",
+      "task"
+    ],
+    "surface": [
+      "matter-admin",
+      "task-details"
+    ],
+    "lifecycle": "set-up",
+    "summary": "Represent people involved in a matter who have no Juralio account, and manage, merge or delete them.",
+    "related": [
+      "matter-roles",
+      "add-remove-matter-people",
+      "task-team-members"
+    ],
+    "words": 230,
+    "path": "articles/placeholders.md"
+  },
+  {
+    "id": "posts",
+    "title": "Posts: notes and links",
+    "type": "concept",
+    "role": [
+      "matter-editor",
+      "external-account"
+    ],
+    "object": [
+      "post",
+      "task"
+    ],
+    "surface": [
+      "task-details"
+    ],
+    "lifecycle": "work",
+    "summary": "What posts are for, the two types available, and the special links that render inside Juralio.",
+    "related": [
+      "draft-and-final-notes",
+      "restricted-posts",
+      "accepted-urls",
+      "task-details"
+    ],
+    "words": 383,
+    "path": "articles/posts.md"
+  },
+  {
+    "id": "rate-tables",
+    "title": "Rate tables",
+    "type": "how-to",
+    "role": [
+      "org-admin"
+    ],
+    "object": [
+      "cost",
+      "organisation"
+    ],
+    "surface": [
+      "org-admin",
+      "costs"
+    ],
+    "lifecycle": "set-up",
+    "summary": "Build organisation and client rate tables from your grades and rate types, and retire or delete them later.",
+    "related": [
+      "cost-building-blocks",
+      "costs-setup",
+      "matter-costs",
+      "matter-positions"
+    ],
+    "words": 373,
+    "path": "articles/rate-tables.md"
+  },
+  {
+    "id": "reference-numbers",
+    "title": "Reference numbers",
+    "type": "reference",
+    "role": [
+      "everyone"
+    ],
+    "object": [
+      "matter",
+      "workstream",
+      "task",
+      "template"
+    ],
+    "surface": [
+      "matter-switcher",
+      "task-details"
+    ],
+    "lifecycle": "work",
+    "summary": "How matters, workstreams and tasks are numbered, and which numbers are automatic.",
+    "related": [
+      "create-a-matter",
+      "add-a-task",
+      "rename-client-matter-workstream"
+    ],
+    "words": 201,
+    "path": "articles/reference-numbers.md"
+  },
+  {
+    "id": "removing-task-links",
+    "title": "When task links are removed",
+    "type": "reference",
+    "role": [
+      "matter-editor"
+    ],
+    "object": [
+      "link",
+      "task"
+    ],
+    "surface": [
+      "task-details"
+    ],
+    "lifecycle": "work",
+    "summary": "The five situations in which Juralio removes a blocking link, and why.",
+    "related": [
+      "blocking-links",
+      "overriding-block-links",
+      "move-copy-tasks"
+    ],
+    "words": 150,
+    "path": "articles/removing-task-links.md"
+  },
+  {
+    "id": "rename-client-matter-workstream",
+    "title": "Rename a client, matter or workstream",
+    "type": "how-to",
+    "role": [
+      "matter-admin"
+    ],
+    "object": [
+      "matter",
+      "workstream"
+    ],
+    "surface": [
+      "matter-admin"
+    ],
+    "lifecycle": "plan",
+    "summary": "Matter admins can change client, matter and workstream names in the matter admin area.",
+    "related": [
+      "matter-permissions",
+      "reference-numbers",
+      "matters-and-workstreams"
+    ],
+    "words": 55,
+    "path": "articles/rename-client-matter-workstream.md"
+  },
+  {
+    "id": "restricted-posts",
+    "title": "Restricted posts",
+    "type": "how-to",
+    "role": [
+      "matter-editor"
+    ],
+    "object": [
+      "post"
+    ],
+    "surface": [
+      "task-details"
+    ],
+    "lifecycle": "work",
+    "summary": "Limit a note or link so that only its authors can see it, and how to remove that restriction.",
+    "related": [
+      "posts",
+      "draft-and-final-notes",
+      "restricted-workstreams"
+    ],
+    "words": 149,
+    "path": "articles/restricted-posts.md"
+  },
+  {
+    "id": "restricted-workstreams",
+    "title": "Restricted workstreams",
+    "type": "concept",
+    "role": [
+      "matter-admin"
+    ],
+    "object": [
+      "workstream",
+      "matter"
+    ],
+    "surface": [
+      "matter-admin"
+    ],
+    "lifecycle": "plan",
+    "summary": "Limit access to a workstream to nominated people while keeping it inside its matter.",
+    "related": [
+      "create-a-workstream",
+      "matter-permissions",
+      "restricted-posts"
+    ],
+    "words": 175,
+    "path": "articles/restricted-workstreams.md"
+  },
+  {
+    "id": "roadmap",
+    "title": "Roadmap",
+    "type": "concept",
+    "role": [
+      "matter-viewer",
+      "matter-editor"
+    ],
+    "object": [
+      "task",
+      "workstream"
+    ],
+    "surface": [
+      "roadmap"
+    ],
+    "lifecycle": "work",
+    "summary": "See a workstream on a timeline, expand into subtasks and change the time scale.",
+    "related": [
+      "taskmap",
+      "tasklist",
+      "map-views",
+      "task-dates"
+    ],
+    "words": 222,
+    "path": "articles/roadmap.md"
+  },
+  {
+    "id": "search",
+    "title": "Searching for things",
+    "type": "how-to",
+    "role": [
+      "everyone"
+    ],
+    "object": [
+      "task",
+      "post",
+      "workstream"
+    ],
+    "surface": [
+      "search"
+    ],
+    "lifecycle": "work",
+    "summary": "Search task, post and workstream names and descriptions, and narrow results by type or workstream.",
+    "related": [
+      "labels",
+      "map-views",
+      "tasklist"
+    ],
+    "words": 128,
+    "path": "articles/search.md"
+  },
+  {
+    "id": "single-sign-on",
+    "title": "Set up single sign-on (SSO)",
+    "type": "how-to",
+    "role": [
+      "org-admin",
+      "org-owner"
+    ],
+    "object": [
+      "account",
+      "organisation"
+    ],
+    "surface": [
+      "org-admin"
+    ],
+    "lifecycle": "set-up",
+    "summary": "Enable Microsoft or Google single sign-on for your organisation and switch individual accounts over to it.",
+    "related": [
+      "logging-in",
+      "sso-email-change",
+      "organisation-security-settings"
+    ],
+    "words": 86,
+    "path": "articles/single-sign-on.md"
+  },
+  {
+    "id": "split-merge-workstreams",
+    "title": "Split and merge workstreams",
+    "type": "how-to",
+    "role": [
+      "matter-admin",
+      "matter-editor"
+    ],
+    "object": [
+      "workstream",
+      "task"
+    ],
+    "surface": [
+      "matter-admin",
+      "taskmap"
+    ],
+    "lifecycle": "plan",
+    "summary": "Move tasks between workstreams to break up an unwieldy workstream or consolidate small ones.",
+    "related": [
+      "move-copy-tasks",
+      "create-a-workstream",
+      "matters-and-workstreams"
+    ],
+    "words": 144,
+    "path": "articles/split-merge-workstreams.md"
+  },
+  {
+    "id": "sso-email-change",
+    "title": "My email changed and I cannot log in via SSO",
+    "type": "troubleshooting",
+    "role": [
+      "everyone",
+      "org-admin"
+    ],
+    "object": [
+      "account"
+    ],
+    "surface": [
+      "login"
+    ],
+    "lifecycle": "access",
+    "summary": "What to do when an email address changes and single sign-on stops working.",
+    "related": [
+      "single-sign-on",
+      "logging-in"
+    ],
+    "words": 135,
+    "path": "articles/sso-email-change.md"
+  },
+  {
+    "id": "sysadmin",
+    "title": "Sysadmin",
+    "type": "reference",
+    "role": [
+      "sysadmin"
+    ],
+    "object": [
+      "organisation",
+      "account"
+    ],
+    "surface": [
+      "sysadmin"
+    ],
+    "lifecycle": "set-up",
+    "summary": "What system administrators can do that organisation admins cannot.",
+    "related": [
+      "organisation-roles",
+      "manage-accounts",
+      "manage-groups"
+    ],
+    "words": 69,
+    "path": "articles/sysadmin.md"
+  },
+  {
+    "id": "task-breakdown-examples",
+    "title": "Examples of how to break down tasks",
+    "type": "reference",
+    "role": [
+      "matter-editor"
+    ],
+    "object": [
+      "task",
+      "workstream"
+    ],
+    "surface": [
+      "taskmap"
+    ],
+    "lifecycle": "plan",
+    "summary": "Worked M&A, litigation and arbitration examples of phases and subtask levels.",
+    "related": [
+      "breaking-down-tasks",
+      "tasks-introduction",
+      "templates"
+    ],
+    "words": 266,
+    "path": "articles/task-breakdown-examples.md"
+  },
+  {
+    "id": "task-dates",
+    "title": "Dates in tasks",
+    "type": "reference",
+    "role": [
+      "matter-editor"
+    ],
+    "object": [
+      "task",
+      "date"
+    ],
+    "surface": [
+      "task-details",
+      "roadmap"
+    ],
+    "lifecycle": "plan",
+    "summary": "Planned and actual start and end dates, when they are added automatically, and how parent and subtask dates are kept consistent.",
+    "related": [
+      "task-status",
+      "roadmap",
+      "task-details",
+      "tasklist"
+    ],
+    "words": 512,
+    "path": "articles/task-dates.md"
+  },
+  {
+    "id": "task-details",
+    "title": "Task details",
+    "type": "reference",
+    "role": [
+      "matter-viewer",
+      "matter-editor"
+    ],
+    "object": [
+      "task",
+      "post"
+    ],
+    "surface": [
+      "task-details"
+    ],
+    "lifecycle": "work",
+    "summary": "The full task view: heading and options menu, overview panel, posts and subtasks.",
+    "related": [
+      "task-preview",
+      "task-dates",
+      "task-team-members",
+      "posts",
+      "labels"
+    ],
+    "words": 266,
+    "path": "articles/task-details.md"
+  },
+  {
+    "id": "task-preview",
+    "title": "Task preview",
+    "type": "how-to",
+    "role": [
+      "matter-viewer",
+      "matter-editor"
+    ],
+    "object": [
+      "task"
+    ],
+    "surface": [
+      "task-preview",
+      "taskmap",
+      "roadmap"
+    ],
+    "lifecycle": "work",
+    "summary": "Hover over a task to view and edit dates, labels and team without opening full task details.",
+    "related": [
+      "task-details",
+      "task-team-members",
+      "task-dates"
+    ],
+    "words": 67,
+    "path": "articles/task-preview.md"
+  },
+  {
+    "id": "task-status",
+    "title": "Task status and colours",
+    "type": "reference",
+    "role": [
+      "everyone"
+    ],
+    "object": [
+      "task"
+    ],
+    "surface": [
+      "taskmap",
+      "roadmap",
+      "task-details"
+    ],
+    "lifecycle": "work",
+    "summary": "The four task states - not started, in progress, done and not required - and the colours that represent them.",
+    "related": [
+      "task-dates",
+      "archiving-and-closing",
+      "blocking-links",
+      "map-views"
+    ],
+    "words": 76,
+    "path": "articles/task-status.md"
+  },
+  {
+    "id": "task-team-members",
+    "title": "Team members and followers on tasks",
+    "type": "how-to",
+    "role": [
+      "matter-editor"
+    ],
+    "object": [
+      "task",
+      "account"
+    ],
+    "surface": [
+      "task-details",
+      "task-preview",
+      "taskmap"
+    ],
+    "lifecycle": "work",
+    "summary": "Add and remove task team members, add people to all subtasks at once, and follow a task without being on the team.",
+    "related": [
+      "task-preview",
+      "matter-permissions",
+      "placeholders",
+      "task-details"
+    ],
+    "words": 396,
+    "path": "articles/task-team-members.md"
+  },
+  {
+    "id": "tasklist",
+    "title": "Tasklist",
+    "type": "concept",
+    "role": [
+      "matter-viewer",
+      "matter-editor"
+    ],
+    "object": [
+      "task",
+      "workstream"
+    ],
+    "surface": [
+      "tasklist"
+    ],
+    "lifecycle": "work",
+    "summary": "See every below-phase task in one list, filter it, and order it by priority, taskmap order or end date.",
+    "related": [
+      "taskmap",
+      "roadmap",
+      "map-views",
+      "task-dates"
+    ],
+    "words": 195,
+    "path": "articles/tasklist.md"
+  },
+  {
+    "id": "taskmap",
+    "title": "Taskmap",
+    "type": "concept",
+    "role": [
+      "matter-viewer",
+      "matter-editor"
+    ],
+    "object": [
+      "task",
+      "workstream"
+    ],
+    "surface": [
+      "taskmap"
+    ],
+    "lifecycle": "work",
+    "summary": "See how tasks relate to each other in a hierarchy of up to six levels, and edit them in place.",
+    "related": [
+      "roadmap",
+      "tasklist",
+      "map-views",
+      "task-status",
+      "add-a-task"
+    ],
+    "words": 371,
+    "path": "articles/taskmap.md"
+  },
+  {
+    "id": "tasks-introduction",
+    "title": "Tasks: an introduction",
+    "type": "concept",
+    "role": [
+      "everyone"
+    ],
+    "object": [
+      "task",
+      "workstream"
+    ],
+    "surface": [
+      "taskmap"
+    ],
+    "lifecycle": "plan",
+    "summary": "What tasks are for, and the deliberate limits Juralio places on phases, levels and task numbers.",
+    "related": [
+      "breaking-down-tasks",
+      "task-breakdown-examples",
+      "add-a-task",
+      "posts"
+    ],
+    "words": 186,
+    "path": "articles/tasks-introduction.md"
+  },
+  {
+    "id": "templates",
+    "title": "Templates",
+    "type": "concept",
+    "role": [
+      "everyone",
+      "knowledge-manager"
+    ],
+    "object": [
+      "template",
+      "workstream"
+    ],
+    "surface": [
+      "templates"
+    ],
+    "lifecycle": "plan",
+    "summary": "What templates are for, who can create and publish them, and how to make one.",
+    "related": [
+      "use-a-template",
+      "edit-template-tasks",
+      "create-a-workstream",
+      "breaking-down-tasks"
+    ],
+    "words": 95,
+    "path": "articles/templates.md"
+  },
+  {
+    "id": "use-a-template",
+    "title": "Create a workstream from a template",
+    "type": "how-to",
+    "role": [
+      "matter-admin",
+      "matter-editor"
+    ],
+    "object": [
+      "template",
+      "workstream"
+    ],
+    "surface": [
+      "templates",
+      "matter-admin"
+    ],
+    "lifecycle": "plan",
+    "summary": "Use a whole template, or just part of one, as the basis for a new workstream.",
+    "related": [
+      "templates",
+      "create-a-workstream",
+      "edit-template-tasks"
+    ],
+    "words": 82,
+    "path": "articles/use-a-template.md"
+  }
+]

@@ -1,0 +1,19 @@
+# Deployment configuration.
+#
+# Articles use {{placeholder}} tokens for anything specific to a particular
+# deployment. scripts/export.py substitutes these values. Fork this file and
+# change it rather than editing the articles.
+
+product_name: Juralio
+
+# Where readers are told to go for help. Used by {{support_email}} and
+# {{support_channel}} in article text.
+support_email: support@example.com
+support_channel: your Juralio administrator
+
+# Base URL for the published help centre. Used to build absolute links in
+# exports that require them.
+site_url: https://help.example.com
+
+# Optional: a note appended to every exported article, e.g. a fork notice.
+footer: ""

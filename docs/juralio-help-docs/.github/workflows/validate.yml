@@ -1,0 +1,31 @@
+name: validate
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install pyyaml markdown
+
+      - name: Validate articles
+        run: python3 scripts/validate.py --strict
+
+      - name: Check the generated index is up to date
+        run: |
+          python3 scripts/build_index.py
+          git diff --exit-code index.json index.md \
+            || (echo "::error::index.json / index.md are stale - run scripts/build_index.py and commit" && exit 1)
+
+      - name: Check exports build
+        run: python3 scripts/export.py
