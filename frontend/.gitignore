@@ -1,0 +1,11 @@
+build
+coverage
+test-report.xml
+credentials.json
+
+# Local dev TLS certs for `npm run start-https` (generate your own, e.g. with mkcert)
+certs/
+
+#cypress
+cypress/screenshots/
+cypress/videos/

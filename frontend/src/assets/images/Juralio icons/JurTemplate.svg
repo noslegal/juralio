@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="19px" viewBox="0 0 18 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>JurTemplate</title>
+    <defs>
+        <path d="M3,13 L5,13 L5,11 L3,11 L3,13 L3,13 Z M3,17 L5,17 L5,15 L3,15 L3,17 L3,17 Z M5,21 L5,19 L3,19 C3,20.1 3.89,21 5,21 L5,21 Z M3,9 L5,9 L5,7 L3,7 L3,9 L3,9 Z M15,21 L17,21 L17,19 L15,19 L15,21 L15,21 Z M19,3 L9,3 C7.89,3 7,3.9 7,5 L7,15 C7,16.1 7.89,17 9,17 L19,17 C20.1,17 21,16.1 21,15 L21,5 C21,3.9 20.1,3 19,3 L19,3 Z M19,15 L9,15 L9,5 L19,5 L19,15 L19,15 Z M11,21 L13,21 L13,19 L11,19 L11,21 L11,21 Z M7,21 L9,21 L9,19 L7,19 L7,21 L7,21 Z" id="path-1"></path>
+        <rect id="path-3" x="0" y="0" width="50" height="50"></rect>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard-Copy" transform="translate(-129.000000, -524.000000)">
+            <g id="Group" transform="translate(126.000000, 521.500000)">
+                <g id="ic_flip_to_front" transform="translate(12.000000, 12.000000) scale(1, -1) translate(-12.000000, -12.000000) ">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g id="Mask"></g>
+                    <g id="Group" mask="url(#mask-2)">
+                        <g transform="translate(-13.000000, -13.000000)">
+                            <mask id="mask-4" fill="white">
+                                <use xlink:href="#path-3"></use>
+                            </mask>
+                            <use id="Black" fill="#000000" xlink:href="#path-3"></use>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

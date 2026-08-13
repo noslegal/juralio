@@ -1,0 +1,196 @@
+{
+  "sheets": [
+    {
+      "cells": {
+        "A5": {
+          "s": "0928bf26",
+          "value": {
+            "text": "name-header"
+          }
+        },
+        "A6": {
+          "s": "4d2f305a",
+          "value": {
+            "text": "Acme Corporation"
+          }
+        },
+        "A7": {
+          "s": "4d2f305a",
+          "value": {
+            "text": "Blackstone & Partners LLP"
+          }
+        },
+        "A8": {
+          "s": "845d34da",
+          "value": {
+            "text": "Tiny Co"
+          }
+        },
+        "B5": {
+          "s": "0928bf26",
+          "value": {
+            "text": "delBy-header"
+          }
+        },
+        "B6": {
+          "s": "4d2f305a",
+          "value": {
+            "text": "admin@acme.example"
+          }
+        },
+        "B7": {
+          "s": "4d2f305a",
+          "value": {
+            "text": "owner@blackstone.example"
+          }
+        },
+        "B8": {
+          "s": "845d34da",
+          "value": {
+            "text": "sysadmin@juralio.com"
+          }
+        },
+        "C5": {
+          "s": "0928bf26",
+          "value": {
+            "text": "delOn-header"
+          }
+        },
+        "C6": {
+          "s": "4d2f305a",
+          "value": {
+            "text": "12 Mar 2025"
+          }
+        },
+        "C7": {
+          "s": "4d2f305a",
+          "value": {
+            "text": "2 Jan 2025"
+          }
+        },
+        "C8": {
+          "s": "845d34da",
+          "value": {
+            "text": "28 Feb 2025"
+          }
+        }
+      },
+      "cols": {
+        "1": {
+          "bestFit": false,
+          "width": 23.625
+        },
+        "2": {
+          "bestFit": false,
+          "width": 23.625
+        },
+        "3": {
+          "bestFit": false,
+          "width": 23.625
+        },
+        "4": {
+          "bestFit": false,
+          "width": 23.625
+        }
+      },
+      "images": [
+        {
+          "col": 0,
+          "colOff": 0,
+          "cx": 1181100,
+          "cy": 342900,
+          "image": "24700b7c:6046",
+          "row": 0,
+          "rowOff": 114300
+        }
+      ],
+      "merges": [
+        "B4:D4"
+      ],
+      "name": "header",
+      "print": {
+        "errors": null,
+        "evenFooter": null,
+        "fitToHeight": null,
+        "fitToPage": false,
+        "fitToWidth": null,
+        "horizontalCentered": false,
+        "margins": {
+          "bottom": 0.75,
+          "footer": 0.3,
+          "header": 0.3,
+          "left": 0.7,
+          "right": 0.7,
+          "top": 0.75
+        },
+        "oddFooter": null,
+        "orientation": "portrait",
+        "paperSize": null
+      },
+      "printArea": null,
+      "rows": {},
+      "view": {
+        "pane": null,
+        "showGridLines": true
+      }
+    }
+  ],
+  "styles": {
+    "0928bf26": {
+      "alignment": null,
+      "border": {
+        "bottom": {
+          "colour": "666361",
+          "style": "thin"
+        }
+      },
+      "fill": {
+        "fg": "DEDFE3",
+        "pattern": "solid"
+      },
+      "font": {
+        "bold": false,
+        "colour": null,
+        "italic": false,
+        "name": "Calibri",
+        "size": 12
+      }
+    },
+    "4d2f305a": {
+      "alignment": null,
+      "border": null,
+      "fill": null,
+      "font": {
+        "bold": false,
+        "colour": null,
+        "italic": false,
+        "name": "Calibri",
+        "size": 12
+      }
+    },
+    "845d34da": {
+      "alignment": {
+        "horizontal": "left",
+        "vertical": "center"
+      },
+      "border": {
+        "bottom": {
+          "colour": "666361",
+          "style": "thin"
+        },
+        "top": {
+          "colour": "666361",
+          "style": "medium"
+        }
+      },
+      "fill": null,
+      "font": {
+        "bold": false,
+        "colour": "333232",
+        "italic": false,
+        "name": "Segoe UI Semibold",
+        "size": 8
+      }
+    }
+  }
+}

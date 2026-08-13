@@ -1,0 +1,39 @@
+/*
+ * Copyright 2026 Graeme and Joanna Johnston
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+import com.juralio.task.Task
+import com.juralio.task.TaskBlocker
+import com.juralio.task.label.TaskLabel
+import com.juralio.task.status.TaskStatus
+
+/**
+ * The purpose of this view is to render a single task and its direct sub-tasks
+ */
+model {
+    TaskBlocker taskBlocker
+}
+
+
+def renderBlocker(TaskBlocker blocker){
+    return [
+            id:  blocker.id,
+            blocker: [id: blocker.blocker.id, name:blocker.blocker.name, level:blocker.blocker.level,status:blocker.blocker.status],
+            blocked: [id: blocker.blocked.id, name:blocker.blocked.name, level:blocker.blocked.level,status:blocker.blocked.status],
+            relationship: blocker.relationship
+    ]
+}
+
+json g.render(renderBlocker(taskBlocker)) {}

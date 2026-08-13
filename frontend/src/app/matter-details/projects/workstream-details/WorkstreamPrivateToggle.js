@@ -1,0 +1,64 @@
+/*
+ * Copyright 2026 Graeme and Joanna Johnston
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+import PropTypes from 'prop-types'
+import React from 'react'
+import { useTranslation } from 'react-i18next'
+import StatusSelect from '../../../../components/inputs/status-select/StatusSelect'
+import rawColours from '../../../../theme/raw-colours'
+
+const WorkstreamPrivateToggle = props => {
+  const { t } = useTranslation()
+
+  const project_status_options = {
+    optionOnName: t('common.private'),
+    optionOffName: t('common.public'),
+    optionOnValue: true,
+    optionOffValue: false,
+  }
+
+  return (
+    <div data-test="WorkstreamPrivateToggle-wrapper">
+      <StatusSelect
+        options={project_status_options}
+        currentValue={props.currentValue}
+        updateStatus={props.updateStatus}
+        readOnly={props.readOnly}
+        darkChevron={props.currentValue}
+        style={{
+          on: {
+            backgroundColor: rawColours.primary.black[200],
+            color: 'white',
+            paddingLeft: 4,
+            paddingright: 8,
+          },
+          off: {
+            color: 'black',
+            backgroundColor: 'Gainsboro',
+          },
+        }}
+      />
+    </div>
+  )
+}
+
+WorkstreamPrivateToggle.propTypes = {
+  currentValue: PropTypes.bool.isRequired,
+  readOnly: PropTypes.bool.isRequired,
+  updateStatus: PropTypes.func.isRequired,
+}
+
+export default WorkstreamPrivateToggle

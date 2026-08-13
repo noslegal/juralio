@@ -1,0 +1,106 @@
+
+Frontend NPM packages
+
+Package                            	License Type   	Version   	Description
+-------                            	------------   	-------   	-----------
+@emotion/react                     	MIT            	11.14.0   	error
+@emotion/styled                    	MIT            	11.14.1   	styled API for emotion
+@glideapps/glide-data-grid         	MIT            	6.0.3     	React data grid for beautifully displaying and editing large amounts of data wit
+@glideapps/glide-data-grid-cells   	MIT            	6.0.3     	Extra cells for glide-data-grid
+@hello-pangea/dnd                  	Apache-2.0     	18.0.1    	Beautiful and accessible drag and drop for lists with React
+@mdi/js                            	Apache-2.0     	7.4.47    	Dist for Material Design Icons for JS/TypeScript
+@mdi/react                         	MIT            	1.6.1     	React Dist for Material Design Icons
+@mui/icons-material                	MIT            	9.1.1     	Material Design icons distributed as SVG React components.
+@mui/lab                           	MIT            	9.0.0-beta.5	Laboratory for new Material UI modules.
+@mui/material                      	MIT            	9.1.1     	Material UI is an open-source React component library that implements Google's M
+@mui/system                        	MIT            	9.1.1     	MUI System is a set of CSS utilities to help you build custom designs more effic
+@mui/x-charts                      	MIT            	9.6.0     	The community edition of MUI X Charts components.
+@mui/x-data-grid                   	MIT            	9.6.0     	The Community plan edition of the MUI X Data Grid components.
+@mui/x-date-pickers                	MIT            	9.6.0     	The community edition of the MUI X Date and Time Picker components.
+@okta/okta-react                   	Apache-2.0     	6.11.0    	React support for Okta
+@peculiar/x509                     	MIT            	2.0.0     	@peculiar/x509 is an easy to use TypeScript/Javascript library based on @peculia
+@tiptap/core                       	MIT            	3.27.1    	headless rich text editor
+@tiptap/extension-character-count  	MIT            	3.27.1    	font family extension for tiptap
+@tiptap/extension-link             	MIT            	3.27.1    	link extension for tiptap
+@tiptap/extension-placeholder      	MIT            	3.27.1    	placeholder extension for tiptap
+@tiptap/extension-table            	MIT            	3.27.1    	table extension for tiptap
+@tiptap/extension-table-cell       	MIT            	3.27.1    	table cell extension for tiptap
+@tiptap/extension-table-header     	MIT            	3.27.1    	table cell extension for tiptap
+@tiptap/extension-table-row        	MIT            	3.27.1    	table row extension for tiptap
+@tiptap/extension-underline        	MIT            	3.27.1    	underline extension for tiptap
+@tiptap/react                      	MIT            	3.27.1    	React components for tiptap
+@tiptap/starter-kit                	MIT            	3.27.1    	starter kit for tiptap
+buffer                             	MIT            	6.0.3     	Node.js Buffer API, for the browser
+classnames                         	MIT            	2.5.1     	A simple utility for conditionally joining classNames together
+d3-axis                            	ISC            	3.0.0     	Displays automatic reference lines for scales.
+d3-drag                            	ISC            	3.0.0     	Drag and drop SVG, HTML or Canvas using mouse or touch input.
+d3-hierarchy                       	ISC            	3.1.2     	Layout algorithms for visualizing hierarchical data.
+d3-scale                           	ISC            	4.0.2     	Encodings that map abstract data to visual representation.
+d3-selection                       	ISC            	3.0.0     	Data-driven DOM manipulation: select elements and join them to data.
+d3-shape                           	ISC            	3.2.0     	Graphical primitives for visualization, such as lines and areas.
+d3-time-format                     	ISC            	4.1.0     	A JavaScript time formatter and parser inspired by strftime and strptime.
+d3-transition                      	ISC            	3.0.1     	Animated transitions for D3 selections.
+d3-zoom                            	ISC            	3.0.0     	Pan and zoom SVG, HTML or Canvas using mouse or touch input.
+date-fns                           	MIT            	2.30.0    	Modern JavaScript date utility library
+dayjs                              	MIT            	1.11.21   	2KB immutable date time library alternative to Moment.js with the same modern AP
+docx                               	MIT            	9.7.1     	Easily generate .docx files with JS/TS with a nice declarative API. Works for No
+downshift                          	MIT            	9.3.6     	🏎 A set of primitives to build simple, flexible, WAI-ARIA compliant React autoco
+element-closest                    	CC0-1.0        	3.0.2     	Return the closest element matching a selector up the DOM tree
+exceljs                            	MIT            	4.4.0     	Excel Workbook Manager - Read and Write xlsx and csv Files.
+file-saver                         	MIT            	2.0.5     	An HTML5 saveAs() FileSaver implementation
+http-status-codes                  	MIT            	2.3.0     	Constants enumerating the HTTP status codes. Based on the Java Apache HttpStatus
+i18next                            	MIT            	22.4.15   	i18next internationalization framework
+i18next-browser-languagedetector   	MIT            	8.2.1     	language detector used in browser environment for i18next
+i18next-xhr-backend                	MIT            	3.2.2     	backend layer for i18next using browsers xhr
+jest-each                          	MIT            	30.4.1    	Parameterised tests for Jest
+js-base64                          	BSD-3-Clause   	3.7.8     	Yet another Base64 transcoder in pure-JS
+json-diff                          	MIT            	1.0.6     	JSON diff
+json-stringify-safe                	ISC            	5.0.1     	Like JSON.stringify, but doesn't blow up on circular refs.
+prop-types                         	MIT            	15.8.1    	Runtime type checking for React props and similar objects.
+qrcode.react                       	ISC            	4.2.0     	React component to generate QR codes
+querystring-browser                	MIT            	1.0.4     	Node.js v5 compatible querystring module for browsers.
+ramda                              	MIT            	0.32.0    	A practical functional library for JavaScript programmers.
+react                              	MIT            	18.3.1    	React is a JavaScript library for building user interfaces.
+react-dom                          	MIT            	18.3.1    	React package for working with the DOM.
+react-draggable                    	MIT            	4.7.0     	React draggable component
+react-i18next                      	MIT            	12.2.0    	Internationalization for react done right. Using the i18next i18n ecosystem.
+react-redux                        	MIT            	8.0.5     	Official React bindings for Redux
+react-resize-detector              	MIT            	12.3.0    	React resize detector
+react-router                       	MIT            	6.30.3    	Declarative routing for React
+react-router-dom                   	MIT            	6.30.3    	Declarative routing for React web applications
+react-transition-group             	BSD-3-Clause   	4.4.5     	A react component toolset for managing animations
+reactour                           	MIT            	1.19.4    	Tourist Guide into your React Components
+redux                              	MIT            	4.2.1     	Predictable state container for JavaScript apps
+redux-thunk                        	MIT            	2.4.2     	Thunk middleware for Redux.
+reflect-metadata                   	Apache-2.0     	0.2.2     	Polyfill for Metadata Reflection API
+regenerator-runtime                	MIT            	0.14.1    	Runtime for Regenerator-compiled generator and async functions.
+sanitize-html                      	MIT            	2.17.5    	Clean up user-submitted HTML, preserving allowlisted elements and allowlisted at
+styled-components                  	MIT            	5.3.11    	Visual primitives for the component age. Use the best bits of ES6 and CSS to sty
+tss-react                          	MIT            	4.9.21    	Type safe CSS-in-JS API heavily inspired by react-jss
+unsplash-js                        	MIT            	7.0.20    	Official JavaScript wrapper for the Unsplash API
+use-error-boundary                 	MIT            	2.0.6     	React hook for using error boundaries
+
+E2e NPM packages
+
+Package                            	License Type   	Version   	Description
+-------                            	------------   	-------   	-----------
+@nuintun/qrcode                    	MIT            	3.1.1     	A pure JavaScript QRCode encode and decode library.
+chai-colors                        	MIT            	1.0.1     	Color assertions for chai
+cross-env                          	MIT            	7.0.3     	Run scripts that set and use environment variables across platforms
+crypto-js                          	MIT            	4.2.0     	JavaScript library of crypto standards.
+dayjs                              	MIT            	1.11.21   	2KB immutable date time library alternative to Moment.js with the same modern AP
+faker                              	MIT            	5.5.3     	Generate massive amounts of fake contextual data
+http-status-codes                  	MIT            	2.3.0     	Constants enumerating the HTTP status codes. Based on the Java Apache HttpStatus
+otpauth                            	MIT            	7.1.1     	One Time Password (HOTP/TOTP) library for Node.js, Deno and browsers
+project-name-generator             	ISC            	2.1.9     	Generate a random, unique, heroku-like name for your app/project/server etc. e.g
+ramda                              	MIT            	0.32.0    	A practical functional library for JavaScript programmers.
+wait-on                            	MIT            	9.0.10    	wait-on is a cross platform command line utility and Node.js API which will wait
+
+Server NPM packages
+
+Package                            	License Type   	Version   	Description
+-------                            	------------   	-------   	-----------
+lodash                             	MIT            	4.18.1    	Lodash modular utilities.
+node-fetch                         	MIT            	2.7.0     	A light-weight module that brings window.fetch to node.js
+shelljs                            	BSD-3-Clause   	0.8.5     	Portable Unix shell commands for Node.js
+yargs                              	MIT            	17.7.3    	yargs the modern, pirate-themed, successor to optimist.

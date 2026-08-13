@@ -1,0 +1,6282 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+      }
+
+      td,
+      th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+      }
+
+      tr:nth-child(even) {
+        background-color: #dddddd;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>matterViewer_permissions</h1>
+    <table style="font-family: Arial">
+      <tr style="// display: flex; // justify-content: center;">
+        <td
+          style="
+            // display: flex;
+            // justify-content: end;
+            // min-width: 800px;
+          "
+        >
+          /api/organisations/
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          GET
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          POST
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          PATCH
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          DELETE
+        </td>
+      </tr>
+      <tr style="// display: flex; // justify-content: center;">
+        <td
+          style="
+            // display: flex;
+            // justify-content: end;
+            // min-width: 800px;
+          "
+        >
+          /api/organisations/${organisation?.id}
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          GET
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          POST
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          PATCH
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          DELETE
+        </td>
+      </tr>
+      <tr style="// display: flex; // justify-content: center;">
+        <td
+          style="
+            // display: flex;
+            // justify-content: end;
+            // min-width: 800px;
+          "
+        >
+          /api/organisation
+        </td>
+        <td
+          style="
+            background-color: green;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          GET
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          POST
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          PATCH
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          DELETE
+        </td>
+      </tr>
+      <tr style="// display: flex; // justify-content: center;">
+        <td
+          style="
+            // display: flex;
+            // justify-content: end;
+            // min-width: 800px;
+          "
+        >
+          /api/organisations/${organisation?.id}/users
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          GET
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          POST
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          PATCH
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          DELETE
+        </td>
+      </tr>
+      <tr style="// display: flex; // justify-content: center;">
+        <td
+          style="
+            // display: flex;
+            // justify-content: end;
+            // min-width: 800px;
+          "
+        >
+          /api/organisations/${organisation?.id}/logo
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          GET
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          POST
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          PATCH
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          DELETE
+        </td>
+      </tr>
+      <tr style="// display: flex; // justify-content: center;">
+        <td
+          style="
+            // display: flex;
+            // justify-content: end;
+            // min-width: 800px;
+          "
+        >
+          /api/matters
+        </td>
+        <td
+          style="
+            background-color: green;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          GET
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          POST
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          PATCH
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          DELETE
+        </td>
+      </tr>
+      <tr style="// display: flex; // justify-content: center;">
+        <td
+          style="
+            // display: flex;
+            // justify-content: end;
+            // min-width: 800px;
+          "
+        >
+          /api/matter/${matter?.id}
+        </td>
+        <td
+          style="
+            background-color: green;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          GET
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          POST
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          PATCH
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          DELETE
+        </td>
+      </tr>
+      <tr style="// display: flex; // justify-content: center;">
+        <td
+          style="
+            // display: flex;
+            // justify-content: end;
+            // min-width: 800px;
+          "
+        >
+          /api/matters/shared
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          GET
+        </td>
+        <td
+          style="
+            background-color: green;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          POST
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          PATCH
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          DELETE
+        </td>
+      </tr>
+      <tr style="// display: flex; // justify-content: center;">
+        <td
+          style="
+            // display: flex;
+            // justify-content: end;
+            // min-width: 800px;
+          "
+        >
+          /api/matters/search/teammembers
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          GET
+        </td>
+        <td
+          style="
+            background-color: green;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          POST
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          PATCH
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          DELETE
+        </td>
+      </tr>
+      <tr style="// display: flex; // justify-content: center;">
+        <td
+          style="
+            // display: flex;
+            // justify-content: end;
+            // min-width: 800px;
+          "
+        >
+          /api/matter/${matter?.id}/team
+        </td>
+        <td
+          style="
+            background-color: green;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          GET
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          POST
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          PATCH
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          DELETE
+        </td>
+      </tr>
+      <tr style="// display: flex; // justify-content: center;">
+        <td
+          style="
+            // display: flex;
+            // justify-content: end;
+            // min-width: 800px;
+          "
+        >
+          /api/admin/matter/${matter?.id}
+        </td>
+        <td
+          style="
+            background-color: green;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          GET
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          POST
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          PATCH
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          DELETE
+        </td>
+      </tr>
+      <tr style="// display: flex; // justify-content: center;">
+        <td
+          style="
+            // display: flex;
+            // justify-content: end;
+            // min-width: 800px;
+          "
+        >
+          /api/admin/matter/${matter?.id}/matters
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          GET
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          POST
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          PATCH
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          DELETE
+        </td>
+      </tr>
+      <tr style="// display: flex; // justify-content: center;">
+        <td
+          style="
+            // display: flex;
+            // justify-content: end;
+            // min-width: 800px;
+          "
+        >
+          /api/admin/matter/${matter?.id}/matters/${matter?.id}
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          GET
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          POST
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          PATCH
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          DELETE
+        </td>
+      </tr>
+      <tr style="// display: flex; // justify-content: center;">
+        <td
+          style="
+            // display: flex;
+            // justify-content: end;
+            // min-width: 800px;
+          "
+        >
+          /api/admin/matter/${matter?.id}/teammembers
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          GET
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          POST
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          PATCH
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          DELETE
+        </td>
+      </tr>
+      <tr style="// display: flex; // justify-content: center;">
+        <td
+          style="
+            // display: flex;
+            // justify-content: end;
+            // min-width: 800px;
+          "
+        >
+          /api/admin/matter/${matter?.id}/teammembers/${matterEditor?.id}?
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          GET
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          POST
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          PATCH
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          DELETE
+        </td>
+      </tr>
+      <tr style="// display: flex; // justify-content: center;">
+        <td
+          style="
+            // display: flex;
+            // justify-content: end;
+            // min-width: 800px;
+          "
+        >
+          /api/admin/matter/${matter?.id}/viewers
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          GET
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          POST
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          PATCH
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          DELETE
+        </td>
+      </tr>
+      <tr style="// display: flex; // justify-content: center;">
+        <td
+          style="
+            // display: flex;
+            // justify-content: end;
+            // min-width: 800px;
+          "
+        >
+          /api/admin/matter/${matter?.id}/viewers/${matterViewer?.id}?
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          GET
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          POST
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          PATCH
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          DELETE
+        </td>
+      </tr>
+      <tr style="// display: flex; // justify-content: center;">
+        <td
+          style="
+            // display: flex;
+            // justify-content: end;
+            // min-width: 800px;
+          "
+        >
+          /api/matter/${matter?.id}/workstreams
+        </td>
+        <td
+          style="
+            background-color: green;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          GET
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          POST
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          PATCH
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          DELETE
+        </td>
+      </tr>
+      <tr style="// display: flex; // justify-content: center;">
+        <td
+          style="
+            // display: flex;
+            // justify-content: end;
+            // min-width: 800px;
+          "
+        >
+          /api/admin/matter/${matter?.id}/workstreams/${project?.id}
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          GET
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          POST
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          PATCH
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          DELETE
+        </td>
+      </tr>
+      <tr style="// display: flex; // justify-content: center;">
+        <td
+          style="
+            // display: flex;
+            // justify-content: end;
+            // min-width: 800px;
+          "
+        >
+          /api/matter/${matter?.id}/workstreams/${project?.id}
+        </td>
+        <td
+          style="
+            background-color: green;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          GET
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          POST
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          PATCH
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          DELETE
+        </td>
+      </tr>
+      <tr style="// display: flex; // justify-content: center;">
+        <td
+          style="
+            // display: flex;
+            // justify-content: end;
+            // min-width: 800px;
+          "
+        >
+          /api/matter/${matter?.id}/workstreams/${project?.id}/preview
+        </td>
+        <td
+          style="
+            background-color: green;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          GET
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          POST
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          PATCH
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          DELETE
+        </td>
+      </tr>
+      <tr style="// display: flex; // justify-content: center;">
+        <td
+          style="
+            // display: flex;
+            // justify-content: end;
+            // min-width: 800px;
+          "
+        >
+          /api/matter/${matter?.id}/workstreams/${project?.id}/visit
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          GET
+        </td>
+        <td
+          style="
+            background-color: green;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          POST
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          PATCH
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          DELETE
+        </td>
+      </tr>
+      <tr style="// display: flex; // justify-content: center;">
+        <td
+          style="
+            // display: flex;
+            // justify-content: end;
+            // min-width: 800px;
+          "
+        >
+          /api/matter/${matter?.id}/workstreams/${project?.id}/link
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          GET
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          POST
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          PATCH
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          DELETE
+        </td>
+      </tr>
+      <tr style="// display: flex; // justify-content: center;">
+        <td
+          style="
+            // display: flex;
+            // justify-content: end;
+            // min-width: 800px;
+          "
+        >
+          /api/matter/${matter?.id}/workstreams/${project?.id}/tasks/new
+        </td>
+        <td
+          style="
+            background-color: green;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          GET
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          POST
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          PATCH
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          DELETE
+        </td>
+      </tr>
+      <tr style="// display: flex; // justify-content: center;">
+        <td
+          style="
+            // display: flex;
+            // justify-content: end;
+            // min-width: 800px;
+          "
+        >
+          /api/matter/${matter?.id}/workstreams/${project?.id}/tasks/${task?.id}/seen
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          GET
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          POST
+        </td>
+        <td
+          style="
+            background-color: green;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          PATCH
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          DELETE
+        </td>
+      </tr>
+      <tr style="// display: flex; // justify-content: center;">
+        <td
+          style="
+            // display: flex;
+            // justify-content: end;
+            // min-width: 800px;
+          "
+        >
+          /api/matter/${matter?.id}/workstreams/${project?.id}/tasks
+        </td>
+        <td
+          style="
+            background-color: green;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          GET
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          POST
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          PATCH
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          DELETE
+        </td>
+      </tr>
+      <tr style="// display: flex; // justify-content: center;">
+        <td
+          style="
+            // display: flex;
+            // justify-content: end;
+            // min-width: 800px;
+          "
+        >
+          /api/matter/${matter?.id}/tasks/archived
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          GET
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          POST
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          PATCH
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          DELETE
+        </td>
+      </tr>
+      <tr style="// display: flex; // justify-content: center;">
+        <td
+          style="
+            // display: flex;
+            // justify-content: end;
+            // min-width: 800px;
+          "
+        >
+          /api/matter/${matter?.id}/workstreams/${project?.id}/task/${task?.id}
+        </td>
+        <td
+          style="
+            background-color: green;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          GET
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          POST
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          PATCH
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          DELETE
+        </td>
+      </tr>
+      <tr style="// display: flex; // justify-content: center;">
+        <td
+          style="
+            // display: flex;
+            // justify-content: end;
+            // min-width: 800px;
+          "
+        >
+          /api/matter/${matter?.id}/workstreams/${project?.id}/task/${task?.id}/siblings
+        </td>
+        <td
+          style="
+            background-color: green;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          GET
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          POST
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          PATCH
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          DELETE
+        </td>
+      </tr>
+      <tr style="// display: flex; // justify-content: center;">
+        <td
+          style="
+            // display: flex;
+            // justify-content: end;
+            // min-width: 800px;
+          "
+        >
+          /api/matter/${matter?.id}/workstreams/${project?.id}/task/${task?.id}/link
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          GET
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          POST
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          PATCH
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          DELETE
+        </td>
+      </tr>
+      <tr style="// display: flex; // justify-content: center;">
+        <td
+          style="
+            // display: flex;
+            // justify-content: end;
+            // min-width: 800px;
+          "
+        >
+          /api/matter/${matter?.id}/workstreams/${project?.id}/task/${task?.id}/followers
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          GET
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          POST
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          PATCH
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          DELETE
+        </td>
+      </tr>
+      <tr style="// display: flex; // justify-content: center;">
+        <td
+          style="
+            // display: flex;
+            // justify-content: end;
+            // min-width: 800px;
+          "
+        >
+          /api/matter/${matter?.id}/workstreams/${project?.id}/task/${task?.id}/followers/${user?.id}
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          GET
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          POST
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          PATCH
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          DELETE
+        </td>
+      </tr>
+      <tr style="// display: flex; // justify-content: center;">
+        <td
+          style="
+            // display: flex;
+            // justify-content: end;
+            // min-width: 800px;
+          "
+        >
+          /api/matter/${matter?.id}/workstreams/${project?.id}/task/${task?.id}/teammembers
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          GET
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          POST
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          PATCH
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          DELETE
+        </td>
+      </tr>
+      <tr style="// display: flex; // justify-content: center;">
+        <td
+          style="
+            // display: flex;
+            // justify-content: end;
+            // min-width: 800px;
+          "
+        >
+          /api/matter/${matter?.id}/workstreams/${project?.id}/task/${task?.id}/teammembers/${user?.id}
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          GET
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          POST
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          PATCH
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          DELETE
+        </td>
+      </tr>
+      <tr style="// display: flex; // justify-content: center;">
+        <td
+          style="
+            // display: flex;
+            // justify-content: end;
+            // min-width: 800px;
+          "
+        >
+          /api/matter/${matter?.id}/workstreams/${project?.id}/task/${task?.id}/copy
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          GET
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          POST
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          PATCH
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          DELETE
+        </td>
+      </tr>
+      <tr style="// display: flex; // justify-content: center;">
+        <td
+          style="
+            // display: flex;
+            // justify-content: end;
+            // min-width: 800px;
+          "
+        >
+          /api/matter/${matter?.id}/workstreams/${project?.id}/task/${task?.id}/move
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          GET
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          POST
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          PATCH
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          DELETE
+        </td>
+      </tr>
+      <tr style="// display: flex; // justify-content: center;">
+        <td
+          style="
+            // display: flex;
+            // justify-content: end;
+            // min-width: 800px;
+          "
+        >
+          /api/matter/${matter?.id}/workstreams/${project?.id}/task/${task?.id}/archive
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          GET
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          POST
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          PATCH
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          DELETE
+        </td>
+      </tr>
+      <tr style="// display: flex; // justify-content: center;">
+        <td
+          style="
+            // display: flex;
+            // justify-content: end;
+            // min-width: 800px;
+          "
+        >
+          /api/matter/${matter?.id}/workstreams/${project?.id}/task/${task?.id}/unarchive
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          GET
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          POST
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          PATCH
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          DELETE
+        </td>
+      </tr>
+      <tr style="// display: flex; // justify-content: center;">
+        <td
+          style="
+            // display: flex;
+            // justify-content: end;
+            // min-width: 800px;
+          "
+        >
+          /api/matter/${matter?.id}/workstreams/${project?.id}/task/${task?.id}/checkConsistency
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          GET
+        </td>
+        <td
+          style="
+            background-color: green;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          POST
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          PATCH
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          DELETE
+        </td>
+      </tr>
+      <tr style="// display: flex; // justify-content: center;">
+        <td
+          style="
+            // display: flex;
+            // justify-content: end;
+            // min-width: 800px;
+          "
+        >
+          /api/tasks/recent
+        </td>
+        <td
+          style="
+            background-color: green;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          GET
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          POST
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          PATCH
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          DELETE
+        </td>
+      </tr>
+      <tr style="// display: flex; // justify-content: center;">
+        <td
+          style="
+            // display: flex;
+            // justify-content: end;
+            // min-width: 800px;
+          "
+        >
+          /api/matter/${matter?.id}/search/users/${user?.id}
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          GET
+        </td>
+        <td
+          style="
+            background-color: green;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          POST
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          PATCH
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          DELETE
+        </td>
+      </tr>
+      <tr style="// display: flex; // justify-content: center;">
+        <td
+          style="
+            // display: flex;
+            // justify-content: end;
+            // min-width: 800px;
+          "
+        >
+          /api/matter/${matter?.id}/search/users
+        </td>
+        <td
+          style="
+            background-color: green;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          GET
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          POST
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          PATCH
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          DELETE
+        </td>
+      </tr>
+      <tr style="// display: flex; // justify-content: center;">
+        <td
+          style="
+            // display: flex;
+            // justify-content: end;
+            // min-width: 800px;
+          "
+        >
+          /api/tasksAffected
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          GET
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          POST
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          PATCH
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          DELETE
+        </td>
+      </tr>
+      <tr style="// display: flex; // justify-content: center;">
+        <td
+          style="
+            // display: flex;
+            // justify-content: end;
+            // min-width: 800px;
+          "
+        >
+          /api/matter/${matter?.id}/workstreams/${project?.id}/task/${task?.id}/posts
+        </td>
+        <td
+          style="
+            background-color: green;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          GET
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          POST
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          PATCH
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          DELETE
+        </td>
+      </tr>
+      <tr style="// display: flex; // justify-content: center;">
+        <td
+          style="
+            // display: flex;
+            // justify-content: end;
+            // min-width: 800px;
+          "
+        >
+          /api/matter/${matter?.id}/workstreams/${project?.id}/task/${task?.id}/post/${post?.id}
+        </td>
+        <td
+          style="
+            background-color: green;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          GET
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          POST
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          PATCH
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          DELETE
+        </td>
+      </tr>
+      <tr style="// display: flex; // justify-content: center;">
+        <td
+          style="
+            // display: flex;
+            // justify-content: end;
+            // min-width: 800px;
+          "
+        >
+          /api/matter/${matter?.id}/workstreams/${project?.id}/task/${task?.id}/post/${post?.id}/authors
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          GET
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          POST
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          PATCH
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          DELETE
+        </td>
+      </tr>
+      <tr style="// display: flex; // justify-content: center;">
+        <td
+          style="
+            // display: flex;
+            // justify-content: end;
+            // min-width: 800px;
+          "
+        >
+          /api/matter/${matter?.id}/workstreams/${project?.id}/task/${task?.id}/post/${post?.id}/authors/${user?.id}
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          GET
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          POST
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          PATCH
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          DELETE
+        </td>
+      </tr>
+      <tr style="// display: flex; // justify-content: center;">
+        <td
+          style="
+            // display: flex;
+            // justify-content: end;
+            // min-width: 800px;
+          "
+        >
+          /api/matter/${matter?.id}/workstreams/${project?.id}/task/${task?.id}/post/${post?.id}/postmembers
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          GET
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          POST
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          PATCH
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          DELETE
+        </td>
+      </tr>
+      <tr style="// display: flex; // justify-content: center;">
+        <td
+          style="
+            // display: flex;
+            // justify-content: end;
+            // min-width: 800px;
+          "
+        >
+          /api/matter/${matter?.id}/workstreams/${project?.id}/task/${task?.id}/post/${post?.id}/postmembers/${user?.id}
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          GET
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          POST
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          PATCH
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          DELETE
+        </td>
+      </tr>
+      <tr style="// display: flex; // justify-content: center;">
+        <td
+          style="
+            // display: flex;
+            // justify-content: end;
+            // min-width: 800px;
+          "
+        >
+          /api/matter/${matter?.id}/workstreams/${project?.id}/task/${task?.id}/post/${post?.id}/move
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          GET
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          POST
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          PATCH
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          DELETE
+        </td>
+      </tr>
+      <tr style="// display: flex; // justify-content: center;">
+        <td
+          style="
+            // display: flex;
+            // justify-content: end;
+            // min-width: 800px;
+          "
+        >
+          /api/matter/${matter?.id}/posts
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          GET
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          POST
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          PATCH
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          DELETE
+        </td>
+      </tr>
+      <tr style="// display: flex; // justify-content: center;">
+        <td
+          style="
+            // display: flex;
+            // justify-content: end;
+            // min-width: 800px;
+          "
+        >
+          /api/matter/${matter?.id}/post/${post?.id}
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          GET
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          POST
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          PATCH
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          DELETE
+        </td>
+      </tr>
+      <tr style="// display: flex; // justify-content: center;">
+        <td
+          style="
+            // display: flex;
+            // justify-content: end;
+            // min-width: 800px;
+          "
+        >
+          /api/usage
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          GET
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          POST
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          PATCH
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          DELETE
+        </td>
+      </tr>
+      <tr style="// display: flex; // justify-content: center;">
+        <td
+          style="
+            // display: flex;
+            // justify-content: end;
+            // min-width: 800px;
+          "
+        >
+          /api/usage/report/summary
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          GET
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          POST
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          PATCH
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          DELETE
+        </td>
+      </tr>
+      <tr style="// display: flex; // justify-content: center;">
+        <td
+          style="
+            // display: flex;
+            // justify-content: end;
+            // min-width: 800px;
+          "
+        >
+          /api/usage/report/month
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          GET
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          POST
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          PATCH
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          DELETE
+        </td>
+      </tr>
+      <tr style="// display: flex; // justify-content: center;">
+        <td
+          style="
+            // display: flex;
+            // justify-content: end;
+            // min-width: 800px;
+          "
+        >
+          /api/users/search
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          GET
+        </td>
+        <td
+          style="
+            background-color: green;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          POST
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          PATCH
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          DELETE
+        </td>
+      </tr>
+      <tr style="// display: flex; // justify-content: center;">
+        <td
+          style="
+            // display: flex;
+            // justify-content: end;
+            // min-width: 800px;
+          "
+        >
+          /api/users
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          GET
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          POST
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          PATCH
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          DELETE
+        </td>
+      </tr>
+      <tr style="// display: flex; // justify-content: center;">
+        <td
+          style="
+            // display: flex;
+            // justify-content: end;
+            // min-width: 800px;
+          "
+        >
+          /api/user
+        </td>
+        <td
+          style="
+            background-color: green;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          GET
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          POST
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          PATCH
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          DELETE
+        </td>
+      </tr>
+      <tr style="// display: flex; // justify-content: center;">
+        <td
+          style="
+            // display: flex;
+            // justify-content: end;
+            // min-width: 800px;
+          "
+        >
+          /api/users/${user?.id}
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          GET
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          POST
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          PATCH
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          DELETE
+        </td>
+      </tr>
+      <tr style="// display: flex; // justify-content: center;">
+        <td
+          style="
+            // display: flex;
+            // justify-content: end;
+            // min-width: 800px;
+          "
+        >
+          /api/settings/user/password
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          GET
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          POST
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          PATCH
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          DELETE
+        </td>
+      </tr>
+      <tr style="// display: flex; // justify-content: center;">
+        <td
+          style="
+            // display: flex;
+            // justify-content: end;
+            // min-width: 800px;
+          "
+        >
+          /api/settings/users/${user?.id}/password
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          GET
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          POST
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          PATCH
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          DELETE
+        </td>
+      </tr>
+      <tr style="// display: flex; // justify-content: center;">
+        <td
+          style="
+            // display: flex;
+            // justify-content: end;
+            // min-width: 800px;
+          "
+        >
+          /api/settings/user/updateftue
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          GET
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          POST
+        </td>
+        <td
+          style="
+            background-color: green;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          PATCH
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          DELETE
+        </td>
+      </tr>
+      <tr style="// display: flex; // justify-content: center;">
+        <td
+          style="
+            // display: flex;
+            // justify-content: end;
+            // min-width: 800px;
+          "
+        >
+          /api/settings/user/${user?.id}/resetftue
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          GET
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          POST
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          PATCH
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          DELETE
+        </td>
+      </tr>
+      <tr style="// display: flex; // justify-content: center;">
+        <td
+          style="
+            // display: flex;
+            // justify-content: end;
+            // min-width: 800px;
+          "
+        >
+          /api/settings/user/${user?.id}/visit
+        </td>
+        <td
+          style="
+            background-color: green;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          GET
+        </td>
+        <td
+          style="
+            background-color: green;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          POST
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          PATCH
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          DELETE
+        </td>
+      </tr>
+      <tr style="// display: flex; // justify-content: center;">
+        <td
+          style="
+            // display: flex;
+            // justify-content: end;
+            // min-width: 800px;
+          "
+        >
+          /api/settings/user/tours
+        </td>
+        <td
+          style="
+            background-color: green;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          GET
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          POST
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          PATCH
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          DELETE
+        </td>
+      </tr>
+      <tr style="// display: flex; // justify-content: center;">
+        <td
+          style="
+            // display: flex;
+            // justify-content: end;
+            // min-width: 800px;
+          "
+        >
+          /api/settings/user/completeTour
+        </td>
+        <td
+          style="
+            background-color: green;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          GET
+        </td>
+        <td
+          style="
+            background-color: green;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          POST
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          PATCH
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          DELETE
+        </td>
+      </tr>
+      <tr style="// display: flex; // justify-content: center;">
+        <td
+          style="
+            // display: flex;
+            // justify-content: end;
+            // min-width: 800px;
+          "
+        >
+          /api/settings/user/${user?.id}/resetTours
+        </td>
+        <td
+          style="
+            background-color: green;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          GET
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          POST
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          PATCH
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          DELETE
+        </td>
+      </tr>
+      <tr style="// display: flex; // justify-content: center;">
+        <td
+          style="
+            // display: flex;
+            // justify-content: end;
+            // min-width: 800px;
+          "
+        >
+          /api/${user/user?.id}/todo
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          GET
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          POST
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          PATCH
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          DELETE
+        </td>
+      </tr>
+      <tr style="// display: flex; // justify-content: center;">
+        <td
+          style="
+            // display: flex;
+            // justify-content: end;
+            // min-width: 800px;
+          "
+        >
+          /api/projecttemplates
+        </td>
+        <td
+          style="
+            background-color: green;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          GET
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          POST
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          PATCH
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          DELETE
+        </td>
+      </tr>
+      <tr style="// display: flex; // justify-content: center;">
+        <td
+          style="
+            // display: flex;
+            // justify-content: end;
+            // min-width: 800px;
+          "
+        >
+          /api/${template?.id}
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          GET
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          POST
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          PATCH
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          DELETE
+        </td>
+      </tr>
+      <tr style="// display: flex; // justify-content: center;">
+        <td
+          style="
+            // display: flex;
+            // justify-content: end;
+            // min-width: 800px;
+          "
+        >
+          /api/${template?.id}/preview
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          GET
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          POST
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          PATCH
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          DELETE
+        </td>
+      </tr>
+      <tr style="// display: flex; // justify-content: center;">
+        <td
+          style="
+            // display: flex;
+            // justify-content: end;
+            // min-width: 800px;
+          "
+        >
+          /api/admin/projecttemplates/${template?.id}
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          GET
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          POST
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          PATCH
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          DELETE
+        </td>
+      </tr>
+      <tr style="// display: flex; // justify-content: center;">
+        <td
+          style="
+            // display: flex;
+            // justify-content: end;
+            // min-width: 800px;
+          "
+        >
+          /api/projecttemplates/${template?.id}/tasks
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          GET
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          POST
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          PATCH
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          DELETE
+        </td>
+      </tr>
+      <tr style="// display: flex; // justify-content: center;">
+        <td
+          style="
+            // display: flex;
+            // justify-content: end;
+            // min-width: 800px;
+          "
+        >
+          /api/projecttemplates/${template?.id}/tasks/search
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          GET
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          POST
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          PATCH
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          DELETE
+        </td>
+      </tr>
+      <tr style="// display: flex; // justify-content: center;">
+        <td
+          style="
+            // display: flex;
+            // justify-content: end;
+            // min-width: 800px;
+          "
+        >
+          /api/projecttemplates/${template?.id}/tasks/${task?.id}
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          GET
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          POST
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          PATCH
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          DELETE
+        </td>
+      </tr>
+      <tr style="// display: flex; // justify-content: center;">
+        <td
+          style="
+            // display: flex;
+            // justify-content: end;
+            // min-width: 800px;
+          "
+        >
+          /api/projecttemplates/${template?.id}/tasks/${task?.id}/copy
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          GET
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          POST
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          PATCH
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          DELETE
+        </td>
+      </tr>
+      <tr style="// display: flex; // justify-content: center;">
+        <td
+          style="
+            // display: flex;
+            // justify-content: end;
+            // min-width: 800px;
+          "
+        >
+          /api/projecttemplates/${template?.id}/tasks/${task?.id}/move
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          GET
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          POST
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          PATCH
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          DELETE
+        </td>
+      </tr>
+      <tr style="// display: flex; // justify-content: center;">
+        <td
+          style="
+            // display: flex;
+            // justify-content: end;
+            // min-width: 800px;
+          "
+        >
+          /api/projecttemplates/${template?.id}/copy
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          GET
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          POST
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          PATCH
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          DELETE
+        </td>
+      </tr>
+      <tr style="// display: flex; // justify-content: center;">
+        <td
+          style="
+            // display: flex;
+            // justify-content: end;
+            // min-width: 800px;
+          "
+        >
+          /api/projecttemplates/${template?.id}/favourite
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          GET
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          POST
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          PATCH
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          DELETE
+        </td>
+      </tr>
+      <tr style="// display: flex; // justify-content: center;">
+        <td
+          style="
+            // display: flex;
+            // justify-content: end;
+            // min-width: 800px;
+          "
+        >
+          /api/projecttemplates/${template?.id}/tasks/${templateTask?.id}/posts
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          GET
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          POST
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          PATCH
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          DELETE
+        </td>
+      </tr>
+      <tr style="// display: flex; // justify-content: center;">
+        <td
+          style="
+            // display: flex;
+            // justify-content: end;
+            // min-width: 800px;
+          "
+        >
+          /api/projecttemplates/${template?.id}/tasks/${templateTask?.id}/posts/${templatePost?.id}
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          GET
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          POST
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          PATCH
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          DELETE
+        </td>
+      </tr>
+      <tr style="// display: flex; // justify-content: center;">
+        <td
+          style="
+            // display: flex;
+            // justify-content: end;
+            // min-width: 800px;
+          "
+        >
+          /api/projecttemplates/${template?.id}/tasks/${templateTask?.id}/posts/${templatePost?.id}/move
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          GET
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          POST
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          PATCH
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          DELETE
+        </td>
+      </tr>
+      <tr style="// display: flex; // justify-content: center;">
+        <td
+          style="
+            // display: flex;
+            // justify-content: end;
+            // min-width: 800px;
+          "
+        >
+          /api/inboxnotifications
+        </td>
+        <td
+          style="
+            background-color: green;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          GET
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          POST
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          PATCH
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          DELETE
+        </td>
+      </tr>
+      <tr style="// display: flex; // justify-content: center;">
+        <td
+          style="
+            // display: flex;
+            // justify-content: end;
+            // min-width: 800px;
+          "
+        >
+          /api/inboxnotifications/${notification?.id}/read
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          GET
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          POST
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          PATCH
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          DELETE
+        </td>
+      </tr>
+      <tr style="// display: flex; // justify-content: center;">
+        <td
+          style="
+            // display: flex;
+            // justify-content: end;
+            // min-width: 800px;
+          "
+        >
+          /api/inboxnotifications/${notification?.id}/dismiss
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          GET
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          POST
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          PATCH
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          DELETE
+        </td>
+      </tr>
+      <tr style="// display: flex; // justify-content: center;">
+        <td
+          style="
+            // display: flex;
+            // justify-content: end;
+            // min-width: 800px;
+          "
+        >
+          /api/notificationfilteruserrecency
+        </td>
+        <td
+          style="
+            background-color: green;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          GET
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          POST
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          PATCH
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          DELETE
+        </td>
+      </tr>
+      <tr style="// display: flex; // justify-content: center;">
+        <td
+          style="
+            // display: flex;
+            // justify-content: end;
+            // min-width: 800px;
+          "
+        >
+          /api/todo/search
+        </td>
+        <td
+          style="
+            background-color: green;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          GET
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          POST
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          PATCH
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          DELETE
+        </td>
+      </tr>
+      <tr style="// display: flex; // justify-content: center;">
+        <td
+          style="
+            // display: flex;
+            // justify-content: end;
+            // min-width: 800px;
+          "
+        >
+          /api/universal/search
+        </td>
+        <td
+          style="
+            background-color: green;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          GET
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          POST
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          PATCH
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          DELETE
+        </td>
+      </tr>
+      <tr style="// display: flex; // justify-content: center;">
+        <td
+          style="
+            // display: flex;
+            // justify-content: end;
+            // min-width: 800px;
+          "
+        >
+          /api/matter/${matter?.id}/workstreams/${project?.id}/search
+        </td>
+        <td
+          style="
+            background-color: green;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          GET
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          POST
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          PATCH
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          DELETE
+        </td>
+      </tr>
+      <tr style="// display: flex; // justify-content: center;">
+        <td
+          style="
+            // display: flex;
+            // justify-content: end;
+            // min-width: 800px;
+          "
+        >
+          /api/universal/fuzzysearch
+        </td>
+        <td
+          style="
+            background-color: green;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          GET
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          POST
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          PATCH
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          DELETE
+        </td>
+      </tr>
+      <tr style="// display: flex; // justify-content: center;">
+        <td
+          style="
+            // display: flex;
+            // justify-content: end;
+            // min-width: 800px;
+          "
+        >
+          /api/labels/system
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          GET
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          POST
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          PATCH
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          DELETE
+        </td>
+      </tr>
+      <tr style="// display: flex; // justify-content: center;">
+        <td
+          style="
+            // display: flex;
+            // justify-content: end;
+            // min-width: 800px;
+          "
+        >
+          /api/matter/${matter?.id}/labels
+        </td>
+        <td
+          style="
+            background-color: green;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          GET
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          POST
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          PATCH
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          DELETE
+        </td>
+      </tr>
+      <tr style="// display: flex; // justify-content: center;">
+        <td
+          style="
+            // display: flex;
+            // justify-content: end;
+            // min-width: 800px;
+          "
+        >
+          /api/matter/${matter?.id}/labels/${label?.id}
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          GET
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          POST
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          PATCH
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          DELETE
+        </td>
+      </tr>
+      <tr style="// display: flex; // justify-content: center;">
+        <td
+          style="
+            // display: flex;
+            // justify-content: end;
+            // min-width: 800px;
+          "
+        >
+          /api/organisation/labels/${label?.id}
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          GET
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          POST
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          PATCH
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          DELETE
+        </td>
+      </tr>
+      <tr style="// display: flex; // justify-content: center;">
+        <td
+          style="
+            // display: flex;
+            // justify-content: end;
+            // min-width: 800px;
+          "
+        >
+          /api/organisation/labels
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          GET
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          POST
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          PATCH
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          DELETE
+        </td>
+      </tr>
+      <tr style="// display: flex; // justify-content: center;">
+        <td
+          style="
+            // display: flex;
+            // justify-content: end;
+            // min-width: 800px;
+          "
+        >
+          /api/matter/${matter?.id}/workstreams/${project?.id}/task/${task?.id}/labels
+        </td>
+        <td
+          style="
+            background-color: green;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          GET
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          POST
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          PATCH
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          DELETE
+        </td>
+      </tr>
+      <tr style="// display: flex; // justify-content: center;">
+        <td
+          style="
+            // display: flex;
+            // justify-content: end;
+            // min-width: 800px;
+          "
+        >
+          /api/matter/${matter?.id}/workstreams/${project?.id}/task/${task?.id}/labels/${label?.id}
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          GET
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          POST
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          PATCH
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          DELETE
+        </td>
+      </tr>
+      <tr style="// display: flex; // justify-content: center;">
+        <td
+          style="
+            // display: flex;
+            // justify-content: end;
+            // min-width: 800px;
+          "
+        >
+          /health
+        </td>
+        <td
+          style="
+            background-color: green;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          GET
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          POST
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          PATCH
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          DELETE
+        </td>
+      </tr>
+      <tr style="// display: flex; // justify-content: center;">
+        <td
+          style="
+            // display: flex;
+            // justify-content: end;
+            // min-width: 800px;
+          "
+        >
+          /version
+        </td>
+        <td
+          style="
+            background-color: green;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          GET
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          POST
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          PATCH
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          DELETE
+        </td>
+      </tr>
+      <tr style="// display: flex; // justify-content: center;">
+        <td
+          style="
+            // display: flex;
+            // justify-content: end;
+            // min-width: 800px;
+          "
+        >
+          /mstoken
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          GET
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          POST
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          PATCH
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          DELETE
+        </td>
+      </tr>
+      <tr style="// display: flex; // justify-content: center;">
+        <td
+          style="
+            // display: flex;
+            // justify-content: end;
+            // min-width: 800px;
+          "
+        >
+          /oktatoken
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          GET
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          POST
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          PATCH
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          DELETE
+        </td>
+      </tr>
+      <tr style="// display: flex; // justify-content: center;">
+        <td
+          style="
+            // display: flex;
+            // justify-content: end;
+            // min-width: 800px;
+          "
+        >
+          /mslogin
+        </td>
+        <td
+          style="
+            background-color: green;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          GET
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          POST
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          PATCH
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          DELETE
+        </td>
+      </tr>
+      <tr style="// display: flex; // justify-content: center;">
+        <td
+          style="
+            // display: flex;
+            // justify-content: end;
+            // min-width: 800px;
+          "
+        >
+          /oktalogin
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          GET
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          POST
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          PATCH
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          DELETE
+        </td>
+      </tr>
+      <tr style="// display: flex; // justify-content: center;">
+        <td
+          style="
+            // display: flex;
+            // justify-content: end;
+            // min-width: 800px;
+          "
+        >
+          /experimental
+        </td>
+        <td
+          style="
+            background-color: green;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          GET
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          POST
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          PATCH
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          DELETE
+        </td>
+      </tr>
+      <tr style="// display: flex; // justify-content: center;">
+        <td
+          style="
+            // display: flex;
+            // justify-content: end;
+            // min-width: 800px;
+          "
+        >
+          /instance/settings
+        </td>
+        <td
+          style="
+            background-color: green;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          GET
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          POST
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          PATCH
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          DELETE
+        </td>
+      </tr>
+      <tr style="// display: flex; // justify-content: center;">
+        <td
+          style="
+            // display: flex;
+            // justify-content: end;
+            // min-width: 800px;
+          "
+        >
+          /api/admin/instance/settings
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          GET
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          POST
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          PATCH
+        </td>
+        <td
+          style="
+            background-color: red;
+            // min-width: 100px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 6px;
+          "
+        >
+          DELETE
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>

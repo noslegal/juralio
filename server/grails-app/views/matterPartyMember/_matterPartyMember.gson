@@ -1,0 +1,46 @@
+/*
+ * Copyright 2026 Graeme and Joanna Johnston
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+import com.juralio.matter.MatterPartyMember
+
+model {
+    MatterPartyMember matterPartyMember
+}
+
+def renderMember(MatterPartyMember it) {
+    def b = [
+            id              : it.user.id,
+            firstname       : it.user.firstname,
+            lastname        : it.user.lastname,
+            username        : it.user.username,
+            isExternal      : it.user.externalUser != null,
+            enabled         : it.user.enabled,
+            isActiveOnMatter: it.user.isActiveOnMatter,
+            isThirdPartyUser: it.user.isThirdPartyUser,
+    ]
+    def a = [
+            memberId     : it.id,
+            user         : b,
+            matterParty  : it.matterParty.id,
+            matterAdminId: it.matterAdminId,
+            teamMemberId : it.teamMemberId,
+    ]
+    return a
+}
+
+json g.render(matterPartyMember, [excludes: ["user"]]) {
+    member renderMember(matterPartyMember)
+}

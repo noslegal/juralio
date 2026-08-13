@@ -1,0 +1,5 @@
+node_modules
+# Host build output: Dockerfile.static runs its own `npm run build`, so copying
+# a stale one in only inflates the build context (12 MB of the 31 MB sent).
+build
+coverage

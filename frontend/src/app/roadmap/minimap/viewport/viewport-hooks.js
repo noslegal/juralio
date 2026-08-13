@@ -1,0 +1,76 @@
+/*
+ * Copyright 2026 Graeme and Joanna Johnston
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+import { scaleLinear } from 'd3-scale'
+import { useEffect, useState } from 'react'
+
+export const useViewportX = (roadMapWidth, miniMapWidth, xPos) => {
+  const [viewportX, setViewportX] = useState(0)
+
+  useEffect(() => {
+    let roadMapToMiniMapXScale = scaleLinear()
+      .domain([0, roadMapWidth])
+      .range([0, miniMapWidth])
+    setViewportX(roadMapToMiniMapXScale(xPos))
+  }, [roadMapWidth, xPos]) // eslint-disable-line
+
+  return viewportX
+}
+
+export const useViewportY = (roadMapHeight, miniMapHeight, yPos) => {
+  const [viewportY, setViewportY] = useState(0)
+
+  useEffect(() => {
+    let roadMapToMiniMapYScale = scaleLinear()
+      .domain([0, roadMapHeight])
+      .range([0, miniMapHeight])
+    setViewportY(roadMapToMiniMapYScale(yPos))
+  }, [roadMapHeight, yPos]) // eslint-disable-line
+
+  return viewportY
+}
+
+export const useViewportWidth = (roadMapWidth, miniMapWidth, windowWidth) => {
+  const [viewportWidth, setViewportWidth] = useState(0)
+
+  useEffect(() => {
+    let roadMapToMiniMapXScale = scaleLinear()
+      .domain([0, roadMapWidth])
+      .range([0, miniMapWidth])
+
+    setViewportWidth(roadMapToMiniMapXScale(windowWidth))
+  }, [roadMapWidth, windowWidth]) // eslint-disable-line
+
+  return viewportWidth
+}
+
+export const useViewportHeight = (
+  roadMapHeight,
+  miniMapHeight,
+  windowHeight
+) => {
+  const [viewportHeight, setViewportHeight] = useState(0)
+
+  useEffect(() => {
+    let roadMapToMiniMapYScale = scaleLinear()
+      .domain([0, roadMapHeight])
+      .range([0, miniMapHeight])
+
+    setViewportHeight(roadMapToMiniMapYScale(windowHeight))
+  }, [roadMapHeight, windowHeight]) // eslint-disable-line
+
+  return viewportHeight
+}

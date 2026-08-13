@@ -1,0 +1,25 @@
+# The frontend image behind docker-compose.local.yml (the one-command local
+# stack). Runs the Vite dev server; sources are bind-mounted, so a code change
+# is picked up by hot reload rather than needing an image rebuild.
+#
+# The production/e2e image is the sibling Dockerfile — keep them separate: this
+# one is optimised for start-up time, not for producing a deployable artefact.
+FROM node:20-alpine
+LABEL maintainer="Juralio <docker@juralio.com>"
+
+WORKDIR /usr/src/app
+
+# Dependencies first and on their own layer: editing application code then
+# never re-runs the install.
+COPY package.json package-lock.json ./
+RUN npm ci
+
+# No source COPY: docker-compose.local.yml bind-mounts the whole frontend
+# directory (so .env.local is picked up too) and keeps node_modules in a named
+# volume so the mount can't shadow the install above.
+
+EXPOSE 3000
+
+# --no-open: `open: true` in vite.config.js would try to launch a browser
+# inside the container.
+CMD ["npm", "start", "--", "--no-open"]

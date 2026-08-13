@@ -1,0 +1,66 @@
+/*
+ * Copyright 2026 Graeme and Joanna Johnston
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+import com.juralio.template.TaskTemplate
+
+/**
+ * The purpose of this view is to render only the top level task template properties and direct sub-tasks
+ */
+model {
+    TaskTemplate taskTemplate
+}
+
+json g.render(taskTemplate, [excludes: ['projectTemplate']]) {
+    parent g.render(taskTemplate.parent)
+    tasks renderTasks(taskTemplate.tasks)
+    posts g.render(taskTemplate.posts)
+    noticeboardText taskTemplate.noticeboardText
+    projectTemplateId renderTemplateId(taskTemplate)
+}
+
+def renderTasks(List<TaskTemplate> tasks) {
+    if (tasks) {
+        return tasks.collect {
+            [id             : it.id,
+             referenceNumber: it.referenceNumber,
+             name           : it.name,
+             level          : it.level,
+             isMilestone    : it.isMilestone,
+             isDeliverable  : it.isDeliverable,
+             parent         : renderParent(it.parent),
+             tasks          : renderTasksShort(it.tasks)
+            ]
+        }
+    }
+    return []
+}
+
+def renderParent(TaskTemplate parentTask) {
+    if (!parentTask) return []
+    return [
+            id   : parentTask.id,
+            tasks: renderTasksShort(parentTask.tasks)
+    ]
+}
+
+def renderTasksShort(List<TaskTemplate> tasks) {
+    if (!tasks) return []
+    return tasks.collect { [id: it.id] }
+}
+
+def renderTemplateId(TaskTemplate task){
+    return  task.projectTemplateId
+}

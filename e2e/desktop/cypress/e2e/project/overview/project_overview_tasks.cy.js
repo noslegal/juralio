@@ -1,0 +1,76 @@
+import { generateFixture } from '../../../../../helpers/matterprojects/fixture_helper'
+import VisitHelpers from '../../../../../helpers/matterprojects/visit_helpers'
+import { createUser } from '../../../../../helpers/users/user_api_helper'
+
+const visitHelpers = new VisitHelpers()
+
+describe('project_overview_tasks.cy', () => {
+  let testUser, fixture, matter, project
+
+  before(() => {
+    createUser('ZZZ')
+      .then(createdUser => {
+        testUser = createdUser
+        const seed = {
+          matter: {
+            teamMembers: [testUser],
+            matterAdmins: [testUser],
+            projects: [
+              {
+                name: 'Overview Spec with Tasks',
+                tasks: [
+                  {
+                    name: 'Task1',
+                    tasks: [{ name: 'Task2' }],
+                  },
+                ],
+              },
+            ],
+          },
+        }
+        fixture = generateFixture(seed)
+      })
+      .then(() => {
+        matter = fixture.matter
+        project = fixture.projects[0]
+      })
+  })
+
+  describe('when selecting the tasks tab', () => {
+    before(() => {
+      cy.login(testUser.username)
+      visitHelpers.visitProjectOverview(matter.id, project.id)
+      cy.get('[data-test=post-count]').click()
+      cy.get('[data-test=task-tab]').eq(0).click()
+    })
+    it('should display the projects tasks', () => {
+      cy.get('[data-test=taskColumnHeader]').should('be.visible')
+    })
+
+    describe('clicking a row', () => {
+      before(() => {
+        cy.get('[data-rowindex=0]').click()
+      })
+      it('should redirect to the task details', () => {
+        cy.url().should(
+          'contain',
+          `/#/matter/${fixture.matter.id}/workstream/${fixture.projects[0].id}/task/${fixture.tasks[0].id}`
+        )
+      })
+    })
+  })
+  describe('when visiting the overview tasks url', () => {
+    before(() => {
+      cy.login(testUser.username)
+      visitHelpers.visitProjectOverviewTasks(matter.id, project.id)
+      cy.get('[data-test=task-tab]').eq(0).click()
+    })
+    it('should display the projects tasks', () => {
+      cy.get('[data-test=taskColumnHeader]').should('be.visible')
+    })
+    it('should render all of the tasks', () => {
+      cy.get('[data-rowindex=0]').should('exist')
+      cy.get('[data-rowindex=1]').should('exist')
+    })
+  })
+})

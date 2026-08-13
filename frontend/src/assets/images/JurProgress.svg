@@ -1,0 +1,11 @@
+<svg width="27" height="28" viewBox="0 0 27 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.25583 2.38379H12.5582V4.89542H1.25583V2.38379Z" fill="black" fill-opacity="0.87"/>
+<path d="M3.76746 6.77914H13.814V9.29077H3.76746V6.77914Z" fill="black" fill-opacity="0.87"/>
+<path d="M1.88374 11.1745H8.79071V13.6861H1.88374V11.1745Z" fill="black" fill-opacity="0.87"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M1.25581 0.625581H13.814C14.4382 0.625581 14.9442 1.1316 14.9442 1.75581V9.9186H15.0698V1.75581C15.0698 1.06225 14.5075 0.5 13.814 0.5H1.25581C0.562247 0.5 0 1.06225 0 1.75581V14.314C0 15.0075 0.562247 15.5698 1.25581 15.5698H8.7907V15.4442H1.25581C0.631604 15.4442 0.125581 14.9382 0.125581 14.314V1.75581C0.125581 1.1316 0.631604 0.625581 1.25581 0.625581Z" fill="black" fill-opacity="0.6"/>
+<path d="M10.6744 11.1743H16.3256V18.7092H10.6744V11.1743Z" fill="black" fill-opacity="0.87"/>
+<path d="M17.5814 11.1743H23.2325V14.3139H17.5814V11.1743Z" fill="black" fill-opacity="0.87"/>
+<path d="M17.5814 15.5697H23.2325V18.7092H17.5814V15.5697Z" fill="black" fill-opacity="0.87"/>
+<path d="M10.6744 19.965H16.3256V23.7325H10.6744V19.965Z" fill="black" fill-opacity="0.87"/>
+<rect x="9.4814" y="9.98125" width="14.9442" height="14.9442" rx="1.19302" stroke="black" stroke-opacity="0.6" stroke-width="0.125581"/>
+</svg>

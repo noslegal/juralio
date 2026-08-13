@@ -1,0 +1,20 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "node tools/deploy/deploy.js",
+    "deploy-cci": "node tools/deploy/deploy-cci.js 2>&1",
+    "upload-notices": "node tools/deploy/upload-notices.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "lodash": "^4.17.21",
+    "node-fetch": "^2.6.1",
+    "shelljs": "^0.8.5",
+    "yargs": "^17.7.2"
+  }
+}

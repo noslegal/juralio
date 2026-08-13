@@ -1,0 +1,7 @@
+# The build context is otherwise ~1 GB, most of it build output that the image
+# never wants (and that must not leak in: it was produced by a different OS).
+build
+.gradle
+node_modules
+out
+*.log

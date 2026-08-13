@@ -1,0 +1,21 @@
+html {
+  overflow: hidden;
+}
+
+.app {
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+
+  background-color: #fff;
+  overflow: hidden;
+}
+
+/**
+  Setting font-family here as there does not seems to be a way of doing this within
+  the material theme for the Link component.
+**/
+a {
+  font-family: 'Montserrat';
+}

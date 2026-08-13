@@ -1,0 +1,130 @@
+# The one-command local stack: database + backend + frontend, nothing to install
+# but a container runtime. Drive it with ./start.sh — see docs/RUNBOOK-LOCAL-SETUP.md §9.
+#
+# Deliberately standalone (not layered onto docker-compose.yml, which exists to
+# build production/e2e images). Differences that matter:
+#   • the database is a plain postgres image and its data PERSISTS across runs
+#     — ./start.sh reset is the only thing that wipes it
+#   • the backend is not compiled into the image; sources are mounted
+#   • the database is published on 5433 by default so it can't collide with a
+#     Postgres already running natively on 5432
+
+name: juralio-local
+
+volumes:
+  db-data: {}
+  # Gradle's dependency cache. The slow first boot is slow only once.
+  gradle-home: {}
+  # Build output kept inside the container: the host's server/build and
+  # server/.gradle were produced by a different OS and must not be reused.
+  server-build: {}
+  server-gradle: {}
+  frontend-node-modules: {}
+
+services:
+  db:
+    image: postgres:14
+    environment:
+      # Creates the role, password and database the development profile expects
+      # — the equivalent of server/database/init.sql, without a custom image.
+      POSTGRES_USER: juralio
+      POSTGRES_PASSWORD: juralio
+      POSTGRES_DB: juralio
+    ports:
+      - '${JURALIO_DB_PORT:-5433}:5432'
+    volumes:
+      - db-data:/var/lib/postgresql/data
+    healthcheck:
+      test: ['CMD-SHELL', 'pg_isready -U juralio -d juralio']
+      interval: 5s
+      timeout: 5s
+      retries: 20
+
+  server:
+    build:
+      context: ./server
+      target: devlocal
+    environment:
+      # Point the development profile's datasource at the db service. Without
+      # these it defaults to localhost, which inside a container is the
+      # container itself — see the development block in application.yml.
+      DS_HOST: db
+      DS_PORT: '5432'
+      DS_DB_NAME: juralio
+      DS_USERNAME: juralio
+      DS_PASSWORD: juralio
+      AWS_SDK_REGION: eu-west-2
+      GRADLE_USER_HOME: /root/.gradle
+      # MagicLinkService fails closed when this is unset (application.yml maps it to
+      # grails.magicLinkPassphrase), and creating a user always issues a welcome
+      # magic link — so without it every POST /api/users throws and '/start.sh seed'
+      # cannot create its demo users. Any non-empty value works; this is a throwaway
+      # local secret, not a shared one.
+      MAGIC_LINK_PASSPHRASE: ${MAGIC_LINK_PASSPHRASE:-local-dev-only-passphrase}
+    ports:
+      - '${JURALIO_API_PORT:-8080}:8080'
+    volumes:
+      - ./server:/app
+      - server-build:/app/build
+      - server-gradle:/app/.gradle
+      - gradle-home:/root/.gradle
+    depends_on:
+      db:
+        condition: service_healthy
+    healthcheck:
+      test: ['CMD-SHELL', 'curl -fsS http://localhost:8080/health || exit 1']
+      interval: 10s
+      timeout: 5s
+      retries: 30
+      # A cold first boot compiles the whole Grails app; don't report unhealthy
+      # while that's still going on.
+      start_period: 900s
+    stdin_open: true
+    tty: true
+
+  # Default frontend: built once, served as static files. Quicker to browse than
+  # either the container dev server or a native one, because there is no bind
+  # mount and no on-demand module transform. A code change needs a rebuild
+  # (`./start.sh` again), so this is the mode for running the app, not editing it.
+  frontend-static:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile.static
+    ports:
+      - '${JURALIO_FRONTEND_PORT:-3000}:3000'
+    depends_on:
+      - server
+
+  # Live-editing frontend: Vite dev server over the mounted sources. Started by
+  # `./start.sh dev`; hot-reloads, but every module Vite serves crosses the bind
+  # mount, which is what makes it feel laggy on macOS and Windows.
+  # Profile-gated so it can't fight frontend-static for the port.
+  frontend:
+    profiles: ['dev']
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile.dev
+    # Hot reload works over the bind mount as-is on current Docker Desktop
+    # (VirtioFS forwards file events). If edits stop being picked up — older
+    # file-sharing implementations, or Windows/WSL2 — uncomment this to make
+    # Vite poll instead. It costs CPU, hence not the default.
+    # environment:
+    #   VITE_USE_POLLING: 'true'
+    # Must be published on a port api-helper.js recognises as a dev port
+    # (3000/9090/3007), or the browser resolves the API to its own origin
+    # instead of the backend on 8080. ./start.sh enforces this.
+    ports:
+      - '${JURALIO_FRONTEND_PORT:-3000}:3000'
+    volumes:
+      - ./frontend:/usr/src/app
+      - frontend-node-modules:/usr/src/app/node_modules
+    depends_on:
+      - server
+
+  # Browser-based database client, for looking at data without installing psql.
+  adminer:
+    image: adminer
+    ports:
+      - '${JURALIO_ADMINER_PORT:-8083}:8080'
+    depends_on:
+      - db

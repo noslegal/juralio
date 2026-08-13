@@ -1,0 +1,116 @@
+import { get3LevelATasksWithSubsData } from '../../../../../../../helpers/data/task_operations_test_project_data'
+import { selectDate } from '../../../../../../../helpers/date/picker/date_picker_helper'
+import {
+  generateFixture,
+  getWrapper,
+} from '../../../../../../../helpers/matterprojects/fixture_helper'
+import { createUser } from '../../../../../../../helpers/users/user_api_helper'
+
+describe('task_psd_children_consistency.cy', () => {
+  let user, appPage, fixture
+
+  before(() => {
+    createUser().then((createdUser) => {
+      user = createdUser
+      const seed = {
+        matter: {
+          prefix: 'TaskStatusSortingTest',
+          teamMembers: [user],
+          matterAdmins: [user],
+          projects: get3LevelATasksWithSubsData(),
+        },
+      }
+      fixture = generateFixture(seed)
+      appPage = getWrapper(fixture)
+    })
+  })
+
+  describe('When the task parent is not started and has planned children', () => {
+    before(() => {
+      cy.login(user.username)
+      appPage.visitTaskByName('task2')
+      selectDate('[data-test="planned-start-date"]', 2016, 6, 14)
+      appPage.visitTaskByName('subtask5')
+      selectDate('[data-test="planned-start-date"]', 2016, 6, 16)
+      appPage.visitTaskByName('task2')
+    })
+
+    it('should display the updated date', () => {
+      cy.get('[data-test="planned-start-date"]').should(
+        'contain.text',
+        'Tue 14 Jun 2016'
+      )
+    })
+
+    describe('When the parents PSD is changed to an later date than its childs PSD', () => {
+      before(() => {
+        cy.login(user.username)
+        selectDate('[data-test="planned-start-date"]', 2016, 6, 22)
+      })
+
+      describe('a dialog should be displayed', () => {
+        it('should have the correct title', () => {
+          cy.get('[data-test=dialog-header-title-text]').should(
+            'have.text',
+            'Impact of date change in Task #5 (task2)'
+          )
+        })
+        it('should display the confirmation dialog', () => {
+          cy.get('[data-test=affected-task-count]').should(
+            'contain.text',
+            '1 Task'
+          )
+        })
+
+        describe('Clicking the Cancel button ', () => {
+          before(() => {
+            cy.get('[data-test=cancel-dialog-button]').click()
+          })
+          it('should no longer display the dialog', () => {
+            cy.get('[data-test=dialog-prompt-text]').should('not.exist')
+          })
+          it('The PSD should NOT persist the changed date', () => {
+            cy.get('[data-test="planned-start-date"]').should(
+              'not.contain.text',
+              'Wed 22 Jun 2016'
+            )
+          })
+        })
+
+        describe('Clicking the continue button', () => {
+          before(() => {
+            cy.login(user.username)
+            selectDate('[data-test="planned-start-date"]', 2016, 6, 22)
+            cy.get('[data-test=action-dialog-button]').click()
+            cy.wait(5000)
+          })
+
+          it('should no longer display the dialog', () => {
+            cy.get('[data-test=dialog-prompt-text]').should('not.exist')
+          })
+
+          it('The PSD should persist the changed date', () => {
+            cy.get('[data-test="planned-start-date"]').should(
+              'contain.text',
+              'Wed 22 Jun 2016'
+            )
+          })
+
+          describe('and its first child should persist the change', () => {
+            before(() => {
+              cy.login(user.username)
+              appPage.visitTaskByName('subtask5')
+            })
+
+            it('The PSD should persist the parents PSD', () => {
+              cy.get('[data-test="planned-start-date"]').should(
+                'contain.text',
+                'Wed 22 Jun 2016'
+              )
+            })
+          })
+        })
+      })
+    })
+  })
+})

@@ -1,0 +1,92 @@
+/*
+ * Copyright 2026 Graeme and Joanna Johnston
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+import com.juralio.matter.Matter
+import com.juralio.project.Project
+import com.juralio.organisationgroup.MatterGroupPositionDTO
+import com.juralio.organisationgroup.OrganisationGroup
+import com.juralio.organisationgroup.GroupPosition
+
+model {
+    Matter matter
+}
+
+def renderTaskCount(List<Project> projects) {
+    Long notStartedCount = 0
+    Long inProgressCount = 0
+    Long doneCount = 0
+    Long notRequiredCount = 0
+    Map<String, Long> taskCounts = new HashMap<>()
+    projects.findAll { p -> p.active }.each { Project p ->
+        if (p.taskCounts) {
+            notStartedCount = notStartedCount + (p.taskCounts.notStartedCount as Long)
+            inProgressCount = inProgressCount + (p.taskCounts.inProgressCount as Long)
+            doneCount = doneCount + (p.taskCounts.doneCount as Long)
+            notRequiredCount = notRequiredCount + (p.taskCounts.notRequiredCount as Long)
+        }
+    }
+    taskCounts['notStartedTasks'] = notStartedCount
+    taskCounts['inProgressTasks'] = inProgressCount
+    taskCounts['doneTasks'] = doneCount
+    taskCounts['notRequiredTasks'] = notRequiredCount
+    return taskCounts
+}
+
+def renderPostCount(List<Project> projects) {
+    Long postCount = 0
+    Map<String, Long> taskCounts = new HashMap<>()
+    projects.each { Project p ->
+        if (p.postCount) {
+            postCount = postCount + p.postCount
+        }
+    }
+    return postCount
+}
+
+def renderGroup(OrganisationGroup group) {
+    return [
+        id: group.id,
+        name: group.name,
+        isInternal: group.isInternal,
+    ]
+}
+
+def renderPosition(GroupPosition position) {
+    return [
+        id: position.id,
+        name: position.name,
+    ]
+}
+
+def renderPositionsOfGroups(List<MatterGroupPositionDTO> positionsOfGroups) {
+    return positionsOfGroups.collect {[
+        group: renderGroup(it.group),
+        position: it.position ? renderPosition(it.position) : null
+    ]}
+}
+
+json g.render(matter, [excludes: ['deletedMirror', 'caseId']]) {
+    activities matter.activities
+    matterId matter.caseId
+    admins matter.matterAdmins ? matter.matterAdmins.findAll { user -> user.user.enabled }.size() : null
+    team matter.teamMembers ? matter.teamMembers.findAll { user -> user.user.enabled }.size() : null
+    viewers matter.matterViewers ? matter.matterViewers.findAll { user -> user.user.enabled }.size() : 0
+    numProjects matter.projects ? matter.projects.size() : null
+    activeWorkstreams matter.projects ? matter.projects.findAll { project -> project.active }.size() : null
+    taskCount matter.projects ? renderTaskCount(matter.projects as List<Project>) : null
+    postCount matter.projects ? renderPostCount(matter.projects as List<Project>) : null
+    positionsOfGroups matter.positionsOfGroups ? renderPositionsOfGroups(matter.positionsOfGroups) : null
+}

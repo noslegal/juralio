@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>JurPostMultiple</title>
+    <g id="JurPostMultiple" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M3,5 L3,21 L21,21 L21,23 L3,23 C1.8954305,23 1,22.1045695 1,21 L1,5 L3,5 M17,1 L23,7 L23,17 C23,18.1045695 22.1045695,19 21,19 L7,19 C5.89,19 5,18.1 5,17 L5,3 C5,1.8954305 5.8954305,1 7,1 L17,1 Z M7,3 L7,17 L21,17 L21,10 L14,10 L14,3 L7,3 Z" id="Shape" fill="#000000" fill-rule="nonzero"></path>
+    </g>
+</svg>

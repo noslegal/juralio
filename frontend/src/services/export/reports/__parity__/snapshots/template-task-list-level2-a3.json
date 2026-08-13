@@ -1,0 +1,685 @@
+{
+  "sheets": [
+    {
+      "cells": {
+        "A1": {
+          "s": "6f2398ad",
+          "value": {
+            "text": ""
+          }
+        },
+        "A10": {
+          "s": "0cd2405f",
+          "value": {
+            "text": "A#005"
+          }
+        },
+        "A2": {
+          "s": "6f2398ad",
+          "value": {
+            "text": ""
+          }
+        },
+        "A3": {
+          "s": "6f2398ad",
+          "value": {
+            "text": ""
+          }
+        },
+        "A4": {
+          "s": "f64da6c7",
+          "value": {
+            "text": "templateTaskList"
+          }
+        },
+        "A5": {
+          "s": "6f2398ad",
+          "value": {
+            "text": ""
+          }
+        },
+        "A6": {
+          "s": "fb919bf9",
+          "value": {
+            "text": "levelTaskId"
+          }
+        },
+        "A7": {
+          "s": "0cd2405f",
+          "value": {
+            "text": "A#001"
+          }
+        },
+        "A8": {
+          "s": "ecc2a925",
+          "value": {
+            "text": "  B#002"
+          }
+        },
+        "A9": {
+          "s": "ecc2a925",
+          "value": {
+            "text": "  B#003"
+          }
+        },
+        "B1": {
+          "s": "6f2398ad",
+          "value": {
+            "text": ""
+          }
+        },
+        "B10": {
+          "s": "19a82238",
+          "value": {
+            "text": "Phase B"
+          }
+        },
+        "B2": {
+          "s": "6f2398ad",
+          "value": {
+            "text": ""
+          }
+        },
+        "B3": {
+          "s": "6f2398ad",
+          "value": {
+            "text": ""
+          }
+        },
+        "B4": {
+          "s": "6f2398ad",
+          "value": {
+            "text": ""
+          }
+        },
+        "B5": {
+          "s": "6f2398ad",
+          "value": {
+            "text": ""
+          }
+        },
+        "B6": {
+          "s": "fb919bf9",
+          "value": {
+            "text": "taskName"
+          }
+        },
+        "B7": {
+          "s": "19a82238",
+          "value": {
+            "text": "Phase A"
+          }
+        },
+        "B8": {
+          "s": "902880e1",
+          "value": {
+            "text": "Sub-task A1"
+          }
+        },
+        "B9": {
+          "s": "902880e1",
+          "value": {
+            "text": "Sub-task A2"
+          }
+        },
+        "C1": {
+          "s": "d92fd7ae",
+          "value": {
+            "text": "Standard Litigation Template"
+          }
+        },
+        "C10": {
+          "s": "069d923d",
+          "value": {
+            "text": ""
+          }
+        },
+        "C2": {
+          "s": "6f2398ad",
+          "value": {
+            "text": ""
+          }
+        },
+        "C3": {
+          "s": "6f2398ad",
+          "value": {
+            "text": ""
+          }
+        },
+        "C4": {
+          "s": "6f2398ad",
+          "value": {
+            "text": ""
+          }
+        },
+        "C5": {
+          "s": "6f2398ad",
+          "value": {
+            "text": ""
+          }
+        },
+        "C6": {
+          "s": "fb919bf9",
+          "value": {
+            "text": ""
+          }
+        },
+        "C7": {
+          "s": "069d923d",
+          "value": {
+            "text": ""
+          }
+        },
+        "C8": {
+          "s": "069d923d",
+          "value": {
+            "text": ""
+          }
+        },
+        "C9": {
+          "s": "069d923d",
+          "value": {
+            "text": ""
+          }
+        },
+        "D1": {
+          "s": "6f2398ad",
+          "value": {
+            "text": ""
+          }
+        },
+        "D10": {
+          "s": "bec2e012",
+          "value": {
+            "text": ""
+          }
+        },
+        "D2": {
+          "s": "6f2398ad",
+          "value": {
+            "text": ""
+          }
+        },
+        "D3": {
+          "s": "6f2398ad",
+          "value": {
+            "text": ""
+          }
+        },
+        "D4": {
+          "s": "6f2398ad",
+          "value": {
+            "text": ""
+          }
+        },
+        "D5": {
+          "s": "6f2398ad",
+          "value": {
+            "text": ""
+          }
+        },
+        "D6": {
+          "s": "fb919bf9",
+          "value": {
+            "text": ""
+          }
+        },
+        "D7": {
+          "s": "bec2e012",
+          "value": {
+            "text": ""
+          }
+        },
+        "D8": {
+          "s": "bec2e012",
+          "value": {
+            "text": ""
+          }
+        },
+        "D9": {
+          "s": "bec2e012",
+          "value": {
+            "text": ""
+          }
+        },
+        "E1": {
+          "s": "6f2398ad",
+          "value": {
+            "text": ""
+          }
+        },
+        "E10": {
+          "s": "b73ed154",
+          "value": {
+            "text": ""
+          }
+        },
+        "E2": {
+          "s": "6f2398ad",
+          "value": {
+            "text": ""
+          }
+        },
+        "E3": {
+          "s": "6f2398ad",
+          "value": {
+            "text": ""
+          }
+        },
+        "E4": {
+          "s": "6f2398ad",
+          "value": {
+            "text": ""
+          }
+        },
+        "E5": {
+          "s": "6f2398ad",
+          "value": {
+            "text": ""
+          }
+        },
+        "E6": {
+          "s": "fb919bf9",
+          "value": {
+            "text": ""
+          }
+        },
+        "E7": {
+          "s": "b73ed154",
+          "value": {
+            "text": ""
+          }
+        },
+        "E8": {
+          "s": "b73ed154",
+          "value": {
+            "text": ""
+          }
+        },
+        "E9": {
+          "s": "b73ed154",
+          "value": {
+            "text": ""
+          }
+        },
+        "F1": {
+          "s": "85cc97a4",
+          "value": {
+            "text": "templateReferenceNumber"
+          }
+        },
+        "F10": {
+          "s": "b73ed154",
+          "value": {
+            "text": ""
+          }
+        },
+        "F2": {
+          "s": "85cc97a4",
+          "value": {
+            "text": "JUR900"
+          }
+        },
+        "F3": {
+          "s": "6f2398ad",
+          "value": {
+            "text": ""
+          }
+        },
+        "F4": {
+          "s": "f78404ec",
+          "value": {
+            "text": "exportedFromJuralio\nSun 1 Jun 2025 12:00 UTC"
+          }
+        },
+        "F5": {
+          "s": "6f2398ad",
+          "value": {
+            "text": ""
+          }
+        },
+        "F6": {
+          "s": "fb919bf9",
+          "value": {
+            "text": ""
+          }
+        },
+        "F7": {
+          "s": "b73ed154",
+          "value": {
+            "text": ""
+          }
+        },
+        "F8": {
+          "s": "b73ed154",
+          "value": {
+            "text": ""
+          }
+        },
+        "F9": {
+          "s": "b73ed154",
+          "value": {
+            "text": ""
+          }
+        }
+      },
+      "cols": {
+        "1": {
+          "bestFit": false,
+          "width": 17.504
+        },
+        "2": {
+          "bestFit": false,
+          "width": 30.625
+        },
+        "3": {
+          "bestFit": false,
+          "width": 43.625
+        },
+        "4": {
+          "bestFit": false,
+          "width": 18.125
+        },
+        "5": {
+          "bestFit": false,
+          "width": 5.625
+        },
+        "6": {
+          "bestFit": false,
+          "width": 30.625
+        }
+      },
+      "images": [
+        {
+          "col": 0,
+          "colOff": 0,
+          "cx": 1181100,
+          "cy": 342900,
+          "image": "24700b7c:6046",
+          "row": 0,
+          "rowOff": 114300
+        }
+      ],
+      "merges": [
+        "A4:B4"
+      ],
+      "name": "taskList",
+      "print": {
+        "errors": "NA",
+        "evenFooter": null,
+        "fitToHeight": "0",
+        "fitToPage": true,
+        "fitToWidth": "1",
+        "horizontalCentered": true,
+        "margins": {
+          "bottom": 0.5,
+          "footer": 0.2,
+          "header": 0.2,
+          "left": 0.2,
+          "right": 0.2,
+          "top": 0.2
+        },
+        "oddFooter": "&L&8&K666361privilegedAndConfidential&12&K000000&R&8&K666361 &P of &N&12&K000000",
+        "orientation": "landscape",
+        "paperSize": "8"
+      },
+      "printArea": "A1:G17",
+      "rows": {
+        "1": 22.5,
+        "2": 22.5,
+        "3": 22.5,
+        "4": 26.25,
+        "5": 22.5,
+        "6": 26.25
+      },
+      "view": {
+        "pane": {
+          "state": "frozen",
+          "topLeftCell": "A7",
+          "xSplit": "0",
+          "ySplit": "6"
+        },
+        "showGridLines": false
+      }
+    }
+  ],
+  "styles": {
+    "069d923d": {
+      "alignment": null,
+      "border": {
+        "bottom": {
+          "colour": "666361",
+          "style": "thin"
+        }
+      },
+      "fill": null,
+      "font": {
+        "bold": false,
+        "colour": null,
+        "italic": false,
+        "name": "Arial",
+        "size": 10
+      }
+    },
+    "0cd2405f": {
+      "alignment": {
+        "horizontal": "left",
+        "vertical": "top"
+      },
+      "border": {
+        "bottom": {
+          "colour": "666361",
+          "style": "thin"
+        }
+      },
+      "fill": null,
+      "font": {
+        "bold": true,
+        "colour": null,
+        "italic": false,
+        "name": "Arial",
+        "size": 14
+      }
+    },
+    "19a82238": {
+      "alignment": {
+        "horizontal": "left",
+        "vertical": "top"
+      },
+      "border": {
+        "bottom": {
+          "colour": "666361",
+          "style": "thin"
+        }
+      },
+      "fill": null,
+      "font": {
+        "bold": true,
+        "colour": "333232",
+        "italic": false,
+        "name": "Arial",
+        "size": 14
+      }
+    },
+    "6f2398ad": {
+      "alignment": null,
+      "border": null,
+      "fill": null,
+      "font": {
+        "bold": false,
+        "colour": null,
+        "italic": false,
+        "name": "Arial",
+        "size": 12
+      }
+    },
+    "85cc97a4": {
+      "alignment": {
+        "horizontal": "right",
+        "vertical": "bottom",
+        "wrapText": true
+      },
+      "border": null,
+      "fill": null,
+      "font": {
+        "bold": false,
+        "colour": null,
+        "italic": false,
+        "name": "Arial",
+        "size": 10
+      }
+    },
+    "902880e1": {
+      "alignment": {
+        "horizontal": "left",
+        "vertical": "top"
+      },
+      "border": {
+        "bottom": {
+          "colour": "666361",
+          "style": "thin"
+        }
+      },
+      "fill": null,
+      "font": {
+        "bold": false,
+        "colour": "333232",
+        "italic": false,
+        "name": "Arial",
+        "size": 14
+      }
+    },
+    "b73ed154": {
+      "alignment": {
+        "horizontal": "left",
+        "vertical": "top",
+        "wrapText": true
+      },
+      "border": {
+        "bottom": {
+          "colour": "666361",
+          "style": "thin"
+        }
+      },
+      "fill": null,
+      "font": {
+        "bold": false,
+        "colour": null,
+        "italic": false,
+        "name": "Arial",
+        "size": 8
+      }
+    },
+    "bec2e012": {
+      "alignment": {
+        "horizontal": "left",
+        "vertical": "top"
+      },
+      "border": {
+        "bottom": {
+          "colour": "666361",
+          "style": "thin"
+        }
+      },
+      "fill": null,
+      "font": {
+        "bold": false,
+        "colour": null,
+        "italic": false,
+        "name": "Arial",
+        "size": 10
+      }
+    },
+    "d92fd7ae": {
+      "alignment": {
+        "horizontal": "center",
+        "vertical": "center"
+      },
+      "border": null,
+      "fill": null,
+      "font": {
+        "bold": false,
+        "colour": null,
+        "italic": false,
+        "name": "Arial",
+        "size": 14
+      }
+    },
+    "ecc2a925": {
+      "alignment": {
+        "horizontal": "left",
+        "indent": "1",
+        "vertical": "top"
+      },
+      "border": {
+        "bottom": {
+          "colour": "666361",
+          "style": "thin"
+        }
+      },
+      "fill": null,
+      "font": {
+        "bold": false,
+        "colour": null,
+        "italic": false,
+        "name": "Arial",
+        "size": 14
+      }
+    },
+    "f64da6c7": {
+      "alignment": null,
+      "border": null,
+      "fill": null,
+      "font": {
+        "bold": false,
+        "colour": null,
+        "italic": false,
+        "name": "Arial",
+        "size": 14
+      }
+    },
+    "f78404ec": {
+      "alignment": {
+        "horizontal": "right",
+        "vertical": "center",
+        "wrapText": true
+      },
+      "border": null,
+      "fill": null,
+      "font": {
+        "bold": false,
+        "colour": null,
+        "italic": true,
+        "name": "Arial",
+        "size": 8
+      }
+    },
+    "fb919bf9": {
+      "alignment": {
+        "horizontal": "left",
+        "vertical": "center"
+      },
+      "border": {
+        "bottom": {
+          "colour": "666361",
+          "style": "medium"
+        },
+        "top": {
+          "colour": "666361",
+          "style": "medium"
+        }
+      },
+      "fill": {
+        "fg": "D9E1F2",
+        "pattern": "solid"
+      },
+      "font": {
+        "bold": true,
+        "colour": null,
+        "italic": false,
+        "name": "Arial",
+        "size": 11
+      }
+    }
+  }
+}

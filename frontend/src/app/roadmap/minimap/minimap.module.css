@@ -1,0 +1,61 @@
+.minimap-container {
+  position: fixed;
+  width: 244px;
+  height: 148px;
+  bottom: 56px;
+  right: 10px;
+  z-index: 100;
+
+  display: flex;
+  flex-direction: column;
+
+  padding-top: 4px;
+  padding-bottom: 4px;
+  overflow: hidden;
+}
+
+.zoom-out-button {
+  height: 50px;
+  padding-left: 4px;
+  color: #9e9e9e;
+}
+
+.zoom-out-icon {
+  border: 1px solid #9e9e9e;
+  border-radius: 4px;
+}
+
+.mini-icicle {
+  margin: 16px;
+  flex: 1;
+  position: relative;
+}
+
+.mini-icicle-cell {
+  background: #838383;
+  width: 100%;
+  height: 100%;
+}
+
+.minimised-minimap-container {
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  bottom: 10px;
+  right: 10px;
+
+  display: fixed;
+  z-index: 100;
+}
+
+.minimised-minimap {
+  margin: 8px;
+  flex: 1;
+  position: relative;
+}
+
+.opened-minimap {
+  margin: 8px;
+  flex: 1;
+  position: relative;
+}

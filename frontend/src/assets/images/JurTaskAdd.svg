@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>JurTaskAdd</title>
+    <g id="JurTaskAdd" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M19,14 L19,17 L22,17 L22,19 L19,19 L19,22 L17,22 L17,19 L14,19 L14,17 L17,17 L17,14 L19,14 Z M18,2 C19.0595455,2 19.9186364,2.81092975 19.9945464,3.85006292 L20,4 L20.0006859,12.3416539 C19.3749342,12.1203964 18.7015272,12 18,12 L18,4 L4,4 L4,18 L12,18 C12,18.7015272 12.1203964,19.3749342 12.3416539,20.0006859 L4,20 C2.94045455,20 2.08136364,19.1890702 2.00545361,18.1499371 L2,18 L2,4 C2,2.94045455 2.81092975,2.08136364 3.85006292,2.00545361 L4,2 L18,2 Z M10,6 L10,10 L6,10 L6,6 L10,6 Z" id="Shape" fill="#000000" fill-rule="nonzero"></path>
+    </g>
+</svg>

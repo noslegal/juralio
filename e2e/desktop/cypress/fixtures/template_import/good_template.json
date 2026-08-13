@@ -1,0 +1,182 @@
+{
+  "published": false,
+  "archived": false,
+  "name": "resources this time",
+  "tasks": [
+    {
+      "id": "CT18929",
+      "name": "Phase A",
+      "level": 1,
+      "isMilestone": false,
+      "isDeliverable": false,
+      "tasks": [
+        {
+          "id": "CT18958",
+          "name": "Group 1",
+          "level": 2,
+          "isMilestone": false,
+          "isDeliverable": false,
+          "tasks": [
+            {
+              "id": "CT18971",
+              "name": "Subtask 1",
+              "level": 3,
+              "isMilestone": false,
+              "isDeliverable": false,
+              "tasks": [],
+              "posts": [],
+              "description": null
+            },
+            {
+              "id": "CT18984",
+              "name": "Subtask 2",
+              "level": 3,
+              "isMilestone": false,
+              "isDeliverable": false,
+              "tasks": [],
+              "posts": [],
+              "description": null
+            },
+            {
+              "id": "CT19049",
+              "name": "A Deliverable",
+              "level": 3,
+              "isMilestone": false,
+              "isDeliverable": true,
+              "tasks": [],
+              "posts": [],
+              "description": null
+            }
+          ],
+          "posts": [],
+          "description": null
+        },
+        {
+          "id": "CT19062",
+          "name": "Group 2",
+          "level": 2,
+          "isMilestone": false,
+          "isDeliverable": false,
+          "tasks": [
+            {
+              "id": "CT19075",
+              "name": "Subtask 4",
+              "level": 3,
+              "isMilestone": false,
+              "isDeliverable": false,
+              "tasks": [],
+              "posts": [],
+              "description": null
+            }
+          ],
+          "posts": [],
+          "description": null
+        }
+      ],
+      "posts": [
+        {
+          "id": "CT26667",
+          "name": "Normal Note",
+          "type": null,
+          "url": null,
+          "description": null,
+          "startTime": null,
+          "endTime": null,
+          "finalised": false,
+          "privatePost": false
+        },
+        {
+          "id": "CT19284",
+          "name": "Web Link Post",
+          "type": "Web Link",
+          "url": "www.google.com",
+          "description": null,
+          "startTime": null,
+          "endTime": null,
+          "finalised": false,
+          "privatePost": false
+        },
+        {
+          "id": "CT19262",
+          "name": "Document Link Post",
+          "type": "Document Link",
+          "url": "www.google.com",
+          "description": null,
+          "startTime": null,
+          "endTime": null,
+          "finalised": false,
+          "privatePost": false
+        },
+        {
+          "id": "CT19240",
+          "name": "Meeting Post",
+          "type": "Meeting",
+          "url": null,
+          "description": null,
+          "startTime": null,
+          "endTime": null,
+          "finalised": false,
+          "privatePost": false
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "CT19114",
+      "name": "Phase B",
+      "level": 1,
+      "isMilestone": false,
+      "isDeliverable": false,
+      "tasks": [
+        {
+          "id": "CT19126",
+          "name": "A Milestone",
+          "level": 2,
+          "isMilestone": true,
+          "isDeliverable": false,
+          "tasks": [],
+          "posts": [],
+          "description": null
+        },
+        {
+          "id": "CT19139",
+          "name": "Plain Task",
+          "level": 2,
+          "isMilestone": false,
+          "isDeliverable": false,
+          "tasks": [],
+          "posts": [],
+          "description": null
+        }
+      ],
+      "posts": [],
+      "description": null
+    },
+    {
+      "id": "CT19206",
+      "name": "Phase C",
+      "level": 1,
+      "isMilestone": false,
+      "isDeliverable": false,
+      "tasks": [],
+      "posts": [],
+      "description": null
+    }
+  ],
+  "resources": [
+    {
+      "name": "A Resource",
+      "url": "www.google.com",
+      "image": null
+    }
+  ],
+  "metadata": {
+    "instance": "${DOMAIN}",
+    "schemaVersion": 1,
+    "submitterId": 19,
+    "submissionDate": "2026-04-21T12:39:28.790Z",
+    "submitterOrgId": 16,
+    "submittedTemplateId": 18928,
+    "version": 0
+  }
+}

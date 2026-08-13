@@ -1,0 +1,198 @@
+buildscript {
+    repositories {
+        mavenCentral()
+        maven { url = "https://repo.grails.org/grails/core" }
+        maven { url = "https://build.shibboleth.net/nexus/content/repositories/releases/" }
+    }
+    dependencies {
+        classpath "cloud.wondrify:asset-pipeline-gradle:5.0.19"
+        classpath platform("org.apache.grails:grails-bom:$grailsVersion")
+        classpath "org.apache.grails:grails-data-hibernate5"
+        classpath "org.apache.grails:grails-gradle-plugins"
+    }
+}
+
+version = "0.1"
+group = "server"
+
+apply plugin: "eclipse"
+apply plugin: "idea"
+apply plugin: "war"
+apply plugin: "org.apache.grails.gradle.grails-web"
+apply plugin: "org.apache.grails.gradle.grails-gson"
+apply plugin: "cloud.wondrify.asset-pipeline"
+apply from: "${rootProject.projectDir}/gradle/codenarc.gradle"
+
+repositories {
+    mavenCentral()
+    maven { url = "https://repo.grails.org/grails/core" }
+    maven { url = "https://build.shibboleth.net/nexus/content/repositories/releases/" }
+}
+
+configurations {
+    developmentOnly
+    runtimeClasspath {
+        extendsFrom developmentOnly
+    }
+}
+
+sourceSets {
+    main {
+        resources {
+            srcDir 'grails-app/migrations'
+        }
+    }
+}
+
+dependencies {
+    implementation platform("org.apache.grails:grails-bom:$grailsVersion")
+    implementation platform("software.amazon.awssdk:bom:$awsSdkVersion")
+
+    // Grails core
+    implementation "org.apache.grails:grails-core"
+    implementation "org.apache.grails:grails-url-mappings"
+    implementation "org.apache.grails:grails-interceptors"
+    implementation "org.apache.grails:grails-services"
+    implementation "org.apache.grails:grails-datasource"
+    implementation "org.apache.grails:grails-databinding"
+    implementation "org.apache.grails:grails-web-boot"
+    implementation "org.apache.grails:grails-logging"
+    implementation "org.apache.grails:grails-converters"
+    implementation "org.apache.grails:grails-cache"
+    implementation "org.apache.grails:grails-async"
+    implementation "org.apache.grails:grails-events"
+    implementation "org.apache.grails:grails-rest-transforms"
+    implementation "org.apache.grails:grails-data-hibernate5"
+    implementation("org.apache.grails:grails-data-hibernate5-dbmigration") {
+        exclude group: "org.apache.grails", module: "grails-shell-cli"
+    }
+    implementation "org.apache.grails:grails-views-gson"
+
+    // Spring Boot
+    implementation "org.springframework.boot:spring-boot-autoconfigure"
+    implementation "org.springframework.boot:spring-boot-starter-logging"
+    implementation "org.springframework.boot:spring-boot-starter-tomcat"
+    implementation 'org.springframework.retry:spring-retry:2.0.6'
+    developmentOnly "org.springframework.boot:spring-boot-devtools"
+
+    // Spring Security. These plugins moved into the grails-core build and now
+    // release in lockstep with it, so keep them on $grailsVersion.
+    implementation "org.apache.grails:grails-spring-security:$grailsVersion"
+    implementation "org.apache.grails:grails-spring-security-rest:$grailsVersion"
+    // GORM token storage was split out of the rest plugin in v7 (renamed
+    // "datamapping" under the Apache coordinates). Without it the main plugin
+    // defaults to JWT storage and demands a JWT secret.
+    // Pinned: this module was never re-released past 7.0.2 on the 7.x line
+    // (next published version is 8.0.0-M1), so it cannot track $grailsVersion.
+    implementation 'org.apache.grails:grails-spring-security-rest-datamapping:7.0.2'
+
+    // Asset pipeline (cloud.wondrify coordinates since Grails 7; version managed
+    // by the grails-bom via asset-pipeline-bom).
+    implementation 'cloud.wondrify:asset-pipeline-grails'
+    implementation 'cloud.wondrify:asset-pipeline-core'
+
+    // Audit logging (Grails 7-compatible release)
+    implementation 'org.grails.plugins:audit-logging:6.0.0'
+
+    // Liquibase / Postgres
+    implementation 'org.liquibase:liquibase-core:4.27.0'
+    implementation 'org.postgresql:postgresql:42.7.3'
+    // H2 backs the test datasource and the top-level dataSource default in
+    // application.yml. Version managed by the grails-bom.
+    implementation "com.h2database:h2"
+    implementation "org.apache.tomcat:tomcat-jdbc"
+
+    // Groovy date extension modules, previously pulled in transitively by the AWS SDK v1
+    // deps and silently dropped by the SDK v2 migration. Declared explicitly so they stay
+    // on the classpath:
+    //   groovy-dateutil  -> Date.parse(format, str)            (community/marketplace templates)
+    //   groovy-datetime  -> Date/Timestamp.toLocalDate() etc.  (cost snapshots)
+    implementation 'org.apache.groovy:groovy-dateutil'
+    implementation 'org.apache.groovy:groovy-datetime'
+
+    // Mail / XML
+    implementation 'jakarta.mail:jakarta.mail-api:2.1.3'
+    implementation 'org.eclipse.angus:angus-mail:2.0.3'
+    // Version managed by spring-boot-dependencies; pinning it here downgraded
+    // the api below what jaxb-runtime (via java-saml) asks for.
+    implementation "jakarta.xml.bind:jakarta.xml.bind-api"
+
+    // AWS SDK v2 (used directly via Spring beans defined in resources.groovy).
+    implementation 'software.amazon.awssdk:s3'
+    implementation 'software.amazon.awssdk:ses'
+    implementation 'software.amazon.awssdk:secretsmanager'
+
+    // SAML / SSO / OAuth helpers
+    implementation "com.onelogin:java-saml:2.9.0"
+    implementation 'com.warrenstrange:googleauth:1.5.0'
+    // okta-jwt-verifier-impl brings okta-config-check, okta-commons-lang,
+    // okta-http-api, okta-http-okhttp and okhttp transitively. Declaring those
+    // by hand produced a self-inconsistent set (okta-http-api 2.0.0 wants
+    // okta-commons-lang 2.0.0 but was forced back to 1.3.5) and dragged okhttp
+    // up to a 2022 alpha, so leave them to the resolver.
+    implementation 'com.okta.jwt:okta-jwt-verifier:0.5.9'
+    implementation 'com.okta.jwt:okta-jwt-verifier-impl:0.5.9'
+    implementation 'com.google.api-client:google-api-client:2.6.0'
+
+    // Misc
+    implementation 'org.passay:passay:1.6.4'
+    // EOL commons-lang 2.x, still needed for org.apache.commons.lang.time.DateUtils
+    // in TaskService / TaskUpdateService / TaskConsistencyService. Those three
+    // imports are the only usage; migrating them to commons-lang3 (already on the
+    // classpath at 3.20.0 via the BOM) would let this be dropped.
+    implementation group: 'commons-lang', name: 'commons-lang', version: '2.6'
+    implementation 'builders.dsl:spreadsheet-builder-poi:3.0.1'
+    implementation('builders.dsl:spreadsheet-builder-groovy:3.0.1') {
+        exclude group: 'org.codehaus.groovy', module: 'groovy'
+    }
+    implementation 'org.jsoup:jsoup:1.18.1'
+
+    console "org.apache.grails:grails-console"
+    profile "org.apache.grails.profiles:rest-api:$grailsVersion"
+
+    testImplementation "org.spockframework:spock-core"
+    testImplementation "org.apache.grails:grails-testing-support-datamapping"
+    testImplementation "org.apache.grails:grails-testing-support-web"
+    testImplementation "org.mockito:mockito-core"
+}
+
+compileJava.options.release = 17
+
+tasks.withType(GroovyCompile).configureEach {
+    groovyOptions.fork = true
+    groovyOptions.forkOptions.memoryMaximumSize = '4g'
+    groovyOptions.forkOptions.jvmArgs = ['-XX:MaxMetaspaceSize=1G']
+}
+
+bootRun {
+    jvmArgs(
+            '-Dspring.output.ansi.enabled=always',
+            '-XX:TieredStopAtLevel=1',
+            '-Xmx1024m')
+    sourceResources sourceSets.main
+    // Only forward spring.profiles.active when it is actually set. Passing an
+    // empty -Dspring.profiles.active= makes Grails 7's YamlPropertySourceLoader
+    // document matcher reject every document of application.yml, so the app
+    // boots with no config at all (GORM then falls back to in-memory H2).
+    String springProfilesActive = 'spring.profiles.active'
+    if (System.getProperty(springProfilesActive)) {
+        systemProperty springProfilesActive, System.getProperty(springProfilesActive)
+    }
+}
+
+test {
+    useJUnitPlatform()
+    testLogging {
+        showStandardStreams = true
+    }
+}
+
+bootWar {
+    from(".ebextensions") {
+        into ".ebextensions"
+    }
+    from(".platform") {
+        into ".platform"
+    }
+    archiveFileName = 'juralio.war'
+}

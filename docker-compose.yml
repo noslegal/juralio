@@ -1,0 +1,31 @@
+version: '3.6'
+
+volumes:
+  juralio_server_data: {}
+
+services:
+  server-db:
+    build:
+      context: ./server/database
+    volumes:
+      - juralio_server_data:/var/lib/postgresql/data
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: Postgres123
+
+  server:
+    build:
+      context: ./server
+    environment:
+      JURALIO_VERSION: '111.222-333'
+      DS_HOST: 'server-db'
+      DS_PORT: '5432'
+      DS_DB_NAME: 'juralio'
+      DS_USERNAME: 'juralio'
+      DS_PASSWORD: 'juralio'
+      AWS_SDK_REGION: 'eu-west-2'
+    tty: true
+    depends_on:
+      - server-db
+    links:
+      - server-db

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="theme-color" content="#000000" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="shortcut icon" href="/favicon.png" />
+    <link rel="preconnect" href="https://docs.google.com/" crossorigin />
+    <link rel="dns-prefetch" href="https://docs.google.com/" />
+    <link rel="preconnect" href="https://miro.com/" crossorigin />
+    <link rel="dns-prefetch" href="https://miro.com/" />
+    <link rel="preconnect" href="https://figma.com/" crossorigin />
+    <link rel="dns-prefetch" href="https://figma.com/" />
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <script
+      type="text/javascript"
+      src="https://apis.google.com/js/api.js"
+    ></script>
+    <link rel="apple-touch-icon" href="/favicon.png" />
+
+    <script>
+      try {
+        top.document.domain
+      } catch (e) {
+        var f = function () {
+          document.body.innerHTML = ''
+        }
+        setInterval(f, 1)
+        if (document.body) document.body.onload = f
+      }
+    </script>
+    <!-- <script async src="/webkitcssmatrix.js"></script> -->
+  </head>
+  <body style="height: 100%">
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div
+      id="root"
+      style="
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      "
+    ></div>
+
+    <script>
+      if (!document.getElementById('root').hasChildNodes()) {
+        document.getElementById('root').innerHTML =
+          '<img src="/favicon.png" style="width:128px;height:128px" /><div style="margin-top:16px" >Please wait...</div>'
+      }
+    </script>
+    <div id="portal" />
+    <script type="module" src="/src/index.js"></script>
+  </body>
+</html>

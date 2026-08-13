@@ -1,0 +1,31 @@
+# The frontend image for the default ("fast") mode of ./start.sh: the app is
+# built once at image-build time and served as static files by nginx.
+#
+# Why this exists: in the dev-server mode (Dockerfile.dev) the sources are a
+# bind mount, and on macOS/Windows every file read crosses the container
+# boundary — measured ~3.5x slower, which Vite pays on every module it
+# transforms on demand. Building ahead of time removes both the mount and the
+# on-demand transform, so browsing is quicker than the native dev server. The
+# trade-off is that a code change needs an image rebuild, which is why this is
+# the mode for people running the app rather than working on it.
+FROM node:20-alpine AS build
+
+WORKDIR /usr/src/app
+
+# Dependencies on their own layer so editing code doesn't re-run the install.
+COPY package.json package-lock.json ./
+RUN npm ci
+
+# Everything else the build needs (node_modules is excluded by .dockerignore).
+# A .env.local, if the developer has one, is picked up here and baked into the
+# bundle — that's how the Google Drive picker keys reach the build.
+COPY . .
+RUN npm run build
+
+FROM nginx:alpine AS serve
+LABEL maintainer="Juralio <docker@juralio.com>"
+
+COPY --from=build /usr/src/app/build /usr/share/nginx/html
+COPY nginx.local.conf /etc/nginx/conf.d/default.conf
+
+EXPOSE 3000

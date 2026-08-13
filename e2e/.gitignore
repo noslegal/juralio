@@ -1,0 +1,7 @@
+test-results.*.xml
+
+#cypress
+# run artefacts for every cypress project (desktop, mobile, upload, security, problem)
+**/cypress/screenshots/
+**/cypress/videos/
+**/cypress/downloads/

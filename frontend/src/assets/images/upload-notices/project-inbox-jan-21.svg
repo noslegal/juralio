@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="241px" height="200px" viewBox="0 0 241 200" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>TimelineFTUE5</title>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="240.71362" height="200"></rect>
+        <rect id="path-3" x="0" y="0" width="31.7026736" height="176.234968" rx="4"></rect>
+        <filter x="-41.0%" y="-6.2%" width="182.0%" height="114.8%" filterUnits="objectBoundingBox" id="filter-4">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="4" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.509697334 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <rect id="path-5" x="0" y="0" width="31.7026736" height="176.234968" rx="4"></rect>
+        <filter x="-41.0%" y="-6.2%" width="182.0%" height="114.8%" filterUnits="objectBoundingBox" id="filter-6">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="4" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.284582605 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <polygon id="path-7" points="8 1.33333333 3 13.5266667 3.47333333 14 8 12 12.5266667 14 13 13.5266667"></polygon>
+        <polygon id="path-9" points="8 1.33333333 3 13.5266667 3.47333333 14 8 12 12.5266667 14 13 13.5266667"></polygon>
+    </defs>
+    <g id="Home-page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-1034.000000, -740.000000)">
+            <g id="TimelineFTUE5" transform="translate(1034.000000, 740.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Mask"></g>
+                <g id="Group-6" mask="url(#mask-2)">
+                    <g transform="translate(0.000000, 3.195314)">
+                        <g id="Group-5" transform="translate(0.000000, 0.968824)">
+                            <line x1="0.782044132" y1="63.6355758" x2="91.0302274" y2="63.6355758" id="Line" stroke="#CECECE" stroke-width="2" opacity="0.7" stroke-linecap="square"></line>
+                            <line x1="0.782044132" y1="173.746572" x2="91.0302274" y2="173.746572" id="Line" stroke="#CECECE" stroke-width="2" opacity="0.7" stroke-linecap="square"></line>
+                            <g id="Group-2" transform="translate(18.490515, 0.000000)">
+                                <g id="Group-3" transform="translate(0.990709, 0.000000)">
+                                    <g id="Rectangle">
+                                        <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
+                                        <use fill="#63A6A9" fill-rule="evenodd" xlink:href="#path-3"></use>
+                                    </g>
+                                    <rect id="Rectangle" fill="#FFFFFF" opacity="0.5" x="11.8885026" y="10.6809072" width="7.92566839" height="81.4419173" rx="3.9628342"></rect>
+                                </g>
+                                <g id="Group-3-Copy" transform="translate(48.544719, 12.016021)">
+                                    <g id="Rectangle">
+                                        <use fill="black" fill-opacity="1" filter="url(#filter-6)" xlink:href="#path-5"></use>
+                                        <use fill="#D09B2C" fill-rule="evenodd" xlink:href="#path-5"></use>
+                                    </g>
+                                    <rect id="Rectangle" fill="#FFFFFF" opacity="0.5" x="11.8885026" y="10.6809072" width="7.92566839" height="81.4419173" rx="3.9628342"></rect>
+                                </g>
+                            </g>
+                        </g>
+                        <g id="Group-2" transform="translate(144.282548, 77.752629)">
+                            <rect id="Rectangle" fill="#F1F1EE" x="0.571666264" y="0" width="326.987086" height="61.7760618"></rect>
+                        </g>
+                        <g id="Group-4" transform="translate(145.412757, 4.260418)">
+                            <g transform="translate(0.506562, 0.000000)">
+                                <rect id="Rectangle" stroke="#F1F1EE" stroke-width="4" fill="#FFFFFF" x="2" y="2" width="314.634407" height="56.696033" rx="4"></rect>
+                                <g id="Group-3" transform="translate(7.708897, 11.622645)">
+                                    <rect id="Rectangle" fill="#E1DED8" x="41.114117" y="1.29140496" width="89.937131" height="6.45702479" rx="2"></rect>
+                                    <rect id="Rectangle" fill="#F1F1EE" x="41.114117" y="14.2054545" width="146.469042" height="6.45702479" rx="2"></rect>
+                                    <rect id="Rectangle" fill="#F1F1EE" x="41.114117" y="25.8280992" width="176.019813" height="6.45702479" rx="2"></rect>
+                                    <rect id="Rectangle" fill="#E1DED8" x="0" y="1.29140496" width="28.2659554" height="6.45702479" rx="2"></rect>
+                                </g>
+                            </g>
+                        </g>
+                        <g id="Group-4" transform="translate(142.217443, 153.375050)">
+                            <g transform="translate(0.506562, 0.000000)">
+                                <rect id="Rectangle" stroke="#F1F1EE" stroke-width="4" fill="#FFFFFF" x="2" y="2" width="314.634407" height="55.6311903" rx="4"></rect>
+                                <g id="Group-3" transform="translate(7.708897, 11.418739)">
+                                    <rect id="Rectangle" fill="#E1DED8" x="41.114117" y="1.26874873" width="89.937131" height="6.34374365" rx="2"></rect>
+                                    <rect id="Rectangle" fill="#F1F1EE" x="41.114117" y="13.956236" width="146.469042" height="6.34374365" rx="2"></rect>
+                                    <rect id="Rectangle" fill="#F1F1EE" x="41.114117" y="25.3749746" width="176.019813" height="6.34374365" rx="2"></rect>
+                                    <rect id="Rectangle" fill="#E1DED8" x="0" y="1.26874873" width="28.2659554" height="6.34374365" rx="2"></rect>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+                <g id="Group" mask="url(#mask-2)">
+                    <g transform="translate(161.000000, 88.924511)" id="ic_navigation">
+                        <mask id="mask-8" fill="white">
+                            <use xlink:href="#path-7"></use>
+                        </mask>
+                        <g id="Mask"></g>
+                        <g id="Group" mask="url(#mask-8)">
+                            <g transform="translate(-8.666667, -8.666667)" id="🎨-Color">
+                                <path d="M0,0 L33.3333333,0 L33.3333333,33.3333333 L0,33.3333333 L0,0 Z" id="Colors/Juralio-Teal" fill="#63A6A9"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+                <g id="Group" mask="url(#mask-2)">
+                    <g transform="translate(161.000000, 116.617228)" id="ic_navigation">
+                        <g transform="translate(8.000000, 8.000000) scale(1, -1) translate(-8.000000, -8.000000) ">
+                            <mask id="mask-10" fill="white">
+                                <use xlink:href="#path-9"></use>
+                            </mask>
+                            <g id="Mask"></g>
+                            <g id="Group" mask="url(#mask-10)">
+                                <g transform="translate(-8.666667, -8.666667)" id="🎨-Color">
+                                    <path d="M0,0 L33.3333333,0 L33.3333333,33.3333333 L0,33.3333333 L0,0 Z" id="Colors/Juralio-Maroon" fill="#D86B5A"></path>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

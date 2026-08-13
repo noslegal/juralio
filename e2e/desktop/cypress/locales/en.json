@@ -1,0 +1,2358 @@
+{
+  "UserListItem": {
+    "Inactive": "Inactive",
+    "NotMTM": "Not in this matter"
+  },
+  "accountSecurity": {
+    "convertJuralioUser": "Please confirm that you want to convert this user to use Juralio authentication.",
+    "convertMicrosoftUser": "Please confirm that you want to convert this user to use Microsoft authentication (SSO).",
+    "convertOktaUser": "Please confirm that you want to convert this user to use Okta authentication (SSO).",
+    "convertSamlUser": "Please confirm that you want to convert this user to use SAML authentication (SSO).",
+    "convertToJuralio": "Convert to Juralio authentication",
+    "convertToMicrosoft": "Convert to Microsoft authentication (SSO)",
+    "convertToOkta": "Convert to Okta authentication (SSO)",
+    "convertToSaml": "Convert to SAML authentication (SSO)",
+    "resetPassword": "Reset password",
+    "title": "Authentication method",
+    "userConverted": "User successfully converted"
+  },
+  "addUsersDialog": {
+    "action": "Add",
+    "dialogTitle": "Add someone",
+    "loadingText": "Adding user to matter",
+    "loadingText_other": "Adding users to matter",
+    "loadingUsers": "Loading users",
+    "noOptions": "There’s nobody available to add",
+    "subtitle": "Start typing a name to add them to your matter",
+    "title": "Add users"
+  },
+  "archiveHeaders": {
+    "headerAction": "Action",
+    "headerAllTasksMilestones": "All / tasks / milestones",
+    "headerArchivedBy": "By",
+    "headerArchivedOn": "Archived on",
+    "headerPost": "Post",
+    "headerSubtask": "Subtasks",
+    "headerTask": "Task or milestone",
+    "headerTaskNumber": "Task Number"
+  },
+  "auth": {
+    "external": "External",
+    "internal": "Internal"
+  },
+  "authorsPanel": {
+    "authorSearchPlaceholder": "Add post editor...",
+    "meetingAttendeeSearchPlaceholder": "Add attendee...",
+    "meetingTitle": "People",
+    "memberPlaceholder": "Add a Juralio user...",
+    "memberTitle": "People at the meeting",
+    "title": "Post Editors"
+  },
+  "common": {
+    "active": "Active",
+    "add": "Add",
+    "addATask": "Add a Task",
+    "back": "Back",
+    "by": "By",
+    "cancel": "Cancel",
+    "chooseADestination": "Choose a destination",
+    "chooseAWorkstream": "Choose a workstream",
+    "clear": "Clear",
+    "clipboardCopied": "Copied to clipboard",
+    "clipboardCopy": "Copy to clipboard",
+    "close": "Close",
+    "closed": "Closed",
+    "closedBy": "Closed by",
+    "collapseAll": "Collapse All",
+    "confirm": "Confirm",
+    "content": "Content",
+    "continue": "Continue",
+    "copy": "Copy",
+    "create": "Create",
+    "created": "Created",
+    "createdBy": "Created by",
+    "dates": {
+      "currentMonth": "Current month"
+    },
+    "delete": "Delete",
+    "description": "Description",
+    "disable": "Disable",
+    "download": "Download",
+    "edit": "Edit",
+    "editDescription": "Edit description",
+    "email": "Email",
+    "enable": "Enable",
+    "expandAll": " Expand All",
+    "finalise": "Finalise",
+    "from": "from",
+    "in": "in",
+    "inactive": "Inactive",
+    "juralioMatter": "Juralio matter",
+    "lastUpdated": "Last updated",
+    "loading": "Loading",
+    "meeting": "Meeting",
+    "move": "Move",
+    "name": "Name",
+    "new": "New",
+    "next": "Next",
+    "no": "No",
+    "noOptions": "No options",
+    "noRecordsInTable": "No items.",
+    "noSearchResults": "No search results found",
+    "none": "None",
+    "on": "on",
+    "onlineNow": "Online now",
+    "open": "open",
+    "options": "Options",
+    "organisation": "Organisation",
+    "people": "People",
+    "person": "Person",
+    "plan": "Plan: ",
+    "post": "Post",
+    "posts": "Posts",
+    "preview": "Preview",
+    "private": "private",
+    "proceed": "Proceed",
+    "progress": "Progress",
+    "progressOverview": "Progress overview",
+    "project": "Workstream",
+    "refresh": "refresh",
+    "remove": "Remove",
+    "resource": "Resource",
+    "resources": "Resources",
+    "role": "Role",
+    "save": "Save",
+    "saved": "Saved",
+    "searchForSomeone": "Search for someone",
+    "seeLess": "See less",
+    "seeMore": "See more",
+    "status": "Status",
+    "systemAdministrator": "System Administrator",
+    "task": "Task",
+    "taskOrMilestone": "Task or milestone",
+    "taskmap": "taskmap",
+    "tasks": "Tasks",
+    "team": "Team",
+    "template": "Template",
+    "to": "to",
+    "today": "Today",
+    "yes": "Yes"
+  },
+  "commonValidationMessages": {
+    "levelATaskLimit": "A workstream cannot have more than {{limit}} level A tasks.",
+    "levelATaskLimitTemplate": "A template cannot have more than {{limit}} level A tasks.",
+    "requiredEmailField": "A valid e-mail address is required",
+    "requiredField": "This field is required",
+    "somethingWentWrong": "Something went wrong. Click here to refresh the page.",
+    "taskLevelLimit": "Tasks cannot have more than {{limit}} levels.",
+    "taskSubtaskLimit": "Tasks cannot have more than {{limit}} subtasks.",
+    "unknownError": "Unknown error.",
+    "validHttpUrl": "A valid https:// URL or iManage link is required"
+  },
+  "copyTaskDialog": {
+    "anotherTemplate": "Another template",
+    "chooseATemplate": "Choose a template",
+    "copyTask": "Copy task: {{taskName}}",
+    "copyTaskTo": "Copy task to",
+    "descriptionForTemplateTaskWithSubtasks": "Only subtasks, not posts, will be copied.",
+    "descriptionForTemplateTaskWithoutSubtasks": "Posts will not be copied.",
+    "descriptionWithSubtasks": "Subtasks and planned dates will be copied, but posts and team won’t be copied",
+    "descriptionWithoutSubtasks": "Planned dates will be copied. Actual dates, posts and team won’t be copied.",
+    "enterNewTaskName": "Enter name of new task",
+    "here": "Here",
+    "loadingText": "Copying tasks",
+    "taskCopied": "Task copied.",
+    "templateCopyLevelAValidationMessage": "This task cannot be copied because there are already {{maxLevelACount}} level A tasks",
+    "templateCopyMaxValidationMessage": "Templates cannot have more than {{maxLevelACount}} level A tasks.",
+    "templateCopySubtaskValidationMessage": "This task cannot be copied because its parent already has {{maxLevelACount}} subtasks"
+  },
+  "createLinkFlow": {
+    "addLinkUrl": "Add link Url",
+    "chooseALinkDestination": "Choose a destination for your new link",
+    "chooseYourLinkType": "Choose your link type",
+    "createNewLink": "Create new link",
+    "createNewTemplateLink": "Create new template link",
+    "creatingLoadingText": "Creating {{type}}",
+    "linkTypes": {
+      "email": "Email",
+      "excel": "Spreadsheet (e.g. Excel)",
+      "other": "Other",
+      "pdf": "PDF",
+      "ppt": "Slide deck (e.g. Powerpoint)",
+      "word": "Text doc (e.g. Word)"
+    },
+    "nameYourLink": "Name your link",
+    "nameYourNewLink": "Name your new link",
+    "withinJUR": "within"
+  },
+  "createNoteFlow": {
+    "addUrl": "Type or paste the link URL here",
+    "asPostOf": "As a post of",
+    "blankNote": "Blank note",
+    "chooseANoteDestination": "Choose a destination for your new note",
+    "chooseNoteType": "Choose note type",
+    "createANew": "Create a new {{type}}",
+    "createNewNote": "Create new note",
+    "createNewTemplateNote": "Create new template note",
+    "creatingLoadingText": "Creating {{type}}",
+    "googleDriveErrorTips": "Ensure your cookie policy allows cookies from:\n\r accounts.google.com\ndocs.google.com\ndrive.google.com\nIf the problem persists, contact your administrator",
+    "meetingNote": "Meeting note",
+    "miroDriveReminder": "Paste a Miro, Figma or Google Drive link to interact within Juralio",
+    "nameYourNewNote": "Name your new note",
+    "nameYourNote": "Name your note",
+    "noteType": "Note type",
+    "unableToAccessGoogleDrive": "Unable to access Google Drive at this time",
+    "whatDoYouWantToCallThis": "What do you want to call this {{type}}?",
+    "whatDoYouWantToCallThisDocument": "What is the document called that you are linking to?"
+  },
+  "createResource": {
+    "addLink": "Add link to a resource",
+    "addUrl": "Type or paste the url here"
+  },
+  "desktop": {
+    "zeroState": {
+      "learn": "Learn more about Juralio roles",
+      "matterCreatorSubtitle": "To get started, create a matter using the ⊕ button",
+      "notMatterEditor": "You are not a matter editor or viewer on any active matter or workstream",
+      "subtitle": "You haven't been assigned to any matters yet. Ask someone to add you!",
+      "title": "Welcome to Juralio!"
+    }
+  },
+  "destinationDialog": {
+    "validation": {
+      "levelALimit": "Workstreams cannot have more than {{limit}} level A tasks."
+    }
+  },
+  "detailedView": {
+    "compactDescription": "Show task name, number and status",
+    "compactTitle": "Compact",
+    "detailedDescription": "Also show workflow labels and hashtags",
+    "detailedTitle": "Detailed",
+    "showRisk": "Also show risks",
+    "standardDescription": "Also show team, dates and post count",
+    "standardTitle": "Standard"
+  },
+  "editTaskLink": {
+    "dialogHeader": "Linked sibling task dates",
+    "dialogSubHeader1": "The dates of sibling tasks",
+    "dialogSubHeader2": "which haven’t yet been done can be linked. Adjusting a planned date in a task adjusts its linked siblings' equivalent date by the same number of days.",
+    "dialogTooltip": "'Siblings' are tasks which share the same parent task. Level A tasks are also each other’s siblings.",
+    "linkAll": "Link All",
+    "unlinkAll": "Unlink All"
+  },
+  "entity": {
+    "admin": "Admin",
+    "admins": "Admins",
+    "anybody": "Anybody",
+    "author": "Author",
+    "client": "Client",
+    "currentUser": "You",
+    "documentLink": "Document link",
+    "editor": "Editor",
+    "editors": "Editors",
+    "email": "Email",
+    "everyone": "Everyone",
+    "excelSheet": "Excel Sheet",
+    "image": "Image",
+    "labels": "Labels",
+    "link": "Link",
+    "matter": "Matter",
+    "matterNumber": "Matter number",
+    "matters": "Matters",
+    "meeting": "Meeting",
+    "meetingNote": "Meeting note",
+    "member": "Member",
+    "messages": {
+      "linkSuccessfullyCreated": "Link successfully created",
+      "successfullyArchived": "Selected post successfully archived",
+      "successfullyCreated": "{{type}} successfully created",
+      "successfullyDeleted": "Selected post successfully deleted"
+    },
+    "milestone": "Milestone",
+    "milestones": "Milestones",
+    "name": "Name",
+    "note": "Note",
+    "organisation": "Organisation",
+    "organisation_other": "Organisations",
+    "pdf": "PDF",
+    "people": "People",
+    "post": "Post",
+    "post_other": "Posts",
+    "postsInThisMilestone": "Posts in this milestone",
+    "postsInThisTask": "Posts in this task",
+    "powerpointDeck": "Powerpoint Deck",
+    "project": "Workstream",
+    "projects": "Workstreams",
+    "roadmap": "Roadmap",
+    "role": "Role",
+    "subtask": "Subtask",
+    "subtask_other": "Subtasks",
+    "task": "Task",
+    "task_other": "Tasks",
+    "task_post_other": "Task posts",
+    "taskmap": "Taskmap",
+    "team": "Team",
+    "teamMember": "Member",
+    "teamMembers": "Members",
+    "template": "Templates",
+    "templates": "Templates",
+    "user": "User",
+    "user_other": "Users",
+    "video": "Video",
+    "viewer": "Viewer",
+    "viewers": "Viewers",
+    "webLink": "Web link",
+    "wordDoc": "Word Document",
+    "workstream": "Workstream",
+    "workstreamNumber": "Workstream number",
+    "workstreams": "Workstreams"
+  },
+  "export": {
+    "exportMatter": "Download matter as .xlsx"
+  },
+  "exports": {
+    "activeUsers": {
+      "activated": "Activated",
+      "activePartOfMonth": "Active part Of month",
+      "activeWholeOfMonth": "Active whole of month",
+      "deactivated": "Deactivated",
+      "name": "Active Users"
+    },
+    "common": {
+      "completed": "completed",
+      "created": "Created",
+      "downloadedBy": "Downloaded by",
+      "exported": "Exported",
+      "noCompletedTasks": "No completed tasks",
+      "noInProgressTasks": "No in progress tasks",
+      "noNotStartedTasks": "No not started tasks",
+      "of": "of",
+      "oneTaskInTotal": "One task in total",
+      "preparingYourDownload": "Preparing your download...",
+      "privilegedAndConfidential": "Privileged & Confidential",
+      "projectSummary": "Workstream summary",
+      "roadmap": "Roadmap",
+      "taskList": "Task list",
+      "tasksInTotal": "tasks in total",
+      "team": "Team",
+      "templateReferenceNumber": "Template Reference Number",
+      "templateTaskList": "Template task list",
+      "totalTasks": "total tasks"
+    },
+    "posts": {
+      "dialog": {
+        "paperSize": "Format post for printing to"
+      },
+      "tableHeadings": {
+        "attendees": "Attendees",
+        "authors": "Author(s)",
+        "dataAndTime": "Date and time",
+        "draftOrFinal": "Draft",
+        "draftOrFinal_finalised": "Final",
+        "link": "Link",
+        "link_private": "Private Link",
+        "link_public": "Link",
+        "meetingNoteDetails": "Meeting note details",
+        "meeting_note_private": "Private Meeting note",
+        "meeting_note_public": "Meeting note",
+        "note_private": "Private Note",
+        "note_public": "Note",
+        "notes": "Notes",
+        "postDetails": "Post details",
+        "task": "Task"
+      }
+    },
+    "reportDownload": {
+      "footer": {
+        "exportedFrom": "Exported from Juralio on {{date}}"
+      },
+      "post": {
+        "NotelastEdited": "Note last edited on ",
+        "areEditors": " are editors or viewers of this post.",
+        "attendedBy": "Attended By ",
+        "finalised": "Finalised",
+        "finalisedOn": "Note finalised on ",
+        "from": " from ",
+        "iframe": "This export does not include the content displayed at the link. Visit {{url}} to see that content.",
+        "isEditor": " is an editor or viewer of this post.",
+        "lastEdited": "Last edited",
+        "meetingOn": "Note of meeting on",
+        "noDescription": "This link does not contain a description, visit {{url}} to see its content.",
+        "to": " to "
+      },
+      "projectTaskList": {
+        "confirmation": {
+          "A4": "A4",
+          "header": "Workstream download",
+          "headerMatter": "Matter download",
+          "letter": "Letter U.S.",
+          "levels": "Select which levels you would like to include",
+          "printType": "Format Excel for printing to",
+          "roadmap": "Roadmap",
+          "sheets": "Select which sheets you would like to include in the Excel file",
+          "tasks": "Tasks",
+          "team": "Team"
+        }
+      },
+      "taskDetails": {
+        "dueToBeFinished": " is due to be finished by ",
+        "dueToStart": " is due to start ",
+        "finishedOn": " finished on ",
+        "includePosts": "Include list of posts",
+        "noAssignees": "Nobody has been assigned responsibility for this task.",
+        "noDates": "This task has no dates yet",
+        "noPosts": "This task has no posts",
+        "paperFormat": " Format task for printing to",
+        "taskDownload": "Task download: {{name}}",
+        "thisTask": "This task",
+        "wasStartedOn": " was started on "
+      },
+      "templateTaskList": {
+        "confirmation": {
+          "header": "Template download"
+        }
+      }
+    },
+    "roadmap": {
+      "andMore": "and {{count}} others",
+      "dates": {
+        "noDates": "No dates have been set",
+        "noEnd": "No planned end date",
+        "noStart": "No planned start date"
+      },
+      "level": "Level",
+      "taskOrMilestone": "Task / Milestone (◆)",
+      "tasksInTotal": "Tasks in total"
+    },
+    "tableHeadings": {
+      "completedOrDue": "Completed or due",
+      "completion": "Completion",
+      "lastUpdated": "Last updated",
+      "levelTaskId": "Level / ID",
+      "milestone": "Milestone",
+      "name": "Name",
+      "status": "Status",
+      "taskId": "Task ID",
+      "taskName": "Task name",
+      "type": "Type"
+    },
+    "taskDetails": {
+      "dates": {
+        "completed": "Completed",
+        "dueToEnd": "Due to end",
+        "startedOn": "Started on",
+        "startingOn": "Starting on"
+      },
+      "posts": {
+        "by": "by"
+      }
+    },
+    "team": {
+      "matterTeam": "Matter team",
+      "name": "Name",
+      "none": "None",
+      "role": "Role",
+      "tasksInProgress": "Tasks in progress on this {{content}}"
+    }
+  },
+  "fabItems": {
+    "aNoteBlank": "Note (blank)",
+    "documentLink": "Document link",
+    "fabLabel": "New",
+    "link": "Link",
+    "matter": "Matter",
+    "meetingNote": "Meeting note",
+    "milestone": "Milestone",
+    "note": "Note",
+    "organisation": "Organisation",
+    "post": "Post",
+    "project": "Workstream",
+    "task": "Task",
+    "template": "Template",
+    "user": "User",
+    "webLink": "Web link"
+  },
+  "filter": {
+    "All": "All",
+    "all": "All tasks",
+    "allRequired": "All required tasks",
+    "hiddenStatusSnackbar": "Task status changed. {{Status}} tasks are currently hidden. Use the status filter to change what tasks are displayed",
+    "highlightFilter": "Highlight",
+    "in-progress": "In progress tasks",
+    "incomplete": "Incomplete tasks",
+    "resetFilters": "Reset Filters",
+    "selected": "Selected tasks",
+    "showFilter": "Show: ",
+    "status": "Status",
+    "unassignedTasks": "Unassigned tasks",
+    "unassignedTasksDescription": "Show all tasks without team members",
+    "yourTasks": "Your tasks",
+    "yourTasksDescription": "Highlight tasks you are responsible for or follow"
+  },
+  "ftue": {
+    "buttons": {
+      "back": "BACK",
+      "finish": "Finish",
+      "finishLater": "Finish later",
+      "next": "NEXT",
+      "skip": "SKIP",
+      "skipCompletely": "Skip completely"
+    },
+    "globalInbox": {
+      "gettingStarted": "Getting started",
+      "gettingStartedSubtitle": "To begin, we’ll start with your new Juralio inbox. Inbox has three key areas [1] Right here, right now [2] To date [3] To do",
+      "rightHereRightNow": "Right here, right now",
+      "rightHereRightNowSubtitle": "This is the central point of your inbox. Past activity appears above the bar and future work is below.",
+      "toDate": "To date",
+      "toDateSubtitle": "Above the bar is a stream of activity on your matters e.g., creation of new content or change of task status.",
+      "todo": "To do",
+      "todoSubtitle": "Any tasks due to be finished within the next 30 days on your matters will appear here.",
+      "welcome": "Welcome to Juralio",
+      "welcomeSubtitle": "Juralio is your central hub for handling legal matters. With the goal of making your life better."
+    },
+    "home": {
+      "createContent": "Create content",
+      "createContentSubtitleMatterCreator": "Add content using the <b>add</b> button. Create <b>matters, tasks, milestones</b> and posts. <b>Posts</b> include notes and links to documents stored on other systems.",
+      "createContentSubtitleMatterEditor": "Add content using the <b>add</b> button. Create tasks, milestones and posts within matters. <b>Posts</b> include notes and links to documents stored on other systems.",
+      "helpAndGuides": "Help and guides",
+      "helpAndGuidesSubtitle": "More questions? Read through our help guides. You can also reset this tutorial from your personal settings.",
+      "howItWorks": "How it works",
+      "howItWorksSubtitle": "Work in Juralio is expressed as matters. These contain tasks.",
+      "noName": "What's your name?",
+      "recentlyViewed": "Recently viewed",
+      "recentlyViewedSubtitle": "On the left, you’ll see a <b>To-do list</b>. There’s also a <b>Recently viewed</b> list to help you quickly go back to matters and tasks.",
+      "settings": "Settings",
+      "settingsSubtitle": "Visit your personal settings to change your account details, avatar and more.",
+      "switcher": "Switcher",
+      "switcherSubtitle": "The <b>switcher</b> is a quick way to navigate to your matters. Larger matters can be split into workstreams by the matter administrator.",
+      "templates": "Templates",
+      "templatesSubtitle": "From the switcher, you can also find <b>templates</b>. These help you get started quickly with ready made work plans.",
+      "welcome": "Welcome to Juralio",
+      "welcomeSubtitle": "<b>Welcome to Juralio!</b><br/> Are you ready to map your work and get things done more effectively? Let’s get you started with some basics."
+    },
+    "orgAdmin": {
+      "adjustLabels": "Adjust labels",
+      "adjustLabelsSubtitle": "Disable Juralio standard labels for your organisation and create organisation-specific labels",
+      "administerMatters": "Administer matters",
+      "administerMattersSubtitle": "See a list of matters in the organisation. Manage matter access and workstream status.",
+      "controlSecurity": "Control Security",
+      "controlSecuritySubtitle": "In the security section, you can enable or disable multi-factor authentication for the entire organisation.",
+      "documentSystems": "Integrate document systems",
+      "documentSystemsSubtitle": "Turn on document system browsing within this organisation",
+      "getStarted": "Get started with organisation admin",
+      "getStartedSubtitle": "Org admin lets you manage the users in your organisation as well as control your organisation’s security.",
+      "manageYourUsers": "Manage your users",
+      "manageYourUsersSubtitle": "In the users section, you can add, remove and manage users as well as reset users’ passwords and set individual MFA settings."
+    },
+    "roadmap": {
+      "expandSubtasks": "Click to expand subtasks",
+      "expandSubtasksSubtitle": "Clicking below any task will display its subtasks. Clicking again will hide them",
+      "gettingStarted": "Get started with Roadmap!",
+      "gettingStartedSubtitle": "Roadmap visualises task status, dates and durations. ",
+      "overdueDates": "Overdue dates",
+      "overdueDatesSubtitle": "The pins at the bottom of taskcards show start and end dates. Planned dates are red if overdue."
+    },
+    "taskmap": {
+      "getStarted": "Get started with taskmap",
+      "getStartedSubtitle": "All the tasks within a workstream can be viewed in the workstream's taskmap. This gives you an overview of the structure, size and status of the workstream.",
+      "levelATasks": "Level A tasks",
+      "levelATasksSubtitle": "Level A tasks commonly represent phases of a workstream. To help you distinguish between phases, there is a wider space between the subtasks of each level A task.",
+      "structure": "Taskmap structure",
+      "structureSubtitle": "Tasks can be organised in up to six levels from  A to F. Level B tasks are subtasks of level A tasks and so on.",
+      "workflowStatus": "Task workflow status",
+      "workflowStatusSubtitle": "Task colours show their status - not started (yellow), in progress (amber) or done (teal)."
+    },
+    "timeline": {
+      "drilling": "Drilling down and up",
+      "drillingSubtitle": "Selecting a subtask will take your view down a level. Selecting the back button will take you up a level. As you drill down, the inbox will be filtered to cover just the current parent task and its subtasks.",
+      "gettingStarted": "Get started with Inbox!",
+      "gettingStartedSubtitle": "Inbox lets you see notifications and to-dos for the entire workstream as well as visualisation of tasks and their durations"
+    }
+  },
+  "globalHeader": {
+    "orgAdminCaption": "Administer your organisation and team"
+  },
+  "help": {
+    "managingTasksLinkText": "managing tasks in our experience centre",
+    "maxNumberOfTasksAdvisory": "Maximum number of subtasks reached. Learn more about "
+  },
+  "home": {
+    "tabs": {
+      "recentlyViewed": "RECENTLY VIEWED",
+      "todo": "TO-DOS"
+    }
+  },
+  "inbox": {
+    "chooseUserPlaceholder": "Search for someone",
+    "globalTitle": "Your Inbox",
+    "personFilterLabel": "Inbox View",
+    "projectTitle": "Workstream Inbox",
+    "showAllTasksWithoutTeamMembers": "Show all tasks without team members",
+    "taskTitle": "Task Inbox",
+    "toDate": {
+      "nothingToReport": "Nothing to report!"
+    },
+    "todoList": {
+      "noDeadlines": "You don't have any upcoming deadlines on your Juralio tasks",
+      "nothingToReport": "Nothing upcoming",
+      "nothingUpcomingForThisUser": "Nothing upcoming for this user"
+    },
+    "unassignedProjectTasksTitle": "Unassigned Workstream Tasks",
+    "unassignedTaskTitle": "Unassigned Task Inbox",
+    "userProjectTitle": "{{firstname}}'s Workstream Inbox",
+    "userTaskTitle": "{{firstname}}'s Task Inbox",
+    "yourProjectTitle": "Your Workstream Inbox",
+    "yourTaskTitle": "Your Task Inbox",
+    "zeroState": {
+      "globalInbox": {
+        "you": {
+          "toDate": "Activity by other people will appear here if likely to be of interest to you (e.g. on tasks you’re a member of or are following)",
+          "toDo": "Tasks from all your matters will appear here if you’re a team member on them and they’re due to be completed"
+        }
+      },
+      "projectInbox": {
+        "anybody": {
+          "toDate": "Activity on this workstream’s tasks will appear here",
+          "toDo": "This workstream’s tasks due to be completed"
+        },
+        "namedUser": {
+          "toDate": "Activity on this workstream’s tasks will appear here if this user is a member of the task in question",
+          "toDo": "This workstream’s tasks will appear here if this user is a task team member and the tasks are due to be completed within the next 30 days"
+        },
+        "taskMarkedAs": "marked as {{newStatus}}",
+        "unassigned": {
+          "toDate": "Activity on this workstream’s tasks which lack team members will appear here",
+          "toDo": "This workstream’s tasks will appear here if they lack a task team member and are due to be completed"
+        },
+        "you": {
+          "toDate": "Activity on this workstream’s tasks will appear here if you’re a task team member of, or are following, the task in question",
+          "toDo": "This workstream’s tasks will appear here if you’re a task team member and the tasks are due to be completed within the next 30 days"
+        }
+      },
+      "projectInboxTaskFocussed": {
+        "anybody": {
+          "toDate": "Activity on this task and its subtasks will appear here",
+          "toDo": "If this task or its subtasks are due to be completed, they will appear here "
+        },
+        "namedUser": {
+          "toDate": "Activity on this task and its subtasks will appear here if this user is a task team member of the task in question",
+          "toDo": "This task and its subtasks will appear here if this user is a task team member and the tasks are due to be completed within the next 30 days"
+        },
+        "unassigned": {
+          "toDate": "Activity on this task and its subtasks which lack team members will appear here",
+          "toDo": "This task and its subtasks will appear here if they lack a task team member and are due to be completed within 30 days"
+        },
+        "you": {
+          "toDate": "Activity on this task and its subtasks will appear here if you’re a task team member of, or are following, the task in question",
+          "toDo": "This task and its subtasks appear here if you’re a task team member and the tasks are due to be completed within the next 30 days"
+        }
+      }
+    }
+  },
+  "inboxZeroState": {
+    "imageAlt": "Zero State Graphic",
+    "title": "Nothing to report!"
+  },
+  "labels": {
+    "actions": {
+      "removedFromTasks": "This label has been removed from tasks in this matter"
+    },
+    "add": "Add label",
+    "addHashtask": "Add \"#{{name}}\" hashtag",
+    "addZeroState": "No existing labels. Start typing to create a new one",
+    "advice": {
+      "addLabelTooltip": "Pre-defined labels are available for adding nuance to workflow and flagging risks. You can also create your own hashtags for other purposes.",
+      "availability": "This label is available in any matter, irrespective of when the matter was created.",
+      "noMoreMatterLabel": "No more labels can be created in this matter as the label limit has been reached.",
+      "startTypingToAddHashTagLabel": "Start typing to add hashtag label"
+    },
+    "buttons": {
+      "addRiskLabel": "Add Risk Label",
+      "addUserDefinedLabel": "Add Hashtag",
+      "addWorkflowLabel": "Add Workflow Label"
+    },
+    "common": {
+      "addPlaceholderText": "Enter label name"
+    },
+    "confirmDelete": {
+      "header": "Delete label: ",
+      "promptText_matter": "Are you sure you want to permanently delete this label from this matter? It will continue to be used in tasks it is assigned to, but will not be available to add to new tasks.",
+      "promptText_org": "Are you sure you want to permanently delete this label? It will continue to be used in tasks it is assigned to, but will not be available to add to new tasks."
+    },
+    "confirmation": {
+      "disablePrompt": "If you disable this label, it will still be attached to tasks it has been assigned to.",
+      "enablePrompt": "If you enable this label and later disable it, it will remain attached to tasks to which it was assigned between the times of enabling and disabling.",
+      "titleDisable": "Disable {{label}}",
+      "titleEnable": "Enable {{label}}"
+    },
+    "disabled": "Disabled",
+    "disabledExplanation": "This label is not available to add to tasks. It remains on tasks to which it was added before it was disabled.",
+    "disabledExplanationInTask": "{{labels}} has been disabled for this matter by a matter admin. If you remove it from this task, you won’t be able to add it back again.",
+    "disabledExplanationInTask_other": "{{labels}} have been disabled for this matter by a matter admin. If you remove one from this task, you won’t be able to add it back again.",
+    "disabledExplanation_orgContext": "This label is not available on matters created after it was disabled. It remains available on matters created prior to that time unless the matter admin has disabled it.",
+    "disabledSince": "Disabled since {{date}}",
+    "enabled": "Enabled",
+    "errors": {
+      "invalidUserDefinedLabel": "Hashtags can only contain letters, numbers and underscores without spaces and may not start with a number",
+      "labelAlreadyAssigned": "\"#{{name}}\" already added to this task",
+      "labelAlreadyExists": "Label name is already in use"
+    },
+    "hashtags": "Hashtags",
+    "headers": {
+      "organisatonLabels": "Labels in this organisation",
+      "standardLabels": "Standard Juralio Labels"
+    },
+    "modifiers": {
+      "amber": "Amber",
+      "green": "Green",
+      "red": "Red"
+    },
+    "risks": "Risks",
+    "search": "Search for a label",
+    "taskCount": {
+      "taskPlural": "tasks",
+      "taskSingular": "task",
+      "usedIn": "Used in"
+    },
+    "usage": {
+      "dialogTitle": "Label Usage: ",
+      "removeLabelFromAllTasks": "Remove label from all tasks",
+      "removeSubtitle": "Proceeding will permanently remove this label from all tasks in this matter",
+      "removeTitle": "Remove label from tasks: ",
+      "usedInTaskCount": "Used in {{count}} task",
+      "usedInTaskCount_plural": "Used in {{count}} tasks"
+    },
+    "workflow": "Workflow",
+    "workflows": "Workflows",
+    "zeroStates": {
+      "filter": "No labels are currently added to tasks in this workstream",
+      "noLabelsToShow": "There are no labels or hashtags to show",
+      "organisationRisks": "You have no bespoke risk labels in this organisation.",
+      "organisationWorkflow": "You have no bespoke workflow labels in this organisation."
+    }
+  },
+  "login": {
+    "authenticatingWithMicrosoft": "Authenticating with Microsoft",
+    "authenticatingWithOkta": "Authenticating with Okta",
+    "authenticatingWithSaml": "Authenticating with SAML",
+    "expiredPassword": "Your password has expired and must be changed",
+    "incorrectAuthenticationCode": "Incorrect authentication code",
+    "incorrectCredentials": "Incorrect username / password",
+    "locked": "Too many failed login attempts.\nPlease try again after 10 minutes",
+    "newPasswordMatchesOldPassword": "Cannot be same as current password",
+    "newPasswordsDoNotMatch": "Passwords do not match",
+    "noOrganisation": "This account is not associated with an organisation. Please contact your organisation administrator.",
+    "noPassword": "Password is required",
+    "noUsername": "Username is required",
+    "noUsernameAndPassword": "Username and Password required",
+    "oldPasswordIncorrect": "Current password incorrect",
+    "pageTitle": "Login",
+    "passwordComplexityNotMet": "Passwords must have at least 8 characters and contain at least two of the following: upper case letters, lower case letters, numbers and symbols.",
+    "signIn": "Sign In",
+    "signInWithMicrosoft": "Sign in with Microsoft",
+    "userLocked": "User is currently locked"
+  },
+  "matter": {
+    "overview": {
+      "deleteMatterResource": "Delete this matter resource",
+      "deleteMatterResourceConfirmText": "Deleting this matter resource will permanently remove it. Are you sure you wish to continue?",
+      "linkResourceCreatedBy": "{{link_name}} added by {{username}} on {{creation_date}}",
+      "linkResourceMaxCountReached": "Maximum number of links added",
+      "linkResourceViewOnly": "Only matter editors may add resources",
+      "matterContent": "Matter content",
+      "matterLevel": "Matter level",
+      "matterProgress": "Matter progress",
+      "matterResourceZeroState": "Add links to document workspaces or other useful resources outside Juralio",
+      "matterResources": "Matter resources",
+      "peopleInThisMatter": "People in this matter",
+      "peopleZeroStateMessage": "Nobody has been assigned tasks on this matter yet.",
+      "projectOverviewZeroState": "Create a level A task",
+      "roadmap": {
+        "multipleWorkstreamsTitle": "active workstreams in this matter",
+        "noTasks": "There are no tasks on this matter",
+        "singleWorkstreamTitle": "tasks in this matter"
+      },
+      "searchResources": "Search resources",
+      "seeWorkstreamLevelLinks": "See workstream-level links",
+      "tasks": {
+        "noTasks": "There are no tasks in this matter"
+      },
+      "tasksInWorkstream": "Tasks in workstream"
+    },
+    "viewOnly": "You can view but not edit this matter"
+  },
+  "matterAdmin": {
+    "archive": {
+      "closedHelper": "This matter is closed. The archive cannot be accessed until the matter is reactivated (go to Admin summary).",
+      "header": "Archive",
+      "subtitle": "View archived tasks and posts and restore them."
+    },
+    "labels": {
+      "bespoke": "Bespoke",
+      "bespokeToMatter": "Matter Labels",
+      "closedHelper": "This matter is closed. Its labels cannot be administered while that is so.",
+      "deleted": "Deleted",
+      "header": "Labels",
+      "inactiveLabelsMergeError": "Cannot merge two inactive labels.\nPlease select at least one active label.",
+      "mergeConfirm1": "The",
+      "mergeConfirm2": "hashtag will be deleted. All tasks labelled with it will be automatically labelled with the new label or hashtag you have selected",
+      "mergeError": "Unable to merge these hashtags",
+      "mergeHashtags": "Merge hashtags",
+      "mergeSubtitle": "Which label or hashtag would you like to merge",
+      "mergeTarget": "The new label will be",
+      "organisation": "Organisation Labels",
+      "removeFromTasks": "Remove from tasks",
+      "standard": "Standard Juralio labels",
+      "subheader": "Choose which labels are available in this matter.",
+      "subtitle": "See and edit the risk, workflow and hashtag labels available in this matter.",
+      "unableToAdd": "You cannot add a new label as the matter label limit has been reached.",
+      "unableToEnable": "This label cannot be enabled as the matter label limit has been reached.",
+      "userDefined": "Hashtags",
+      "zeroStates": {
+        "risk": "You have no bespoke risk labels in this matter.",
+        "userDefined": "There are no hashtags in this matter",
+        "workflow": "You have no bespoke workflow labels in this matter."
+      }
+    },
+    "matterAdminTitle": "Admin Settings",
+    "overview": {
+      "header": "Admin summary",
+      "subtitle": "Edit the client and matter name, and matter number. Close and re-activate the matter."
+    },
+    "people": {
+      "administerMatter": "Can they administer this matter?",
+      "disabledTooltip": "Users with no access to matter content must be matter admins",
+      "disabledTooltipSelf": "You are the only matter admin on this matter, so cannot remove yourself",
+      "header": "People",
+      "matterAccess": "What access do you want them to have to matter content?",
+      "noAccess": "No access",
+      "peopleBreakdown1": "This matter has",
+      "peopleBreakdown2": "editor,",
+      "peopleBreakdown2_other": "editors,",
+      "peopleBreakdown3": "viewer and",
+      "peopleBreakdown3_other": "viewers and",
+      "peopleBreakdown4": "admin.",
+      "peopleBreakdown4_other": "admins.",
+      "removeSelfAdmin": "Remove",
+      "removeSelfAdminPrompt": "If you proceed, you’ll no longer be able to administer this matter. Only another matter admin or an organisation admin can re-add you.",
+      "removeSelfTeam": "Do you want to remove yourself from the matter?",
+      "removeSelfTeamPrompt": "By removing yourself from the matter you will no lose all access to this matter",
+      "removeUserDialogBody": "Are you sure you want to remove this person from the matter?",
+      "removeUserDialogTitle": "Remove from matter",
+      "subtitle": "Assign or remove people and adjust their permissions.",
+      "viewEdit": "View and edit",
+      "viewOnly": "View only"
+    },
+    "projects": {
+      "header": "Workstreams",
+      "subtitle": "View, manage and add new workstreams in your matter."
+    },
+    "prompt": "Administer this matter",
+    "usersDescription": {
+      "activeAdmins": " ({{count}} active) ",
+      "activeAdmins_0": " (none active) ",
+      "activeAdmins_other": " ({{count}} active) ",
+      "activeEditors": " ({{count}} active) ",
+      "activeEditors_0": " (none active) ",
+      "activeEditors_other": " ({{count}} active) ",
+      "activeViewers": " ({{count}} active) ",
+      "activeViewers_0": " (none active) ",
+      "activeViewers_other": " ({{count}} active) ",
+      "admins": " and {{count}} admin ",
+      "admins_0": " and no admins ",
+      "admins_other": " and {{count}} admins ",
+      "editors": "This matter has {{count}} editor ",
+      "editors_0": "This matter has no editors ",
+      "editors_other": "This matter has {{count}} editors ",
+      "tooltip": "Editors who are inactive users can still be seen on the tasks and posts they were editors of, but cannot be added to more tasks and posts unless they become active again.",
+      "viewers": ", {{count}} viewer ",
+      "viewers_0": " and no viewers ",
+      "viewers_other": " and {{count}} viewers "
+    },
+    "workstreams": {
+      "clickHere": "Click here",
+      "closedHelper": "This matter is closed. Workstreams cannot be added or altered until the matter is reactivated (go to Admin summary).",
+      "createNewWorkstream": "Create new workstream",
+      "editMatterDetails": "Edit matter details",
+      "header": "Workstreams",
+      "multipleWorkstreams1": "This matter has",
+      "multipleWorkstreams2": "active workstream",
+      "multipleWorkstreams2_other": "active workstreams",
+      "multipleWorkstreams3": "and",
+      "multipleWorkstreams4": "closed workstream.",
+      "multipleWorkstreams4_other": "closed workstreams.",
+      "multipleWorkstreams5": "Go to workstreams section to see details and create more.",
+      "multipleWorkstreamsClosed": "workstream",
+      "multipleWorkstreamsClosed_other": "workstreams",
+      "noPermission": "Only a user with the matter admin and matter editor role can create and edit workstreams",
+      "singleWorkstream": "This is a single workstream matter",
+      "singleWorkstreamExplanatory1": "Workstreams allow you to conveniently sub-divide your work.",
+      "singleWorkstreamExplanatory2": "to learn more about workstreams and splitting out tasks.",
+      "subtitle": "Create, rename, close or re-activate workstreams in this matter."
+    }
+  },
+  "matterCreatedDialog": {
+    "addTaskButtonText": "Start adding tasks",
+    "explanatoryText": "Choose how you would like to get started",
+    "inviteButtonText": "Start inviting people",
+    "title": "Matter created!"
+  },
+  "matterCreation": {
+    "creatingMatter": "Creating matter"
+  },
+  "matterDetails": {
+    "button": "Next",
+    "client": "Client",
+    "create": "Create a matter",
+    "dialogTitle": "Choose a template",
+    "guidancePlaceholderMatterReferenceNumber": "This is the matter number used in your finance and other systems. You can edit this after creation.",
+    "matter": "Matter",
+    "matterJuralioReference": "Juralio reference",
+    "matterJuralioReferenceNumberInfoTip": "The matter number automatically assigned by Juralio",
+    "matterName": "Matter name",
+    "matterNumber": "Matter number",
+    "matterNumberInfoTip": "The matter number used in your finance or practice management system",
+    "noContent": "Oops! You don't have access to this matter",
+    "placeholderClient": "Client name",
+    "placeholderMatter": "Matter name",
+    "placeholderMatterReferenceNumber": "Matter reference number",
+    "standard": "Standard matter",
+    "title": "Matter details",
+    "useButton": "Use"
+  },
+  "matterDialog": {
+    "button": "Create",
+    "noTemplates": "You don't have any templates available",
+    "projectBlank": "Create blank workstream",
+    "projectContent": " Workstreams contain the work in a matter. Division of matters into workstreams allows work to be conveniently sub-divided.",
+    "projectLabel": "Workstream name",
+    "projectTemp": "Create workstream from template",
+    "projectTitle": "Create your first workstream",
+    "splitProject": "Split existing workstream",
+    "templatesNoTasks": "You don't have any tasks created in your templates"
+  },
+  "matterOverview": {
+    "descriptionPlaceholder": "Describe this matter",
+    "goToMatterAdmin": "Administer this matter",
+    "matterProgress": "Matter progress",
+    "noDatesSet": "This workstream does not have any dates set"
+  },
+  "matterSelector": {
+    "goToMatterOverview": "Go to matter overview",
+    "userSearchPlaceholder": "Filter team members"
+  },
+  "mfa": {
+    "enterCode": "Enter the six digit code generated by the authenticator app.",
+    "message": "Enter this key into your authenticator app",
+    "mfaDescription": "Your administrator has turned on multi-factor authentication. This helps protect your account.",
+    "noScan": "Can't scan it?",
+    "scanCode": "Please scan this code using the authenticator app on your phone. A six digit code will display. Enter this code to continue.",
+    "secretKey": "Secret key:"
+  },
+  "milestoneCreation": {
+    "asASubtaskOf": "As a subtask of",
+    "milestoneNamePlaceHolder": "New milestone name",
+    "nameYourNewMilestone": "Name your new milestone"
+  },
+  "milestoneDetails": {
+    "archivePrompt": "Are you sure you want to archive this milestone?",
+    "archivedMilestone": "This milestone has been archived",
+    "assignedToMilestone": "Assigned to milestones",
+    "lastUpdated": "Last updated: {{date}} at {{time}}",
+    "milestoneEstimatedFor": "Milestone estimated for",
+    "milestoneReachedOn": "Milestone reached on",
+    "notAssignedToMilestone": "Not assigned to any milestones",
+    "postCloseTooltip": "Close post and return to milestone",
+    "urlOfMilestoneCopiedToClipbard": "Url of milestone copied to clipboard.",
+    "workstreamClosed": "This workstream has been closed"
+  },
+  "milestones": {
+    "taskChipHover": "This task is a milestone"
+  },
+  "navigationLinks": {
+    "activeUsers": "Active Users",
+    "collapse": "Minimise",
+    "expand": "Expand",
+    "help": "Help",
+    "home": "Home",
+    "inbox": "Inbox",
+    "logout": "Logout",
+    "matterOverview": "Matter overview",
+    "matters": "Matters",
+    "organisation": "Organisation",
+    "organisations": "Organisations",
+    "overview": "Workstream overview",
+    "roadmap": "Roadmap",
+    "settings": "Personal settings",
+    "taskmap": "Taskmap",
+    "templateOverview": "Template Overview",
+    "templates": "Templates",
+    "timeline": "Timeline",
+    "users": "Users"
+  },
+  "newTasks": {
+    "newTask": "There is {{ count }} new task",
+    "newTask_other": "There are {{ count }} new tasks"
+  },
+  "notFound": {
+    "404": "Wrong turn, the page you are looking for cannot be found",
+    "backOnePage": "Back one page",
+    "help": "Help",
+    "home": "Home"
+  },
+  "notice": {
+    "alt": "A zero state image"
+  },
+  "noticeboard": {
+    "existingSlides": "Existing slides",
+    "fileTooBig": "Picture can be a maximum of 1MB",
+    "formHelperText": "The title and secondary text have a limit of 255 characters",
+    "header": "Noticeboard",
+    "helperInfo": "Add custom helper text and images to your inbox that everyone can see when they first log in to Juralio",
+    "notFeaturedTooltip": "This slide will not display while another post is featured",
+    "title": "Noticeboard",
+    "toolTip": "A featured image will always be shown",
+    "uploadButton": "Upload image",
+    "uploadImageHint": ".svg file type",
+    "zeroState": "No existing slides"
+  },
+  "notificationIcon": {
+    "notificationIconAlt": "Notification Icon"
+  },
+  "notifications": {
+    "detailText": {
+      "aSubtaskOf": "a subtask of",
+      "addedToTheTaskTeam": "added {{person}} to the task team",
+      "additionOfADate": "added {{dateType}}: {{newDateString}}",
+      "atLevelA": "at level A",
+      "being": "being",
+      "changeOfADate": "changed {{dateType}} from {{oldDateString}} to {{newDateString}}",
+      "createdTask": "created task",
+      "knockOnEffect": "The {{dateTypeKnockOn}} of {{count}} other task was changed to {{newDateString}} as a result.",
+      "knockOnEffect_other": "The {{dateTypeKnockOn}} of {{count}} other tasks were changed to {{newDateString}} as a result.",
+      "labelDeleted": "Organisation-level label \"{{label}}\" has been deleted. It will remain applied to existing tasks in your matters, but cannot be added to more tasks.",
+      "labelPromoted": "Matter-level label \"{{label}}\" has been replaced in your matters with a new organisation-level label of the same name.",
+      "levelA": "level A",
+      "matterMemberAdded": "added {{actionee}} as {{role}}",
+      "matterMemberRemoved": "removed {{actionee}} as {{role}}",
+      "removalOfADate": "removed the {{dateType}} of {{oldDateString}}",
+      "removedFromTheTaskTeam": "removed {{person}} from the task team",
+      "taskMove": "moved task from {{source}} to {{destination}}",
+      "taskStatusChanged": "changed status to",
+      "taskStatusChangedOther": "{{count}} other task status changed as a result.",
+      "taskStatusChangedOther_other": "{{count}} other task statuses changed as a result.",
+      "taskStatusReverted": "reverted status to"
+    },
+    "olderHeader": "Older",
+    "people": {
+      "aMatterAdmin": "a matter admin",
+      "aMatterEditor": "a matter editor",
+      "you": "you",
+      "youCapital": "You",
+      "yourself": "yourself"
+    },
+    "posts": {
+      "actions": {
+        "markDraft": "changed the final version of {{postName}} back to draft",
+        "markFinal": "marked the draft of {{postName}} as final"
+      },
+      "added": "added",
+      "types": {
+        "aDocumentlink": "A Document",
+        "aEmail": "an Email",
+        "aExcelsheet": "an Excel sheet",
+        "aImage": "an Image",
+        "aLink": "a Link",
+        "aMeeting": "a Meeting note",
+        "aNote": "a Note",
+        "aPDF": "a PDF",
+        "aPowerpointdeck": "a Powerpoint deck",
+        "aVideo": "a Video",
+        "aWebLink": "A Web Link",
+        "aWorddocument": "a Word document"
+      }
+    },
+    "text": {
+      "datesShort": {
+        "additionOfADate": "{{dateType}} added: {{newDateString}}",
+        "changeOfADate": "{{dateType}} changed to {{newDateString}}",
+        "removalOfADate": "Removed {{dateType}} of {{oldDateString}}"
+      },
+      "matters": {
+        "addedMatterAdmin": "You and {{otherUser}} are now matter admins",
+        "addedMatterAdmin_0": "You are now a matter admin",
+        "addedMatterAdmin_other": "You and {{count}} users are now matter admins",
+        "addedMatterEditor": "You and {{otherUser}} are now matter editors",
+        "addedMatterEditor_0": "You are now a matter editor",
+        "addedMatterEditor_other": "You and {{count}} users are now matter editors",
+        "matterMemberAdded": "{{user}} and {{otherUser}} are now matter editors",
+        "matterMemberAddedAdmin": "{{user}} and {{otherUser}} are now matter admins",
+        "matterMemberAddedAdmin_0": "{{user}} is now a matter admin",
+        "matterMemberAddedAdmin_other": "{{user}} and {{count}} users are now matter admins",
+        "matterMemberAdded_0": "{{user}} is now a matter editor",
+        "matterMemberAdded_other": "{{user}} and {{count}} users are now matter editors",
+        "matterMemberRemovedAdmin": "{{user}} is no longer an admin",
+        "matterMemberRemovedEditor": "{{user}} is no longer an editor",
+        "matterMemberRemovedYouAdmin": "{{user}} removed you as admin",
+        "matterMemberRemovedYouEditor": "{{user}} removed you as editor"
+      },
+      "posts": {
+        "wasCreated": "{{postName}} was created",
+        "wasFinalised": "{{postName}} was finalised"
+      },
+      "taskMove": {
+        "aSubtaskOf": "a subtask of",
+        "atLevelA": "at level A",
+        "being": "being",
+        "interProject": "{{taskName}} has been moved from {{oldProjectName}} to {{projectName}}",
+        "levelA": "level A"
+      },
+      "tasks": {
+        "addedTaskTeam": "You were added to {{taskName}}",
+        "removedTaskTeam": "You were removed from {{taskName}}",
+        "taskStatusUpdated": "changed status to",
+        "taskWasCompleted": "{{taskName}} was completed",
+        "taskWasMarkedAsNotRequired": "{{taskName}} was marked as not required",
+        "taskWasReopened": "{{taskName}} was reopened",
+        "taskWasStarted": "{{taskName}} was started"
+      },
+      "zeroState": "Nothing here right now"
+    },
+    "title": "Notifications",
+    "titleText": {
+      "labelDeleted": "Label deleted",
+      "labelPromotion": "Label promotion"
+    },
+    "userInbox": {
+      "addedToTheTaskTeam": "{{user}} was added to this task",
+      "addedYouToTheTaskTeam": "You were added to this task",
+      "matterMemberAdded": "{{user}} was added to the team",
+      "matterMemberAddedYou": "You were added as {{role}}",
+      "matterMemberRemovedYou": "You were removed as {{role}}",
+      "newPostCreated": "New post created: {{name}}",
+      "posts": {
+        "actions": {
+          "markedDraft": "Post {{postName}} changed back to draft",
+          "markedFinal": "Post {{postName}} marked as final"
+        }
+      },
+      "removedFromTheTaskTeam": "{{user}} was removed from this task",
+      "removedYouFromTheTaskTeam": "You were removed from this task",
+      "taskDateChange": "The {{dateType}} was updated",
+      "taskMarkedAs": "marked as {{newStatus}}",
+      "taskMove": "Task moved to {{destination}}",
+      "taskMoveWorkstream": "Task moved to workstream {{destination}}",
+      "taskStatusChange": "Status changed to {{newStatus}}"
+    }
+  },
+  "operationMenuItem": {
+    "archive": "Archive",
+    "copy": "Copy",
+    "delete": "Delete",
+    "downloadword": "Download as .docx",
+    "link": "Link sibling dates",
+    "linkedit": "Edit sibling date links",
+    "move": "Move",
+    "rename": "Rename"
+  },
+  "orgMatterInfo": {
+    "StatusTooltip": "Only matter admins can close or re-activate workstreams",
+    "headerCreated": "Created/Closed",
+    "headerProject": "Workstream",
+    "headerStatus": "Status"
+  },
+  "organisation": {
+    "confirmationDialog": {
+      "actionText": "Continue",
+      "enabled": {
+        "promptText_disable": "Are you sure you want to deactivate this organisation?",
+        "promptText_enable": "Are you sure you want to activate this organisation?",
+        "titleText_disable": "Deactivate Organisation",
+        "titleText_enable": "Activate Organisation"
+      }
+    },
+    "createOrganisation": "Create a new organisation",
+    "explanatoryTexts": {
+      "creation": "Begin by naming your organisation and appointing your first admin. You will be able to add additional users and manage user roles once you've created your organisation."
+    },
+    "mfaTogglePanel": {
+      "confirmationDialog": {
+        "action": "Continue",
+        "body_disable": "Are you sure you would like to disable MFA for this organisation? We recommend keeping MFA enabled. With MFA enabled, you can still turn MFA off for specific users if required.",
+        "body_enable": "This will enable you to turn on multi factor authentication for all users in your organisation.",
+        "title_disable": "Disable multi-factor authentication",
+        "title_enable": "Enable multi-factor authentication"
+      },
+      "explanatoryText": "We recommend that you keep MFA enabled for your organisation. This requires people to type a code from an authenticator app on their phone as well as entering a password. When enabled it can still be turned off for individual users.",
+      "mfaStatus_disabled": "MFA is disabled for this organisation",
+      "mfaStatus_enabled": "MFA is enabled for this organisation",
+      "title": "MFA (multi-factor authentication)"
+    },
+    "nameYourOrganisation": "Organisation name",
+    "orgExistsError": "An organisation already exists with that name",
+    "organisations": "Organisations",
+    "security": {
+      "title": "Security"
+    },
+    "settings": "Settings",
+    "ssoTogglePanel": {
+      "confirmationPrompt_disabled": "Disable logging in with {{provider}}",
+      "confirmationPrompt_enabled": "Enable logging in with {{provider}}",
+      "enablePrompt": "This will allow users to log into this organisation with this provider.",
+      "existingUsersExplanatory": "Disabling this will mean they cannot log in unless you convert their accounts to log in by another method.",
+      "existingUsersWarning": "There is {{count}} user currently logging in with {{provider}}",
+      "existingUsersWarning_other": "There are {{count}} users currently logging in with {{provider}}",
+      "explanatoryText": "Enable or disable the use of third party authentication services to sign on to Juralio.",
+      "juralio": "Juralio",
+      "microsoft": "Microsoft",
+      "noExistingUsers": "By turning off this authentication method users will no longer be able to use {{provider}} to log into Juralio.",
+      "okta": "Okta",
+      "saml": "SAML",
+      "title": "SSO (single sign-on)"
+    },
+    "userAlreadyExists": "User already exists in another organisation."
+  },
+  "organisationAdmin": {
+    "caption": "Administer this organisation",
+    "documents": {
+      "googleDrive": "Google Drive browsing",
+      "googleDriveAdd": "to use Google Drive",
+      "googleDriveHelper": "Enable users logged into Google Workspace to browse their Google Drive and select files from it when creating a Juralio post linking to that file",
+      "header": "Documents",
+      "subtitle": "Enable or disable integrations with document systems"
+    },
+    "labels": {
+      "header": "Labels",
+      "subheader": "Choose which labels are available in this organisation.",
+      "subtitle": "See and edit the risk and workflow labels available in this organisation",
+      "unableToAdd": "You cannot add a new label as the organisation label limit has been reached.",
+      "unableToEnable": "This label cannot be enabled as the organisation label limit has been reached."
+    },
+    "matters": {
+      "backCaption": "Back to matter list",
+      "header": "Matters",
+      "matterClient": "Matter / Client",
+      "matterMembers": "Matter members",
+      "removeMatterRole": {
+        "confirmationPart1of2": "Are you sure you want to remove",
+        "confirmationPart2of2": "as a matter {{role}}?",
+        "prompt": "Remove {{role}}"
+      },
+      "subtitle": "See a list of this organisation’s matters, with their admins, editors and viewers",
+      "tooltip": {
+        "admins": "Add or remove matter admins",
+        "status": "You can re-activate a closed matter, but only matter admins can close an active matter",
+        "teamMembers": "Only matter admins can add or remove matter editors",
+        "users": "Only active users are counted",
+        "workstreams": "Only active workstreams are counted"
+      },
+      "zeroState": "There are no matters in this org yet"
+    },
+    "security": {
+      "header": "Security",
+      "subtitle": "Enable or disable MFA (multi-factor authentication) or SSO (single sign-on)"
+    },
+    "users": {
+      "header": "Users",
+      "subtitle": "See and edit users in this organisation including roles, MFA and active status."
+    }
+  },
+  "organisationAdmins": {
+    "placeholder": "Add admin...",
+    "title": "Organisation Admins",
+    "zeroState": "No administrators"
+  },
+  "organisationList": {
+    "members": "Members",
+    "name": "Organisation name",
+    "orgAdmins": "Admins",
+    "status": "Status"
+  },
+  "organisationSelector": {
+    "currentOrganisation": "Current organisation",
+    "none": "None"
+  },
+  "organisationUsers": {
+    "pageTitle": "Organisation"
+  },
+  "passwordSettings": {
+    "caption": "Personal settings",
+    "currentPassword": "Current password",
+    "header": "Password",
+    "loadingText": "Saving profile",
+    "snackbar": "Password updated. You will now be logged out",
+    "submit": "Update Password",
+    "subtitle": "Reset your password",
+    "title": "Reset your password"
+  },
+  "passwords": {
+    "newPassword": "New password",
+    "oldPassword": "Old password",
+    "verifyNewPassword": "Verify new password"
+  },
+  "people": {
+    "clickToSeeAllNames": "Click to see all names",
+    "matterAdmins": "Matter admins",
+    "matterAdminsZeroState": "There are no matter admins. You can ask your organisation admin (this may be someone in your IT service) to add one",
+    "matterEditors": "Matter editors",
+    "matterEditorsZeroState": "There are no editors on this matter. A matter admin can add editors.",
+    "matterViewers": "Matter viewers",
+    "matterViewersZeroState": "There are no viewers on this matter. A matter admin can add viewers.",
+    "teamMembersZeroState": "There are no team members on this task"
+  },
+  "postArchive": {
+    "confirmation": "Are you sure you wish to archive this post?",
+    "postUnarchived": "The post has been restored",
+    "restoreDialog": {
+      "originalLocationNotAvailable": "The original location for this post is not available.",
+      "restoreOriginal": "Unarchive this post to the location it was originally archived",
+      "title": "Restore Post"
+    },
+    "restoringPostPrompt": "Restoring",
+    "zeroState": "No archived posts to display."
+  },
+  "postDelete": {
+    "confirmation": "Are you sure you wish to delete this post?"
+  },
+  "postDetails": {
+    "addSomeNotesAboutThis": "Add some notes about the {{postType}}",
+    "allChangesSaved": "All changes saved",
+    "archivedPost": "This post is not currently available",
+    "atlassian": "This is a link to an Atlassian platform such as Jira or Confluence",
+    "autoSaving": "Auto saving",
+    "created": "Created",
+    "documentNotePlaceholder": "You can add some notes about the document here",
+    "draftStatusLetter": "D",
+    "editorsTitle": "Editors and viewers of this post",
+    "emptyNotePlaceholder": "Add note content",
+    "emptyNoteReadOnlyPlaceholder": "This note has no content.",
+    "errors": "Post content is too long to be saved.",
+    "finalStatusLetter": "F",
+    "finalisePrivateTooltip": "This post will only be visible to its editors upon finalisation. You can choose to make it visible to all after it’s been finalised.",
+    "finaliseTooltip": "This post will be visible to anyone in this matter when finalised. You can choose to make it private after finalising it",
+    "finalisedOn": "Finalised on",
+    "finalisedOnBy": "Finalised on {{date}} by {{user}}",
+    "hourAgo": "hour ago",
+    "hoursAgo": "hours ago",
+    "isFinal": "Finalised notes cannot be edited",
+    "lastSaved": "Last saved",
+    "lastUpdated": "Last updated",
+    "meetingNote": {
+      "endTime": "End time",
+      "errorText": "Time must be of the form HH:MM",
+      "meetingDate": "Meeting Date",
+      "meetingOn": "Meeting on",
+      "meetingTimings": "Meeting start time cannot be before meeting end time",
+      "membersLabel": "attended by",
+      "peopleTitle": "Meeting attendees",
+      "placeholder": "HH:MM",
+      "startTime": "Start time",
+      "timezone": "Timezone:"
+    },
+    "meetingNotePlaceholder": "Add meeting notes",
+    "minAgo": "min ago",
+    "minsAgo": "mins ago",
+    "openLink": "Open link",
+    "postFinalPrivate": "This post can only be seen by its editors and viewers. To make it visible to all, go to the options (⋮)",
+    "postTemplateKm": "Only knowledge managers can see this post",
+    "postTemplateVisible": "This post can be seen by everyone who can see this template",
+    "postVisible": "This post can only be seen by its editors and viewers",
+    "saved": "Saved",
+    "savedTooltip": "All changes are saved automatically (so long as you're online)",
+    "saving": "Saving",
+    "secAgo": "second ago",
+    "secsAgo": "seconds ago",
+    "visibleToAll": "This post can be seen by everyone on this matter",
+    "webNotePlaceholder": "You can add some notes about the web link here"
+  },
+  "postList": {
+    "by": "by ",
+    "edited": " edited",
+    "helperText": {
+      "afterIcon": "to create new posts on this task.",
+      "beforeIcon": "Use the"
+    },
+    "meetingHeld": "meeting held on",
+    "postTooltip": "{{type}} (visible to all)",
+    "private": "Private",
+    "privateTooltip": "{{type}} (private)",
+    "zeroStateCaption": "To begin work, create your first post",
+    "zeroStateTitle": "No posts yet",
+    "zeroStateTitleReadOnly": "No posts"
+  },
+  "postMenu": {
+    "archive": "Archive",
+    "convertTo": "Convert to {{type}} note",
+    "delete": "Delete",
+    "downloadWord": "Download as .docx",
+    "draft": "Draft",
+    "final": "Finalised",
+    "makePrivate": "Make private",
+    "makeVisible": "Make visible to all",
+    "markAsDraft": "Mark as draft",
+    "markAsFinal": "Mark as final",
+    "move": "Move",
+    "visibleToAll": "Visible"
+  },
+  "postMove": {
+    "move": "Move",
+    "moveSuccess": "Successfully moved {{post}} to {{task}}",
+    "newDestination": "Choose a new destination for your note",
+    "selectProject": "Choose a workstream",
+    "selectTask": "Choose a task",
+    "selectTemplate": "Choose a template",
+    "title": "Move post: {{title}}"
+  },
+  "postOverviewTable": {
+    "allTasksMilestonesFilter": "All, tasks, milestones",
+    "editorFilter": "Editors",
+    "following": "Following",
+    "followingText": "Only tasks I am following",
+    "labels": "Task labels",
+    "levelFilter": "Task level",
+    "moreThanOneAuthorInformationTip": "If there is more than one author, only the first listed is shown",
+    "notFollowingText": "Tasks or milestones I am not following",
+    "responsibleTeam": "Responsible team",
+    "statusFilter": "Task or milestone status",
+    "taskNumber": "Task or milestone Number",
+    "teamFilter": "Task or milestone team"
+  },
+  "postsList": {
+    "createAPost": "Create a post"
+  },
+  "privacyBar": {
+    "as": "as",
+    "confirmation": {
+      "body": "Anyone in this matter will be able to view this post when finalised",
+      "title": "Are you sure you want to make this post visible to all?"
+    },
+    "keepPrivate": "Keep note private even when finalised",
+    "pluralPrivate": "This post can only be seen by its authors",
+    "private": "Post is private",
+    "public": "Everyone in this matter can see this post",
+    "setPrivate": "Set to private",
+    "singularPrivate": "This post can only be seen by you"
+  },
+  "project": {
+    "overview": {
+      "assignedToTasks": "assigned to tasks on this workstream",
+      "content": {
+        "description": "Use these tables to quickly locate a task or milestone or post in this {{overviewType}}. The filter button can help you narrow down your search.",
+        "title": "{{overviewType}} content"
+      },
+      "counts": "This {{isWorkstream}} has {{taskCount}} {{tasks}}/milestones containing {{postCount}} {{posts}}",
+      "countsNoPosts": "This {{isWorkstream}} has {{taskCount}} {{tasks}}/milestones but doesn't have any posts yet",
+      "countsNoTasks": "This {{isWorkstream}} doesn’t have any tasks/milestones or posts yet",
+      "latestPost": "Latest Post",
+      "latestPosts": "Latest Posts",
+      "noOneAssigned": "No one assigned to tasks on this workstream",
+      "noPeopleYet": "No people yet",
+      "noPostsCreated": "No posts created on this {{type}}",
+      "noPostsYet": "No posts yet",
+      "noTasksCreated": "No tasks created on this {{type}}",
+      "noTasksYet": "No tasks yet",
+      "people": {
+        "headers": {
+          "inProgressTasks": "In progress tasks",
+          "matterRoles": "Matter roles",
+          "matterTableHeader": "Matter editors & viewers",
+          "tableHeader": "People who are assigned to tasks on this workstream"
+        },
+        "matterAdmins": "Matter admins",
+        "matterAdminsInformation": "Ask one of these people if you need to add someone to the matter. Admins who are matter editors can also move or archive tasks or milestones and delete posts."
+      },
+      "peopleAssignedToProjectTasks": "People assigned to workstream tasks",
+      "peopleInThisWorkstream": "People in this workstream",
+      "peopleSeeMore": "Show all {{count}} team members",
+      "peopleZeroStateMessage": "Nobody has been assigned tasks on this workstream yet.",
+      "posts": {
+        "noPostsInProject": "No posts created on this workstream"
+      },
+      "roadmap": {
+        "noDatesSet": "This task does not have any dates set",
+        "noDatesSetWorkstream": "This workstream does not have any dates set",
+        "noEndDateSet": "No end date set",
+        "noStartDateSet": "No start date set",
+        "noTasks": "There are no tasks in this workstream",
+        "noTasksWorkstream": "This workstream does not have any tasks",
+        "title": "Tasks and milestones in workstream"
+      },
+      "seeMatterLevelLinks": "See matter-level links",
+      "taskCreatedBy": "Created {{date}} by: {{firstname}} {{lastname}}",
+      "templateContent": "Template content",
+      "templateMap": "Template map",
+      "workstreamContent": "Workstream content",
+      "workstreamLevel": "Workstream level",
+      "workstreamProgress": "Workstream progress",
+      "workstreamResources": "Workstream Resources"
+    }
+  },
+  "projectCreation": {
+    "button": "Create",
+    "buttonTemp": "Use",
+    "cannotBeEmpty": "Workstream name cannot be empty",
+    "createOwnTasks": "I'll create my own tasks",
+    "dialogSplitTitle": "Create workstream from existing tasks",
+    "dialogTitle": "Create a workstream",
+    "dialogTitleName": "Name your new workstream",
+    "dialogTitleTemplate": "Choose a template",
+    "error": "Workstream names must be unique",
+    "genericNamingError": "Name must be valid",
+    "loadingText": "Creating workstream",
+    "newWorkstream": "New workstream",
+    "noPermissionsToRename": "You must be a matter admin to create workstreams.",
+    "originalWorkstream": "Original workstream",
+    "originalWorkstreamHelperText": "This workstream will contain the existing tasks in your matter",
+    "projectName": "Workstream name",
+    "projectNameUniquePerMatter": "Workstream name must be unique within the matter.",
+    "projectPlaceholder": "Enter the name of your workstream here",
+    "projectSplitSelect": "Select a workstream to split",
+    "templateWorkstreamHelper": "The template will be used to create this new workstream",
+    "useATemplate": "Use a template",
+    "workstreamNamePrompt": "Give this workstream a name"
+  },
+  "projectOverview": {
+    "descriptionPlaceholder": "Describe this workstream",
+    "levelATasks": {
+      "caption": "You can manage your level A tasks here. Changes will be reflected in the task map.",
+      "title": "Level A tasks"
+    },
+    "projectZeroStateText": "A preview of your task map will appear here as you add tasks.",
+    "rename": {
+      "title": "Rename Workstream"
+    },
+    "taskMap": {
+      "phaseLabel": {
+        "taskCountLabel": " Task",
+        "taskCountLabel_other": " Tasks"
+      }
+    }
+  },
+  "projectOverviewZeroState": {
+    "permissionToAccessProjectDenied": "Oops! You don't have access to this workstream",
+    "workstreamClosed": "This workstream has been closed"
+  },
+  "projectSelector": {
+    "defaultBreadcrumb": "All matters & workstreams",
+    "matterContains": "Matter Contains",
+    "matterListZeroState": "Any open workstreams within a matter will appear here. If you’re a matter admin, use the admin settings to create or re-open a matter. If you’re not, ask one of the matter admins (see above) to do so.",
+    "matterTitle": "Clients & Matters",
+    "matters": "Matter",
+    "nextLevelATaskDue": "Next level A due:",
+    "noActiveWorkstreams": "There are no active workstreams on this matter",
+    "noActiveWorkstreamsAdmin": "This matter is closed. Press “Administer this matter” (below) to see information about it or to re-open.",
+    "noActiveWorkstreamsViewer": "There are no active workstreams on this matter.\n Only matter admins can reactivate workstreams or create new ones",
+    "noLevelATasksDue": "No level A tasks due",
+    "noMatterZeroState": "You have no matters yet. Ask someone to add you to one!",
+    "noMatterZeroStateMatterCreator": "No workstreams currently available. To start a new workstream you must first create a matter for your workstream.",
+    "noMatters": "No matters available.",
+    "noMatters2": "Check your closed matters by selecting the box above.",
+    "noMattersPrompt1": "Click the",
+    "noMattersPrompt2": "to create your first matter.",
+    "noMembers": "There are no matter ",
+    "notEditor": "You are a matter admin but not a matter editor, so cannot see the work in this matter",
+    "notMTMZeroState": "You're a matter admin but not a matter editor so cannot access the matter's workstream content.",
+    "notMTMZeroStateClosed": "This matter is closed. Its workstreams cannot be viewed unless you reopen it (go to matter admin to do so).",
+    "peopleTitle": "People on this matter",
+    "search": "Filter by client, matter or person",
+    "thisMattersWork": "This matter's work",
+    "title": "Matters and templates",
+    "work": "Work",
+    "workstream": "Workstream",
+    "workstreams": "Workstreams",
+    "workstreamsInMatter": "Workstreams in this matter"
+  },
+  "projectsList": {
+    "noDisplay": "No Workstreams to display",
+    "noMTM": "You must be a team member to see workstreams",
+    "noProjects": "No workstreams"
+  },
+  "recentPanel": {
+    "noRecentTasks": "You haven't yet viewed any Juralio tasks",
+    "recentActivity": "Your Recent Activity",
+    "yourTodosAndRecents": "Your to-dos and recents"
+  },
+  "roadmapExpandableArea": {
+    "collapse": "Collapse",
+    "expand": "Expand",
+    "noSubtasks": "No Subtasks"
+  },
+  "roadmapZeroState": {
+    "caption": "Get started by creating your first level A task in the",
+    "permissionToAccessWorkstreamDenied": "Oops! You don't have access to this workstream",
+    "title": "This workstream is empty"
+  },
+  "roles": {
+    "matterAdmin": "Matter admin",
+    "matterEditor": "Matter editor",
+    "matterViewer": "Matter viewer"
+  },
+  "search": {
+    "matters": "Search your matters",
+    "noResults": "No results",
+    "project": "Search in",
+    "searchEverything": "Search everything"
+  },
+  "slide": {
+    "alt": "Slide image",
+    "feature": "feature"
+  },
+  "snackbarCommon": {
+    "dismiss": "Dismiss"
+  },
+  "sso": {
+    "failed_authentication": "Unable to authenticate with SSO, please try again. If this issue persists, contact a system administrator.",
+    "logout": " You may still be logged into {{provider}}.\nConsider if you need to log out from that.",
+    "no_matching_user": "No Juralio account associated with this SSO account. Please contact a system administrator.",
+    "signInWithMicrosoft": "Sign in with Microsoft",
+    "signInWithOkta": "Sign in with Okta",
+    "signInWithSaml": "SAML SSO",
+    "unknown": "An unknown error occurred, please try again. If this issue persists, contact a system administrator."
+  },
+  "standardUserRoutes": {
+    "matterCreationRouteRestriction": "You must be a Matter Creator to create a Matter",
+    "organisationSelfAdminUsersRouteRestriction": "To manage your organisation, please contact an organisation admin",
+    "somethingWentWrong": "Oops, something went wrong. Click here to go back"
+  },
+  "subTaskPanel": {
+    "createASubtask": "Create a subtask",
+    "hide": "hide",
+    "notRequiredTaskCount": "This task has a subtask set to not required.",
+    "notRequiredTaskCountLevelA": "This workstream has a level A task set to not required.",
+    "notRequiredTaskCountLevelA_other": "This workstream has {{count}} level A tasks set to not required.",
+    "notRequiredTaskCount_other": "This task has {{count}} subtasks set to not required.",
+    "taskStatusDone": "Completed",
+    "taskStatusInProgress": "In progress",
+    "taskStatusNotStarted": "Not started",
+    "title": "Subtasks"
+  },
+  "sysAdmin": {
+    "activeUsers": {
+      "action": "Action",
+      "dateUpTo": " up to ",
+      "header": "Active Users",
+      "headerActive": "Active users",
+      "headerMonth": "Month",
+      "information_content1": "(1) Please refer to the contract for the definition of ‘Active’.",
+      "information_content2": "(2) System administrator accounts are not included in this number.",
+      "information_heading": "Active users",
+      "notRecorded": "Not recorded",
+      "subtitle": "Review and download monthly list of active users.",
+      "timeAt": " at "
+    },
+    "fullRoleName": "Juralio System Administrator",
+    "globalUsers": {
+      "title": "Users and permissions"
+    },
+    "home": {
+      "navigationOptions": {
+        "organisations": {
+          "description": "Create and manage each organisation's security and users.",
+          "title": "Manage my organisations"
+        },
+        "users": {
+          "description": "Manage a global list of users for all organisations.",
+          "title": "Users and Permissions"
+        }
+      },
+      "title": "Juralio System Administrator Dashboards"
+    },
+    "instanceManagement": {
+      "confirmationPrompt_disable": "The {{provider}} SSO button will no longer appear on the log in page, and people will not be able to use {{provider}} SSO in any of this instance’s organisations. If it is subsequently turned back on within this sys admin screen, the button will appear again on the log in screen, but each organisation’s org admin will also need to turn it on again for their organisation. This is to prevent surprises at organisation level.",
+      "confirmationPrompt_enable": "The {{provider}} SSO button will appear on the log in page. But people will not be able to sign on using {{provider}} SSO unless the org admin for their organisation has turned it on for that organisation.",
+      "confirmationTitle_disable": "Disable {{provider}} SSO button",
+      "confirmationTitle_enable": "Enable {{provider}} SSO button",
+      "header": "Instance Management",
+      "samlHelpers": {
+        "invalidCert": "Invalid X.509 Certificate",
+        "invalidIssuer": "Invalid Issuer URL",
+        "invalidUrl": "Invalid URL"
+      },
+      "samlSettings": "SAML Settings",
+      "samlSettingsTitles": {
+        "cert": "X.509 Certiifcate",
+        "issuer": "IDP Issuer",
+        "ssoUrl": "IDP SOO URL"
+      },
+      "subtitle": "Manage system level settings which affect all users."
+    },
+    "manageOrganisations": {
+      "organisationCount": "{{count}} organisation",
+      "organisationCount_other": "{{count}} organisations",
+      "title": "Manage my organisations"
+    },
+    "organisations": {
+      "backToOrganisationsList": "Back to organisations list",
+      "confirm": "confirm",
+      "currentImage": "Current Image",
+      "deleteImage": "Delete Image",
+      "failedDelete": "Unable to delete image currently. If this problem persists, please contact a system administrator",
+      "failedUpload": "Unable to upload image currently. If this problem persists, please contact a system administrator",
+      "header": "Organisations",
+      "invalidFileType": "Invalid file type. Please upload a JPEG or a PNG.",
+      "organisationImage": "Organisation Image",
+      "prompt": "Nothing...",
+      "subtitle": "Create and (de)activate organisations and their users.",
+      "successfulDelete": "Successfully deleted image",
+      "successfulUpload": "Successfully uploaded image",
+      "uploadImage": "Upload Image"
+    },
+    "searchPlaceholder": "Search organisations and users",
+    "users": {
+      "header": "Users",
+      "infotip": "Each user who is not a system administrator must belong to a single organisation. System administrators cannot be assigned to an organisation.",
+      "prompt": "Nothing...",
+      "subtitle": "Manage a global list of users for all organisations."
+    }
+  },
+  "taskActions": {
+    "doneTaskCreated": "New {{type}} successfully created. New {{type}} marked as 'done' to reflect parent status",
+    "doneTasksCreatedInProject": "New tasks successfully created. New tasks marked as 'done' to reflect parent status",
+    "maxSubtasksDoneTaskCreated": "New {{type}} successfully created. 8 {{type}} sibling limit reached. New {{type}} marked as 'done' to reflect parent status",
+    "maxSubtasksTaskCreated": "New {{type}} successfully created. 8 {{type}} sibling limit reached",
+    "taskCreated": "New {{type}} successfully created",
+    "tasksCreatedInProject": "New tasks successfully created"
+  },
+  "taskAuthorActions": {
+    "addedPostAuthor": "{{firstname}} {{lastname}} was added as an author",
+    "removedPostAuthor": "{{firstname}} {{lastname}} was removed as an author"
+  },
+  "taskCardContent": {
+    "collapseFollowers": "Show fewer followers",
+    "datesHeader": "Key Dates",
+    "descriptionZeroText": "Click to add a description",
+    "expandFollowers": "Show all followers",
+    "following": {
+      "buttonCaption": "Follow this {{type}}",
+      "buttonCaptionStop": "Stop following",
+      "caption": "Following this {{type}}",
+      "infotip": "If you follow a {{type}}, you’ll receive notifications about it and see it in your to do list."
+    },
+    "keyDatesHeading": "Key dates",
+    "lastUpdated": "Last updated: {{date}} at {{time}}",
+    "overviewHeader": "Overview",
+    "overviewHeading": "Overview",
+    "peopleHeader": "People",
+    "referenceNumber": "is the {{type}} number. It’s unique within this matter.",
+    "referenceNumberTemplate": "is the task number. It’s unique within this template.",
+    "teamNotRequired": "Team members cannot be assigned to not required tasks"
+  },
+  "taskCellHoverButton": {
+    "disabledButton": "Milestones can not have children tasks"
+  },
+  "taskChange": {
+    "dateChange": "Date changes: ",
+    "dateText": "Date: ",
+    "parentText": " parent task",
+    "promptText": "The following changes will be made. Are you sure you want to continue?",
+    "statusChange": "Status changes: ",
+    "statusText": "Status: ",
+    "subtaskText": " subtask",
+    "tooltipText": " tasks cannot have a"
+  },
+  "taskCreation": {
+    "asASubtaskOf": "As a subtask of",
+    "createTask": "Create new task",
+    "editDestination": "Edit destination",
+    "nameYourNewTask": "Name your new task",
+    "taskNamePlaceHolder": "New task name",
+    "validation": {
+      "levelFTasksCannotHaveSubTasks": "Level F tasks cannot have subtasks.",
+      "tasksCannotHaveMoreThanLimitubtasks": "Tasks cannot have more than {{limit}} subtasks."
+    }
+  },
+  "taskDateChangeTooltips": {
+    "AEDEarlier": "Actual end date cannot be earlier than the actual end dates in any subtasks",
+    "AEDLater": "Actual end date cannot be later than the actual end dates in any parent tasks",
+    "ASDEarlier": "Actual start date cannot be earlier than the actual start dates in any parent tasks",
+    "ASDLater": "Actual start date cannot be later than the actual start dates in any subtasks",
+    "PEDEarlier": "Planned end date cannot be earlier than the planned end dates in any subtasks",
+    "PEDLater": "Planned end date cannot be later than the planned end dates in any parent tasks",
+    "PSDEarlier": "Planned start date cannot be earlier than the planned start dates in any parent tasks",
+    "PSDLater": "Planned start date cannot be later than the planned start dates in any subtasks",
+    "linked": "This task’s planned dates are linked to one or more of its sibling tasks. Changes in planned dates of one are reflected automatically in the linked tasks."
+  },
+  "taskDateTypes": {
+    "AED": "actual end date",
+    "ASD": "actual start date",
+    "PED": "planned end date",
+    "PSD": "planned start date"
+  },
+  "taskDateTypesHelperText": {
+    "AEDEarlierThanChildAED": "Actual end date cannot be earlier than the actual end dates in any subtasks",
+    "AEDLaterTahnParentAED": "Actual end date cannot be later than the actual end dates in any parent tasks",
+    "ASDEarlierThanParentASD": "Actual start date cannot be earlier than the actual start dates in any parent tasks",
+    "ASPLaterthanChildASD": "Actual start date cannot be later than the actual start dates in any subtasks",
+    "PEDEarlierThanChildPED": "Planned end date cannot be earlier than the planned end dates in any subtasks",
+    "PEDLaterThanParentPED": "Planned end date cannot be later than the planned end dates in any parent tasks",
+    "PSDEarlierThenParentPSD": "Planned start date cannot be earlier than the planned start dates in any parent tasks",
+    "PSDLaterThanChildPSD": "Planned start date cannot be later than the planned start dates in any subtasks"
+  },
+  "taskDateTypesPlural": {
+    "AED": "actual end dates",
+    "ASD": "actual start dates",
+    "PED": "planned end dates",
+    "PSD": "planned start dates"
+  },
+  "taskDates": {
+    "dueToEnd": "Due to end",
+    "dueToStart": "Due to start",
+    "ended": "Ended on",
+    "noDate": "No date currently set",
+    "notRequired": "Not required tasks are view-only and do not have dates. To edit this task, first use the options menu (⋮) to change its status.",
+    "prompts": {
+      "setPlannedEndDate": "Set planned end",
+      "setPlannedStartDate": "Set planned start"
+    },
+    "showFewerDates": "Show fewer dates",
+    "showMoreDates": "Show all dates",
+    "startedOn": "Started on"
+  },
+  "taskDelete": {
+    "deleteTaskConfirmationPrompt": "Are you sure you want to delete this task and all of its subtasks?",
+    "deleteTaskHeader": "Delete task: {{taskName}}"
+  },
+  "taskDescription": {
+    "editDesc": "Edit description",
+    "saveDesc": "Save description"
+  },
+  "taskDetails": {
+    "archivePrompt": "Are you sure you want to archive this task and all of its subtasks?",
+    "archivedTask": "This task has been archived",
+    "assignedToTask": "Assigned to tasks",
+    "lastUpdated": "Last updated: {{date}} at {{time}}",
+    "notAssignedToTask": "Not assigned to any tasks",
+    "postCloseTooltip": "Close post and return to task",
+    "urlOfTaskCopiedToClipbard": "Url of task copied to clipboard.",
+    "workstreamClosed": "This workstream has been closed"
+  },
+  "taskFilters": {
+    "tooltips": {
+      "noDoneTasks": "There are no done tasks",
+      "noNotRequiredTasks": "There are no tasks not required",
+      "noNotStartedTasks": "There are no tasks not started"
+    }
+  },
+  "taskFollowersZeroState": {
+    "message": "Followers receive notifications when there are changes on the task."
+  },
+  "taskHoverInfo": {
+    "dueToComplete": "Due to complete",
+    "noDueDate": "No due date",
+    "noPostsYet": "No posts yet",
+    "noTeamYet": "No team yet",
+    "post": "{{count}} post",
+    "post_other": "{{count}} posts"
+  },
+  "taskLinking": {
+    "datesLinkedTo": "Dates linked to",
+    "editLinks": "Edit links",
+    "excluded": "Excluded from sibling date link",
+    "keepUnlinked": "Keep Unlinked",
+    "linkAlert": "   This task is linked moving it will remove the task from the linked group",
+    "linkButton": "Link sibling dates",
+    "linkDates": "Link Dates",
+    "linkedTasksUpdated": "Linked sibling task dates also updated",
+    "linkedTooltip": "Linked date. Select to unlink it.",
+    "siblingTasks": "sibling task",
+    "siblingTasks_other": "sibling tasks",
+    "tooltipInfo": "When sibling task dates are linked, changes in planned dates of one are reflected automatically in the linked tasks.",
+    "unlinkedTooltip": "Unlinked date. Select to link it.",
+    "updatedStatusLinkBody": "Do you want to include this task in the existing sibling date link?",
+    "updatedStatusLinkTitle": "Add to sibling date link"
+  },
+  "taskMap": {
+    "dropZoneError": "Tasks cannot be reordered outside their status",
+    "moveSuccess": "Successfully moved task",
+    "moveSuccessUpdateParent": "Successfully moved task and updated parent task status to \"{{taskStatus}}\"",
+    "moveTask": "Do you want to move this task?",
+    "movingAdminOnly": "Moving tasks can only be performed by matter admins",
+    "updatedParentTaskTo": "Updated parent task to '{{status}}'"
+  },
+  "taskMapDates": {
+    "ASDLaterThanAED": "This change cannot be made, because one or more subtasks are recorded as finishing earlier than the proposed new start date.",
+    "doneText": "Done: ",
+    "finishText": "Finish by: ",
+    "milestoneEnd": "Milestone reached on:",
+    "milestonePlan": "Milestone planned for:",
+    "setDates": "Set dates",
+    "setEnd": "Set end date",
+    "setPlannedEnd": "Set planned end",
+    "setPlannedStart": "Set planned start",
+    "setStart": "Set start date",
+    "startBy": "Start by: ",
+    "startText": "Started: "
+  },
+  "taskMove": {
+    "cancelMove": "Cancel Move",
+    "chooseDestination": "Choose a destination for {{taskName}}",
+    "clickAnArrow": "Click an arrow",
+    "destinations": {
+      "anotherWorkstream": "Another workstream",
+      "levelA": "Level A",
+      "subtaskOf": "Under an existing task"
+    },
+    "enterNameOfProject": "Enter name of workstream",
+    "enterNameOfTask": "Enter name of task",
+    "loadingText": "Moving tasks",
+    "moveTask": "Move Task",
+    "moveTaskTo": "Move task to",
+    "needHelpMoving": "Need help moving tasks?",
+    "selectDestination": "Select destination",
+    "titleWithTaskName": "Move task: {{taskName}}",
+    "toMoveToThatLocation": "to move to that location"
+  },
+  "taskMoveButton": {
+    "moveHere": "Move Here"
+  },
+  "taskStatus": {
+    "done": "Done",
+    "in-progress": "In progress",
+    "not-started": "Not started",
+    "notYetReached": "Not yet reached",
+    "reached": "Reached",
+    "task-not-required": "Not required"
+  },
+  "taskStatusChange": {
+    "confirmation": "Continuing will mark this task and any subtasks as 'not required'. This will also remove dates, team members and followers from the relevant tasks.",
+    "multipleSubTasksNotRequired": "Task (including {{count}} subtasks) marked as not required",
+    "singleSubTaskNotRequired": "Task (including one subtask) marked as not required",
+    "singleTaskNotRequired": "Task marked as not required"
+  },
+  "taskSubtaskDates": {
+    "header": "Also update subtasks?",
+    "promptText": "Do you also want to update the corresponding dates in any subtasks which have not yet been marked as done?  If you reply “yes” then those dates will be adjusted by the same number of days as the adjustment you make to this task."
+  },
+  "taskTaskTeamButton": {
+    "following": "You follow this task",
+    "leaveTeam": "Leave this team?",
+    "onTeam": "You're on this team",
+    "unfollow": "Unfollow this task?"
+  },
+  "taskTeamMembers": {
+    "header": "Responsible team",
+    "joinButton": "Join",
+    "notRequired": "Not required tasks cannot have team members assigned to them"
+  },
+  "taskTeamMembersZeroState": {
+    "message": "Assign team members to let everyone in your workstream know who is responsible for this task."
+  },
+  "taskmapNewTasks": {
+    "hideAll": "Hide {{count}} new task highlights"
+  },
+  "taskmapPopover": {
+    "addPost": "Add post",
+    "addTeamMember": "Add team member",
+    "andMore": "and {{count}} more",
+    "goToTaskDetails": "Go to task details"
+  },
+  "taskmapPosts": {
+    "multiple": "There are {{count}} posts on this task",
+    "single": "There is 1 post on this task"
+  },
+  "taskmapTaskAlert": {
+    "tooltipLimit": "You have reached the 300 task limit",
+    "tooltipP1": "You are {{tasks}} tasks away from the 300 task limit",
+    "tooltipP2": " Consider splitting some tasks into a separate workstream. For more information",
+    "tooltipP3": " Click here!",
+    "tooltipSingle": "You are 1 task away from the 300 task limit"
+  },
+  "taskmapZeroState": {
+    "arrowAlt": "Zero State Image",
+    "buttonTitle": "Create a level A task",
+    "caption": "Get started by creating your first level A task",
+    "filterCaption": "Use the status button to change this",
+    "filterTitle": "You have hidden all your tasks",
+    "permissionToAccessProjectDenied": "Oops! You don't have access to this workstream",
+    "template": {
+      "title": "Your template is empty"
+    },
+    "title": "This workstream is empty",
+    "workstreamClosed": "This workstream has been closed"
+  },
+  "teamList": {
+    "adminTooltip": "Admins can add and remove people to and from the matter.",
+    "membersTooltip": "Editors can see and edit the contents of a matter."
+  },
+  "teamMembership": {
+    "addedSuccessSnackbar": "{{firstname}} {{lastname}} was added to the team",
+    "helper": "Search for someone in your organisation to add them to this matter",
+    "teamClosed": "This matter is closed - members cannot be added or altered until the matter is reactivated. (Go to Admin summary)",
+    "teamSearchPlaceholder": "Add team member..."
+  },
+  "templateOverview": {
+    "copy": {
+      "copyTemplate": "Copy template",
+      "nameYourNewTemplate": "Enter a name for the new template"
+    },
+    "deletion": {
+      "deleteTemplate": "Delete template",
+      "deleteTemplatePrompt": "Are you sure you want to delete this template? You will not be able to recover it. Workstreams using this template will not be affected.",
+      "deleteTemplateQuestion": "Delete template?"
+    },
+    "descriptionPlaceholder": "Click here to add a description",
+    "goToTemplates": "Go to template gallery",
+    "noFavourites1": "You don't have any favourites yet. Click the favourite icon",
+    "noFavourites2": "in a templates details to keep it pinned to the top.",
+    "noTemplatesExist": "No published templates currently exist in this organisation.",
+    "otherTemplates": "Other {{org}} templates",
+    "rename": "Rename Template",
+    "templateOptions": "Template options",
+    "templateZeroStateText": "There are no tasks in this template",
+    "useThisTemplate": "Use this template",
+    "yourFavourites": "Your favourites"
+  },
+  "templatePostDestinationDialog": {
+    "chooseATemplate": "Choose a template",
+    "whereToCreateTemplatePost": "Choose where to create your new template post"
+  },
+  "templateTaskActions": {
+    "errorUpdatingTemplate": "Error updating template.",
+    "templateMilestoneCreated": "New template milestone successfully created",
+    "templateTaskCreated": "New template task successfully created",
+    "templateTaskMoved": "Template task has been moved."
+  },
+  "templates": {
+    "chooseATemplateTask": "Choose a template task",
+    "createFromProject": "Create from existing matter",
+    "createFromScratch": "Create from scratch",
+    "createProjectFromTemplate": "Create workstream from template",
+    "createTemplate": "Create template",
+    "createTemplateFromWorkstreamLoadingText": "Creating template",
+    "createTemplateNamePlaceholder": "Template name",
+    "createTemplateTask": "Create template task",
+    "createWorkstream": "Create a new workstream",
+    "draft": "Draft",
+    "existingMatter": "Existing matter",
+    "existingWorkstream": "Existing workstream",
+    "fullTemplateAlt": "Use full template",
+    "includePosts": "Include posts",
+    "includePostsTooltip": "Only finalised (not draft) posts will be included",
+    "levelA": "Level A tasks",
+    "loadingText": "Adding template content to workstream",
+    "matterRef": "Matter reference number",
+    "milestones": {
+      "createTemplateMilestone": "Choose a destination for your template milestone",
+      "nameYourNewTemplateMilestone": "Name your new template milestone",
+      "templateMilestoneName": "Template milestone name"
+    },
+    "nameOfProject": "Workstream name",
+    "nameYourNewProject": "Name your new workstream",
+    "nameYourNewTemplateTask": "Name your new template task",
+    "nameYourOldProject": "Name your original workstream",
+    "newMatter": "New matter",
+    "onlyKMCanEdit": "Only knowledge managers can edit templates",
+    "partialTemplateAlt": "Use partial template",
+    "publish": "Publish",
+    "published": "Published",
+    "selectDestination": "Select a destination",
+    "selectTheTaskYouWantToUse": "Select the task you want to use",
+    "subtask": "Subtasks of...",
+    "templateDeleted": "Template deleted",
+    "templateSourcePrompt": "Choose what to base the new template on",
+    "templateTaskDestination": "Choose a destination for your new template task",
+    "templateTaskName": "Template task name",
+    "toolTip": {
+      "draft": "This template is only visible to knowledge managers",
+      "published": "This template is visible to everyone"
+    },
+    "updateError": "Failed to update template",
+    "useEntireTemplate": "I want to use the entire template",
+    "usePartialTemplate": "I want to use a task from this template",
+    "useThisTemplate": "Use this template",
+    "zeroState": "No templates have been published",
+    "zeroStateCaption": "To get started, create a template using the ⊕ button"
+  },
+  "temporaryPasswordDisplayDialog": {
+    "resetMessage_existingUser": "Share this password reset code with {{username}}",
+    "resetMessage_newUser": "Share this activation code with {{username}} to complete their account setup.",
+    "resetTitle_existingUser": "Password reset code",
+    "resetTitle_newUser": "New user activation code",
+    "usedOnceWarning": "This code may only be used once."
+  },
+  "time": {
+    "daySingularShort": "d",
+    "daysPluralShort": "d",
+    "hourPluralShort": "h",
+    "hourSingularShort": "h",
+    "minuteShort": "min",
+    "now": "now",
+    "weeksShort": "w"
+  },
+  "timePeriodAgo": {
+    "day": " days ago",
+    "month": " months ago",
+    "week": " weeks ago"
+  },
+  "timePeriodPicker": {
+    "entire": "Entire",
+    "month": "Month",
+    "quarter": "Quarter",
+    "week": "Week",
+    "year": "Year"
+  },
+  "timelineZeroState": {
+    "permissionToAccessProjectDenied": "Oops! You don't have access to this workstream",
+    "workstreamClosed": "This workstream has been closed"
+  },
+  "tipCards": {
+    "filters": {
+      "description": "Focus on what's most relevant to you in the taskmap and roadmap",
+      "title": "Filters"
+    },
+    "googleDrive": {
+      "description": "Paste a Google doc URL into a Juralio web link post",
+      "title": "Google Drive in Juralio"
+    },
+    "hashtags": {
+      "description": "Tag a post with a particular topic to make it easy to find",
+      "title": "Hashtags"
+    },
+    "matterSwitch": {
+      "description": "Select \"Matters and templates\" at top left",
+      "title": "Switch matter quickly"
+    },
+    "milestone": {
+      "description": "Highlight the most important stages in your work",
+      "title": "Mark a milestone"
+    },
+    "miro": {
+      "description": "Paste a Miro URL into a Juralio web link post",
+      "title": "Use Miro in Juralio"
+    },
+    "overviews": {
+      "description": "See at a glance what's going on in matters and workstreams",
+      "title": "Overviews"
+    },
+    "recentlyViewed": {
+      "description": "The \"Recently viewed\" list allows you to quickly go back to things",
+      "title": "Take me back"
+    },
+    "risks": {
+      "description": "Stay on top of risks in your task by colour-coding them",
+      "title": "Flag risks"
+    },
+    "roadmap": {
+      "description": "Roadmap shows how work develops over time",
+      "title": "Map the road ahead"
+    },
+    "split": {
+      "description": "Matter admins can split matters into workstreams",
+      "title": "Split things out"
+    },
+    "status": {
+      "description": "Tasks can be changed between these four statuses",
+      "title": "See the status"
+    },
+    "taskmap": {
+      "description": "Taskmap shows the tasks and their subtasks",
+      "title": "See the breakdown"
+    },
+    "templates": {
+      "description": "Use a template to get started quickly",
+      "title": "Templates"
+    },
+    "workflow": {
+      "description": "Describe the nuances of the status of work",
+      "title": "Workflow labels"
+    }
+  },
+  "tours": {
+    "common": {
+      "dontShowAgain": "Don't show me this again",
+      "resetSuccess": "Done! The reset will take effect upon next login."
+    },
+    "hiddenTask": {
+      "body": "The tasks you have just changed are no longer visible because of their status. Use this filter to see them again."
+    },
+    "statusFilter": {
+      "body": "Done tasks are hidden by default. Click here to control what tasks you see"
+    },
+    "sysadminUserCreationOrg": {
+      "body": "Users need to be assigned to an organisation before they can log in. Choose which organisation to assign them to."
+    },
+    "templateDraft": {
+      "body": "This template is a draft. Publish the template to make it visible to everyone in your organisation"
+    },
+    "webLinkCreate": {
+      "body1": "Did you know you can interact with Miro boards, Google documents and Figma files inside Juralio?",
+      "body2": "Paste a link to a Miro board, Google doc or a Figma file to try this feature."
+    }
+  },
+  "unarchiveActions": {
+    "taskUnarchived": "This has been restored"
+  },
+  "unarchiveDialog": {
+    "button": "Restore",
+    "error": "Failed to restore task",
+    "invalidUser": "You must be a matter admin and a matter editor to see the contents of the archive.",
+    "isParent": "Is a level A task",
+    "loadingText": "Restoring",
+    "projectSelect": "Choose a workstream",
+    "radioNewLocation": "New location",
+    "radioNewSubtitle": "Restore this task to a new parent task",
+    "radioPostNewLocation": "Unarchive this post to a new location",
+    "radioPrevSub": "In workstream: ",
+    "radioPrevSub2": "Subtask of: ",
+    "radioPrevSubtitle": "Restore this task to its original parent task",
+    "radioPreviousLocation": "Original location",
+    "restore": "Restore",
+    "restoreTo": "Restore task to",
+    "selectDestination": "Select destination",
+    "taskSelect": "Choose a task",
+    "titleText": "Restore task",
+    "unrecorded": "The original location is not available",
+    "zeroState": "No archived tasks to display."
+  },
+  "userCreateDetails": {
+    "emailLabel": "Email",
+    "firstNameLabel": "First name",
+    "lastNameLabel": "Last name",
+    "microsoftEmailLabel": "Microsoft Email",
+    "noOrganisationAtCreation": "User will be created without being assigned to an organisation.",
+    "noOrganisationAtCreationAdvice": "Once created, go to the user list and assign them to an organisation. We recommend that you create users from within the context of an organisation - they will automatically be assigned to it.",
+    "oktaEmailLabel": "Okta Email",
+    "organisationAtCreation": "User will be created in the {{organisationName}} organisation.",
+    "organisationHelperText": "Users without an organisation will not be able to login to Juralio",
+    "organisationLabel": "Organisation"
+  },
+  "userCreation": {
+    "accountOptionsTitle": "Account Options",
+    "association": "Association",
+    "authenticationTypes": {
+      "juralio": "Juralio password",
+      "microsoft": "Microsoft SSO",
+      "okta": "Okta SSO",
+      "saml": "SAML SSO"
+    },
+    "chooseUserType": "How will the new user sign in to Juralio?",
+    "completed": {
+      "activationCode": "activation code",
+      "copyToClipboard": "Copy to clipboard",
+      "shareThis": "Share this activation code with {{email}} to complete their account setup. This code may only be used once.",
+      "userCreated": "User Created"
+    },
+    "enableNeutralMatterCreator": "Enable neutral matter creation",
+    "enableNeutralMatterCreatorHover": "This is a specialised type of matter for people who act as arbitrators, judges, mediators or other neutral parties in dispute resolution processes, and who wish to give the disputing parties access to the matter as well",
+    "enterMicrosoftEmail": "Enter the new users Microsoft email address",
+    "enterOktaEmail": "Enter the new users Okta email address",
+    "externalUsersLoseTheirRolesError": "External users do not have assigned roles.",
+    "firstTimeUserExperienceReset": "Done! The reset will take effect upon next login.",
+    "helpText": "This can be changed after the user is created",
+    "juralio": {
+      "loginDetails": "The user will log in with their email and a Juralio password"
+    },
+    "microsoft": {
+      "loginDetails": "The user will log in with their existing Microsoft Account"
+    },
+    "microsoftCompleted": "This user will need to log in with the \"Sign in with Microsoft\" button on the Juralio login page.",
+    "okta": {
+      "loginDetails": "The user will log in with their existing Okta account"
+    },
+    "oktaCompleted": "This user will need to log in with the Okta button on the Juralio login page.",
+    "organisationHelpText": "This user will be created in the {{orgName}} organisation.",
+    "resetFtueHelperText": "This will show the tutorial cards presented to a new Juralio user",
+    "resetFtueTutorialProgress": "Reset tutorial cards",
+    "resetTipsAndTricks": "Reset feature reminders",
+    "resetTipsAndTricksHelperText": "These are reminders which appear on advanced features e.g. filter controls",
+    "roles": {
+      "knowledgeManagerDescription": "Knowledge managers can create and edit templates",
+      "matterCreatorDescription": "Only users with the mater creator role can create matters",
+      "orgAdminDescription": "Organisation admins can add uses to the organisation and manage other organisation settings"
+    },
+    "rolesKnowledgeManager": "Knowledge manager",
+    "rolesMatterCreatorName": "Matter creator",
+    "rolesMatterViewerName": "Matter viewer",
+    "rolesOrgAdminName": "Organisation admin",
+    "rolesTitle": "Assign roles",
+    "samlCompleted": "This user will need to log in with the SAML SSO on the Juralio login page.",
+    "userAddFailed": "A user with this email address already exists.",
+    "userAddFailedInvalidEmail": "Email address {{email}} is not a valid email address.",
+    "userAddSuccessful": "Added {{firstName}} {{lastName}} to {{orgName}}",
+    "userTypes": {
+      "juralio": "juralio",
+      "microsoft": "microsoft",
+      "okta": "okta",
+      "saml": "saml"
+    }
+  },
+  "userDetails": {
+    "firstNameLabel": "First name",
+    "lastNameLabel": "Last name",
+    "microsoftUserNotLoggedIn": "This user has not yet logged in. When they have done so for the first time, their name will be added above.",
+    "organisationChangeWarning": "This user may not be able to log in to their new org with their current authentication method.",
+    "organisationNoneWarning": "This user will not be able to access any organisations, are you sure?",
+    "title": "Manage user account"
+  },
+  "userList": {
+    "accountOptions": "Account Options",
+    "assignUserRoles": "Will this user have any special roles?",
+    "authMethod": "Auth method",
+    "authMethodDisabled": "This authentication method has been disabled",
+    "confirmationDialog": {
+      "actionText": "Continue",
+      "enabled": {
+        "promptText_disable": "Are you sure you want to deactivate this user's account?",
+        "promptText_enable": "Are you sure you want to activate this user's account?",
+        "titleText_disable": "Deactivate User Account",
+        "titleText_enable": "Activate User Account"
+      },
+      "mfaEnabled": {
+        "promptText_disable": "Are you sure you want to disable MFA for this user's account?",
+        "promptText_enable": "Are you sure you want to enable MFA for this user's account?",
+        "titleText_disable": "Disable MFA",
+        "titleText_enable": "Enable MFA"
+      }
+    },
+    "createUserAccount": "Create a new user account",
+    "createUserButtonLabel": "Create",
+    "currentUsers": "All users across all organisations",
+    "header": {
+      "tooltipRolesOrganisation": "Only organisation-level roles (not matter-level roles) are shown",
+      "usersSummary": {
+        "overallCount_1": "This organisation has ",
+        "overallCount_2": " active user(s). ",
+        "overallCount_instance": "This instance of Juralio has "
+      }
+    },
+    "headerEmail": "Email",
+    "headerMFA": "MFA",
+    "headerName": "Name",
+    "headerRoles": "Roles",
+    "headerStatus": "Status",
+    "howWillTheyLogin": "How will the user sign in to Juralio?",
+    "knowledgeManager": "Knowledge manager",
+    "lastLoggedIn": "Last logged in",
+    "matterCreator": "Matter creator",
+    "matterViewer": "Matter viewer",
+    "orgadmin": "Org admin",
+    "orgadmin_other": "Org admins",
+    "organisation": "Organisation",
+    "sysadmin": "System admin",
+    "sysadminMFATooltip": "System admins cannot toggle MFA for individual user accounts",
+    "sysadminMFATooltip_self": "System admins cannot toggle MFA on their own accounts",
+    "type": "Type"
+  },
+  "userSettings": {
+    "caption": "Personal settings",
+    "editProfileImage": "Edit profile image",
+    "header": "Edit profile",
+    "loadingText": "Saving profile",
+    "subtitle": "Edit your name and reset tutorials",
+    "title": "Personal Settings | Juralio"
+  },
+  "workstreamChip": {
+    "clickHereToStart": "Click here to start adding tasks",
+    "goToOverview": "Go to overview"
+  },
+  "workstreamCreation": {
+    "createABlankWorkstream": "Create a blank workstream",
+    "createOwnTasks": "I'll create my own tasks",
+    "createWorkstreamFromExistingTasks": "Create workstream from existing tasks",
+    "createWorkstreamFromTemplate": "Create workstream from template",
+    "selectTask": "Select task you want to move to the new workstream",
+    "splitExistingWorkstream": "Split original workstream",
+    "splitFromExistingConfirmation": "Workstream successfully split. Any sibling date links or other task links have been removed",
+    "useATemplate": "Use a template"
+  }
+}

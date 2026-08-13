@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="22px" viewBox="0 0 16 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>JurMeetingNote</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard-Copy" transform="translate(-130.000000, -643.000000)" fill="#000000" fill-rule="nonzero">
+            <g id="JurMeetingNote" transform="translate(130.000000, 643.000000)">
+                <path d="M9.77777778,15 L3.55555556,15 L3.55555556,17 L9.77777778,17 M14,20 L2,20 L2,6 L14,6 M13,2.2 L13,0 L11,0 L11,2.2 L5,2.2 L5,0 L3,0 L3,2.2 L1.77777778,2.2 C0.791111111,2.2 0,3.19 0,4.4 L0,19.8 C0,21.0150264 0.795938223,22 1.77777778,22 L14.2222222,22 C15.2040618,22 16,21.0150264 16,19.8 L16,4.4 C16,3.18497355 15.2040618,2.2 14.2222222,2.2 L13,2.2 Z M12.4444444,11 L3.55555556,11 L3.55555556,13 L12.4444444,13 L12.4444444,11 Z" id="Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>

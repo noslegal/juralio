@@ -1,0 +1,49 @@
+Juralio
+Copyright 2026 Graeme and Joanna Johnston
+
+This product includes software developed at Juralio.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this software except in compliance with the License.
+You may obtain a copy of the License in the LICENSE file distributed
+with this work or at:
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+---
+
+Bundled fonts
+
+This distribution includes the Montserrat typeface, Copyright 2011 The Montserrat
+Project Authors (https://github.com/JulietaUla/Montserrat), licensed under the SIL
+Open Font License, Version 1.1. The licence text is distributed with the fonts at
+frontend/src/fonts/OFL.txt and must remain with them in any redistribution.
+
+It also includes the Material Icons font, Copyright 2018 Google, Inc., licensed
+under the Apache License, Version 2.0. See frontend/src/fonts/LICENSE-MaterialIcons.txt.
+
+---
+
+Trademarks
+
+This distribution includes third-party logos and marks (Google, Microsoft, Okta,
+Atlassian, Figma, Miro) used solely to identify those services within Juralio's
+single sign-on and document-linking interfaces. All such marks are the property of
+their respective owners. Their inclusion does not imply any affiliation with,
+sponsorship by, or endorsement from those owners.
+
+These brand assets — in particular the official "sign in with" buttons for Google,
+Microsoft and Okta — are NOT covered by the Apache License 2.0 grant that applies
+to Juralio's own code. They remain subject to each owner's brand guidelines. If you
+redistribute or fork Juralio, you are responsible for obtaining them from the
+relevant vendor's brand kit, or for replacing them with unbranded equivalents.
+
+"Juralio" and the Juralio logo are marks of the copyright holders. The Apache
+License 2.0 grants you rights in the software, not in the name or the logo: you may
+use, modify and redistribute the code, but you may not use the Juralio name or logo
+to identify your own distribution, product or service in a way that suggests it is
+endorsed by or originates from Juralio.
+
+As stated in section 6 of the Apache License 2.0, this License does not grant
+permission to use the trade names, trademarks, service marks, or product names of
+the Licensor or of any third party.

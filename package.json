@@ -1,0 +1,29 @@
+{
+  "name": "juralio-mm",
+  "version": "1.0.0",
+  "description": "Juralio — an open-source matter management platform for legal teams",
+  "main": "produce_war.js",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "npm-run-all": "4.1.5",
+    "shelljs": "^0.8.5",
+    "yargs": "15.4.1"
+  },
+  "devDependencies": {
+    "husky": "^9.1.7",
+    "prettier": "3.8.3"
+  },
+  "scripts": {
+    "prepare": "husky",
+    "postinstall": "npm-run-all -p install:*",
+    "install:e2e": "cd ./e2e && npm install",
+    "install:server": "cd ./server && npm install",
+    "build": "node produce_war.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/noslegal/juralio.git"
+  },
+  "author": "Juralio Dev Team"
+}

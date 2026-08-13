@@ -1,0 +1,365 @@
+{
+  "sheets": [
+    {
+      "cells": {
+        "A10": {
+          "s": "4d2f305a",
+          "value": {
+            "text": "maya.lindqvist@example.com"
+          }
+        },
+        "A13": {
+          "s": "9892372e",
+          "value": {
+            "text": "activeWholeOfMonth"
+          }
+        },
+        "A14": {
+          "s": "845d34da",
+          "value": {
+            "text": "user"
+          }
+        },
+        "A15": {
+          "s": "4d2f305a",
+          "value": {
+            "text": "adam.brookes@example.com"
+          }
+        },
+        "A16": {
+          "s": "4d2f305a",
+          "value": {
+            "text": "zara.whitfield@example.com"
+          }
+        },
+        "A4": {
+          "s": "16a15d9e",
+          "value": {
+            "text": "Mar 2025"
+          }
+        },
+        "A5": {
+          "s": "0928bf26",
+          "value": {
+            "text": ""
+          }
+        },
+        "A7": {
+          "s": "9892372e",
+          "value": {
+            "text": "activePartOfMonth"
+          }
+        },
+        "A8": {
+          "s": "845d34da",
+          "value": {
+            "text": "user"
+          }
+        },
+        "A9": {
+          "s": "4d2f305a",
+          "value": {
+            "text": "carlos.duarte@example.com"
+          }
+        },
+        "B10": {
+          "s": "4d2f305a",
+          "value": {
+            "text": "5 Mar"
+          }
+        },
+        "B13": {
+          "s": "f2b9e7bf",
+          "value": {
+            "number": 2
+          }
+        },
+        "B14": {
+          "s": "845d34da",
+          "value": {
+            "text": ""
+          }
+        },
+        "B4": {
+          "s": "16a15d9e",
+          "value": {
+            "text": "4 name"
+          }
+        },
+        "B5": {
+          "s": "0928bf26",
+          "value": {
+            "text": ""
+          }
+        },
+        "B7": {
+          "s": "f2b9e7bf",
+          "value": {
+            "number": 2
+          }
+        },
+        "B8": {
+          "s": "845d34da",
+          "value": {
+            "text": "activated"
+          }
+        },
+        "B9": {
+          "s": "4d2f305a",
+          "value": {
+            "text": "12 Mar"
+          }
+        },
+        "C10": {
+          "s": "4d2f305a",
+          "value": {
+            "text": "20 Mar"
+          }
+        },
+        "C14": {
+          "s": "845d34da",
+          "value": {
+            "text": ""
+          }
+        },
+        "C4": {
+          "s": "b614dd48",
+          "value": {
+            "text": ""
+          }
+        },
+        "C5": {
+          "s": "0928bf26",
+          "value": {
+            "text": ""
+          }
+        },
+        "C8": {
+          "s": "845d34da",
+          "value": {
+            "text": "deactivated"
+          }
+        },
+        "D10": {
+          "s": "4d2f305a",
+          "value": {
+            "text": "admin@example.com"
+          }
+        },
+        "D14": {
+          "s": "845d34da",
+          "value": {
+            "text": ""
+          }
+        },
+        "D4": {
+          "s": "b614dd48",
+          "value": {
+            "text": ""
+          }
+        },
+        "D5": {
+          "s": "0928bf26",
+          "value": {
+            "text": ""
+          }
+        },
+        "D8": {
+          "s": "845d34da",
+          "value": {
+            "text": "by"
+          }
+        },
+        "D9": {
+          "s": "4d2f305a",
+          "value": {
+            "text": "notRecorded"
+          }
+        }
+      },
+      "cols": {
+        "1": {
+          "bestFit": false,
+          "width": 46.625
+        },
+        "2": {
+          "bestFit": false,
+          "width": 23.625
+        },
+        "3": {
+          "bestFit": false,
+          "width": 23.625
+        },
+        "4": {
+          "bestFit": false,
+          "width": 23.625
+        }
+      },
+      "images": [
+        {
+          "col": 0,
+          "colOff": 0,
+          "cx": 1181100,
+          "cy": 342900,
+          "image": "24700b7c:6046",
+          "row": 0,
+          "rowOff": 114300
+        }
+      ],
+      "merges": [
+        "B4:D4"
+      ],
+      "name": "header",
+      "print": {
+        "errors": "NA",
+        "evenFooter": null,
+        "fitToHeight": null,
+        "fitToPage": false,
+        "fitToWidth": null,
+        "horizontalCentered": true,
+        "margins": {
+          "bottom": 0.5,
+          "footer": 0.2,
+          "header": 0.2,
+          "left": 0.2,
+          "right": 0.2,
+          "top": 0.2
+        },
+        "oddFooter": "&L&8&K666361privilegedAndConfidential&12&K000000&R&8&K666361 &P of &N&12&K000000",
+        "orientation": "landscape",
+        "paperSize": "9"
+      },
+      "printArea": "A1:E16",
+      "rows": {},
+      "view": {
+        "pane": null,
+        "showGridLines": true
+      }
+    }
+  ],
+  "styles": {
+    "0928bf26": {
+      "alignment": null,
+      "border": {
+        "bottom": {
+          "colour": "666361",
+          "style": "thin"
+        }
+      },
+      "fill": {
+        "fg": "DEDFE3",
+        "pattern": "solid"
+      },
+      "font": {
+        "bold": false,
+        "colour": null,
+        "italic": false,
+        "name": "Calibri",
+        "size": 12
+      }
+    },
+    "16a15d9e": {
+      "alignment": null,
+      "border": {
+        "top": {
+          "colour": "666361",
+          "style": "medium"
+        }
+      },
+      "fill": {
+        "fg": "DEDFE3",
+        "pattern": "solid"
+      },
+      "font": {
+        "bold": false,
+        "colour": "666361",
+        "italic": false,
+        "name": "Calibri",
+        "size": 24
+      }
+    },
+    "4d2f305a": {
+      "alignment": null,
+      "border": null,
+      "fill": null,
+      "font": {
+        "bold": false,
+        "colour": null,
+        "italic": false,
+        "name": "Calibri",
+        "size": 12
+      }
+    },
+    "845d34da": {
+      "alignment": {
+        "horizontal": "left",
+        "vertical": "center"
+      },
+      "border": {
+        "bottom": {
+          "colour": "666361",
+          "style": "thin"
+        },
+        "top": {
+          "colour": "666361",
+          "style": "medium"
+        }
+      },
+      "fill": null,
+      "font": {
+        "bold": false,
+        "colour": "333232",
+        "italic": false,
+        "name": "Segoe UI Semibold",
+        "size": 8
+      }
+    },
+    "9892372e": {
+      "alignment": null,
+      "border": null,
+      "fill": null,
+      "font": {
+        "bold": false,
+        "colour": null,
+        "italic": false,
+        "name": "Calibri",
+        "size": 16
+      }
+    },
+    "b614dd48": {
+      "alignment": null,
+      "border": {
+        "top": {
+          "colour": "666361",
+          "style": "medium"
+        }
+      },
+      "fill": {
+        "fg": "DEDFE3",
+        "pattern": "solid"
+      },
+      "font": {
+        "bold": false,
+        "colour": null,
+        "italic": false,
+        "name": "Calibri",
+        "size": 12
+      }
+    },
+    "f2b9e7bf": {
+      "alignment": {
+        "horizontal": "left",
+        "vertical": "center"
+      },
+      "border": null,
+      "fill": null,
+      "font": {
+        "bold": false,
+        "colour": null,
+        "italic": false,
+        "name": "Calibri",
+        "size": 16
+      }
+    }
+  }
+}

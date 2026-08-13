@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>JurMeetingNote</title>
+    <g id="JurMeetingNote" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M13.7777778,16 L7.55555556,16 L7.55555556,18 L13.7777778,18 M18,21 L6,21 L6,7 L18,7 M17,3.2 L17,1 L15,1 L15,3.2 L9,3.2 L9,1 L7,1 L7,3.2 L5.77777778,3.2 C4.79111111,3.2 4,4.19 4,5.4 L4,20.8 C4,22.0150264 4.79593822,23 5.77777778,23 L18.2222222,23 C19.2040618,23 20,22.0150264 20,20.8 L20,5.4 C20,4.18497355 19.2040618,3.2 18.2222222,3.2 L17,3.2 Z M16.4444444,12 L7.55555556,12 L7.55555556,14 L16.4444444,14 L16.4444444,12 Z" id="Shape" fill="#000000" fill-rule="nonzero"></path>
+    </g>
+</svg>

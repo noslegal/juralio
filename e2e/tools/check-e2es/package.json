@@ -1,0 +1,22 @@
+{
+  "name": "check-e2es",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "check-e2es": "babel-node --presets react,env,stage-2 index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-transform-imports": "^2.0.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1"
+  },
+  "devDependencies": {
+    "glob": "^7.1.6"
+  }
+}

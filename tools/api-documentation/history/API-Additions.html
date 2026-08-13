@@ -1,0 +1,30 @@
+<html><head><style>table, th, td {
+  font-family: arial;
+  border: 1px solid black;
+  padding: 2;
+  border-color: lightgrey;
+  border-spacing: 0;
+}</style></head><body>
+
+<h1>API Additions</h1>
+
+<table><tr><td style="background:blue;color:white">Endpoint</td><td style="background:blue;color:white;text-align:center;width:95px;">PUBLIC</td><td style="background:blue;color:white;text-align:center;width:95px;">GET</td><td style="background:blue;color:white;text-align:center;width:95px;">POST</td><td style="background:blue;color:white;text-align:center;width:95px;">PATCH</td><td style="background:blue;color:white;text-align:center;width:95px;">DELETE</td><td  style="background:blue;color:white;text-align:center;">Description</td></tr>
+
+<tr><td><span style="color:red">/api/matter/$matter_id/projects/$project_id/task/$id/unarchive</td><td style="text-align:center;width:95px;background:lightyellow">-</td><td style="text-align:center;width:95px;">-</td><td style="text-align:center;width:95px;">X</td><td style="text-align:center;width:95px;">-</td><td style="text-align:center;width:95px;">-</td><td><span style="color:red"> A MTM who is a MA can unarchive a task from that Matter.</td></tr>
+
+<tr><td><span style="color:red">/api/matter/$matter_id/tasks/archived</td><td style="text-align:center;width:95px;background:lightyellow">-</td><td style="text-align:center;width:95px;">X</td><td style="text-align:center;width:95px;">-</td><td style="text-align:center;width:95px;">-</td><td style="text-align:center;width:95px;">-</td><td><span style="color:red"> A MTM can retrieve a list of archived tasks.</td></tr>
+
+<tr><td><span style="color:red">/api/matters/search/teammembers</td><td style="text-align:center;width:95px;background:lightyellow">-</td><td style="text-align:center;width:95px;">-</td><td style="text-align:center;width:95px;">X</td><td style="text-align:center;width:95px;">-</td><td style="text-align:center;width:95px;">-</td><td><span style="color:red"> A MTM can serach a list of matters they are a member of.</td></tr>
+
+<tr><td><span style="color:red">/api/matters/shared</td><td style="text-align:center;width:95px;background:lightyellow">-</td><td style="text-align:center;width:95px;">-</td><td style="text-align:center;width:95px;">X</td><td style="text-align:center;width:95px;">-</td><td style="text-align:center;width:95px;">-</td><td><span style="color:red"> A MTM can retrieve a list of matters they share with another MTM</td></tr>
+
+<tr><td><span style="color:red">/api/projecttemplates/$templateId/favourite</td><td style="text-align:center;width:95px;background:lightyellow">-</td><td style="text-align:center;width:95px;">-</td><td style="text-align:center;width:95px;">X</td><td style="text-align:center;width:95px;">-</td><td style="text-align:center;width:95px;">X</td><td><span style="color:red"> A MTM can mark a template as a favourite</td></tr>
+
+<tr><td><span style="color:red">/api/projecttemplates/recenttemplates</td><td style="text-align:center;width:95px;background:lightyellow">-</td><td style="text-align:center;width:95px;">X</td><td style="text-align:center;width:95px;">-</td><td style="text-align:center;width:95px;">-</td><td style="text-align:center;width:95px;">-</td><td><span style="color:red"> A MTM can retrive a list of recently used project templates</td></tr>
+
+<tr><td><span style="color:red">/api/usage/report/month</td><td style="text-align:center;width:95px;background:lightyellow">-</td><td style="text-align:center;width:95px;">-</td><td style="text-align:center;width:95px;">X</td><td style="text-align:center;width:95px;">-</td><td style="text-align:center;width:95px;">-</td><td><span style="color:red"> A sysadmin can retrieve usage figures for a particular month</td></tr>
+
+<tr><td><span style="color:red">/api/usage/report/summary</td><td style="text-align:center;width:95px;background:lightyellow">-</td><td style="text-align:center;width:95px;">X</td><td style="text-align:center;width:95px;">-</td><td style="text-align:center;width:95px;">-</td><td style="text-align:center;width:95px;">-</td><td><span style="color:red"> A sysadmin can retrieve a summary of usage figures</td></tr>
+
+</table>
+</body></html>

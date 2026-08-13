@@ -1,0 +1,61 @@
+/*
+ * Copyright 2026 Graeme and Joanna Johnston
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+import com.juralio.post.Post
+import com.juralio.post.authors.PostAuthor
+import com.juralio.post.members.PostMember
+
+model {
+    Post post
+}
+
+def renderMembers(def members) {
+    if (members) {
+        def out = []
+        members.each { it ->
+            PostMember pm = it as PostMember
+            out.push([
+                    id: pm.user ?pm.user.id : pm.placeholder.id,
+                    isPlaceholder:pm.isPlaceholder,
+                    firstname: pm.user ?pm.user.firstname :pm.placeholder.firstName,
+                    lastname: pm.user ? pm.user.lastname:pm.placeholder.lastName,
+                    username: pm.user ? pm.user.username: pm.placeholder.emailAddress,
+                    enabled         : pm.user ? pm.user.enabled : pm.placeholder.enabled,
+                    isExternal      : pm.user ? pm.user.externalUser != null : false,
+                    avatarColorIndex: pm.user ? pm.user.avatarColorIndex : '',
+                    avatarImageIndex: pm.user ? pm.user.avatarImageIndex : '',
+                    isActiveOnMatter : pm.user ?pm.user.isActiveOnMatter : true
+            ])
+        }
+        return out
+    }
+    return []
+}
+
+json g.render(post, [deep: 'true']) {
+    id post.id
+    name post.name
+    type post.type
+    description post.description
+    dateCreated post.dateCreated
+    lastUpdated post.lastUpdated
+    referenceNumber post.referenceNumber
+    privatePost post.privatePost
+    finalised post.finalised
+    startTime post.startTime
+    endTime post.endTime
+    members renderMembers(post.members)
+}

@@ -1,0 +1,21 @@
+Thumbs.db
+.DS_Store
+.gradle
+build/
+out/
+*.war
+
+test-results
+
+.idea
+*.iml
+*.ipr
+*.iws
+
+database/_init.sql
+
+.elasticbeanstalk/config.yml
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml

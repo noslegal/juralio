@@ -1,0 +1,16 @@
+{
+  "baseUrl": "http://localhost:3000/",
+  "reporter": "junit",
+  "reporterOptions": {
+    "mochaFile": "../results/test-results.[hash].xml"
+  },
+  "video": false,
+  "env": {
+    "serverBaseUrl": "http://localhost:8080/api",
+    "defaultPassword": "Password2Password2$"
+  },
+  "viewportHeight": 900,
+  "viewportWidth": 1400,
+  "userAgent": "Cypress!",
+  "watchForFileChanges": false
+}

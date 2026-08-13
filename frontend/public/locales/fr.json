@@ -1,0 +1,8 @@
+{
+  "subTaskPanel": {
+    "title": "Sous-tâches",
+    "taskStatusNotStarted": "Pas encore commencée",
+    "taskStatusInProgress": "En cours",
+    "taskStatusDone": "Finie"
+  }
+}

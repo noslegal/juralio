@@ -1,0 +1,107 @@
+/*
+ * Copyright 2026 Graeme and Joanna Johnston
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+import com.juralio.organisationgroup.OrganisationGroup
+import com.juralio.task.Task
+import com.juralio.task.TaskBlocker
+import com.juralio.task.label.TaskLabel
+import com.juralio.task.team.TaskTeamMember
+
+/**
+ * The purpose of this view is to render a single task and its direct sub-tasks
+ */
+model {
+    Task task
+}
+
+def renderLabels(List<TaskLabel> labels) {
+    labels.collect {
+        [
+                name    : it.label.name,
+                type    : it.label.type,
+                modifier: it.modifier,
+                id      : it.id,
+                labelId : it.label.id,
+                inactive: it.label.inactive
+        ]
+
+    }
+}
+
+
+def renderBlockers(List<TaskBlocker> blockers) {
+    return blockers.collect {
+        [
+                id          : it.id,
+                blocker     : [id: it.blocker.id, name: it.blocker.name, level: it.blocker.level, status: it.blocker.status],
+                blocked     : [id: it.blocked.id, name: it.blocked.name, level: it.blocked.level, status: it.blocked.status],
+                relationship: it.relationship
+        ]
+    }
+
+}
+
+def renderTeam(List<TaskTeamMember> teamMembers) {
+    if (teamMembers) {
+        def out = []
+        teamMembers.each { it ->
+            TaskTeamMember ttm = it as TaskTeamMember
+            out.push([id              : ttm.user ? ttm.user.id : ttm.placeholder.id,
+                      firstname       : ttm.user ? ttm.user.firstname : ttm.placeholder.firstName,
+                      lastname        : ttm.user ? ttm.user.lastname : ttm.placeholder.lastName,
+                      avatarColorIndex: ttm.user ? ttm.user.avatarColorIndex : '',
+                      avatarImageIndex: ttm.user ? ttm.user.avatarImageIndex : '',
+                      email           : ttm.user ? ttm.user.username : ttm.placeholder.emailAddress,
+                      enabled         : ttm.user ? ttm.user.enabled : ttm.placeholder.enabled,
+                      isOnAllSubtasks : ttm.user ? ttm.user.isOnAllSubtasks : ttm.placeholder.isOnAllSubtasks,
+                      isOnSomeSubtasks: ttm.user ? ttm.user.isOnSomeSubtasks : ttm.placeholder.isOnSomeSubtasks,
+                      isActiveOnMatter: ttm.user ? ttm.user.isActiveOnMatter : true,
+                      isViewerOnMatter: ttm.user ? ttm.user.isViewerOnMatter : false,
+                      isPlaceholder   : ttm.placeholder ? true : false,
+                      organisationGroup:  ttm.user ? renderOrganisationGroup(ttm.user.organisationGroup) : null
+
+            ])
+        }
+        return out
+    }
+    return []
+}
+
+def renderOrganisationGroup(OrganisationGroup orgGroup) {
+    return orgGroup ? [id: orgGroup.id, name: orgGroup.name, isInternal: orgGroup.isInternal, customLogo: orgGroup.logo != null, organisationId: orgGroup.organisation?.id] : null
+}
+
+
+
+json g.render(task, [excludes: ['createdBy', 'dateCreated', 'isParked', 'projectTemplate', 'taskParentWhenArchived']]) {
+    tasks g.render(task.tasks, [deep: true])
+    plannedStartDate task.plannedStartDate
+    plannedEndDate task.plannedEndDate
+    actualStartDate task.actualStartDate
+    actualEndDate task.actualEndDate
+    teamMembers task.teamMembers ? renderTeam(task.teamMembers as List<TaskTeamMember>) : []
+    projectId task.project.id
+    matterId task.project.matter.id
+    activities task.activities
+    isFollower task.isCurrentUserFollower
+    updateMeta task.updateMeta
+    parent task.parent ? task.parent : []
+    blockers task.blockers ? renderBlockers(task.blockers) : []
+    labels task.labels ? renderLabels(task.labels as List<TaskLabel>) : null
+    description task.description
+    isMilestone task.isMilestone
+    isDeliverable task.isDeliverable
+}

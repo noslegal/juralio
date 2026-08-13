@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>JurWorkstream</title>
+    <g id="JurWorkstream" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M19,3 C20.0595455,3 20.9186364,3.81092975 20.9945464,4.85006292 L21,5 L21,19 C21,20.0595455 20.1890702,20.9186364 19.1499371,20.9945464 L19,21 L5,21 C3.94045455,21 3.08136364,20.1890702 3.00545361,19.1499371 L3,19 L3,5 C3,3.94045455 3.81092975,3.08136364 4.85006292,3.00545361 L5,3 L19,3 Z M19,5 L5,5 L5,19 L19,19 L19,5 Z M11,13 L11,17 L7,17 L7,13 L11,13 Z M11,7 L11,11 L7,11 L7,7 L11,7 Z" id="Shape" fill="#000000" fill-rule="nonzero"></path>
+    </g>
+</svg>

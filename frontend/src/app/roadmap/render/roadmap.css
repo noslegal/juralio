@@ -1,0 +1,17 @@
+.today-label {
+  font-weight: bold;
+  position: absolute;
+  min-width: 104px;
+  max-width: 104px;
+  height: 16px;
+  padding-top: 2px;
+  border-radius: 2px;
+  text-align: center;
+  font-size: 10px;
+  font-family: Montserrat;
+}
+
+.month-label {
+  font-family: Montserrat;
+  font-size: 12px;
+}

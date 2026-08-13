@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>JurWorkstream</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard-Copy" transform="translate(-220.000000, -347.000000)" fill="#000000" fill-rule="nonzero">
+            <g id="JurWorkstream" transform="translate(220.000000, 347.000000)">
+                <path d="M2,0 C0.89,0 0,0.89 0,2 L0,16 C0,17.11 0.89,18 2,18 L16,18 C17.11,18 18,17.11 18,16 L18,2 C18,0.89 17.11,0 16,0 L2,0 M2,2 L16,2 L16,16 L2,16 L2,2" id="Shape"></path>
+                <polyline id="Path" points="4 4 4 8 8 8 8 4 4 4"></polyline>
+                <polyline id="Path-Copy-2" points="4 10 4 14 8 14 8 10 4 10"></polyline>
+            </g>
+        </g>
+    </g>
+</svg>

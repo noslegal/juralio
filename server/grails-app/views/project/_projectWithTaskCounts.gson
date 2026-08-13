@@ -1,0 +1,132 @@
+/*
+ * Copyright 2026 Graeme and Joanna Johnston
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+import com.juralio.post.Post
+import com.juralio.project.Project
+import com.juralio.task.Task
+import server.PrivateWorkstreamMember
+
+model {
+    Project project
+}
+
+
+def renderPosts(def posts) {
+    posts.collect { Post p ->
+        [
+                id         : p.id,
+                name       : p.name,
+                lastUpdated: p.lastUpdated,
+                private    : p.privatePost,
+                type       : p.type,
+                finalised  : p.finalised,
+                authors    : p.authors ? p.authors.collect {
+                    [
+                            id              : it.id,
+                            appUserId       : it.user.id,
+                            firstname       : it.user.firstname,
+                            lastname        : it.user.lastname,
+                            username        : it.user.username,
+                            avatarImageIndex: it.user.avatarImageIndex,
+                            avatarColorIndex: it.user.avatarColorIndex
+                    ]
+                } : []
+        ]
+    }
+}
+
+def renderTasks(def tasks, boolean isLevelA) {
+   return tasks.collect { Task it ->
+        [id                   : it.id,
+         referenceNumber      : it.referenceNumber,
+         name                 : it.name,
+         status               : it.status,
+         level                : it.level,
+         plannedStartDate     : it.plannedStartDate,
+         lastUpdated          : it.lastUpdated,
+         plannedEndDate       : it.plannedEndDate,
+         isMilestone          : it.isMilestone,
+         isDeliverable        : it.isDeliverable,
+         actualStartDate      : it.actualStartDate,
+         actualEndDate        : it.actualEndDate,
+         datesLinkedToSiblings: it.datesLinkedToSiblings,
+         posts                : it.posts ? renderPosts(it.posts) : [],
+         tasks                : isLevelA ? [] : renderTasks(it.tasks, isLevelA),
+         childCount           : it.tasks ? it.tasks.size() : 0,
+         teamMembers          : it.teamMembers ? it.teamMembers.collect { taskMember ->
+             [id              : taskMember.user ? taskMember.user.id : taskMember.placeholder.id,
+              firstname       : taskMember.user ? taskMember.user.firstname : taskMember.placeholder.firstName,
+              lastname        : taskMember.user ? taskMember.user.lastname : taskMember.placeholder.lastName,
+              avatarColorIndex: taskMember.user ? taskMember.user.avatarColorIndex : '',
+              avatarImageIndex: taskMember.user ? taskMember.user.avatarImageIndex : '',
+              email           : taskMember.user ? taskMember.user.username : taskMember.placeholder.emailAddress,
+              enabled         : taskMember.user ? taskMember.user.enabled : taskMember.placeholder.enabled,
+              isExternal      : taskMember.user ? taskMember.user.externalUser != null : false,
+              isOnAllSubtasks : taskMember.user ? taskMember.user.isOnAllSubtasks : taskMember.placeholder.isOnAllSubtasks,
+              isOnSomeSubtasks: taskMember.user ? taskMember.user.isOnSomeSubtasks : taskMember.placeholder.isOnSomeSubtasks,
+              isPlaceholder   : taskMember.placeholder ? true : false
+             ]
+         } : [],
+         followers            : it.followers ? it.followers.collect { follower ->
+             [id       : follower.user.id,
+              firstname: follower.user.firstname,
+              lastname : follower.user.lastname,
+              email    : follower.user.username,
+              enabled  : follower.user.enabled]
+         } : []
+        ]
+    }
+
+}
+
+
+def renderPrivateWorkstreamTeam(Project project) {
+    if (project.isPrivate) {
+        project.privateWorkstreamTeam.collect { PrivateWorkstreamMember member ->
+            def mem = [
+                    id            : member.id,
+                    user          : [
+                            id                       : member.user.id,
+                            username                 : member.user.username,
+                            firstname                : member.user.firstname,
+                            lastname                 : member.user.lastname,
+                            avatarColorIndex         : member.user.avatarColorIndex,
+                            avatarImageIndex         : member.user.avatarImageIndex,
+                            enabled                  : member.user.enabled,
+                            isActiveOnMatter         : member.matterAdmin || member.matterTeamMember || member.matterViewer,
+                            privateWorkstreamMemberId: member.id
+                    ],
+                    matterViewerId: member.matterViewer,
+                    teamMemberId  : member.matterTeamMember,
+                    matterAdminId : member.matterAdmin
+            ]
+            return mem
+        }
+    } else {
+        return []
+    }
+}
+
+
+json g.render(project,[excludes:["deletedMirror"]]) {
+    taskCounts g.render(project.taskCounts)
+    postCount project.postCount
+    creator g.render(project.creator)
+    closer g.render(project.closer)
+    tasks renderTasks(project.tasks, false)
+    levelATasks renderTasks(project.levelATasks, true)
+    privateWorkstreamTeam renderPrivateWorkstreamTeam(project)
+}

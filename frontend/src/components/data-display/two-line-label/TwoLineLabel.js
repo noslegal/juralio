@@ -1,0 +1,70 @@
+/*
+ * Copyright 2026 Graeme and Joanna Johnston
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+import { Typography } from '@mui/material'
+import PropTypes from 'prop-types'
+import React from 'react'
+import { makeStyles } from 'tss-react/mui'
+import juralioColours from '../../../theme/juralio-colours'
+import InfoTooltip from '../info-tooltip/InfoTooltip'
+
+const useStyles = makeStyles()(theme => ({
+  root: {
+    paddingBottom: theme.spacing(2),
+  },
+  heading: {
+    color: juralioColours.darkText.secondary,
+  },
+  entry: {},
+  topRow: { display: 'flex', alignItems: 'center' },
+  infoIcon: { marginLeft: theme.spacing() },
+}))
+
+const TwoLineLabel = props => {
+  const { classes } = useStyles()
+  const { heading, entry, dataTest, infoTipText } = props
+
+  return (
+    <div className={classes.root}>
+      <div className={classes.topRow}>
+        <Typography variant="caption" className={classes.heading}>
+          {heading}
+        </Typography>
+        {infoTipText && (
+          <div className={classes.infoIcon}>
+            <InfoTooltip text={infoTipText} />
+          </div>
+        )}
+      </div>
+      <Typography
+        variant="subtitle1"
+        className={classes.entry}
+        data-test={`${dataTest}`}
+      >
+        {entry}
+      </Typography>
+    </div>
+  )
+}
+
+PropTypes.propTypes = {
+  heading: PropTypes.string,
+  entry: PropTypes.string,
+  infoTipText: PropTypes.string,
+  dataTest: PropTypes.string,
+}
+
+export default TwoLineLabel

@@ -1,0 +1,17 @@
+{
+  "name": "jurcomp",
+  "version": "1.0.0",
+  "description": "Component generator",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "bin": {
+    "jurcomp": "./index.js"
+  },
+  "dependencies": {
+    "yargs": "^15.3.0"
+  }
+}

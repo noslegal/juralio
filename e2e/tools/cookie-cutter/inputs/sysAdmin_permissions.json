@@ -1,0 +1,1253 @@
+[
+  {
+    "endpoint": "/api/organisations/",
+    "permissions": {
+      "GET": "Client error response (400 - 499)",
+      "POST": "Client error response (400 - 499)",
+      "PATCH": "Client error response (400 - 499)",
+      "DELETE": "Client error response (400 - 499)"
+    }
+  },
+  {
+    "endpoint": "/api/organisations/${organisation?.id}",
+    "permissions": {
+      "GET": "Client error response (400 - 499)",
+      "POST": "Client error response (400 - 499)",
+      "PATCH": "Client error response (400 - 499)",
+      "DELETE": "Client error response (400 - 499)"
+    }
+  },
+  {
+    "endpoint": "/api/organisation",
+    "permissions": {
+      "GET": "Client error response (400 - 499)",
+      "POST": "Client error response (400 - 499)",
+      "PATCH": "Client error response (400 - 499)",
+      "DELETE": "Client error response (400 - 499)"
+    }
+  },
+  {
+    "endpoint": "/api/organisations/${organisation?.id}/users",
+    "permissions": {
+      "GET": "Client error response (400 - 499)",
+      "POST": "Client error response (400 - 499)",
+      "PATCH": "Client error response (400 - 499)",
+      "DELETE": "Client error response (400 - 499)"
+    }
+  },
+  {
+    "endpoint": "/api/organisations/${organisation?.id}/logo",
+    "permissions": {
+      "GET": "Client error response (400 - 499)",
+      "POST": "Client error response (400 - 499)",
+      "PATCH": "Client error response (400 - 499)",
+      "DELETE": "Client error response (400 - 499)"
+    }
+  },
+  {
+    "endpoint": "/api/organisation/billing/setup",
+    "permissions": {
+      "GET": "Client error response (400 - 499)",
+      "POST": "Client error response (400 - 499)",
+      "PATCH": "Client error response (400 - 499)",
+      "DELETE": "Client error response (400 - 499)"
+    }
+  },
+  {
+    "endpoint": "/api/organisation/billing/redirect",
+    "permissions": {
+      "GET": "Client error response (400 - 499)",
+      "POST": "Client error response (400 - 499)",
+      "PATCH": "Client error response (400 - 499)",
+      "DELETE": "Client error response (400 - 499)"
+    }
+  },
+  {
+    "endpoint": "/api/organisation/billing/customerInfo",
+    "permissions": {
+      "GET": "Client error response (400 - 499)",
+      "POST": "Client error response (400 - 499)",
+      "PATCH": "Client error response (400 - 499)",
+      "DELETE": "Client error response (400 - 499)"
+    }
+  },
+  {
+    "endpoint": "/api/organisation/billing/organisationInfo",
+    "permissions": {
+      "GET": "Client error response (400 - 499)",
+      "POST": "Client error response (400 - 499)",
+      "PATCH": "Client error response (400 - 499)",
+      "DELETE": "Client error response (400 - 499)"
+    }
+  },
+  {
+    "endpoint": "/api/organisation/billing/updatesubscription",
+    "permissions": {
+      "GET": "Client error response (400 - 499)",
+      "POST": "Client error response (400 - 499)",
+      "PATCH": "Client error response (400 - 499)",
+      "DELETE": "Client error response (400 - 499)"
+    }
+  },
+  {
+    "endpoint": "/api/organisation/billing/updateCustomerDetails",
+    "permissions": {
+      "GET": "Client error response (400 - 499)",
+      "POST": "Client error response (400 - 499)",
+      "PATCH": "Client error response (400 - 499)",
+      "DELETE": "Client error response (400 - 499)"
+    }
+  },
+  {
+    "endpoint": "/api/organisation/billing/cancel",
+    "permissions": {
+      "GET": "Client error response (400 - 499)",
+      "POST": "Client error response (400 - 499)",
+      "PATCH": "Client error response (400 - 499)",
+      "DELETE": "Client error response (400 - 499)"
+    }
+  },
+  {
+    "endpoint": "/api/organisation/billing/dontcancel",
+    "permissions": {
+      "GET": "Client error response (400 - 499)",
+      "POST": "Client error response (400 - 499)",
+      "PATCH": "Client error response (400 - 499)",
+      "DELETE": "Client error response (400 - 499)"
+    }
+  },
+  {
+    "endpoint": "/api/matters",
+    "permissions": {
+      "GET": "Client error response (400 - 499)",
+      "POST": "Client error response (400 - 499)",
+      "PATCH": "Client error response (400 - 499)",
+      "DELETE": "Client error response (400 - 499)"
+    }
+  },
+  {
+    "endpoint": "/api/matter/${matter?.id}",
+    "permissions": {
+      "GET": "Client error response (400 - 499)",
+      "POST": "Client error response (400 - 499)",
+      "PATCH": "Client error response (400 - 499)",
+      "DELETE": "Client error response (400 - 499)"
+    }
+  },
+  {
+    "endpoint": "/api/matters/shared",
+    "permissions": {
+      "GET": "Client error response (400 - 499)",
+      "POST": "Client error response (400 - 499)",
+      "PATCH": "Client error response (400 - 499)",
+      "DELETE": "Client error response (400 - 499)"
+    }
+  },
+  {
+    "endpoint": "/api/matters/search/teammembers",
+    "permissions": {
+      "GET": "Client error response (400 - 499)",
+      "POST": "Client error response (400 - 499)",
+      "PATCH": "Client error response (400 - 499)",
+      "DELETE": "Client error response (400 - 499)"
+    }
+  },
+  {
+    "endpoint": "/api/matter/${matter?.id}/team",
+    "permissions": {
+      "GET": "Client error response (400 - 499)",
+      "POST": "Client error response (400 - 499)",
+      "PATCH": "Client error response (400 - 499)",
+      "DELETE": "Client error response (400 - 499)"
+    }
+  },
+  {
+    "endpoint": "/api/admin/matter/${matter?.id}/notify",
+    "permissions": {
+      "GET": "Client error response (400 - 499)",
+      "POST": "Client error response (400 - 499)",
+      "PATCH": "Client error response (400 - 499)",
+      "DELETE": "Client error response (400 - 499)"
+    }
+  },
+  {
+    "endpoint": "/api/admin/matter/${matter?.id}",
+    "permissions": {
+      "GET": "Client error response (400 - 499)",
+      "POST": "Client error response (400 - 499)",
+      "PATCH": "Client error response (400 - 499)",
+      "DELETE": "Client error response (400 - 499)"
+    }
+  },
+  {
+    "endpoint": "/api/admin/matter/${matter?.id}/matters",
+    "permissions": {
+      "GET": "Client error response (400 - 499)",
+      "POST": "Client error response (400 - 499)",
+      "PATCH": "Client error response (400 - 499)",
+      "DELETE": "Client error response (400 - 499)"
+    }
+  },
+  {
+    "endpoint": "/api/admin/matter/${matter?.id}/matters/${matter?.id}",
+    "permissions": {
+      "GET": "Client error response (400 - 499)",
+      "POST": "Client error response (400 - 499)",
+      "PATCH": "Client error response (400 - 499)",
+      "DELETE": "Client error response (400 - 499)"
+    }
+  },
+  {
+    "endpoint": "/api/admin/matter/${matter?.id}/teammembers",
+    "permissions": {
+      "GET": "Client error response (400 - 499)",
+      "POST": "Client error response (400 - 499)",
+      "PATCH": "Client error response (400 - 499)",
+      "DELETE": "Client error response (400 - 499)"
+    }
+  },
+  {
+    "endpoint": "/api/admin/matter/${matter?.id}/teammembers/${matterEditor?.id}?",
+    "permissions": {
+      "GET": "Client error response (400 - 499)",
+      "POST": "Client error response (400 - 499)",
+      "PATCH": "Client error response (400 - 499)",
+      "DELETE": "Client error response (400 - 499)"
+    }
+  },
+  {
+    "endpoint": "/api/admin/matter/${matter?.id}/viewers",
+    "permissions": {
+      "GET": "Client error response (400 - 499)",
+      "POST": "Client error response (400 - 499)",
+      "PATCH": "Client error response (400 - 499)",
+      "DELETE": "Client error response (400 - 499)"
+    }
+  },
+  {
+    "endpoint": "/api/admin/matter/${matter?.id}/viewers/${matterViewer?.id}?",
+    "permissions": {
+      "GET": "Client error response (400 - 499)",
+      "POST": "Client error response (400 - 499)",
+      "PATCH": "Client error response (400 - 499)",
+      "DELETE": "Client error response (400 - 499)"
+    }
+  },
+  {
+    "endpoint": "/api/workstreams",
+    "permissions": {
+      "GET": "Client error response (400 - 499)",
+      "POST": "Client error response (400 - 499)",
+      "PATCH": "Client error response (400 - 499)",
+      "DELETE": "Client error response (400 - 499)"
+    }
+  },
+  {
+    "endpoint": "/api/matter/${matter?.id}/workstreams",
+    "permissions": {
+      "GET": "Client error response (400 - 499)",
+      "POST": "Client error response (400 - 499)",
+      "PATCH": "Client error response (400 - 499)",
+      "DELETE": "Client error response (400 - 499)"
+    }
+  },
+  {
+    "endpoint": "/api/admin/matter/${matter?.id}/workstreams/${project?.id}",
+    "permissions": {
+      "GET": "Client error response (400 - 499)",
+      "POST": "Client error response (400 - 499)",
+      "PATCH": "Client error response (400 - 499)",
+      "DELETE": "Client error response (400 - 499)"
+    }
+  },
+  {
+    "endpoint": "/api/matter/${matter?.id}/workstreams/${project?.id}",
+    "permissions": {
+      "GET": "Client error response (400 - 499)",
+      "POST": "Client error response (400 - 499)",
+      "PATCH": "Client error response (400 - 499)",
+      "DELETE": "Client error response (400 - 499)"
+    }
+  },
+  {
+    "endpoint": "/api/matter/${matter?.id}/workstreams/${project?.id}/preview",
+    "permissions": {
+      "GET": "Client error response (400 - 499)",
+      "POST": "Client error response (400 - 499)",
+      "PATCH": "Client error response (400 - 499)",
+      "DELETE": "Client error response (400 - 499)"
+    }
+  },
+  {
+    "endpoint": "/api/matter/${matter?.id}/workstreams/${project?.id}/visit",
+    "permissions": {
+      "GET": "Client error response (400 - 499)",
+      "POST": "Client error response (400 - 499)",
+      "PATCH": "Client error response (400 - 499)",
+      "DELETE": "Client error response (400 - 499)"
+    }
+  },
+  {
+    "endpoint": "/api/matter/${matter?.id}/workstreams/${project?.id}/link",
+    "permissions": {
+      "GET": "Client error response (400 - 499)",
+      "POST": "Client error response (400 - 499)",
+      "PATCH": "Client error response (400 - 499)",
+      "DELETE": "Client error response (400 - 499)"
+    }
+  },
+  {
+    "endpoint": "/api/matter/${matter?.id}/workstreams/${project?.id}/tasks/new",
+    "permissions": {
+      "GET": "Client error response (400 - 499)",
+      "POST": "Client error response (400 - 499)",
+      "PATCH": "Client error response (400 - 499)",
+      "DELETE": "Client error response (400 - 499)"
+    }
+  },
+  {
+    "endpoint": "/api/matter/${matter?.id}/workstreams/${project?.id}/tasks/${task?.id}/seen",
+    "permissions": {
+      "GET": "Client error response (400 - 499)",
+      "POST": "Client error response (400 - 499)",
+      "PATCH": "Client error response (400 - 499)",
+      "DELETE": "Client error response (400 - 499)"
+    }
+  },
+  {
+    "endpoint": "/api/matter/${matter?.id}/workstreams/${project?.id}/resources",
+    "permissions": {
+      "GET": "Client error response (400 - 499)",
+      "POST": "Client error response (400 - 499)",
+      "PATCH": "Client error response (400 - 499)",
+      "DELETE": "Client error response (400 - 499)"
+    }
+  },
+  {
+    "endpoint": "/api/matter/${matter?.id}/workstreams/resources",
+    "permissions": {
+      "GET": "Client error response (400 - 499)",
+      "POST": "Client error response (400 - 499)",
+      "PATCH": "Client error response (400 - 499)",
+      "DELETE": "Client error response (400 - 499)"
+    }
+  },
+  {
+    "endpoint": "/api/matter/${matter?.id}/workstreams/${project?.id}/resources/$id",
+    "permissions": {
+      "GET": "Client error response (400 - 499)",
+      "POST": "Client error response (400 - 499)",
+      "PATCH": "Client error response (400 - 499)",
+      "DELETE": "Client error response (400 - 499)"
+    }
+  },
+  {
+    "endpoint": "/api/matter/${matter?.id}/resources",
+    "permissions": {
+      "GET": "Client error response (400 - 499)",
+      "POST": "Client error response (400 - 499)",
+      "PATCH": "Client error response (400 - 499)",
+      "DELETE": "Client error response (400 - 499)"
+    }
+  },
+  {
+    "endpoint": "/api/matter/${matter?.id}/resources/$id",
+    "permissions": {
+      "GET": "Client error response (400 - 499)",
+      "POST": "Client error response (400 - 499)",
+      "PATCH": "Client error response (400 - 499)",
+      "DELETE": "Client error response (400 - 499)"
+    }
+  },
+  {
+    "endpoint": "/api/matter/${matter?.id}/workstreams/${project?.id}/teammembers",
+    "permissions": {
+      "GET": "Client error response (400 - 499)",
+      "POST": "Client error response (400 - 499)",
+      "PATCH": "Client error response (400 - 499)",
+      "DELETE": "Client error response (400 - 499)"
+    }
+  },
+  {
+    "endpoint": "/api/matter/${matter?.id}/workstreams/${project?.id}/teammembers/${matterEditor?.id}?",
+    "permissions": {
+      "GET": "Client error response (400 - 499)",
+      "POST": "Client error response (400 - 499)",
+      "PATCH": "Client error response (400 - 499)",
+      "DELETE": "Client error response (400 - 499)"
+    }
+  },
+  {
+    "endpoint": "/api/matter/${matter?.id}/remove-private-teammember/$id",
+    "permissions": {
+      "GET": "Client error response (400 - 499)",
+      "POST": "Client error response (400 - 499)",
+      "PATCH": "Client error response (400 - 499)",
+      "DELETE": "Client error response (400 - 499)"
+    }
+  },
+  {
+    "endpoint": "/api/matter/${matter?.id}/workstreams/${project?.id}/tasks",
+    "permissions": {
+      "GET": "Client error response (400 - 499)",
+      "POST": "Client error response (400 - 499)",
+      "PATCH": "Client error response (400 - 499)",
+      "DELETE": "Client error response (400 - 499)"
+    }
+  },
+  {
+    "endpoint": "/api/matter/${matter?.id}/tasks/archived",
+    "permissions": {
+      "GET": "Client error response (400 - 499)",
+      "POST": "Client error response (400 - 499)",
+      "PATCH": "Client error response (400 - 499)",
+      "DELETE": "Client error response (400 - 499)"
+    }
+  },
+  {
+    "endpoint": "/api/matter/${matter?.id}/workstreams/${project?.id}/task/${task?.id}",
+    "permissions": {
+      "GET": "Client error response (400 - 499)",
+      "POST": "Client error response (400 - 499)",
+      "PATCH": "Client error response (400 - 499)",
+      "DELETE": "Client error response (400 - 499)"
+    }
+  },
+  {
+    "endpoint": "/api/matter/${matter?.id}/workstreams/${project?.id}/task/${task?.id}/siblings",
+    "permissions": {
+      "GET": "Client error response (400 - 499)",
+      "POST": "Client error response (400 - 499)",
+      "PATCH": "Client error response (400 - 499)",
+      "DELETE": "Client error response (400 - 499)"
+    }
+  },
+  {
+    "endpoint": "/api/matter/${matter?.id}/workstreams/${project?.id}/task/${task?.id}/link",
+    "permissions": {
+      "GET": "Client error response (400 - 499)",
+      "POST": "Client error response (400 - 499)",
+      "PATCH": "Client error response (400 - 499)",
+      "DELETE": "Client error response (400 - 499)"
+    }
+  },
+  {
+    "endpoint": "/api/matter/${matter?.id}/workstreams/${project?.id}/task/${task?.id}/followers",
+    "permissions": {
+      "GET": "Client error response (400 - 499)",
+      "POST": "Client error response (400 - 499)",
+      "PATCH": "Client error response (400 - 499)",
+      "DELETE": "Client error response (400 - 499)"
+    }
+  },
+  {
+    "endpoint": "/api/matter/${matter?.id}/workstreams/${project?.id}/task/${task?.id}/followers/${user?.id}",
+    "permissions": {
+      "GET": "Client error response (400 - 499)",
+      "POST": "Client error response (400 - 499)",
+      "PATCH": "Client error response (400 - 499)",
+      "DELETE": "Client error response (400 - 499)"
+    }
+  },
+  {
+    "endpoint": "/api/matter/${matter?.id}/workstreams/${project?.id}/task/${task?.id}/teammembers",
+    "permissions": {
+      "GET": "Client error response (400 - 499)",
+      "POST": "Client error response (400 - 499)",
+      "PATCH": "Client error response (400 - 499)",
+      "DELETE": "Client error response (400 - 499)"
+    }
+  },
+  {
+    "endpoint": "/api/matter/${matter?.id}/workstreams/${project?.id}/task/${task?.id}/teammembers/${user?.id}",
+    "permissions": {
+      "GET": "Client error response (400 - 499)",
+      "POST": "Client error response (400 - 499)",
+      "PATCH": "Client error response (400 - 499)",
+      "DELETE": "Client error response (400 - 499)"
+    }
+  },
+  {
+    "endpoint": "/api/matter/${matter?.id}/workstreams/${project?.id}/task/${task?.id}/copy",
+    "permissions": {
+      "GET": "Client error response (400 - 499)",
+      "POST": "Client error response (400 - 499)",
+      "PATCH": "Client error response (400 - 499)",
+      "DELETE": "Client error response (400 - 499)"
+    }
+  },
+  {
+    "endpoint": "/api/matter/${matter?.id}/workstreams/${project?.id}/task/${task?.id}/move",
+    "permissions": {
+      "GET": "Client error response (400 - 499)",
+      "POST": "Client error response (400 - 499)",
+      "PATCH": "Client error response (400 - 499)",
+      "DELETE": "Client error response (400 - 499)"
+    }
+  },
+  {
+    "endpoint": "/api/matter/${matter?.id}/workstreams/${project?.id}/task/${task?.id}/archive",
+    "permissions": {
+      "GET": "Client error response (400 - 499)",
+      "POST": "Client error response (400 - 499)",
+      "PATCH": "Client error response (400 - 499)",
+      "DELETE": "Client error response (400 - 499)"
+    }
+  },
+  {
+    "endpoint": "/api/matter/${matter?.id}/workstreams/${project?.id}/task/${task?.id}/unarchive",
+    "permissions": {
+      "GET": "Client error response (400 - 499)",
+      "POST": "Client error response (400 - 499)",
+      "PATCH": "Client error response (400 - 499)",
+      "DELETE": "Client error response (400 - 499)"
+    }
+  },
+  {
+    "endpoint": "/api/matter/${matter?.id}/workstreams/${project?.id}/task/${task?.id}/checkConsistency",
+    "permissions": {
+      "GET": "Client error response (400 - 499)",
+      "POST": "Client error response (400 - 499)",
+      "PATCH": "Client error response (400 - 499)",
+      "DELETE": "Client error response (400 - 499)"
+    }
+  },
+  {
+    "endpoint": "/api/tasks/recent",
+    "permissions": {
+      "GET": "Client error response (400 - 499)",
+      "POST": "Client error response (400 - 499)",
+      "PATCH": "Client error response (400 - 499)",
+      "DELETE": "Client error response (400 - 499)"
+    }
+  },
+  {
+    "endpoint": "/api/matter/${matter?.id}/search/users/${user?.id}",
+    "permissions": {
+      "GET": "Client error response (400 - 499)",
+      "POST": "Client error response (400 - 499)",
+      "PATCH": "Client error response (400 - 499)",
+      "DELETE": "Client error response (400 - 499)"
+    }
+  },
+  {
+    "endpoint": "/api/matter/${matter?.id}/search/users",
+    "permissions": {
+      "GET": "Client error response (400 - 499)",
+      "POST": "Client error response (400 - 499)",
+      "PATCH": "Client error response (400 - 499)",
+      "DELETE": "Client error response (400 - 499)"
+    }
+  },
+  {
+    "endpoint": "/api/tasksAffected",
+    "permissions": {
+      "GET": "Client error response (400 - 499)",
+      "POST": "Client error response (400 - 499)",
+      "PATCH": "Client error response (400 - 499)",
+      "DELETE": "Client error response (400 - 499)"
+    }
+  },
+  {
+    "endpoint": "/api/matter/${matter?.id}/workstreams/${project?.id}/task/${task?.id}/posts",
+    "permissions": {
+      "GET": "Client error response (400 - 499)",
+      "POST": "Client error response (400 - 499)",
+      "PATCH": "Client error response (400 - 499)",
+      "DELETE": "Client error response (400 - 499)"
+    }
+  },
+  {
+    "endpoint": "/api/matter/${matter?.id}/workstreams/${project?.id}/task/${task?.id}/post/${post?.id}",
+    "permissions": {
+      "GET": "Client error response (400 - 499)",
+      "POST": "Client error response (400 - 499)",
+      "PATCH": "Client error response (400 - 499)",
+      "DELETE": "Client error response (400 - 499)"
+    }
+  },
+  {
+    "endpoint": "/api/matter/${matter?.id}/workstreams/${project?.id}/task/${task?.id}/post/${post?.id}/authors",
+    "permissions": {
+      "GET": "Client error response (400 - 499)",
+      "POST": "Client error response (400 - 499)",
+      "PATCH": "Client error response (400 - 499)",
+      "DELETE": "Client error response (400 - 499)"
+    }
+  },
+  {
+    "endpoint": "/api/matter/${matter?.id}/workstreams/${project?.id}/task/${task?.id}/post/${post?.id}/authors/${user?.id}",
+    "permissions": {
+      "GET": "Client error response (400 - 499)",
+      "POST": "Client error response (400 - 499)",
+      "PATCH": "Client error response (400 - 499)",
+      "DELETE": "Client error response (400 - 499)"
+    }
+  },
+  {
+    "endpoint": "/api/matter/${matter?.id}/workstreams/${project?.id}/task/${task?.id}/post/${post?.id}/postmembers",
+    "permissions": {
+      "GET": "Client error response (400 - 499)",
+      "POST": "Client error response (400 - 499)",
+      "PATCH": "Client error response (400 - 499)",
+      "DELETE": "Client error response (400 - 499)"
+    }
+  },
+  {
+    "endpoint": "/api/matter/${matter?.id}/workstreams/${project?.id}/task/${task?.id}/post/${post?.id}/postmembers/${user?.id}",
+    "permissions": {
+      "GET": "Client error response (400 - 499)",
+      "POST": "Client error response (400 - 499)",
+      "PATCH": "Client error response (400 - 499)",
+      "DELETE": "Client error response (400 - 499)"
+    }
+  },
+  {
+    "endpoint": "/api/matter/${matter?.id}/workstreams/${project?.id}/task/${task?.id}/post/${post?.id}/move",
+    "permissions": {
+      "GET": "Client error response (400 - 499)",
+      "POST": "Client error response (400 - 499)",
+      "PATCH": "Client error response (400 - 499)",
+      "DELETE": "Client error response (400 - 499)"
+    }
+  },
+  {
+    "endpoint": "/api/matter/${matter?.id}/posts",
+    "permissions": {
+      "GET": "Client error response (400 - 499)",
+      "POST": "Client error response (400 - 499)",
+      "PATCH": "Client error response (400 - 499)",
+      "DELETE": "Client error response (400 - 499)"
+    }
+  },
+  {
+    "endpoint": "/api/matter/${matter?.id}/post/${post?.id}",
+    "permissions": {
+      "GET": "Client error response (400 - 499)",
+      "POST": "Client error response (400 - 499)",
+      "PATCH": "Client error response (400 - 499)",
+      "DELETE": "Client error response (400 - 499)"
+    }
+  },
+  {
+    "endpoint": "/api/usage",
+    "permissions": {
+      "GET": "Client error response (400 - 499)",
+      "POST": "Client error response (400 - 499)",
+      "PATCH": "Client error response (400 - 499)",
+      "DELETE": "Client error response (400 - 499)"
+    }
+  },
+  {
+    "endpoint": "/api/usage/report/summary",
+    "permissions": {
+      "GET": "Client error response (400 - 499)",
+      "POST": "Client error response (400 - 499)",
+      "PATCH": "Client error response (400 - 499)",
+      "DELETE": "Client error response (400 - 499)"
+    }
+  },
+  {
+    "endpoint": "/api/usage/report/month",
+    "permissions": {
+      "GET": "Client error response (400 - 499)",
+      "POST": "Client error response (400 - 499)",
+      "PATCH": "Client error response (400 - 499)",
+      "DELETE": "Client error response (400 - 499)"
+    }
+  },
+  {
+    "endpoint": "/api/users/search",
+    "permissions": {
+      "GET": "Client error response (400 - 499)",
+      "POST": "Client error response (400 - 499)",
+      "PATCH": "Client error response (400 - 499)",
+      "DELETE": "Client error response (400 - 499)"
+    }
+  },
+  {
+    "endpoint": "/api/users/bulk",
+    "permissions": {
+      "GET": "Client error response (400 - 499)",
+      "POST": "Client error response (400 - 499)",
+      "PATCH": "Client error response (400 - 499)",
+      "DELETE": "Client error response (400 - 499)"
+    }
+  },
+  {
+    "endpoint": "/api/users",
+    "permissions": {
+      "GET": "Client error response (400 - 499)",
+      "POST": "Client error response (400 - 499)",
+      "PATCH": "Client error response (400 - 499)",
+      "DELETE": "Client error response (400 - 499)"
+    }
+  },
+  {
+    "endpoint": "/api/user",
+    "permissions": {
+      "GET": "Client error response (400 - 499)",
+      "POST": "Client error response (400 - 499)",
+      "PATCH": "Client error response (400 - 499)",
+      "DELETE": "Client error response (400 - 499)"
+    }
+  },
+  {
+    "endpoint": "/api/user/password",
+    "permissions": {
+      "GET": "Client error response (400 - 499)",
+      "POST": "Client error response (400 - 499)",
+      "PATCH": "Client error response (400 - 499)",
+      "DELETE": "Client error response (400 - 499)"
+    }
+  },
+  {
+    "endpoint": "/api/users/${user?.id}",
+    "permissions": {
+      "GET": "Client error response (400 - 499)",
+      "POST": "Client error response (400 - 499)",
+      "PATCH": "Client error response (400 - 499)",
+      "DELETE": "Client error response (400 - 499)"
+    }
+  },
+  {
+    "endpoint": "/api/settings/user/password",
+    "permissions": {
+      "GET": "Client error response (400 - 499)",
+      "POST": "Client error response (400 - 499)",
+      "PATCH": "Client error response (400 - 499)",
+      "DELETE": "Client error response (400 - 499)"
+    }
+  },
+  {
+    "endpoint": "/api/settings/user/resendInvite",
+    "permissions": {
+      "GET": "Client error response (400 - 499)",
+      "POST": "Client error response (400 - 499)",
+      "PATCH": "Client error response (400 - 499)",
+      "DELETE": "Client error response (400 - 499)"
+    }
+  },
+  {
+    "endpoint": "/api/settings/users/${user?.id}/password",
+    "permissions": {
+      "GET": "Client error response (400 - 499)",
+      "POST": "Client error response (400 - 499)",
+      "PATCH": "Client error response (400 - 499)",
+      "DELETE": "Client error response (400 - 499)"
+    }
+  },
+  {
+    "endpoint": "/api/settings/user/updateftue",
+    "permissions": {
+      "GET": "Client error response (400 - 499)",
+      "POST": "Client error response (400 - 499)",
+      "PATCH": "Client error response (400 - 499)",
+      "DELETE": "Client error response (400 - 499)"
+    }
+  },
+  {
+    "endpoint": "/api/settings/user/${user?.id}/resetftue",
+    "permissions": {
+      "GET": "Client error response (400 - 499)",
+      "POST": "Client error response (400 - 499)",
+      "PATCH": "Client error response (400 - 499)",
+      "DELETE": "Client error response (400 - 499)"
+    }
+  },
+  {
+    "endpoint": "/api/settings/user/${user?.id}/visit",
+    "permissions": {
+      "GET": "Client error response (400 - 499)",
+      "POST": "Client error response (400 - 499)",
+      "PATCH": "Client error response (400 - 499)",
+      "DELETE": "Client error response (400 - 499)"
+    }
+  },
+  {
+    "endpoint": "/api/settings/user/tours",
+    "permissions": {
+      "GET": "Client error response (400 - 499)",
+      "POST": "Client error response (400 - 499)",
+      "PATCH": "Client error response (400 - 499)",
+      "DELETE": "Client error response (400 - 499)"
+    }
+  },
+  {
+    "endpoint": "/api/settings/user/completeTour",
+    "permissions": {
+      "GET": "Client error response (400 - 499)",
+      "POST": "Client error response (400 - 499)",
+      "PATCH": "Client error response (400 - 499)",
+      "DELETE": "Client error response (400 - 499)"
+    }
+  },
+  {
+    "endpoint": "/api/settings/user/${user?.id}/resetTours",
+    "permissions": {
+      "GET": "Client error response (400 - 499)",
+      "POST": "Client error response (400 - 499)",
+      "PATCH": "Client error response (400 - 499)",
+      "DELETE": "Client error response (400 - 499)"
+    }
+  },
+  {
+    "endpoint": "/api/user/${user?.id}/todo",
+    "permissions": {
+      "GET": "Client error response (400 - 499)",
+      "POST": "Client error response (400 - 499)",
+      "PATCH": "Client error response (400 - 499)",
+      "DELETE": "Client error response (400 - 499)"
+    }
+  },
+  {
+    "endpoint": "/api/user/infodump",
+    "permissions": {
+      "GET": "Client error response (400 - 499)",
+      "POST": "Client error response (400 - 499)",
+      "PATCH": "Client error response (400 - 499)",
+      "DELETE": "Client error response (400 - 499)"
+    }
+  },
+  {
+    "endpoint": "/api/projecttemplates",
+    "permissions": {
+      "GET": "Client error response (400 - 499)",
+      "POST": "Client error response (400 - 499)",
+      "PATCH": "Client error response (400 - 499)",
+      "DELETE": "Client error response (400 - 499)"
+    }
+  },
+  {
+    "endpoint": "/api/${template?.id}",
+    "permissions": {
+      "GET": "Client error response (400 - 499)",
+      "POST": "Client error response (400 - 499)",
+      "PATCH": "Client error response (400 - 499)",
+      "DELETE": "Client error response (400 - 499)"
+    }
+  },
+  {
+    "endpoint": "/api/${template?.id}/preview",
+    "permissions": {
+      "GET": "Client error response (400 - 499)",
+      "POST": "Client error response (400 - 499)",
+      "PATCH": "Client error response (400 - 499)",
+      "DELETE": "Client error response (400 - 499)"
+    }
+  },
+  {
+    "endpoint": "/api/admin/projecttemplates/${template?.id}",
+    "permissions": {
+      "GET": "Client error response (400 - 499)",
+      "POST": "Client error response (400 - 499)",
+      "PATCH": "Client error response (400 - 499)",
+      "DELETE": "Client error response (400 - 499)"
+    }
+  },
+  {
+    "endpoint": "/api/projecttemplates/${template?.id}/tasks",
+    "permissions": {
+      "GET": "Client error response (400 - 499)",
+      "POST": "Client error response (400 - 499)",
+      "PATCH": "Client error response (400 - 499)",
+      "DELETE": "Client error response (400 - 499)"
+    }
+  },
+  {
+    "endpoint": "/api/projecttemplates/${template?.id}/tasks/search",
+    "permissions": {
+      "GET": "Client error response (400 - 499)",
+      "POST": "Client error response (400 - 499)",
+      "PATCH": "Client error response (400 - 499)",
+      "DELETE": "Client error response (400 - 499)"
+    }
+  },
+  {
+    "endpoint": "/api/projecttemplates/${template?.id}/tasks/${task?.id}",
+    "permissions": {
+      "GET": "Client error response (400 - 499)",
+      "POST": "Client error response (400 - 499)",
+      "PATCH": "Client error response (400 - 499)",
+      "DELETE": "Client error response (400 - 499)"
+    }
+  },
+  {
+    "endpoint": "/api/projecttemplates/${template?.id}/tasks/${task?.id}/copy",
+    "permissions": {
+      "GET": "Client error response (400 - 499)",
+      "POST": "Client error response (400 - 499)",
+      "PATCH": "Client error response (400 - 499)",
+      "DELETE": "Client error response (400 - 499)"
+    }
+  },
+  {
+    "endpoint": "/api/projecttemplates/${template?.id}/tasks/${task?.id}/move",
+    "permissions": {
+      "GET": "Client error response (400 - 499)",
+      "POST": "Client error response (400 - 499)",
+      "PATCH": "Client error response (400 - 499)",
+      "DELETE": "Client error response (400 - 499)"
+    }
+  },
+  {
+    "endpoint": "/api/projecttemplates/${template?.id}/copy",
+    "permissions": {
+      "GET": "Client error response (400 - 499)",
+      "POST": "Client error response (400 - 499)",
+      "PATCH": "Client error response (400 - 499)",
+      "DELETE": "Client error response (400 - 499)"
+    }
+  },
+  {
+    "endpoint": "/api/projecttemplates/${template?.id}/submit",
+    "permissions": {
+      "GET": "Client error response (400 - 499)",
+      "POST": "Client error response (400 - 499)",
+      "PATCH": "Client error response (400 - 499)",
+      "DELETE": "Client error response (400 - 499)"
+    }
+  },
+  {
+    "endpoint": "/api/projecttemplates/${template?.id}/favourite",
+    "permissions": {
+      "GET": "Client error response (400 - 499)",
+      "POST": "Client error response (400 - 499)",
+      "PATCH": "Client error response (400 - 499)",
+      "DELETE": "Client error response (400 - 499)"
+    }
+  },
+  {
+    "endpoint": "/api/projecttemplates/${template?.id}/systemttemplate",
+    "permissions": {
+      "GET": "Client error response (400 - 499)",
+      "POST": "Client error response (400 - 499)",
+      "PATCH": "Client error response (400 - 499)",
+      "DELETE": "Client error response (400 - 499)"
+    }
+  },
+  {
+    "endpoint": "/api/projecttemplates/${template?.id}/resources",
+    "permissions": {
+      "GET": "Client error response (400 - 499)",
+      "POST": "Client error response (400 - 499)",
+      "PATCH": "Client error response (400 - 499)",
+      "DELETE": "Client error response (400 - 499)"
+    }
+  },
+  {
+    "endpoint": "/api/projecttemplates/${template?.id}/resources/$id",
+    "permissions": {
+      "GET": "Client error response (400 - 499)",
+      "POST": "Client error response (400 - 499)",
+      "PATCH": "Client error response (400 - 499)",
+      "DELETE": "Client error response (400 - 499)"
+    }
+  },
+  {
+    "endpoint": "/api/projecttemplates/${template?.id}/tasks/${templateTask?.id}/posts",
+    "permissions": {
+      "GET": "Client error response (400 - 499)",
+      "POST": "Client error response (400 - 499)",
+      "PATCH": "Client error response (400 - 499)",
+      "DELETE": "Client error response (400 - 499)"
+    }
+  },
+  {
+    "endpoint": "/api/projecttemplates/${template?.id}/tasks/${templateTask?.id}/posts/${templatePost?.id}",
+    "permissions": {
+      "GET": "Client error response (400 - 499)",
+      "POST": "Client error response (400 - 499)",
+      "PATCH": "Client error response (400 - 499)",
+      "DELETE": "Client error response (400 - 499)"
+    }
+  },
+  {
+    "endpoint": "/api/projecttemplates/${template?.id}/tasks/${templateTask?.id}/posts/${templatePost?.id}/move",
+    "permissions": {
+      "GET": "Client error response (400 - 499)",
+      "POST": "Client error response (400 - 499)",
+      "PATCH": "Client error response (400 - 499)",
+      "DELETE": "Client error response (400 - 499)"
+    }
+  },
+  {
+    "endpoint": "/api/usernotifications",
+    "permissions": {
+      "GET": "Client error response (400 - 499)",
+      "POST": "Client error response (400 - 499)",
+      "PATCH": "Client error response (400 - 499)",
+      "DELETE": "Client error response (400 - 499)"
+    }
+  },
+  {
+    "endpoint": "/api/usernotifications/count",
+    "permissions": {
+      "GET": "Client error response (400 - 499)",
+      "POST": "Client error response (400 - 499)",
+      "PATCH": "Client error response (400 - 499)",
+      "DELETE": "Client error response (400 - 499)"
+    }
+  },
+  {
+    "endpoint": "/api/usernotifications/read-all",
+    "permissions": {
+      "GET": "Client error response (400 - 499)",
+      "POST": "Client error response (400 - 499)",
+      "PATCH": "Client error response (400 - 499)",
+      "DELETE": "Client error response (400 - 499)"
+    }
+  },
+  {
+    "endpoint": "/api/usernotifications/${notification?.id}/read",
+    "permissions": {
+      "GET": "Client error response (400 - 499)",
+      "POST": "Client error response (400 - 499)",
+      "PATCH": "Client error response (400 - 499)",
+      "DELETE": "Client error response (400 - 499)"
+    }
+  },
+  {
+    "endpoint": "/api/usernotifications/${notification?.id}/dismiss",
+    "permissions": {
+      "GET": "Client error response (400 - 499)",
+      "POST": "Client error response (400 - 499)",
+      "PATCH": "Client error response (400 - 499)",
+      "DELETE": "Client error response (400 - 499)"
+    }
+  },
+  {
+    "endpoint": "/api/notificationfilteruserrecency",
+    "permissions": {
+      "GET": "Client error response (400 - 499)",
+      "POST": "Client error response (400 - 499)",
+      "PATCH": "Client error response (400 - 499)",
+      "DELETE": "Client error response (400 - 499)"
+    }
+  },
+  {
+    "endpoint": "/api/todo/search",
+    "permissions": {
+      "GET": "Client error response (400 - 499)",
+      "POST": "Client error response (400 - 499)",
+      "PATCH": "Client error response (400 - 499)",
+      "DELETE": "Client error response (400 - 499)"
+    }
+  },
+  {
+    "endpoint": "/api/universal/search",
+    "permissions": {
+      "GET": "Client error response (400 - 499)",
+      "POST": "Client error response (400 - 499)",
+      "PATCH": "Client error response (400 - 499)",
+      "DELETE": "Client error response (400 - 499)"
+    }
+  },
+  {
+    "endpoint": "/api/matter/${matter?.id}/workstreams/${project?.id}/search",
+    "permissions": {
+      "GET": "Client error response (400 - 499)",
+      "POST": "Client error response (400 - 499)",
+      "PATCH": "Client error response (400 - 499)",
+      "DELETE": "Client error response (400 - 499)"
+    }
+  },
+  {
+    "endpoint": "/api/universal/fuzzysearch",
+    "permissions": {
+      "GET": "Client error response (400 - 499)",
+      "POST": "Client error response (400 - 499)",
+      "PATCH": "Client error response (400 - 499)",
+      "DELETE": "Client error response (400 - 499)"
+    }
+  },
+  {
+    "endpoint": "/api/labels/system",
+    "permissions": {
+      "GET": "Client error response (400 - 499)",
+      "POST": "Client error response (400 - 499)",
+      "PATCH": "Client error response (400 - 499)",
+      "DELETE": "Client error response (400 - 499)"
+    }
+  },
+  {
+    "endpoint": "/api/matter/${matter?.id}/labels/merge",
+    "permissions": {
+      "GET": "Client error response (400 - 499)",
+      "POST": "Client error response (400 - 499)",
+      "PATCH": "Client error response (400 - 499)",
+      "DELETE": "Client error response (400 - 499)"
+    }
+  },
+  {
+    "endpoint": "/api/matter/${matter?.id}/labels",
+    "permissions": {
+      "GET": "Client error response (400 - 499)",
+      "POST": "Client error response (400 - 499)",
+      "PATCH": "Client error response (400 - 499)",
+      "DELETE": "Client error response (400 - 499)"
+    }
+  },
+  {
+    "endpoint": "/api/matter/${matter?.id}/labels/${label?.id}",
+    "permissions": {
+      "GET": "Client error response (400 - 499)",
+      "POST": "Client error response (400 - 499)",
+      "PATCH": "Client error response (400 - 499)",
+      "DELETE": "Client error response (400 - 499)"
+    }
+  },
+  {
+    "endpoint": "/api/organisation/labels/${label?.id}",
+    "permissions": {
+      "GET": "Client error response (400 - 499)",
+      "POST": "Client error response (400 - 499)",
+      "PATCH": "Client error response (400 - 499)",
+      "DELETE": "Client error response (400 - 499)"
+    }
+  },
+  {
+    "endpoint": "/api/organisation/labels",
+    "permissions": {
+      "GET": "Client error response (400 - 499)",
+      "POST": "Client error response (400 - 499)",
+      "PATCH": "Client error response (400 - 499)",
+      "DELETE": "Client error response (400 - 499)"
+    }
+  },
+  {
+    "endpoint": "/api/matter/${matter?.id}/workstreams/${project?.id}/task/${task?.id}/labels",
+    "permissions": {
+      "GET": "Client error response (400 - 499)",
+      "POST": "Client error response (400 - 499)",
+      "PATCH": "Client error response (400 - 499)",
+      "DELETE": "Client error response (400 - 499)"
+    }
+  },
+  {
+    "endpoint": "/api/matter/${matter?.id}/workstreams/${project?.id}/task/${task?.id}/labels/${label?.id}",
+    "permissions": {
+      "GET": "Client error response (400 - 499)",
+      "POST": "Client error response (400 - 499)",
+      "PATCH": "Client error response (400 - 499)",
+      "DELETE": "Client error response (400 - 499)"
+    }
+  },
+  {
+    "endpoint": "/services/favicon",
+    "permissions": {
+      "GET": "Client error response (400 - 499)",
+      "POST": "Client error response (400 - 499)",
+      "PATCH": "Client error response (400 - 499)",
+      "DELETE": "Client error response (400 - 499)"
+    }
+  },
+  {
+    "endpoint": "/health",
+    "permissions": {
+      "GET": "Client error response (400 - 499)",
+      "POST": "Client error response (400 - 499)",
+      "PATCH": "Client error response (400 - 499)",
+      "DELETE": "Client error response (400 - 499)"
+    }
+  },
+  {
+    "endpoint": "/version",
+    "permissions": {
+      "GET": "Client error response (400 - 499)",
+      "POST": "Client error response (400 - 499)",
+      "PATCH": "Client error response (400 - 499)",
+      "DELETE": "Client error response (400 - 499)"
+    }
+  },
+  {
+    "endpoint": "/mstoken",
+    "permissions": {
+      "GET": "Client error response (400 - 499)",
+      "POST": "Client error response (400 - 499)",
+      "PATCH": "Client error response (400 - 499)",
+      "DELETE": "Client error response (400 - 499)"
+    }
+  },
+  {
+    "endpoint": "/oktatoken",
+    "permissions": {
+      "GET": "Client error response (400 - 499)",
+      "POST": "Client error response (400 - 499)",
+      "PATCH": "Client error response (400 - 499)",
+      "DELETE": "Client error response (400 - 499)"
+    }
+  },
+  {
+    "endpoint": "/mslogin",
+    "permissions": {
+      "GET": "Client error response (400 - 499)",
+      "POST": "Client error response (400 - 499)",
+      "PATCH": "Client error response (400 - 499)",
+      "DELETE": "Client error response (400 - 499)"
+    }
+  },
+  {
+    "endpoint": "/oktalogin",
+    "permissions": {
+      "GET": "Client error response (400 - 499)",
+      "POST": "Client error response (400 - 499)",
+      "PATCH": "Client error response (400 - 499)",
+      "DELETE": "Client error response (400 - 499)"
+    }
+  },
+  {
+    "endpoint": "/saml/redirect",
+    "permissions": {
+      "GET": "Client error response (400 - 499)",
+      "POST": "Client error response (400 - 499)",
+      "PATCH": "Client error response (400 - 499)",
+      "DELETE": "Client error response (400 - 499)"
+    }
+  },
+  {
+    "endpoint": "/api/admin/saml/settings",
+    "permissions": {
+      "GET": "Client error response (400 - 499)",
+      "POST": "Client error response (400 - 499)",
+      "PATCH": "Client error response (400 - 499)",
+      "DELETE": "Client error response (400 - 499)"
+    }
+  },
+  {
+    "endpoint": "/experimental",
+    "permissions": {
+      "GET": "Client error response (400 - 499)",
+      "POST": "Client error response (400 - 499)",
+      "PATCH": "Client error response (400 - 499)",
+      "DELETE": "Client error response (400 - 499)"
+    }
+  },
+  {
+    "endpoint": "/magicLink/decode",
+    "permissions": {
+      "GET": "Client error response (400 - 499)",
+      "POST": "Client error response (400 - 499)",
+      "PATCH": "Client error response (400 - 499)",
+      "DELETE": "Client error response (400 - 499)"
+    }
+  },
+  {
+    "endpoint": "/instance/settings",
+    "permissions": {
+      "GET": "Client error response (400 - 499)",
+      "POST": "Client error response (400 - 499)",
+      "PATCH": "Client error response (400 - 499)",
+      "DELETE": "Client error response (400 - 499)"
+    }
+  },
+  {
+    "endpoint": "/api/admin/instance/settings",
+    "permissions": {
+      "GET": "Client error response (400 - 499)",
+      "POST": "Client error response (400 - 499)",
+      "PATCH": "Client error response (400 - 499)",
+      "DELETE": "Client error response (400 - 499)"
+    }
+  }
+]

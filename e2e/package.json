@@ -1,0 +1,44 @@
+{
+  "name": "e2e",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@nuintun/qrcode": "3.1.1",
+    "chai-colors": "1.0.1",
+    "cross-env": "7.0.3",
+    "crypto-js": "4.2.0",
+    "dayjs": "^1.11.7",
+    "faker": "5.5.3",
+    "http-status-codes": "2.3.0",
+    "otpauth": "7.1.1",
+    "project-name-generator": "2.1.9",
+    "ramda": "0.32.0",
+    "wait-on": "9.0.10"
+  },
+  "scripts": {
+    "start": "npm run e2e",
+    "test": "npm run e2e:dev",
+    "security": "cross-env CYPRESS_baseUrl=http://localhost:3000/ cypress open -P ./security",
+    "e2e": "cypress run",
+    "e2e:dev": "cypress open",
+    "e2e:rapid-desktop-dont-watch": "cross-env CYPRESS_baseUrl=http://localhost:3000/ cypress open -P ./desktop -C cypress-v2.json",
+    "e2e:rapid-desktop": "cross-env CYPRESS_baseUrl=http://localhost:3000/ cypress open -P ./desktop",
+    "e2e:rapid-mobile": "cross-env CYPRESS_baseUrl=http://localhost:3000/ cypress open -P ./mobile",
+    "e2e:rapid-security": "cross-env CYPRESS_baseUrl=http://localhost:3000/ cypress open -P ./security",
+    "e2e:rapid-upload": "cross-env CYPRESS_baseUrl=http://localhost:3000/ cypress open -P ./upload",
+    "test-desktop-headless": "cypress run -P ./desktop",
+    "test-mobile-headless": "cypress run -P ./mobile",
+    "test-security-headless": "cross-env CYPRESS_baseUrl=http://localhost:8080/ cypress run -P ./security",
+    "npm-check": "npm outdated --omit=dev"
+  },
+  "overrides": {
+    "tmp": "0.2.5"
+  },
+  "devDependencies": {
+    "cypress": "^11.2.0",
+    "cypress-esbuild-preprocessor": "1.0.2",
+    "cypress-file-upload": "5.0.8",
+    "esbuild": "0.28.0",
+    "node-xlsx": "0.17.2"
+  }
+}

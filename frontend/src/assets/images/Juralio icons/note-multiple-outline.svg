@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="22px" height="22px" viewBox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>note-multiple-outline</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard-Copy" transform="translate(-224.000000, -468.000000)" fill="#000000" fill-rule="nonzero">
+            <g id="note-multiple-outline" transform="translate(224.000000, 468.000000)">
+                <path d="M2,4 L2,20 L20,20 L20,22 L2,22 C0.8954305,22 0,21.1045695 0,20 L0,4 L2,4 M16,0 L22,6 L22,16 C22,17.1045695 21.1045695,18 20,18 L6,18 C4.89,18 4,17.1 4,16 L4,2 C4,0.8954305 4.8954305,0 6,0 L16,0 Z M6,2 L6,16 L20,16 L20,9 L13,9 L13,2 L6,2 Z" id="Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>

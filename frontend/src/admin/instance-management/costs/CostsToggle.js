@@ -1,0 +1,73 @@
+/*
+ * Copyright 2026 Graeme and Joanna Johnston
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+import { FormControlLabel, FormGroup, Switch, Typography } from '@mui/material'
+import React from 'react'
+import { useTranslation } from 'react-i18next'
+import { useDispatch, useSelector } from 'react-redux'
+import { makeStyles } from 'tss-react/mui'
+import { updateInstanceSettings } from '../../../redux/actions/instance-management-actions'
+
+const style = makeStyles()(theme => ({
+  wrapper: {
+    marginTop: theme.spacing(2),
+  },
+}))
+
+const CostsToggle = props => {
+  const instanceSettings = useSelector(state => state.instanceSettings)
+  const { t } = useTranslation()
+  const { classes } = style()
+  const dispatch = useDispatch()
+
+  const handleChange = e => {
+    dispatch(
+      updateInstanceSettings({
+        costsEnabled: e.target.checked,
+      })
+    )
+  }
+
+  return (
+    <FormGroup className={classes.wrapper}>
+      <FormControlLabel
+        control={
+          <Switch
+            checked={
+              props.costsEnabled !== undefined
+                ? props.costsEnabled
+                : instanceSettings.settings.costsEnabled
+            }
+            onChange={
+              props.requestInlineChangeConfirmation
+                ? props.requestInlineChangeConfirmation
+                : handleChange
+            }
+            color="primary"
+            data-test="costs-toggle"
+          />
+        }
+        label={
+          <Typography>
+            {t('sysAdmin.instanceManagement.enableCosts')}
+          </Typography>
+        }
+      />
+    </FormGroup>
+  )
+}
+
+export default CostsToggle

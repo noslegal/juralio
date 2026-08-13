@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="19px" height="19px" viewBox="0 0 19 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>worstreamIcon</title>
+    <defs>
+        <polygon id="path-1" points="3.18198052 -9.09494702e-13 3.18198052 1.27279221 7.37583083 1.27279221 9.09494702e-13 8.64862304 0.897318505 9.54594155 8.27314934 2.17011071 8.27314934 6.36396103 9.54594155 6.36396103 9.54594155 -9.09494702e-13"></polygon>
+        <rect id="path-3" x="0" y="0" width="31.8198052" height="31.8198052"></rect>
+        <polygon id="path-5" points="3.18198052 0 3.18198052 1.27279221 7.37583083 1.27279221 0 8.64862304 0.897318505 9.54594155 8.27314934 2.17011071 8.27314934 6.36396103 9.54594155 6.36396103 9.54594155 0"></polygon>
+        <rect id="path-7" x="0" y="0" width="31.8198052" height="31.8198052"></rect>
+    </defs>
+    <g id="Release-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Matter-switcher-/-Template-tag-hover" transform="translate(-650.000000, -187.000000)">
+            <g id="Group-11" transform="translate(648.000000, 182.000000)">
+                <g id="Group" transform="translate(0.112853, 2.500000)">
+                    <g id="ic_call_made" transform="translate(6.800000, 9.250000) rotate(-45.000000) translate(-6.800000, -9.250000) translate(2.027029, 4.477029)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <g id="Mask"></g>
+                        <g id="Group" mask="url(#mask-2)">
+                            <g transform="translate(-10.818734, -11.455130)" id="🎨-Color">
+                                <mask id="mask-4" fill="white">
+                                    <use xlink:href="#path-3"></use>
+                                </mask>
+                                <use id="Black" fill="#000000" xlink:href="#path-3"></use>
+                            </g>
+                        </g>
+                    </g>
+                    <g id="ic_call_made-copy-1131" transform="translate(15.477922, 14.650000) rotate(-45.000000) translate(-15.477922, -14.650000) translate(10.704951, 9.877029)">
+                        <mask id="mask-6" fill="white">
+                            <use xlink:href="#path-5"></use>
+                        </mask>
+                        <g id="Mask"></g>
+                        <g id="Group" mask="url(#mask-6)">
+                            <g transform="translate(-10.818734, -11.455130)" id="🎨-Color">
+                                <mask id="mask-8" fill="white">
+                                    <use xlink:href="#path-7"></use>
+                                </mask>
+                                <use id="Black" fill="#000000" xlink:href="#path-7"></use>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

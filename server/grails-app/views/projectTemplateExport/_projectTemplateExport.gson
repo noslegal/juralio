@@ -1,0 +1,79 @@
+/*
+ * Copyright 2026 Graeme and Joanna Johnston
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+import com.juralio.auth.AppUser
+import com.juralio.matter.Matter
+import com.juralio.post.Post
+import com.juralio.project.Project
+import com.juralio.template.ProjectTemplate
+import com.juralio.template.TaskTemplate
+import com.juralio.templateResource.TemplateResource
+
+model {
+    ProjectTemplate projectTemplate
+}
+
+
+static def renderPosts(List<Post> posts) {
+    return posts.collect {
+        [
+                id         : 'CT' + it.id,
+                name       : it.name,
+                type       : it.type,
+                url        : it.url,
+                description: it.description,
+                startTime  : it.startTime,
+                endTime    : it.endTime,
+                finalised  : it.finalised,
+                privatePost: it.privatePost
+        ]
+    }
+}
+
+def renderTasks(List<TaskTemplate> tasks) {
+    if (tasks) {
+        return tasks.collect {
+            [
+                    id           : 'CT' + it.id,
+                    name         : it.name,
+                    level        : it.level,
+                    isMilestone  : it.isMilestone,
+                    isDeliverable: it.isDeliverable,
+                    tasks        : renderTasks(it.tasks),
+                    posts        : renderPosts(it.posts as List<Post>),
+                    description  : it.noticeboardText
+            ]
+        }
+    }
+    return []
+}
+
+static def renderResources(List<TemplateResource> resources) {
+    return resources.collect {
+        [
+                name : it.name,
+                url  : it.url,
+                image: it.image
+        ]
+    }
+}
+
+json g.render(projectTemplate, [excludes: ['tasks', 'systemTemplateUpdateCount', 'referenceNumber', 'taskCount', 'levelATaskCount', 'lastUpdated', 'dateCreated', 'id', 'organisation', 'referenceNumber', 'isSystemTemplate', 'url', 'urlCredit', 'urlCreditName', 'companyImage', 'companyImageBackground']]) {
+    tasks renderTasks(projectTemplate.levelATasks)
+    resources renderResources(projectTemplate.resources)
+    metadata projectTemplate.metadata
+
+}

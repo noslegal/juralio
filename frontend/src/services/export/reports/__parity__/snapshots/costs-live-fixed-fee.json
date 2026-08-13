@@ -1,0 +1,2508 @@
+{
+  "sheets": [
+    {
+      "cells": {
+        "A1": {
+          "s": "4d2f305a",
+          "value": {
+            "text": "client"
+          }
+        },
+        "A13": {
+          "s": "4d2f305a",
+          "value": {
+            "text": "Phase One"
+          }
+        },
+        "A14": {
+          "s": "4d2f305a",
+          "value": {
+            "text": "Phase Two"
+          }
+        },
+        "A2": {
+          "s": "4d2f305a",
+          "value": {
+            "text": "matter:"
+          }
+        },
+        "A3": {
+          "s": "4d2f305a",
+          "value": {
+            "text": "matterNumber"
+          }
+        },
+        "A4": {
+          "s": "4d2f305a",
+          "value": {
+            "text": "jurId"
+          }
+        },
+        "A5": {
+          "s": "4d2f305a",
+          "value": {
+            "text": "numPeriod"
+          }
+        },
+        "A6": {
+          "s": "4d2f305a",
+          "value": {
+            "text": "table"
+          }
+        },
+        "A7": {
+          "s": "4d2f305a",
+          "value": {
+            "text": "status"
+          }
+        },
+        "B1": {
+          "s": "4d2f305a",
+          "value": {
+            "text": "Acme Corp"
+          }
+        },
+        "B10": {
+          "s": "882974ba",
+          "value": {
+            "text": ""
+          }
+        },
+        "B11": {
+          "s": "882974ba",
+          "value": {
+            "text": "Hour total"
+          }
+        },
+        "B12": {
+          "s": "882974ba",
+          "value": {
+            "text": ""
+          }
+        },
+        "B13": {
+          "s": "882974ba",
+          "value": {
+            "number": 100
+          }
+        },
+        "B14": {
+          "s": "882974ba",
+          "value": {
+            "number": 40
+          }
+        },
+        "B2": {
+          "s": "4d2f305a",
+          "value": {
+            "text": "Project Titan"
+          }
+        },
+        "B3": {
+          "s": "4d2f305a",
+          "value": {
+            "text": "ACME-2024-01"
+          }
+        },
+        "B4": {
+          "s": "3e1cee93",
+          "value": {
+            "number": 42
+          }
+        },
+        "B5": {
+          "s": "4d2f305a",
+          "value": {
+            "text": "1"
+          }
+        },
+        "B6": {
+          "s": "4d2f305a",
+          "value": {
+            "text": "hours"
+          }
+        },
+        "B7": {
+          "s": "4d2f305a",
+          "value": {
+            "text": "finalised"
+          }
+        },
+        "C10": {
+          "s": "882974ba",
+          "value": {
+            "text": ""
+          }
+        },
+        "C11": {
+          "s": "882974ba",
+          "value": {
+            "text": "Period start"
+          }
+        },
+        "C12": {
+          "s": "882974ba",
+          "value": {
+            "text": "Jan 25"
+          }
+        },
+        "C13": {
+          "s": "882974ba",
+          "value": {
+            "number": 33
+          }
+        },
+        "C14": {
+          "s": "882974ba",
+          "value": {
+            "text": ""
+          }
+        },
+        "D10": {
+          "s": "882974ba",
+          "value": {
+            "text": ""
+          }
+        },
+        "D11": {
+          "s": "882974ba",
+          "value": {
+            "text": ""
+          }
+        },
+        "D12": {
+          "s": "882974ba",
+          "value": {
+            "text": "Feb 25"
+          }
+        },
+        "D13": {
+          "s": "882974ba",
+          "value": {
+            "number": 33
+          }
+        },
+        "D14": {
+          "s": "882974ba",
+          "value": {
+            "number": 20
+          }
+        },
+        "E10": {
+          "s": "882974ba",
+          "value": {
+            "text": ""
+          }
+        },
+        "E11": {
+          "s": "882974ba",
+          "value": {
+            "text": "Period end"
+          }
+        },
+        "E12": {
+          "s": "882974ba",
+          "value": {
+            "text": "Mar 25"
+          }
+        },
+        "E13": {
+          "s": "882974ba",
+          "value": {
+            "number": 34
+          }
+        },
+        "E14": {
+          "s": "882974ba",
+          "value": {
+            "number": 20
+          }
+        },
+        "F10": {
+          "s": "882974ba",
+          "value": {
+            "text": ""
+          }
+        },
+        "F11": {
+          "s": "882974ba",
+          "value": {
+            "text": ""
+          }
+        },
+        "F12": {
+          "s": "882974ba",
+          "value": {
+            "text": ""
+          }
+        },
+        "F13": {
+          "s": "882974ba",
+          "value": {
+            "text": ""
+          }
+        },
+        "F14": {
+          "s": "882974ba",
+          "value": {
+            "text": ""
+          }
+        },
+        "G10": {
+          "s": "882974ba",
+          "value": {
+            "text": ""
+          }
+        },
+        "G11": {
+          "s": "882974ba",
+          "value": {
+            "text": ""
+          }
+        },
+        "G12": {
+          "s": "882974ba",
+          "value": {
+            "text": ""
+          }
+        },
+        "G13": {
+          "s": "882974ba",
+          "value": {
+            "text": ""
+          }
+        },
+        "G14": {
+          "s": "882974ba",
+          "value": {
+            "text": ""
+          }
+        },
+        "H10": {
+          "s": "882974ba",
+          "value": {
+            "text": ""
+          }
+        },
+        "H11": {
+          "s": "882974ba",
+          "value": {
+            "text": ""
+          }
+        },
+        "H12": {
+          "s": "882974ba",
+          "value": {
+            "text": ""
+          }
+        },
+        "H13": {
+          "s": "882974ba",
+          "value": {
+            "text": ""
+          }
+        },
+        "H14": {
+          "s": "882974ba",
+          "value": {
+            "text": ""
+          }
+        }
+      },
+      "cols": {
+        "1": {
+          "bestFit": true,
+          "width": 14.625
+        },
+        "2": {
+          "bestFit": true,
+          "width": 15.625
+        },
+        "3": {
+          "bestFit": true,
+          "width": 14.625
+        },
+        "4": {
+          "bestFit": true,
+          "width": 7.625
+        },
+        "5": {
+          "bestFit": true,
+          "width": 12.625
+        },
+        "6": {
+          "bestFit": true,
+          "width": 1.625
+        },
+        "7": {
+          "bestFit": true,
+          "width": 1.625
+        },
+        "8": {
+          "bestFit": true,
+          "width": 1.625
+        },
+        "9": {
+          "bestFit": true,
+          "width": 1.625
+        },
+        "10": {
+          "bestFit": true,
+          "width": 1.625
+        },
+        "11": {
+          "bestFit": true,
+          "width": 1.625
+        },
+        "12": {
+          "bestFit": true,
+          "width": 1.625
+        },
+        "13": {
+          "bestFit": true,
+          "width": 1.625
+        },
+        "14": {
+          "bestFit": true,
+          "width": 1.625
+        },
+        "15": {
+          "bestFit": true,
+          "width": 1.625
+        }
+      },
+      "images": [],
+      "merges": [],
+      "name": "Hours",
+      "print": {
+        "errors": null,
+        "evenFooter": null,
+        "fitToHeight": null,
+        "fitToPage": false,
+        "fitToWidth": null,
+        "horizontalCentered": false,
+        "margins": {
+          "bottom": 0.75,
+          "footer": 0.3,
+          "header": 0.3,
+          "left": 0.7,
+          "right": 0.7,
+          "top": 0.75
+        },
+        "oddFooter": null,
+        "orientation": "portrait",
+        "paperSize": null
+      },
+      "printArea": null,
+      "rows": {},
+      "view": {
+        "pane": null,
+        "showGridLines": true
+      }
+    },
+    {
+      "cells": {
+        "A1": {
+          "s": "4d2f305a",
+          "value": {
+            "text": "client"
+          }
+        },
+        "A14": {
+          "s": "4d2f305a",
+          "value": {
+            "text": "Phase One"
+          }
+        },
+        "A15": {
+          "s": "4d2f305a",
+          "value": {
+            "text": "Phase Two"
+          }
+        },
+        "A2": {
+          "s": "4d2f305a",
+          "value": {
+            "text": "matter:"
+          }
+        },
+        "A3": {
+          "s": "4d2f305a",
+          "value": {
+            "text": "matterNumber"
+          }
+        },
+        "A4": {
+          "s": "4d2f305a",
+          "value": {
+            "text": "jurId"
+          }
+        },
+        "A5": {
+          "s": "4d2f305a",
+          "value": {
+            "text": "numPeriod"
+          }
+        },
+        "A6": {
+          "s": "4d2f305a",
+          "value": {
+            "text": "table"
+          }
+        },
+        "A7": {
+          "s": "4d2f305a",
+          "value": {
+            "text": "currency"
+          }
+        },
+        "A8": {
+          "s": "4d2f305a",
+          "value": {
+            "text": "status"
+          }
+        },
+        "B1": {
+          "s": "4d2f305a",
+          "value": {
+            "text": "Acme Corp"
+          }
+        },
+        "B10": {
+          "s": "882974ba",
+          "value": {
+            "text": ""
+          }
+        },
+        "B11": {
+          "s": "882974ba",
+          "value": {
+            "text": ""
+          }
+        },
+        "B12": {
+          "s": "882974ba",
+          "value": {
+            "text": "Fees total"
+          }
+        },
+        "B13": {
+          "s": "882974ba",
+          "value": {
+            "text": ""
+          }
+        },
+        "B14": {
+          "s": "882974ba",
+          "value": {
+            "number": 125000
+          }
+        },
+        "B15": {
+          "s": "882974ba",
+          "value": {
+            "number": 125000
+          }
+        },
+        "B2": {
+          "s": "4d2f305a",
+          "value": {
+            "text": "Project Titan"
+          }
+        },
+        "B3": {
+          "s": "4d2f305a",
+          "value": {
+            "text": "ACME-2024-01"
+          }
+        },
+        "B4": {
+          "s": "3e1cee93",
+          "value": {
+            "number": 42
+          }
+        },
+        "B5": {
+          "s": "4d2f305a",
+          "value": {
+            "text": "1"
+          }
+        },
+        "B6": {
+          "s": "4d2f305a",
+          "value": {
+            "text": "fees"
+          }
+        },
+        "B7": {
+          "s": "4d2f305a",
+          "value": {
+            "text": "GBP"
+          }
+        },
+        "B8": {
+          "s": "4d2f305a",
+          "value": {
+            "text": "finalised"
+          }
+        },
+        "C10": {
+          "s": "882974ba",
+          "value": {
+            "text": ""
+          }
+        },
+        "C11": {
+          "s": "882974ba",
+          "value": {
+            "text": ""
+          }
+        },
+        "C12": {
+          "s": "882974ba",
+          "value": {
+            "text": "Period start"
+          }
+        },
+        "C13": {
+          "s": "882974ba",
+          "value": {
+            "text": "Jan 25"
+          }
+        },
+        "C14": {
+          "s": "882974ba",
+          "value": {
+            "number": 41666
+          }
+        },
+        "C15": {
+          "s": "882974ba",
+          "value": {
+            "text": ""
+          }
+        },
+        "D10": {
+          "s": "882974ba",
+          "value": {
+            "text": ""
+          }
+        },
+        "D11": {
+          "s": "882974ba",
+          "value": {
+            "text": ""
+          }
+        },
+        "D12": {
+          "s": "882974ba",
+          "value": {
+            "text": ""
+          }
+        },
+        "D13": {
+          "s": "882974ba",
+          "value": {
+            "text": "Feb 25"
+          }
+        },
+        "D14": {
+          "s": "882974ba",
+          "value": {
+            "number": 41667
+          }
+        },
+        "D15": {
+          "s": "882974ba",
+          "value": {
+            "number": 62500
+          }
+        },
+        "E10": {
+          "s": "882974ba",
+          "value": {
+            "text": ""
+          }
+        },
+        "E11": {
+          "s": "882974ba",
+          "value": {
+            "text": ""
+          }
+        },
+        "E12": {
+          "s": "882974ba",
+          "value": {
+            "text": "Period end"
+          }
+        },
+        "E13": {
+          "s": "882974ba",
+          "value": {
+            "text": "Mar 25"
+          }
+        },
+        "E14": {
+          "s": "882974ba",
+          "value": {
+            "number": 41667
+          }
+        },
+        "E15": {
+          "s": "882974ba",
+          "value": {
+            "number": 62500
+          }
+        },
+        "F10": {
+          "s": "882974ba",
+          "value": {
+            "text": ""
+          }
+        },
+        "F11": {
+          "s": "882974ba",
+          "value": {
+            "text": ""
+          }
+        },
+        "F12": {
+          "s": "882974ba",
+          "value": {
+            "text": ""
+          }
+        },
+        "F13": {
+          "s": "882974ba",
+          "value": {
+            "text": ""
+          }
+        },
+        "F14": {
+          "s": "882974ba",
+          "value": {
+            "text": ""
+          }
+        },
+        "F15": {
+          "s": "882974ba",
+          "value": {
+            "text": ""
+          }
+        },
+        "G10": {
+          "s": "882974ba",
+          "value": {
+            "text": ""
+          }
+        },
+        "G11": {
+          "s": "882974ba",
+          "value": {
+            "text": ""
+          }
+        },
+        "G12": {
+          "s": "882974ba",
+          "value": {
+            "text": ""
+          }
+        },
+        "G13": {
+          "s": "882974ba",
+          "value": {
+            "text": ""
+          }
+        },
+        "G14": {
+          "s": "882974ba",
+          "value": {
+            "text": ""
+          }
+        },
+        "G15": {
+          "s": "882974ba",
+          "value": {
+            "text": ""
+          }
+        },
+        "H10": {
+          "s": "882974ba",
+          "value": {
+            "text": ""
+          }
+        },
+        "H11": {
+          "s": "882974ba",
+          "value": {
+            "text": ""
+          }
+        },
+        "H12": {
+          "s": "882974ba",
+          "value": {
+            "text": ""
+          }
+        },
+        "H13": {
+          "s": "882974ba",
+          "value": {
+            "text": ""
+          }
+        },
+        "H14": {
+          "s": "882974ba",
+          "value": {
+            "text": ""
+          }
+        },
+        "H15": {
+          "s": "882974ba",
+          "value": {
+            "text": ""
+          }
+        }
+      },
+      "cols": {
+        "1": {
+          "bestFit": true,
+          "width": 14.625
+        },
+        "2": {
+          "bestFit": true,
+          "width": 15.625
+        },
+        "3": {
+          "bestFit": true,
+          "width": 14.625
+        },
+        "4": {
+          "bestFit": true,
+          "width": 7.625
+        },
+        "5": {
+          "bestFit": true,
+          "width": 12.625
+        },
+        "6": {
+          "bestFit": true,
+          "width": 1.625
+        },
+        "7": {
+          "bestFit": true,
+          "width": 1.625
+        },
+        "8": {
+          "bestFit": true,
+          "width": 1.625
+        },
+        "9": {
+          "bestFit": true,
+          "width": 1.625
+        },
+        "10": {
+          "bestFit": true,
+          "width": 1.625
+        },
+        "11": {
+          "bestFit": true,
+          "width": 1.625
+        },
+        "12": {
+          "bestFit": true,
+          "width": 1.625
+        },
+        "13": {
+          "bestFit": true,
+          "width": 1.625
+        },
+        "14": {
+          "bestFit": true,
+          "width": 1.625
+        },
+        "15": {
+          "bestFit": true,
+          "width": 1.625
+        }
+      },
+      "images": [],
+      "merges": [],
+      "name": "Fees",
+      "print": {
+        "errors": null,
+        "evenFooter": null,
+        "fitToHeight": null,
+        "fitToPage": false,
+        "fitToWidth": null,
+        "horizontalCentered": false,
+        "margins": {
+          "bottom": 0.75,
+          "footer": 0.3,
+          "header": 0.3,
+          "left": 0.7,
+          "right": 0.7,
+          "top": 0.75
+        },
+        "oddFooter": null,
+        "orientation": "portrait",
+        "paperSize": null
+      },
+      "printArea": null,
+      "rows": {},
+      "view": {
+        "pane": null,
+        "showGridLines": true
+      }
+    },
+    {
+      "cells": {
+        "A1": {
+          "s": "4d2f305a",
+          "value": {
+            "text": "client"
+          }
+        },
+        "A14": {
+          "s": "4d2f305a",
+          "value": {
+            "text": "Phase One"
+          }
+        },
+        "A15": {
+          "s": "4d2f305a",
+          "value": {
+            "text": "Phase Two"
+          }
+        },
+        "A2": {
+          "s": "4d2f305a",
+          "value": {
+            "text": "matter:"
+          }
+        },
+        "A3": {
+          "s": "4d2f305a",
+          "value": {
+            "text": "matterNumber"
+          }
+        },
+        "A4": {
+          "s": "4d2f305a",
+          "value": {
+            "text": "jurId"
+          }
+        },
+        "A5": {
+          "s": "4d2f305a",
+          "value": {
+            "text": "numPeriod"
+          }
+        },
+        "A6": {
+          "s": "4d2f305a",
+          "value": {
+            "text": "table"
+          }
+        },
+        "A7": {
+          "s": "4d2f305a",
+          "value": {
+            "text": "currency"
+          }
+        },
+        "A8": {
+          "s": "4d2f305a",
+          "value": {
+            "text": "status"
+          }
+        },
+        "B1": {
+          "s": "4d2f305a",
+          "value": {
+            "text": "Acme Corp"
+          }
+        },
+        "B10": {
+          "s": "882974ba",
+          "value": {
+            "text": ""
+          }
+        },
+        "B11": {
+          "s": "882974ba",
+          "value": {
+            "text": ""
+          }
+        },
+        "B12": {
+          "s": "882974ba",
+          "value": {
+            "text": "Cost total"
+          }
+        },
+        "B13": {
+          "s": "882974ba",
+          "value": {
+            "text": ""
+          }
+        },
+        "B14": {
+          "s": "882974ba",
+          "value": {
+            "number": 27000
+          }
+        },
+        "B15": {
+          "s": "882974ba",
+          "value": {
+            "number": 10800
+          }
+        },
+        "B2": {
+          "s": "4d2f305a",
+          "value": {
+            "text": "Project Titan"
+          }
+        },
+        "B3": {
+          "s": "4d2f305a",
+          "value": {
+            "text": "ACME-2024-01"
+          }
+        },
+        "B4": {
+          "s": "3e1cee93",
+          "value": {
+            "number": 42
+          }
+        },
+        "B5": {
+          "s": "4d2f305a",
+          "value": {
+            "text": "1"
+          }
+        },
+        "B6": {
+          "s": "4d2f305a",
+          "value": {
+            "text": "costs"
+          }
+        },
+        "B7": {
+          "s": "4d2f305a",
+          "value": {
+            "text": "GBP"
+          }
+        },
+        "B8": {
+          "s": "4d2f305a",
+          "value": {
+            "text": "finalised"
+          }
+        },
+        "C10": {
+          "s": "882974ba",
+          "value": {
+            "text": ""
+          }
+        },
+        "C11": {
+          "s": "882974ba",
+          "value": {
+            "text": ""
+          }
+        },
+        "C12": {
+          "s": "882974ba",
+          "value": {
+            "text": "Period start"
+          }
+        },
+        "C13": {
+          "s": "882974ba",
+          "value": {
+            "text": "Jan 25"
+          }
+        },
+        "C14": {
+          "s": "882974ba",
+          "value": {
+            "number": 8910
+          }
+        },
+        "C15": {
+          "s": "882974ba",
+          "value": {
+            "text": ""
+          }
+        },
+        "D10": {
+          "s": "882974ba",
+          "value": {
+            "text": ""
+          }
+        },
+        "D11": {
+          "s": "882974ba",
+          "value": {
+            "text": ""
+          }
+        },
+        "D12": {
+          "s": "882974ba",
+          "value": {
+            "text": ""
+          }
+        },
+        "D13": {
+          "s": "882974ba",
+          "value": {
+            "text": "Feb 25"
+          }
+        },
+        "D14": {
+          "s": "882974ba",
+          "value": {
+            "number": 8910
+          }
+        },
+        "D15": {
+          "s": "882974ba",
+          "value": {
+            "number": 5400
+          }
+        },
+        "E10": {
+          "s": "882974ba",
+          "value": {
+            "text": ""
+          }
+        },
+        "E11": {
+          "s": "882974ba",
+          "value": {
+            "text": ""
+          }
+        },
+        "E12": {
+          "s": "882974ba",
+          "value": {
+            "text": "Period end"
+          }
+        },
+        "E13": {
+          "s": "882974ba",
+          "value": {
+            "text": "Mar 25"
+          }
+        },
+        "E14": {
+          "s": "882974ba",
+          "value": {
+            "number": 9180
+          }
+        },
+        "E15": {
+          "s": "882974ba",
+          "value": {
+            "number": 5400
+          }
+        },
+        "F10": {
+          "s": "882974ba",
+          "value": {
+            "text": ""
+          }
+        },
+        "F11": {
+          "s": "882974ba",
+          "value": {
+            "text": ""
+          }
+        },
+        "F12": {
+          "s": "882974ba",
+          "value": {
+            "text": ""
+          }
+        },
+        "F13": {
+          "s": "882974ba",
+          "value": {
+            "text": ""
+          }
+        },
+        "F14": {
+          "s": "882974ba",
+          "value": {
+            "text": ""
+          }
+        },
+        "F15": {
+          "s": "882974ba",
+          "value": {
+            "text": ""
+          }
+        },
+        "G10": {
+          "s": "882974ba",
+          "value": {
+            "text": ""
+          }
+        },
+        "G11": {
+          "s": "882974ba",
+          "value": {
+            "text": ""
+          }
+        },
+        "G12": {
+          "s": "882974ba",
+          "value": {
+            "text": ""
+          }
+        },
+        "G13": {
+          "s": "882974ba",
+          "value": {
+            "text": ""
+          }
+        },
+        "G14": {
+          "s": "882974ba",
+          "value": {
+            "text": ""
+          }
+        },
+        "G15": {
+          "s": "882974ba",
+          "value": {
+            "text": ""
+          }
+        },
+        "H10": {
+          "s": "882974ba",
+          "value": {
+            "text": ""
+          }
+        },
+        "H11": {
+          "s": "882974ba",
+          "value": {
+            "text": ""
+          }
+        },
+        "H12": {
+          "s": "882974ba",
+          "value": {
+            "text": ""
+          }
+        },
+        "H13": {
+          "s": "882974ba",
+          "value": {
+            "text": ""
+          }
+        },
+        "H14": {
+          "s": "882974ba",
+          "value": {
+            "text": ""
+          }
+        },
+        "H15": {
+          "s": "882974ba",
+          "value": {
+            "text": ""
+          }
+        }
+      },
+      "cols": {
+        "1": {
+          "bestFit": true,
+          "width": 14.625
+        },
+        "2": {
+          "bestFit": true,
+          "width": 15.625
+        },
+        "3": {
+          "bestFit": true,
+          "width": 14.625
+        },
+        "4": {
+          "bestFit": true,
+          "width": 7.625
+        },
+        "5": {
+          "bestFit": true,
+          "width": 12.625
+        },
+        "6": {
+          "bestFit": true,
+          "width": 1.625
+        },
+        "7": {
+          "bestFit": true,
+          "width": 1.625
+        },
+        "8": {
+          "bestFit": true,
+          "width": 1.625
+        },
+        "9": {
+          "bestFit": true,
+          "width": 1.625
+        },
+        "10": {
+          "bestFit": true,
+          "width": 1.625
+        },
+        "11": {
+          "bestFit": true,
+          "width": 1.625
+        },
+        "12": {
+          "bestFit": true,
+          "width": 1.625
+        },
+        "13": {
+          "bestFit": true,
+          "width": 1.625
+        },
+        "14": {
+          "bestFit": true,
+          "width": 1.625
+        },
+        "15": {
+          "bestFit": true,
+          "width": 1.625
+        }
+      },
+      "images": [],
+      "merges": [],
+      "name": "Cost",
+      "print": {
+        "errors": null,
+        "evenFooter": null,
+        "fitToHeight": null,
+        "fitToPage": false,
+        "fitToWidth": null,
+        "horizontalCentered": false,
+        "margins": {
+          "bottom": 0.75,
+          "footer": 0.3,
+          "header": 0.3,
+          "left": 0.7,
+          "right": 0.7,
+          "top": 0.75
+        },
+        "oddFooter": null,
+        "orientation": "portrait",
+        "paperSize": null
+      },
+      "printArea": null,
+      "rows": {},
+      "view": {
+        "pane": null,
+        "showGridLines": true
+      }
+    },
+    {
+      "cells": {
+        "A1": {
+          "s": "4d2f305a",
+          "value": {
+            "text": "client"
+          }
+        },
+        "A14": {
+          "s": "4d2f305a",
+          "value": {
+            "text": "Phase One"
+          }
+        },
+        "A15": {
+          "s": "4d2f305a",
+          "value": {
+            "text": "Phase Two"
+          }
+        },
+        "A2": {
+          "s": "4d2f305a",
+          "value": {
+            "text": "matter:"
+          }
+        },
+        "A3": {
+          "s": "4d2f305a",
+          "value": {
+            "text": "matterNumber"
+          }
+        },
+        "A4": {
+          "s": "4d2f305a",
+          "value": {
+            "text": "jurId"
+          }
+        },
+        "A5": {
+          "s": "4d2f305a",
+          "value": {
+            "text": "numPeriod"
+          }
+        },
+        "A6": {
+          "s": "4d2f305a",
+          "value": {
+            "text": "table"
+          }
+        },
+        "A7": {
+          "s": "4d2f305a",
+          "value": {
+            "text": "currency"
+          }
+        },
+        "A8": {
+          "s": "4d2f305a",
+          "value": {
+            "text": "status"
+          }
+        },
+        "B1": {
+          "s": "4d2f305a",
+          "value": {
+            "text": "Acme Corp"
+          }
+        },
+        "B10": {
+          "s": "882974ba",
+          "value": {
+            "text": ""
+          }
+        },
+        "B11": {
+          "s": "882974ba",
+          "value": {
+            "text": ""
+          }
+        },
+        "B12": {
+          "s": "882974ba",
+          "value": {
+            "text": "Gross profit"
+          }
+        },
+        "B13": {
+          "s": "882974ba",
+          "value": {
+            "text": ""
+          }
+        },
+        "B14": {
+          "s": "882974ba",
+          "value": {
+            "number": 95000
+          }
+        },
+        "B15": {
+          "s": "882974ba",
+          "value": {
+            "number": 113000
+          }
+        },
+        "B2": {
+          "s": "4d2f305a",
+          "value": {
+            "text": "Project Titan"
+          }
+        },
+        "B3": {
+          "s": "4d2f305a",
+          "value": {
+            "text": "ACME-2024-01"
+          }
+        },
+        "B4": {
+          "s": "3e1cee93",
+          "value": {
+            "number": 42
+          }
+        },
+        "B5": {
+          "s": "4d2f305a",
+          "value": {
+            "text": "1"
+          }
+        },
+        "B6": {
+          "s": "4d2f305a",
+          "value": {
+            "text": "grossProfit"
+          }
+        },
+        "B7": {
+          "s": "4d2f305a",
+          "value": {
+            "text": "GBP"
+          }
+        },
+        "B8": {
+          "s": "4d2f305a",
+          "value": {
+            "text": "finalised"
+          }
+        },
+        "C10": {
+          "s": "882974ba",
+          "value": {
+            "text": ""
+          }
+        },
+        "C11": {
+          "s": "882974ba",
+          "value": {
+            "text": ""
+          }
+        },
+        "C12": {
+          "s": "882974ba",
+          "value": {
+            "text": "Period start"
+          }
+        },
+        "C13": {
+          "s": "882974ba",
+          "value": {
+            "text": "Jan 25"
+          }
+        },
+        "C14": {
+          "s": "882974ba",
+          "value": {
+            "number": 31666
+          }
+        },
+        "C15": {
+          "s": "882974ba",
+          "value": {
+            "text": ""
+          }
+        },
+        "D10": {
+          "s": "882974ba",
+          "value": {
+            "text": ""
+          }
+        },
+        "D11": {
+          "s": "882974ba",
+          "value": {
+            "text": ""
+          }
+        },
+        "D12": {
+          "s": "882974ba",
+          "value": {
+            "text": ""
+          }
+        },
+        "D13": {
+          "s": "882974ba",
+          "value": {
+            "text": "Feb 25"
+          }
+        },
+        "D14": {
+          "s": "882974ba",
+          "value": {
+            "number": 31667
+          }
+        },
+        "D15": {
+          "s": "882974ba",
+          "value": {
+            "number": 56500
+          }
+        },
+        "E10": {
+          "s": "882974ba",
+          "value": {
+            "text": ""
+          }
+        },
+        "E11": {
+          "s": "882974ba",
+          "value": {
+            "text": ""
+          }
+        },
+        "E12": {
+          "s": "882974ba",
+          "value": {
+            "text": "Period end"
+          }
+        },
+        "E13": {
+          "s": "882974ba",
+          "value": {
+            "text": "Mar 25"
+          }
+        },
+        "E14": {
+          "s": "882974ba",
+          "value": {
+            "number": 31667
+          }
+        },
+        "E15": {
+          "s": "882974ba",
+          "value": {
+            "number": 56500
+          }
+        },
+        "F10": {
+          "s": "882974ba",
+          "value": {
+            "text": ""
+          }
+        },
+        "F11": {
+          "s": "882974ba",
+          "value": {
+            "text": ""
+          }
+        },
+        "F12": {
+          "s": "882974ba",
+          "value": {
+            "text": ""
+          }
+        },
+        "F13": {
+          "s": "882974ba",
+          "value": {
+            "text": ""
+          }
+        },
+        "F14": {
+          "s": "882974ba",
+          "value": {
+            "text": ""
+          }
+        },
+        "F15": {
+          "s": "882974ba",
+          "value": {
+            "text": ""
+          }
+        },
+        "G10": {
+          "s": "882974ba",
+          "value": {
+            "text": ""
+          }
+        },
+        "G11": {
+          "s": "882974ba",
+          "value": {
+            "text": ""
+          }
+        },
+        "G12": {
+          "s": "882974ba",
+          "value": {
+            "text": ""
+          }
+        },
+        "G13": {
+          "s": "882974ba",
+          "value": {
+            "text": ""
+          }
+        },
+        "G14": {
+          "s": "882974ba",
+          "value": {
+            "text": ""
+          }
+        },
+        "G15": {
+          "s": "882974ba",
+          "value": {
+            "text": ""
+          }
+        },
+        "H10": {
+          "s": "882974ba",
+          "value": {
+            "text": ""
+          }
+        },
+        "H11": {
+          "s": "882974ba",
+          "value": {
+            "text": ""
+          }
+        },
+        "H12": {
+          "s": "882974ba",
+          "value": {
+            "text": ""
+          }
+        },
+        "H13": {
+          "s": "882974ba",
+          "value": {
+            "text": ""
+          }
+        },
+        "H14": {
+          "s": "882974ba",
+          "value": {
+            "text": ""
+          }
+        },
+        "H15": {
+          "s": "882974ba",
+          "value": {
+            "text": ""
+          }
+        }
+      },
+      "cols": {
+        "1": {
+          "bestFit": true,
+          "width": 14.625
+        },
+        "2": {
+          "bestFit": true,
+          "width": 15.625
+        },
+        "3": {
+          "bestFit": true,
+          "width": 14.625
+        },
+        "4": {
+          "bestFit": true,
+          "width": 7.625
+        },
+        "5": {
+          "bestFit": true,
+          "width": 12.625
+        },
+        "6": {
+          "bestFit": true,
+          "width": 1.625
+        },
+        "7": {
+          "bestFit": true,
+          "width": 1.625
+        },
+        "8": {
+          "bestFit": true,
+          "width": 1.625
+        },
+        "9": {
+          "bestFit": true,
+          "width": 1.625
+        },
+        "10": {
+          "bestFit": true,
+          "width": 1.625
+        },
+        "11": {
+          "bestFit": true,
+          "width": 1.625
+        },
+        "12": {
+          "bestFit": true,
+          "width": 1.625
+        },
+        "13": {
+          "bestFit": true,
+          "width": 1.625
+        },
+        "14": {
+          "bestFit": true,
+          "width": 1.625
+        },
+        "15": {
+          "bestFit": true,
+          "width": 1.625
+        }
+      },
+      "images": [],
+      "merges": [],
+      "name": "Gross profit",
+      "print": {
+        "errors": null,
+        "evenFooter": null,
+        "fitToHeight": null,
+        "fitToPage": false,
+        "fitToWidth": null,
+        "horizontalCentered": false,
+        "margins": {
+          "bottom": 0.75,
+          "footer": 0.3,
+          "header": 0.3,
+          "left": 0.7,
+          "right": 0.7,
+          "top": 0.75
+        },
+        "oddFooter": null,
+        "orientation": "portrait",
+        "paperSize": null
+      },
+      "printArea": null,
+      "rows": {},
+      "view": {
+        "pane": null,
+        "showGridLines": true
+      }
+    },
+    {
+      "cells": {
+        "A1": {
+          "s": "4d2f305a",
+          "value": {
+            "text": "client"
+          }
+        },
+        "A14": {
+          "s": "4d2f305a",
+          "value": {
+            "text": "Phase One"
+          }
+        },
+        "A15": {
+          "s": "4d2f305a",
+          "value": {
+            "text": "Phase Two"
+          }
+        },
+        "A2": {
+          "s": "4d2f305a",
+          "value": {
+            "text": "matter:"
+          }
+        },
+        "A3": {
+          "s": "4d2f305a",
+          "value": {
+            "text": "matterNumber"
+          }
+        },
+        "A4": {
+          "s": "4d2f305a",
+          "value": {
+            "text": "jurId"
+          }
+        },
+        "A5": {
+          "s": "4d2f305a",
+          "value": {
+            "text": "numPeriod"
+          }
+        },
+        "A6": {
+          "s": "4d2f305a",
+          "value": {
+            "text": "table"
+          }
+        },
+        "A7": {
+          "s": "4d2f305a",
+          "value": {
+            "text": "currency"
+          }
+        },
+        "A8": {
+          "s": "4d2f305a",
+          "value": {
+            "text": "status"
+          }
+        },
+        "B1": {
+          "s": "4d2f305a",
+          "value": {
+            "text": "Acme Corp"
+          }
+        },
+        "B10": {
+          "s": "882974ba",
+          "value": {
+            "text": ""
+          }
+        },
+        "B11": {
+          "s": "882974ba",
+          "value": {
+            "text": ""
+          }
+        },
+        "B12": {
+          "s": "882974ba",
+          "value": {
+            "text": "Margin"
+          }
+        },
+        "B13": {
+          "s": "882974ba",
+          "value": {
+            "text": ""
+          }
+        },
+        "B14": {
+          "s": "882974ba",
+          "value": {
+            "text": "68"
+          }
+        },
+        "B15": {
+          "s": "882974ba",
+          "value": {
+            "text": "81"
+          }
+        },
+        "B2": {
+          "s": "4d2f305a",
+          "value": {
+            "text": "Project Titan"
+          }
+        },
+        "B3": {
+          "s": "4d2f305a",
+          "value": {
+            "text": "ACME-2024-01"
+          }
+        },
+        "B4": {
+          "s": "3e1cee93",
+          "value": {
+            "number": 42
+          }
+        },
+        "B5": {
+          "s": "4d2f305a",
+          "value": {
+            "text": "1"
+          }
+        },
+        "B6": {
+          "s": "4d2f305a",
+          "value": {
+            "text": "margin"
+          }
+        },
+        "B7": {
+          "s": "4d2f305a",
+          "value": {
+            "text": "GBP"
+          }
+        },
+        "B8": {
+          "s": "4d2f305a",
+          "value": {
+            "text": "finalised"
+          }
+        },
+        "C10": {
+          "s": "882974ba",
+          "value": {
+            "text": ""
+          }
+        },
+        "C11": {
+          "s": "882974ba",
+          "value": {
+            "text": ""
+          }
+        },
+        "C12": {
+          "s": "882974ba",
+          "value": {
+            "text": "Period start"
+          }
+        },
+        "C13": {
+          "s": "882974ba",
+          "value": {
+            "text": "Jan 25"
+          }
+        },
+        "C14": {
+          "s": "882974ba",
+          "value": {
+            "text": "68"
+          }
+        },
+        "C15": {
+          "s": "882974ba",
+          "value": {
+            "text": " "
+          }
+        },
+        "D10": {
+          "s": "882974ba",
+          "value": {
+            "text": ""
+          }
+        },
+        "D11": {
+          "s": "882974ba",
+          "value": {
+            "text": ""
+          }
+        },
+        "D12": {
+          "s": "882974ba",
+          "value": {
+            "text": ""
+          }
+        },
+        "D13": {
+          "s": "882974ba",
+          "value": {
+            "text": "Feb 25"
+          }
+        },
+        "D14": {
+          "s": "882974ba",
+          "value": {
+            "text": "68"
+          }
+        },
+        "D15": {
+          "s": "882974ba",
+          "value": {
+            "text": "81"
+          }
+        },
+        "E10": {
+          "s": "882974ba",
+          "value": {
+            "text": ""
+          }
+        },
+        "E11": {
+          "s": "882974ba",
+          "value": {
+            "text": ""
+          }
+        },
+        "E12": {
+          "s": "882974ba",
+          "value": {
+            "text": "Period end"
+          }
+        },
+        "E13": {
+          "s": "882974ba",
+          "value": {
+            "text": "Mar 25"
+          }
+        },
+        "E14": {
+          "s": "882974ba",
+          "value": {
+            "text": "67"
+          }
+        },
+        "E15": {
+          "s": "882974ba",
+          "value": {
+            "text": "81"
+          }
+        },
+        "F10": {
+          "s": "882974ba",
+          "value": {
+            "text": ""
+          }
+        },
+        "F11": {
+          "s": "882974ba",
+          "value": {
+            "text": ""
+          }
+        },
+        "F12": {
+          "s": "882974ba",
+          "value": {
+            "text": ""
+          }
+        },
+        "F13": {
+          "s": "882974ba",
+          "value": {
+            "text": ""
+          }
+        },
+        "F14": {
+          "s": "882974ba",
+          "value": {
+            "text": ""
+          }
+        },
+        "F15": {
+          "s": "882974ba",
+          "value": {
+            "text": ""
+          }
+        },
+        "G10": {
+          "s": "882974ba",
+          "value": {
+            "text": ""
+          }
+        },
+        "G11": {
+          "s": "882974ba",
+          "value": {
+            "text": ""
+          }
+        },
+        "G12": {
+          "s": "882974ba",
+          "value": {
+            "text": ""
+          }
+        },
+        "G13": {
+          "s": "882974ba",
+          "value": {
+            "text": ""
+          }
+        },
+        "G14": {
+          "s": "882974ba",
+          "value": {
+            "text": ""
+          }
+        },
+        "G15": {
+          "s": "882974ba",
+          "value": {
+            "text": ""
+          }
+        },
+        "H10": {
+          "s": "882974ba",
+          "value": {
+            "text": ""
+          }
+        },
+        "H11": {
+          "s": "882974ba",
+          "value": {
+            "text": ""
+          }
+        },
+        "H12": {
+          "s": "882974ba",
+          "value": {
+            "text": ""
+          }
+        },
+        "H13": {
+          "s": "882974ba",
+          "value": {
+            "text": ""
+          }
+        },
+        "H14": {
+          "s": "882974ba",
+          "value": {
+            "text": ""
+          }
+        },
+        "H15": {
+          "s": "882974ba",
+          "value": {
+            "text": ""
+          }
+        }
+      },
+      "cols": {
+        "1": {
+          "bestFit": true,
+          "width": 14.625
+        },
+        "2": {
+          "bestFit": true,
+          "width": 15.625
+        },
+        "3": {
+          "bestFit": true,
+          "width": 14.625
+        },
+        "4": {
+          "bestFit": true,
+          "width": 7.625
+        },
+        "5": {
+          "bestFit": true,
+          "width": 12.625
+        },
+        "6": {
+          "bestFit": true,
+          "width": 1.625
+        },
+        "7": {
+          "bestFit": true,
+          "width": 1.625
+        },
+        "8": {
+          "bestFit": true,
+          "width": 1.625
+        },
+        "9": {
+          "bestFit": true,
+          "width": 1.625
+        },
+        "10": {
+          "bestFit": true,
+          "width": 1.625
+        },
+        "11": {
+          "bestFit": true,
+          "width": 1.625
+        },
+        "12": {
+          "bestFit": true,
+          "width": 1.625
+        },
+        "13": {
+          "bestFit": true,
+          "width": 1.625
+        },
+        "14": {
+          "bestFit": true,
+          "width": 1.625
+        },
+        "15": {
+          "bestFit": true,
+          "width": 1.625
+        }
+      },
+      "images": [],
+      "merges": [],
+      "name": "Margin",
+      "print": {
+        "errors": null,
+        "evenFooter": null,
+        "fitToHeight": null,
+        "fitToPage": false,
+        "fitToWidth": null,
+        "horizontalCentered": false,
+        "margins": {
+          "bottom": 0.75,
+          "footer": 0.3,
+          "header": 0.3,
+          "left": 0.7,
+          "right": 0.7,
+          "top": 0.75
+        },
+        "oddFooter": null,
+        "orientation": "portrait",
+        "paperSize": null
+      },
+      "printArea": null,
+      "rows": {},
+      "view": {
+        "pane": null,
+        "showGridLines": true
+      }
+    },
+    {
+      "cells": {
+        "A1": {
+          "s": "4d2f305a",
+          "value": {
+            "text": "client"
+          }
+        },
+        "A13": {
+          "s": "4d2f305a",
+          "value": {
+            "text": "Grade"
+          }
+        },
+        "A14": {
+          "s": "4d2f305a",
+          "value": {
+            "text": "Partner"
+          }
+        },
+        "A15": {
+          "s": "4d2f305a",
+          "value": {
+            "text": "Associate"
+          }
+        },
+        "A2": {
+          "s": "4d2f305a",
+          "value": {
+            "text": "matter:"
+          }
+        },
+        "A3": {
+          "s": "4d2f305a",
+          "value": {
+            "text": "matterNumber"
+          }
+        },
+        "A4": {
+          "s": "4d2f305a",
+          "value": {
+            "text": "jurId"
+          }
+        },
+        "A5": {
+          "s": "4d2f305a",
+          "value": {
+            "text": "numPeriod"
+          }
+        },
+        "A6": {
+          "s": "4d2f305a",
+          "value": {
+            "text": "table"
+          }
+        },
+        "A7": {
+          "s": "4d2f305a",
+          "value": {
+            "text": "currency"
+          }
+        },
+        "A8": {
+          "s": "4d2f305a",
+          "value": {
+            "text": "status"
+          }
+        },
+        "B1": {
+          "s": "4d2f305a",
+          "value": {
+            "text": "Acme Corp"
+          }
+        },
+        "B10": {
+          "s": "882974ba",
+          "value": {
+            "text": ""
+          }
+        },
+        "B11": {
+          "s": "882974ba",
+          "value": {
+            "text": ""
+          }
+        },
+        "B12": {
+          "s": "882974ba",
+          "value": {
+            "text": "Any earlier time"
+          }
+        },
+        "B13": {
+          "s": "882974ba",
+          "value": {
+            "text": "Until superseded"
+          }
+        },
+        "B14": {
+          "s": "882974ba",
+          "value": {
+            "text": "500"
+          }
+        },
+        "B15": {
+          "s": "4d2f305a",
+          "value": {
+            "text": "250"
+          }
+        },
+        "B2": {
+          "s": "4d2f305a",
+          "value": {
+            "text": "Project Titan"
+          }
+        },
+        "B3": {
+          "s": "4d2f305a",
+          "value": {
+            "text": "ACME-2024-01"
+          }
+        },
+        "B4": {
+          "s": "3e1cee93",
+          "value": {
+            "number": 42
+          }
+        },
+        "B5": {
+          "s": "4d2f305a",
+          "value": {
+            "text": "1"
+          }
+        },
+        "B6": {
+          "s": "4d2f305a",
+          "value": {
+            "text": "rates"
+          }
+        },
+        "B7": {
+          "s": "4d2f305a",
+          "value": {
+            "text": "GBP"
+          }
+        },
+        "B8": {
+          "s": "4d2f305a",
+          "value": {
+            "text": "finalised"
+          }
+        }
+      },
+      "cols": {
+        "1": {
+          "bestFit": true,
+          "width": 14.625
+        },
+        "2": {
+          "bestFit": true,
+          "width": 19.625
+        },
+        "3": {
+          "bestFit": true,
+          "width": 1.625
+        },
+        "4": {
+          "bestFit": true,
+          "width": 1.625
+        },
+        "5": {
+          "bestFit": true,
+          "width": 1.625
+        },
+        "6": {
+          "bestFit": true,
+          "width": 1.625
+        },
+        "7": {
+          "bestFit": true,
+          "width": 1.625
+        },
+        "8": {
+          "bestFit": true,
+          "width": 1.625
+        },
+        "9": {
+          "bestFit": true,
+          "width": 1.625
+        },
+        "10": {
+          "bestFit": true,
+          "width": 1.625
+        },
+        "11": {
+          "bestFit": true,
+          "width": 1.625
+        },
+        "12": {
+          "bestFit": true,
+          "width": 1.625
+        },
+        "13": {
+          "bestFit": true,
+          "width": 1.625
+        },
+        "14": {
+          "bestFit": true,
+          "width": 1.625
+        },
+        "15": {
+          "bestFit": true,
+          "width": 1.625
+        }
+      },
+      "images": [],
+      "merges": [],
+      "name": "Rates",
+      "print": {
+        "errors": null,
+        "evenFooter": null,
+        "fitToHeight": null,
+        "fitToPage": false,
+        "fitToWidth": null,
+        "horizontalCentered": false,
+        "margins": {
+          "bottom": 0.75,
+          "footer": 0.3,
+          "header": 0.3,
+          "left": 0.7,
+          "right": 0.7,
+          "top": 0.75
+        },
+        "oddFooter": null,
+        "orientation": "portrait",
+        "paperSize": null
+      },
+      "printArea": null,
+      "rows": {},
+      "view": {
+        "pane": null,
+        "showGridLines": true
+      }
+    }
+  ],
+  "styles": {
+    "3e1cee93": {
+      "alignment": {
+        "horizontal": "left",
+        "vertical": "center"
+      },
+      "border": null,
+      "fill": null,
+      "font": {
+        "bold": false,
+        "colour": null,
+        "italic": false,
+        "name": "Calibri",
+        "size": 12
+      }
+    },
+    "4d2f305a": {
+      "alignment": null,
+      "border": null,
+      "fill": null,
+      "font": {
+        "bold": false,
+        "colour": null,
+        "italic": false,
+        "name": "Calibri",
+        "size": 12
+      }
+    },
+    "882974ba": {
+      "alignment": {
+        "horizontal": "right",
+        "vertical": "center"
+      },
+      "border": null,
+      "fill": null,
+      "font": {
+        "bold": false,
+        "colour": null,
+        "italic": false,
+        "name": "Calibri",
+        "size": 12
+      }
+    }
+  }
+}

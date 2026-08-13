@@ -1,0 +1,31 @@
+databaseChangeLog = {
+    changeSet(author: "juralio (generated)", id: 1678297013000-1) {
+      dropForeignKeyConstraint(baseTableName: "matter", constraintName: "FKdq616p5kncfw67ltoisnu3xqg")
+      dropForeignKeyConstraint(baseTableName: "matter_admin", constraintName: "FK2fahw9htmgayuyijss1wlb1es")
+      dropForeignKeyConstraint(baseTableName: "matter_team_member", constraintName: "FK2ywa6bf9y262giwsxedfv5vfo")
+      dropForeignKeyConstraint(baseTableName: "matter_viewer", constraintName: "FKl0ejhfiyb3lyarwd3a2egp6uk")
+      dropForeignKeyConstraint(baseTableName: "matter_recency", constraintName: "FKl0ywofdb90gv6ns88uqs5k621")
+      dropForeignKeyConstraint(baseTableName: "post_member", constraintName: "fk_user_id_to_user")
+      dropForeignKeyConstraint(baseTableName: "post_author", constraintName: "FK1wg63dj67cg3ejpmv4cb4ce33")
+      dropForeignKeyConstraint(baseTableName: "private_workstream_member", constraintName: "FK1wg63dj67cg3ejpmvna2km2n1")
+      dropForeignKeyConstraint(baseTableName: "task_team_member", constraintName: "FK1wg63dj67cg3ejpmvna2km2nw")
+      dropForeignKeyConstraint(baseTableName: "inbox_notification", constraintName: "FKp8us9m6n0da6598rsq8btooux")
+      dropForeignKeyConstraint(baseTableName: "user_inbox_notification", constraintName: "FK1jsvgeqj3gw2esmmrlrb7aoa5")
+      dropForeignKeyConstraint(baseTableName: "user_role", constraintName: "FKg7fr1r7o0fkk41nfhnjdyqn7b")
+      dropForeignKeyConstraint(baseTableName: "user_status_event", constraintName: "FK_user_status_event_user_id")
+    
+      addForeignKeyConstraint(baseColumnNames: "creator_id", baseTableName: "matter", constraintName: "FK_CREATOR_ID_OF_MATTER", deferrable: "false", initiallyDeferred: "false", referencedColumnNames: "id", referencedTableName: "app_user", validate: "true", onDelete: "CASCADE")
+      addForeignKeyConstraint(baseColumnNames: "user_id", baseTableName: "matter_admin", constraintName: "FK_USER_ID_OF_MATTER_ADMIN", deferrable: "false", initiallyDeferred: "false", referencedColumnNames: "id", referencedTableName: "app_user", validate: "true", onDelete: "CASCADE")
+      addForeignKeyConstraint(baseColumnNames: "user_id", baseTableName: "matter_team_member", constraintName: "FK_USER_ID_OF_MATTER_TEAM_MEMBER", deferrable: "false", initiallyDeferred: "false", referencedColumnNames: "id", referencedTableName: "app_user", validate: "true", onDelete: "CASCADE")
+      addForeignKeyConstraint(baseColumnNames: "user_id", baseTableName: "matter_viewer", constraintName: "FK_USER_ID_OF_MATTER_VIEWER", deferrable: "false", initiallyDeferred: "false", referencedColumnNames: "id", referencedTableName: "app_user", validate: "true", onDelete: "CASCADE")
+      addForeignKeyConstraint(baseColumnNames: "user_id", baseTableName: "matter_recency", constraintName: "FK_USER_ID_OF_MATTER_RECENCY", deferrable: "false", initiallyDeferred: "false", referencedColumnNames: "id", referencedTableName: "app_user", validate: "true", onDelete: "CASCADE")
+      addForeignKeyConstraint(baseColumnNames: "user_id", baseTableName: "post_member", constraintName: "FK_USER_ID_OF_POST_MEMBER", deferrable: "false", initiallyDeferred: "false", referencedColumnNames: "id", referencedTableName: "app_user", validate: "true", onDelete: "CASCADE")
+      addForeignKeyConstraint(baseColumnNames: "user_id", baseTableName: "post_author", constraintName: "FK_USER_ID_OF_POST_AUTHOR", deferrable: "false", initiallyDeferred: "false", referencedColumnNames: "id", referencedTableName: "app_user", validate: "true", onDelete: "CASCADE")
+      addForeignKeyConstraint(baseColumnNames: "user_id", baseTableName: "private_workstream_member", constraintName: "FK_USER_ID_OF_PRIVATE_WORKSTREAM_MEMBER", deferrable: "false", initiallyDeferred: "false", referencedColumnNames: "id", referencedTableName: "app_user", validate: "true", onDelete: "CASCADE")
+      addForeignKeyConstraint(baseColumnNames: "user_id", baseTableName: "task_team_member", constraintName: "FK_USER_ID_OF_TASK_TEAM_MEMBER", deferrable: "false", initiallyDeferred: "false", referencedColumnNames: "id", referencedTableName: "app_user", validate: "true", onDelete: "CASCADE")
+      addForeignKeyConstraint(baseColumnNames: "target_user_id", baseTableName: "inbox_notification", constraintName: "FK_TARGET_USER_ID_OF_INBOX_NOTIFICATION", deferrable: "false", initiallyDeferred: "false", referencedColumnNames: "id", referencedTableName: "app_user", validate: "true", onDelete: "CASCADE")
+      addForeignKeyConstraint(baseColumnNames: "user_id", baseTableName: "user_inbox_notification", constraintName: "FK_USER_ID_OF_USER_INBOX_NOTIFICATION", deferrable: "false", initiallyDeferred: "false", referencedColumnNames: "id", referencedTableName: "app_user", validate: "true", onDelete: "CASCADE")
+      addForeignKeyConstraint(baseColumnNames: "user_id", baseTableName: "user_role", constraintName: "FK_USER_ID_OF_USER_ROLE", deferrable: "false", initiallyDeferred: "false", referencedColumnNames: "id", referencedTableName: "app_user", validate: "true", onDelete: "CASCADE")
+      addForeignKeyConstraint(baseColumnNames: "user_id", baseTableName: "user_status_event", constraintName: "FK_USER_ID_OF_USER_STATUS_EVENT", deferrable: "false", initiallyDeferred: "false", referencedColumnNames: "id", referencedTableName: "app_user", validate: "true", onDelete: "CASCADE")
+    }
+}

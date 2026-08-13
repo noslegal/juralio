@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>JurPostAdd</title>
+    <g id="JurPostAdd" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M4,18 L4,4 L11,4 L11,11 L18,11 L18,12 C18.7,12 19.37,12.13 20,12.35 L20,8 L14,2 L4,2 C2.89,2 2,2.89 2,4 L2,18 C2,19.1 2.89,20 4,20 L12.35,20 C12.13,19.37 12,18.7 12,18 L4,18 M22,17 L22,19 L19,19 L19,22 L17,22 L17,19 L14,19 L14,17 L17,17 L17,14 L19,14 L19,17 L22,17 Z" id="Shape" fill="#000000" fill-rule="nonzero"></path>
+    </g>
+</svg>

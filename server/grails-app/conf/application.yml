@@ -1,0 +1,192 @@
+---
+server:
+  max-http-request-header-size: 10000
+logging:
+  level:
+    root: ERROR
+grails:
+  controllers:
+    upload:
+      maxFileSize: 2000000 #2MB
+      maxRequestSize: 2000000 #2MB
+  profile: rest-api
+  codegen:
+    defaultPackage: server
+  gorm:
+    reactor:
+      # Whether to translate GORM events into Reactor events
+      # Disabled by default for performance reasons
+      events: false
+    failOnError: true
+  cors:
+    #TODO: Auth - Do we need this for development
+    enabled: true
+    allowedOrigin:
+      - 'http://localhost:3000'
+  #This ensures that the resources copied into src/main/webapp are served from the app server root
+  resources:
+    pattern: '/**'
+  plugin:
+    databasemigration:
+      updateOnStart: true
+      updateOnStartFileName: changelog.groovy
+  views:
+    json:
+      generator:
+        # grails-views-gson 7 changed the default java.util.Date format to
+        # yyyy-MM-dd'T'HH:mm:ss.SSSX (adds milliseconds); pin the pre-Grails-7
+        # wire format the frontend and e2es were built against.
+        dateFormat: "yyyy-MM-dd'T'HH:mm:ss'Z'"
+info:
+  app:
+    name: '@info.app.name@'
+    version: '@info.app.version@'
+    grailsVersion: '@info.app.grailsVersion@'
+spring:
+  jmx:
+    unique-names: true
+  main:
+    banner-mode: 'off'
+  liquibase:
+    # The Grails database-migration plugin owns Liquibase here (see
+    # grails.plugin.databasemigration above — changelog.groovy). Spring Boot's
+    # auto-config looks for its own classpath:/db/changelog/db.changelog-master.yaml
+    # and fails the boot if missing; disable it.
+    enabled: false
+  groovy:
+    template:
+      check-template-location: false
+  devtools:
+    restart:
+      additional-exclude:
+        - '*.gsp'
+        - '**/*.gsp'
+        - '*.gson'
+        - '**/*.gson'
+        - 'DISABLED_logback.groovy'
+        - '*.properties'
+management:
+  endpoints:
+    enabled-by-default: false
+
+---
+grails:
+  mime:
+    disable:
+      accept:
+        header:
+          userAgents:
+            - Gecko
+            - WebKit
+            - Presto
+            - Trident
+    types:
+      json:
+        - application/json
+        - text/json
+      hal:
+        - application/hal+json
+        - application/hal+xml
+      xml:
+        - text/xml
+        - application/xml
+      atom: application/atom+xml
+      css: text/css
+      csv: text/csv
+      js: text/javascript
+      rss: application/rss+xml
+      text: text/plain
+      all: '*/*'
+  urlmapping:
+    cache:
+      maxsize: 1000
+  controllers:
+    defaultScope: singleton
+  converters:
+    encoding: UTF-8
+---
+hibernate:
+  cache:
+    queries: false
+    use_second_level_cache: false
+    use_query_cache: false
+dataSource:
+  pooled: true
+  jmxExport: true
+  driverClassName: org.h2.Driver
+  username: sa
+  password: ''
+
+environments:
+  development:
+    dataSource:
+      dbCreate: none
+      # Defaults are the native local setup (a Postgres on the developer's own
+      # machine), so `./gradlew bootRun` needs no environment at all. The
+      # DS_* overrides let the same development profile run in a container,
+      # where the database is a sibling service rather than localhost — see
+      # docker-compose.local.yml.
+      url: jdbc:postgresql://${DS_HOST:localhost}:${DS_PORT:5432}/${DS_DB_NAME:juralio}
+      driverClassName: org.postgresql.Driver
+      dialect: org.hibernate.dialect.PostgreSQLDialect
+      username: ${DS_USERNAME:juralio}
+      password: ${DS_PASSWORD:juralio}
+  test:
+    dataSource:
+      dbCreate: update
+      url: jdbc:h2:mem:testDb;MVCC=TRUE;LOCK_TIMEOUT=10000;DB_CLOSE_ON_EXIT=FALSE
+  production:
+    dataSource:
+      dbCreate: none
+      url: jdbc:postgresql://${DS_HOST}:${DS_PORT}/${DS_DB_NAME}
+      driverClassName: org.postgresql.Driver
+      dialect: org.hibernate.dialect.PostgreSQLDialect
+      username: ${DS_USERNAME}
+      password: ${DS_PASSWORD}
+      properties:
+        validationQuery: SELECT 1
+        validationInterval: 5000
+        testOnBorrow: true
+        testWhileIdle: true
+        testOnReturn: false
+juralio:
+  maxLoginAttempts: ${MAX_LOGIN_ATTEMPTS}
+  lockDurationMinutes: ${ACCOUNT_LOCK_DURATION_IN_MINUTES}
+  tokenExpiryMinutes: ${TOKEN_EXPIRY_IN_MINUTES}
+  magicLinkPassphrase: ${MAGIC_LINK_PASSPHRASE}
+rateLimit:
+  enabled: ${RATE_LIMIT_ENABLED:true}
+  requestsPerWindow: ${RATE_LIMIT_REQUESTS_PER_WINDOW:200}
+  windowSeconds: ${RATE_LIMIT_WINDOW_SECONDS:60}
+  alertEmail: ${RATE_LIMIT_ALERT_EMAIL:developers@example.com}
+  alertCooldownSeconds: ${RATE_LIMIT_ALERT_COOLDOWN_SECONDS:300}
+
+oauth:
+  google:
+    clientId: ${GOOGLE_CLIENT_ID}
+  microsoft:
+    clientId: ${MICROSOFT_CLIENT_ID}
+    tenantId: ${MICROSOFT_TENANT_ID}
+    redirectUrl: ${MICROSOFT_REDIRECT_URL}
+    clientSecret: ${MICROSOFT_CLIENT_SECRET}
+  okta:
+    clientId: ${OKTA_CLIENT_ID}
+    redirectUrl: ${OKTA_REDIRECT_ID}
+    oktaAuthUrl: ${OKTA_AUTH_URL}
+    oktaAPIKey: ${OKTA_API_KEY}
+    oktaOptionalUsernameAppendage: ${OKTA_OPTIONAL_USERNAME_APPENDAGE}
+domain: ${DOMAIN}
+# Opt-in reporting of unhandled server errors. Leave unset (the default) and the
+# server makes no outbound call — it logs the error locally and returns 500.
+errorReporting:
+  url: ${ERROR_REPORTING_URL:}
+  apiKeySecretName: ${ERROR_REPORTING_API_KEY_SECRET:}
+  alertEmail: ${ERROR_REPORTING_ALERT_EMAIL:}
+seats:
+  full: ${FULL_SEATS}
+  limited: ${LIMITED_SEATS}
+faviconService: ${FAVICON_SERVICE}
+unsplash:
+  key: ${UNSPLASH_API_KEY}
+template:
+  importAccessKey: ${TEMPLATE_IMPORT_ACCESS_KEY}

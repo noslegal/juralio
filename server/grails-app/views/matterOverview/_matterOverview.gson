@@ -1,0 +1,158 @@
+/*
+ * Copyright 2026 Graeme and Joanna Johnston
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+import com.juralio.linkresource.LinkResource
+import com.juralio.matter.MatterAdmin
+import com.juralio.matter.MatterOverview
+import com.juralio.matter.MatterTeamMember
+import com.juralio.matter.MatterViewer
+import com.juralio.project.TaskCountsDTO
+import com.juralio.project.WorkstreamOverviewForMatter
+import com.juralio.task.Task
+import com.juralio.task.status.TaskStatus
+import server.PrivateWorkstreamMember
+
+model {
+    MatterOverview matterOverview
+}
+
+def renderTaskCounts(TaskCountsDTO taskCounts){
+    return [
+            notRequiredCount: taskCounts.notRequiredCount,
+            notStartedCount: taskCounts.notStartedCount,
+            inProgressCount: taskCounts.inProgressCount,
+            doneCount: taskCounts.doneCount
+    ]
+
+}
+
+def renderLevelATasks(List<Task> tasks){
+    return tasks.collect{
+        [
+            id: it.id,
+            status: it.status,
+            plannedStartDate: it.plannedStartDate,
+            plannedEndDate: it.plannedEndDate,
+            actualStartDate: it.actualStartDate,
+            actualEndDate: it.actualEndDate,
+            level:1,
+            name: it.name,
+            taskCounts: renderTaskCounts(it.taskCounts),
+            milestones: it.milestones
+        ]
+    }
+}
+
+def renderPrivateWorkstreamTeam(List<PrivateWorkstreamMember> members){
+    return members.collect{[
+            id: it.id,
+            username        : it.user.username,
+            firstname       : it.user.firstname,
+            lastname        : it.user.lastname,
+            enabled         : it.user.enabled, // This field is required for Userlist control
+            avatarColorIndex: it.user.avatarColorIndex,
+            avatarImageIndex: it.user.avatarImageIndex,
+            matterAdmin: it.matterAdmin,
+            matterViewer: it.matterViewer,
+            matterTeamMember: it.matterTeamMember
+    ]}
+}
+
+
+def renderWorkstream(List<WorkstreamOverviewForMatter> workstreams){
+    return workstreams.collect{
+        [
+                id: it.id,
+                name: it.name,
+                startDate: it.startDate,
+                endDate: it.endDate,
+                referenceNumber: it.referenceNumber,
+                taskCounts: renderTaskCounts(it.taskCounts),
+                activities: it.activities,
+                levelATasks: renderLevelATasks(it.levelATasks),
+                active: it.active,
+                milestones: it.milestones,
+                isPrivate: it.isPrivate,
+                privateWorkstreamTeam: renderPrivateWorkstreamTeam(it.privateWorkstreamTeam),
+                description: it.description
+        ]
+    }
+}
+
+def renderTeamMembers(List<MatterTeamMember> teamMembers, List<MatterAdmin> admins, List<MatterViewer> viewers){
+    //todo this data isn't correct
+    return teamMembers.collect{[
+            id: it.id,
+            user:[
+                username: it.user.username,
+                firstname: it.user.firstname,
+                lastname:it.user.lastname,
+                isViewer: it.user.isViewerOnMatter,
+                avatarColorIndex: it.user.avatarColorIndex,
+                avatarImageIndex: it.user.avatarImageIndex,
+                enabled: it.user.enabled,
+                matterAdminId: admins.find{it.user.id == it.user.id}?.id,
+                teamMemberId: it.id,//it.user.isActiveOnMatter?it.id:null, //todo is this right?
+                matterViewerId:viewers.find{it.user.id == it.user.id}?.id,
+                isActiveOnMatter: true,//it.user.isActiveOnMatter,
+                isActiveOnWorkstream:true//not used for the matter overview
+            ]
+    ]}
+}
+
+def renderResources(List<LinkResource> resources){
+    return resources.collect{[
+            id: it.id,
+            name : it.name,
+            dateCreated : it.dateCreated,
+            url : it.url,
+            image : it.image,
+            matterId : it.matterId,
+            workstreamId : it.workstreamId,
+    ]}
+}
+
+def renderPositionsofGroups(List<MatterGroupPositionDTO> positionsOfGroups){
+return positionsOfGroups.collect{[
+    group: renderGroup(it.group),
+    position: renderPosition(it.position)
+    ]}
+}
+
+def renderGroup(OrganisationGroup group){
+    return [
+    id:      group.id,
+    name:    group.name,
+    isInternal: group.isInternal,
+    customLogo: group.logo != null,
+    organisationId: group.organisation?.id,
+    ]
+}
+
+def renderPosition(GroupPosition position){
+    return [
+    id:     position.id,
+    name:   position.name,
+    ]
+}
+
+
+json g.render(matterOverview,[excludes: ['workstreams','teamMembers','admins','resources']]) {
+    positionsOfGroups renderPositionsofGroups(matterOverview.positionsOfGroups)
+    workstreams renderWorkstream(matterOverview.workstreams)
+    teamMembers renderTeamMembers(matterOverview.teamMembers,matterOverview.admins, matterOverview.viewers)
+    resources  matterOverview.resources ? renderResources(matterOverview.resources) : null
+}

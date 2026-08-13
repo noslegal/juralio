@@ -1,0 +1,15 @@
+{
+  "name": "dependency-updates",
+  "version": "1.0.0",
+  "description": "Weekly scan of every package.json for available dependency updates, summarised to Slack",
+  "private": true,
+  "type": "module",
+  "main": "index.js",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "dependency-updates": "node index.js"
+  },
+  "license": "ISC"
+}

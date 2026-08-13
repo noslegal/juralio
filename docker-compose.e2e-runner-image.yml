@@ -1,0 +1,10 @@
+version: '3.6'
+services:
+  e2e:
+    ipc: host
+    build:
+      context: ./e2e
+      dockerfile: ./runner-image/Dockerfile
+    depends_on:
+      - server
+    command: 'prod server ${suite} ${testfiles} ${ignoretestfiles}'

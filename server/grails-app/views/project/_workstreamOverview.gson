@@ -1,0 +1,126 @@
+/*
+ * Copyright 2026 Graeme and Joanna Johnston
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+import com.juralio.linkresource.LinkResource
+import com.juralio.matter.MatterAdmin
+import com.juralio.matter.MatterTeamMember
+import com.juralio.matter.MatterViewer
+import com.juralio.project.Project
+import com.juralio.project.TaskCountsDTO
+import com.juralio.project.UserWithPermissionsandTaskCounts
+import com.juralio.project.UserWithTaskCount
+import com.juralio.project.WorkstreamOverview
+import com.juralio.task.Task
+import server.PrivateWorkstreamMember
+
+model {
+    WorkstreamOverview workstreamOverview
+}
+
+def renderTaskCounts(TaskCountsDTO taskCounts) {
+    return [
+            notRequiredCount: taskCounts.notRequiredCount,
+            notStartedCount : taskCounts.notStartedCount,
+            inProgressCount : taskCounts.inProgressCount,
+            doneCount       : taskCounts.doneCount
+    ]
+
+}
+
+def renderLevelATasks(List<Task> tasks) {
+    return tasks.collect {
+        [
+                id              : it.id,
+                status          : it.status,
+                plannedStartDate: it.plannedStartDate,
+                plannedEndDate  : it.plannedEndDate,
+                actualStartDate : it.actualStartDate,
+                actualEndDate   : it.actualEndDate,
+                level           : 1,
+                name            : it.name,
+                taskCounts      : renderTaskCounts(it.taskCounts),
+                milestones      : it.milestones,
+                isMilestone     : it.isMilestone,
+                isDeliverable        : it.isDeliverable
+        ]
+    }
+}
+
+def renderTeamMembers(List<UserWithPermissionsandTaskCounts> teamMembers, List<MatterViewer> viewers) {
+    teamMembers.collect {
+        [id                  : it.user.id,
+         username            : it.user.username,
+         firstname           : it.user.firstname,
+         lastname            : it.user.lastname,
+         enabled             : it.user.enabled, // This field is required for Userlist control
+         taskCount           : it.taskCount,
+         avatarColorIndex    : it.user.avatarColorIndex,
+         avatarImageIndex    : it.user.avatarImageIndex,
+         isAdmin             : it.isAdmin,
+         isEditor            : it.isEditor,
+         isCosts             : it.isCosts,
+         isViewer            : it.isViewer,
+         isActiveOnMatter    : it.isEditor,
+         isActiveOnWorkstream: it.isActiveOnWorkstream,
+         isPlaceholder       : it.user.isPlaceholder,
+         organisationGroup:renderOrganisationGroup(it.user.organisationGroup)
+        ]
+    }
+}
+
+def renderResources(List<LinkResource> resources) {
+    return resources.collect {
+        [
+                id          : it.id,
+                name        : it.name,
+                dateCreated : it.dateCreated,
+                url         : it.url,
+                image       : it.image,
+                matterId    : it.matterId,
+                workstreamId: it.workstreamId,
+        ]
+    }
+}
+
+def renderPrivateWorkstreamTeam(List<PrivateWorkstreamMember> members) {
+    return members.collect {
+        [
+                id              : it.id,
+                username        : it.user.username,
+                firstname       : it.user.firstname,
+                lastname        : it.user.lastname,
+                enabled         : it.user.enabled, // This field is required for Userlist control
+                avatarColorIndex: it.user.avatarColorIndex,
+                avatarImageIndex: it.user.avatarImageIndex,
+                matterAdmin     : it.matterAdmin,
+                matterViewer    : it.matterViewer,
+                matterTeamMember: it.matterTeamMember,
+                organisationGroup: renderOrganisationGroup(it.user.organisationGroup)
+        ]
+    }
+}
+
+def renderOrganisationGroup(OrganisationGroup orgGroup){
+return orgGroup ? [id:orgGroup.id,name:orgGroup.name] : null
+}
+
+
+json g.render(workstreamOverview, [excludes: ['teamMembers', 'levelATasks', 'resources', 'privateWorkstreamTeam', 'viewers']]) {
+    teamMembers renderTeamMembers(workstreamOverview.teamMembers, workstreamOverview.viewers)
+    levelATasks renderLevelATasks(workstreamOverview.levelATasks)
+    resources renderResources(workstreamOverview.resources)
+    privateWorkstreamTeam renderPrivateWorkstreamTeam(workstreamOverview.privateWorkstreamTeam)
+}

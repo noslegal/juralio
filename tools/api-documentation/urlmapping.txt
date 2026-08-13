@@ -1,0 +1,469 @@
+package server
+
+import com.juralio.common.RequestParameterValidationFailedException
+import com.juralio.post.exception.DuplicateTeamMemberException
+import com.juralio.post.exception.NoValidUserException
+import com.juralio.task.exception.MaximumTasksExceededException
+import org.springframework.orm.hibernate5.HibernateOptimisticLockingFailureException
+import org.springframework.security.access.AccessDeniedException
+
+class UrlMappings {
+
+    static mappings = {
+        /***************
+         Organisation
+         ****************/
+        "/api/organisations/"(controller: 'organisation') {
+            action = [GET: 'index', POST: 'save']
+        }
+        "/api/organisations/$id"(controller: "organisation") {
+            action = [GET: 'show', PATCH: 'update']
+        }
+        "/api/organisation"(controller: "organisation") {
+            action = [GET: "showCurrentUserOrganisation"]
+        }
+        "/api/organisations/$id/users"(controller: "organisationUser") {
+            action = [GET: 'index', POST: 'save', DELETE: 'delete']
+        }
+        "/api/organisations/$organisationId/logo"(controller: "organisationLogo") {
+            action = [GET: "getLogo", POST: "setLogo", DELETE: "deleteLogo"]
+        }
+
+        /***************
+         Matters
+         ****************/
+        "/api/matters"(controller: 'matter') {
+            action = [GET: "index", POST: "save"]
+        }
+        "/api/matter/$id"(controller: 'matter') {
+            action = [GET: "show"]
+        }
+        "/api/matters/shared"(controller: 'MatterShared') {
+            action = [POST: "getSharedMatters"]
+        }
+        "/api/matters/search/teammembers"(controller: 'MatterTeamMemberSearch') {
+            action = [POST: "getTeamMembers"]
+        }
+        "/api/matter/$matter_id/team"(controller: 'matterTeam') {
+            action = [GET: "getTeam"]
+        }
+        "/api/admin/matter/$matter_id"(controller: 'matter') {
+            action = [PATCH: "patch"]
+        }
+        "/api/admin/matter/$matter_id/matters"(controller: 'matterAdmin') {
+            action = [POST: "save"]
+        }
+        "/api/admin/matter/$matter_id/matters/$id?"(controller: 'matterAdmin') {
+            action = [DELETE: "delete"]
+        }
+        "/api/admin/matter/$matter_id/teammembers"(controller: 'matterTeamMember') {
+            action = [POST: "save"]
+        }
+        "/api/admin/matter/$matter_id/teammembers/$id?"(controller: 'matterTeamMember') {
+            action = [DELETE: "delete"]
+        }
+        "/api/admin/matter/$matter_id/viewers"(controller: 'matterViewer') {
+            action = [POST: "save"]
+        }
+        "/api/admin/matter/$matter_id/viewers/$id?"(controller: 'matterViewer') {
+            action = [DELETE: "delete"]
+        }
+
+
+        // /***************
+        //  Matter Party
+        //  ****************/
+        // "/api/matter/$matter_id/party"(controller: 'matterParty') {
+        //     action = [GET: "index", POST: "save"]
+        // }
+        // "/api/matter/$matter_id/party/$party_id"(controller: 'matterParty') {
+        //     action = [GET: "show", DELETE: "delete", PATCH: "update"]
+        // }
+        // "/api/matter/$matter_id/party/teammembers"(controller: 'matterPartyMember') {
+        //     action = [GET: "index"]
+        // }
+        // "/api/matter/$matter_id/party/$party_id/teammembers"(controller: 'matterPartyMember') {
+        //     action = [POST: "save"]
+        // }
+        // "/api/matter/$matter_id/party/$party_id/teammembers/$id"(controller: 'matterPartyMember') {
+        //     action = [GET: "show", DELETE: "delete"]
+        // }
+
+        /***************
+         Workstreams (formerly Projects).
+         ****************/
+        "/api/matter/$id/projects"(controller: 'project') {
+            action = [POST: "save", GET: 'listForMatter']
+        }
+        "/api/admin/matter/$matter_id/projects/$project_id"(controller: 'projectAdmin') {
+            action = [PATCH: "update"]
+        }
+        "/api/matter/$matter_id/projects/$id"(controller: 'project') {
+            action = [GET: "show"]
+        }
+        "/api/matter/$matter_id/projects/$id/preview"(controller: 'project') {
+            action = [GET: "preview"]
+        }
+        "/api/matter/$matter_id/projects/$id/visit"(controller: 'projectVisitRecency') {
+            action = [POST: "save"]
+        }
+
+        "/api/matter/$matter_id/projects/$id/link"(controller: 'taskLink') {
+            action = [POST: "saveList"]
+        }
+        "/api/matter/$matter_id/projects/$id/tasks/new"(controller: 'projectVisitRecency') {
+            action = [GET: "show"]
+        }
+        "/api/matter/$matter_id/projects/$project_id/tasks/$task_id/seen"(controller: 'projectVisitRecency') {
+            action = [PATCH: "updateTask"]
+        }
+
+        /***************
+         Tasks
+         ****************/
+        "/api/matter/$matter_id/projects/$project_id/tasks"(controller: 'task') {
+            action = [POST: "save", GET: 'index', PATCH: "updateList", DELETE: 'delete']
+        }
+        "/api/matter/$matter_id/tasks/archived"(controller: 'taskArchive') {
+            action = [GET: 'index']
+        }
+        "/api/matter/$matter_id/projects/$project_id/task/$id"(controller: 'task') {
+            action = [GET: "show", PATCH: 'update', POST: 'post']
+        }
+        "/api/matter/$matter_id/projects/$project_id/task/$id/siblings"(controller: 'task') {
+            action = [GET: 'showSiblings']
+        }
+        "/api/matter/$matter_id/projects/$project_id/task/$id/link"(controller: 'taskLink') {
+            action = [POST: 'save']
+        }
+        // "/api/matter/$matter_id/projects/$project_id/task/$id/linkAllSiblings"(controller: 'taskLink') {
+        //     action = [POST: 'saveAll']
+        // }
+        "/api/matter/$matter_id/projects/$project_id/task/$taskId/followers"(controller: 'taskFollower') {
+            action = [POST: 'save']
+        }
+        "/api/matter/$matter_id/projects/$project_id/task/$taskId/followers/$userId"(controller: 'deleteTaskFollower') {
+            action = [DELETE: 'delete']
+        }
+        "/api/matter/$matter_id/projects/$project_id/task/$taskId/teammembers"(controller: 'taskTeamMember') {
+            action = [POST: 'save']
+        }
+        "/api/matter/$matter_id/projects/$project_id/task/$taskId/teammembers/$userId"(controller: 'deleteTaskTeamMember') {
+            action = [DELETE: 'delete']
+        }
+        "/api/matter/$matter_id/projects/$project_id/task/$id/copy"(controller: 'taskCopy') {
+            action = [POST: "copy"]
+        }
+        "/api/matter/$matter_id/projects/$project_id/task/$id/move"(controller: 'taskMove') {
+            action = [POST: "move"]
+        }
+        "/api/matter/$matter_id/projects/$project_id/task/$id/archive"(controller: 'taskArchive', action: 'archive')
+        "/api/matter/$matter_id/projects/$project_id/task/$id/unarchive"(controller: 'taskArchive') {
+            action = [POST: "unarchive"]
+        }
+        "/api/matter/$matter_id/projects/$project_id/task/$task_id/checkConsistency"(controller: 'taskConsistency') {
+            action = [POST: "check"]
+        }
+
+        "/api/tasks/recent"(controller: 'taskRecency') {
+            action = [GET: "listRecentTasksForUser"]
+        }
+        "/api/matter/$matter_id/search/users/$user_id"(controller: "taskFilterUserRecency") {
+            action = [POST: 'save']
+        }
+        "/api/matter/$matter_id/search/users"(controller: "taskFilterUserRecency") {
+            action = [GET: 'index']
+        }
+        "/api/tasksAffected"(controller: 'TaskStatusChange') {
+            action = [POST: 'affectedTasks']
+        }
+
+        /***************
+         Posts
+         ****************/
+        "/api/matter/$matter_id/projects/$project_id/task/$task_id/posts"(controller: 'taskPosts') {
+            action = [GET: "index", POST: "save"]
+        }
+        "/api/matter/$matter_id/projects/$project_id/task/$task_id/post/$post_id"(controller: 'taskPosts') {
+            action = [GET: "show", PATCH: "update"]
+        }
+        "/api/matter/$matter_id/projects/$project_id/task/$task_id/post/$post_id/authors"(controller: 'postAuthor') {
+            action = [POST: "save"]
+        }
+        "/api/matter/$matterId/projects/$projectId/task/$taskId/post/$postId/authors/$userId"(controller: 'deletePostAuthor') {
+            action = [DELETE: "delete"]
+        }
+        "/api/matter/$matter_id/projects/$project_id/task/$task_id/post/$post_id/postmembers"(controller: 'postMember') {
+            action = [POST: "save"]
+        }
+        "/api/matter/$matter_id/projects/$project_id/task/$task_id/post/$post_id/postmembers/$user_id"(controller: 'deletePostMember') {
+            action = [DELETE: "delete"]
+        }
+        "/api/matter/$matter_id/projects/$project_id/task/$task_id/post/$post_id/move"(controller: 'postMove') {
+            action = [POST: 'move']
+        }
+        "/api/matter/$matter_id/posts"(controller: 'postArchive') {
+            action = [GET: 'index']
+        }
+        "/api/matter/$matterId/post/$postId"(controller: 'postArchive') {
+            action = [PATCH: 'restore']
+        }
+
+        /***************
+         Usage
+         ****************/
+        "/api/usage"(controller: "usage", action: "show") {
+            action = [GET: "show"]
+        }
+        "/api/usage/report/summary"(controller: "usageSummary") {
+            action = [GET: "showSummary"]
+        }
+        "/api/usage/report/month"(controller: "usageSummary") {
+            action = [POST: "getMonthDetail"]
+        }
+
+        /***************
+         User
+         ****************/
+        "/api/users/search"(controller: "userSearch", action: "search") {
+            action = [POST: "search"]
+        }
+        "/api/users"(controller: 'user') {
+            action = [GET: "index", POST: "save"]
+        }
+        "/api/user"(controller: 'authenticatedUser') {
+            action = [GET: "show", PATCH:'updateSelf']
+        }
+        "/api/users/$id"(controller: 'user') {
+            action = [GET: "show", PATCH: "update"]
+        }
+
+        "/api/settings/user/password"(controller: 'userPasswordChange') {
+            action = [POST: "userChangeOwnPassword"]
+        }
+        "/api/settings/users/$userId/password"(controller: 'temporaryPassword') {
+            action = [GET: "requestTemporaryPassword"]
+        }
+        "/api/settings/user/updateftue"(controller: 'firstTimeUserExperience') {
+            action = [PATCH: "update"]
+        }
+        "/api/settings/user/$userId/resetftue"(controller: 'firstTimeUserExperienceReset') {
+            action = [POST: "reset"]
+        }
+        "/api/settings/user/$userId/visit"(controller: 'visit') {
+            action = [POST: "visit", GET: "getVisit"]
+        }
+        "/api/settings/user/tours"(controller: 'tour') {
+            action = [GET: "index"]
+        }
+        "/api/settings/user/completeTour"(controller: 'tour') {
+            action = [POST: "complete"]
+        }
+        "/api/settings/user/$userId/resetTours"(controller: 'tour') {
+            action = [GET: "reset"]
+        }
+        "/api/user/$id/todo"(controller: 'userTodos') {
+            action = [GET: "show"]
+        }
+
+
+        /****************
+         Template
+         ****************/
+        "/api/projecttemplates"(controller: "projectTemplate") {
+            action = [GET: 'index', POST: 'save']
+        }
+        "/api/projecttemplates/$id"(controller: "projectTemplate") {
+            action = [GET: 'show', DELETE: "delete"]
+        }
+        "/api/projecttemplates/$id/preview"(controller: "projectTemplate") {
+            action = [GET: 'preview']
+        }
+        "/api/admin/projecttemplates/$templateId"(controller: "ProjectTemplateAdmin") {
+            action = [PATCH: 'update']
+        }
+        "/api/projecttemplates/$template_id/tasks"(controller: "taskTemplate") {
+            action = [GET: 'index', POST: "save", PATCH: "updateList"]
+        }
+
+        "/api/projecttemplates/$template_id/tasks/search"(controller: "taskTemplateSearch") {
+            action = [GET: 'index']
+        }
+        "/api/projecttemplates/$template_id/tasks/$id"(controller: "taskTemplate") {
+            action = [GET: 'show', DELETE: "delete", PATCH: "patch"]
+        }
+        "/api/projecttemplates/$templateId/tasks/$taskId/copy"(controller: "taskTemplateCopy") {
+            action = [POST: "copy"]
+        }
+        "/api/projecttemplates/$templateId/tasks/$taskId/move"(controller: "taskTemplateMove") {
+            action = [POST: "move"]
+        }
+        "/api/projecttemplates/$templateId/copy"(controller: "ProjectTemplateCopy") {
+            action = [POST: "copy"]
+        }
+        // "/api/projecttemplates/recenttemplates"(controller: 'projectTemplate') {
+        //     action = [GET: "listRecentProjectTemplatesForUser"]
+        // }
+        "/api/projecttemplates/$templateId/favourite"(controller: "projectTemplateFavourite") {
+            action = [POST: "save", DELETE: "delete", GET: "show"]
+        }
+
+        /***************
+         Template Posts
+         ****************/
+        "/api/projecttemplates/$templateId/tasks/$templateTaskId/posts"(controller: 'templateTaskPosts') {
+            action = [GET: "index", POST: "save"]
+        }
+
+        "/api/projecttemplates/$templateId/tasks/$templateTaskId/posts/$templatePostId"(controller: 'templateTaskPosts') {
+            action = [GET: "show", PATCH: "update", DELETE: "delete"]
+        }
+
+        "/api/projecttemplates/$templateId/tasks/$templateTaskId/posts/$templatePostId/move"(controller: 'templatePostMove') {
+            action = [POST: 'move']
+        }
+
+        /****************
+         * Inbox Notification
+         ****************/
+        "/api/inboxnotifications"(controller: "inboxNotification") {
+            action = [GET: 'index']
+        }
+
+        "/api/inboxnotifications/$id/read"(controller: "notificationRead") {
+            action = [POST: "markAsRead"]
+        }
+
+        "/api/inboxnotifications/$id/dismiss"(controller: "notificationDismissed") {
+            action = [POST: "dismiss"]
+        }
+
+        /****************
+         * Notification Filter User Recency
+         ****************/
+        "/api/notificationfilteruserrecency"(controller: "NotificationFilterUserRecency") {
+            action = [GET: 'index']
+        }
+
+        /****************
+         * Search
+         ****************/
+        "/api/todo/search"(controller: "projectContentSearch") {
+            action = [GET: 'performSearch']
+        }
+        "/api/universal/search"(controller: "projectContentSearch") {
+            action = [GET: 'performSearch']
+        }
+        "/api/matter/$matter_id/projects/$project_id/search"(controller: "projectContentSearch") {
+            action = [GET: 'performSearch']
+        }
+        "/api/universal/fuzzysearch"(controller: "fuzzySearch") {
+            action = [GET: 'performSearch']
+        }
+
+
+        /****************
+         * Labels
+         ****************/
+        "/api/labels/system"(controller: 'label') {
+            action = [GET: 'getLabelsForSystem']
+        }
+        "/api/matter/$matterId/labels"(controller: 'label') {
+            action = [GET: "getLabelsForMatter", POST: 'addMatterLabel']
+        }
+        "/api/matter/$matterId/labels/$labelId"(controller: 'label') {
+            action = [GET: 'getUsageForLabel', PATCH: 'updateLabelForMatter']
+        }
+
+        "/api/organisation/labels/$labelId"(controller: 'label') {
+            action = [PATCH: 'updateLabelForOrganisation']
+        }
+        "/api/organisation/labels"(controller: 'label') {
+            action = [POST: 'addOrganisationLabel', GET: 'getLabelsForOrganisation']
+        }
+
+        "/api/matter/$matter_id/projects/$project_id/task/$task_id/labels"(controller: 'taskLabel') {
+            action = [GET: "getTaskLabels", POST: "addLabelToTask"]
+        }
+
+        "/api/matter/$matter_id/projects/$project_id/task/$task_id/labels/$label_id"(controller: 'taskLabel') {
+            action = [PATCH: "updateTaskLabel", DELETE: "deleteLabelFromTask"]
+        }
+
+        // /****************
+        //  * Noticeboard
+        //  ****************/
+        // "/api/noticeboard/notice"(controller: "noticeboard") {
+        //     action = [POST: 'addNotice', GET: 'getNotice']
+        // }
+        // "/api/noticeboard/notice/$notice_id"(controller: "noticeboard") {
+        //     action = [GET: 'getNoticeById', DELETE: 'deleteNoticeById']
+        // }
+        // "/api/noticeboard/notice/$notice_id/meta"(controller: "noticeboard") {
+        //     action = [GET: 'getNoticeMeta']
+        // }
+        // "/api/noticeboard/meta"(controller: "noticeboard") {
+        //     action = [GET: 'listNoticeMeta']
+        // }
+        // "/api/noticeboard/notice/$notice_id/feature"(controller: "noticeboard") {
+        //     action = [POST: 'featureNotice']
+        // }
+
+        // /****************
+        //  * Export
+        //  ****************/
+        // "/api/export/matter/$matter_id"(controller: "export") {
+        //     action = [GET: 'exportMatter']
+        // }
+
+        /****************
+         * Misc
+         ****************/
+        "/health"(controller: "health") {
+            action = [GET: 'index']
+        }
+        "/version"(controller: 'version') {
+            action = [GET: 'index']
+        }
+
+        "/mstoken"(controller: 'microsoftResponse') {
+            action = [GET: 'get']
+        }
+
+        "/oktatoken"(controller: 'oktaResponse') {
+            action = [GET: 'get']
+        }
+
+        "/mslogin"(controller: 'microsoft') {
+            action = [GET: 'index']
+        }
+
+        "/oktalogin"(controller: 'okta') {
+            action = [GET: 'index']
+        }
+
+        "/experimental"(controller: 'experimental') {
+            action = [GET: 'index']
+        }
+
+        "/instance/settings"(controller: 'instanceSettings') {
+            action = [GET: 'index']
+        }
+
+        "/api/admin/instance/settings"(controller: 'instanceSettings') {
+            action = [PATCH: 'update']
+        }
+
+        "/error"(view: '/error')
+        "500"(controller: "error", action: "handleAccessDenied", exception: AccessDeniedException)
+        "500"(controller: "error", action: "handleNoValidUserException", exception: NoValidUserException)
+        "500"(controller: "error", action: "handleMaximumTaskLimitException", exception: MaximumTasksExceededException)
+        "500"(controller: "error", action: "handleDuplicateTeamMemberException", exception: DuplicateTeamMemberException)
+        "500"(controller: "error", action: "handleInvalidException", exception: IllegalArgumentException)
+        "500"(controller: "error", action: "handleRequestParameterValidationFailed", exception: RequestParameterValidationFailedException)
+        "500"(controller: "error", action: "handleHibernateOptimisticLockingFailureException", exception: HibernateOptimisticLockingFailureException)
+        "500"(controller: "error", action: "handleInternalServerError")
+        "401"(view: '/unauthorised')
+        "404"(view: '/notFound')
+    }
+}
