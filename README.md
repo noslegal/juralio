@@ -29,6 +29,7 @@ licence.
 - [docs/DATA-MODEL.md](docs/DATA-MODEL.md) — the domain model
 - [DESIGN.md](DESIGN.md) — the visual design language: colour tokens, typography,
   spacing, motion and component vocabulary
+- [CLAUDE.md](CLAUDE.md) - a file for Claude Code to read about Juralio  
 - [server/README.md](server/README.md) — backend notes: database migrations,
   starting from an empty database, and running CodeNarc
 - [SECURITY.md](SECURITY.md) — reporting a vulnerability, and the hardening
