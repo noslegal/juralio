@@ -1,0 +1,47 @@
+# Dependencies
+node_modules/
+
+# Build outputs
+build/
+dist/
+out/
+.gradle/
+*.war
+
+# Frontend test / coverage
+coverage/
+test-report.xml
+test-results/
+test-results.*.xml
+
+# Python (help docs tooling)
+__pycache__/
+*.pyc
+.venv/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Cypress run artefacts
+**/cypress/screenshots/
+**/cypress/videos/
+**/cypress/downloads/
+
+# Secrets and local config
+credentials.json
+.env
+.env.local
+.env.*.local
+
+# Local dev TLS certs (e.g. mkcert for npm run start-https)
+**/certs/
+
+# Local-only database init
+database/_init.sql
