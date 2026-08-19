@@ -116,7 +116,7 @@ export function isInThePast(date) {
 }
 
 export function isInThePastOrToday(date) {
-  return dayjs(dayjs(date)).startOf('day') < dayjs().startOf('day')
+  return dayjs(dayjs(date)).startOf('day') <= dayjs().startOf('day')
 }
 
 export function actualStartDateIsValid(asd, selectedTask) {
