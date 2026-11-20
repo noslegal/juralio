@@ -150,7 +150,7 @@ class TaskController {
 
                 t.parent = taskHierarchyHelperService.getAncestor(t, t.project, !isStructure)
                 t.isCurrentUserFollower = taskFollowerService.isTaskFollower(t, springSecurityService.getCurrentUser())
-                if (params.includePosts = true) {
+                if (params.includePosts == 'true') {
                     t.posts = taskPostsService.getPostsByTaskId(t.id, t.project.id)
                 }
                 return t

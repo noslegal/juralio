@@ -728,7 +728,7 @@ class UserService {
         }
         String ssoMethod = user.thirdPartyProvider.substring(0,1).toUpperCase() + user.thirdPartyProvider.substring(1)
 
-        if (ssoMethod = 'Microsoft') {
+        if (ssoMethod == 'Microsoft') {
             URL base = new URL(domain)
             domain = new URL(base, 'mslogin').toString()
         }
@@ -737,7 +737,7 @@ class UserService {
         String htmlBody
 
         if (user.organisation != null) {
-            if (ssoMethod = 'Microsoft') {
+            if (ssoMethod == 'Microsoft') {
                 template = assetResourceLocator?.findAssetForURI('WelcomeToJuralioMicrosoftSSO.html')
             } else {
                 template = assetResourceLocator?.findAssetForURI('WelcomeToJuralioSSO.html')
